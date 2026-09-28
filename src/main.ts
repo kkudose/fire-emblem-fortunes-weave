@@ -10,26 +10,28 @@ let timer: number | undefined;
 let rosterOpen = false;
 
 root.innerHTML = `
-  <main class="page-shell">
-    <header class="masthead">
-      <span class="eyebrow"><span class="seal" aria-hidden="true">✦</span> A field guide for thoughtful gifts</span>
-      <h1>Fortune’s Weave <em>Gift Almanac</em></h1>
-    </header>
-
-    <section class="search-panel" aria-label="Find a character">
-      <label for="character-search">Whose preferences are you looking for?</label>
-      <div class="search-wrap">
-        <span class="search-icon" aria-hidden="true">⌕</span>
-        <input id="character-search" type="text" placeholder="Begin typing a name…" autocomplete="off" autofocus role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" />
-        <button class="clear-button" type="button" aria-label="Clear search" hidden>×</button>
-        <ul id="suggestions" class="suggestions" role="listbox" hidden></ul>
+  <header class="hero-band">
+    <div class="hero-inner">
+      <div class="masthead">
+        <h1>Fortune’s Weave <em>Gift Almanac</em></h1>
       </div>
-      <button id="roster-toggle" class="roster-toggle" type="button" aria-expanded="false" aria-controls="all-characters">See all characters</button>
-      <div id="all-characters" class="all-characters" hidden></div>
-    </section>
 
+      <section class="search-panel" aria-label="Find a character">
+        <label for="character-search">Whose preferences are you looking for?</label>
+        <div class="search-wrap">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="character-search" type="text" placeholder="Begin typing a name…" autocomplete="off" autofocus role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggestions" />
+          <button class="clear-button" type="button" aria-label="Clear search" hidden>×</button>
+          <ul id="suggestions" class="suggestions" role="listbox" hidden></ul>
+        </div>
+        <button id="roster-toggle" class="roster-toggle" type="button" aria-expanded="false" aria-controls="all-characters">See all characters</button>
+        <div id="all-characters" class="all-characters" hidden></div>
+      </section>
+    </div>
+  </header>
+
+  <main class="page-shell">
     <section id="result" class="result" aria-live="polite"></section>
-
   </main>
 `;
 
@@ -61,18 +63,24 @@ function updateSuggestions() {
 
 function renderResult(character: CharacterGifts) {
   const groups = [
-    { title: 'Loved', subtitle: 'A rare favorite', gifts: character.loved, icon: '✦', kind: 'loved' },
-    { title: 'Preferred', subtitle: 'A documented good match', gifts: character.preferred, icon: '✧', kind: 'preferred' }
+    { title: 'Loved', subtitle: 'Double support', gifts: character.loved, icon: '✦', kind: 'loved' },
+    { title: 'Really liked', subtitle: 'A strong support gain', gifts: character.reallyLiked, icon: '✧', kind: 'really-liked' }
   ];
   const visibleGroups = groups.filter(({ gifts }) => gifts.length > 0);
   const hasGifts = visibleGroups.length > 0;
   result.innerHTML = `
-    <div class="result-heading"><h2>${escapeHtml(character.name)}</h2><span class="divider" aria-hidden="true">✧</span></div>
-    ${hasGifts ? `<div class="gift-columns">${visibleGroups.map((group) => `
-      <section class="gift-card ${group.kind}" aria-labelledby="heading-${group.kind}">
+    <aside class="character-rail" aria-label="Selected character"><h2>${escapeHtml(character.name)}</h2></aside>
+    ${character.unverified ? `<aside class="caution-banner" role="note" aria-label="Unverified gift information">
+      <span class="caution-mark" aria-hidden="true">✧</span>
+      <div><h3>A note from the archivist</h3><p>These gift matches are marked uncertain in the guide. Treat them as clues, not confirmed reactions.</p></div>
+      <span class="caution-mark" aria-hidden="true">✧</span>
+    </aside>` : ''}
+    ${hasGifts ? `<div class="gift-columns${visibleGroups.length === 1 ? ' single' : ''}">${visibleGroups.map((group) => `
+        <section class="gift-card ${group.kind}" aria-labelledby="heading-${group.kind}">
         <div class="card-heading"><span class="gift-icon" aria-hidden="true">${group.icon}</span><div><h3 id="heading-${group.kind}">${group.title}</h3><p>${group.subtitle}</p></div></div>
         <ul class="gift-list">${group.gifts.map((gift) => `<li class="gift-item">${escapeHtml(gift)}</li>`).join('')}</ul>
-      </section>`).join('')}</div>` : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named preferred gifts have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`}
+      </section>`).join('')}</div>` : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named gift preferences have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`}
+    ${character.automaticRecruitment ? `<aside class="recruitment-note" role="note"><span aria-hidden="true">✦</span><p>${escapeHtml(character.automaticRecruitment)}</p></aside>` : ''}
   `;
 }
 
@@ -83,13 +91,29 @@ function choose(character: CharacterGifts) {
   list.hidden = true;
   input.setAttribute('aria-expanded', 'false');
   clearButton.hidden = false;
+  root.querySelector('.page-shell')!.classList.add('has-character');
   renderResult(character);
   input.setAttribute('aria-activedescendant', '');
+}
+
+function clearSearch() {
+  selected = null;
+  query = '';
+  suggestions = [];
+  input.value = '';
+  result.innerHTML = '';
+  root.querySelector('.page-shell')!.classList.remove('has-character');
+  clearButton.hidden = true;
+  list.hidden = true;
+  input.setAttribute('aria-expanded', 'false');
+  input.removeAttribute('aria-activedescendant');
+  window.clearTimeout(timer);
 }
 
 input.addEventListener('input', () => {
   query = input.value;
   selected = null;
+  root.querySelector('.page-shell')!.classList.remove('has-character');
   clearButton.hidden = query.length === 0;
   result.innerHTML = '';
   window.clearTimeout(timer);
@@ -130,12 +154,16 @@ list.addEventListener('mousedown', (event) => {
 });
 
 clearButton.addEventListener('click', () => {
-  selected = null;
-  query = '';
-  input.value = '';
-  result.innerHTML = '';
-  clearButton.hidden = true;
+  clearSearch();
   input.focus();
+});
+
+document.addEventListener('keydown', (event) => {
+  if ((event.metaKey || event.ctrlKey) && event.key.toLocaleLowerCase() === 'k') {
+    event.preventDefault();
+    if (input.value || selected) clearSearch();
+    input.focus();
+  }
 });
 
 document.addEventListener('click', (event) => {
@@ -149,10 +177,27 @@ rosterToggle.addEventListener('click', () => {
   rosterOpen = !rosterOpen;
   rosterToggle.setAttribute('aria-expanded', String(rosterOpen));
   rosterToggle.textContent = rosterOpen ? 'Hide character list' : 'See all characters';
-  roster.hidden = !rosterOpen;
-  if (rosterOpen && !roster.childElementCount) {
-    const ordered = [...characters].sort((a, b) => a.name.localeCompare(b.name));
-    roster.innerHTML = `<ul>${ordered.map(({ name }) => `<li><button type="button" data-character="${escapeHtml(name)}">${escapeHtml(name)}</button></li>`).join('')}</ul>`;
+  if (rosterOpen) {
+    roster.hidden = false;
+    roster.inert = false;
+    roster.removeAttribute('aria-hidden');
+    if (!roster.childElementCount) {
+      const ordered = [...characters].sort((a, b) => a.name.localeCompare(b.name));
+      roster.innerHTML = `<ul>${ordered.map(({ name }) => `<li><button type="button" data-character="${escapeHtml(name)}">${escapeHtml(name)}</button></li>`).join('')}</ul>`;
+    }
+    roster.style.setProperty('--roster-open-height', `${roster.scrollHeight + 20}px`);
+    roster.getBoundingClientRect();
+    roster.classList.add('is-open');
+  } else {
+    roster.inert = true;
+    roster.setAttribute('aria-hidden', 'true');
+    roster.classList.remove('is-open');
+    const hideClosedRoster = (event: TransitionEvent) => {
+      if (event.target !== roster || event.propertyName !== 'max-height') return;
+      roster.removeEventListener('transitionend', hideClosedRoster);
+      if (!rosterOpen) roster.hidden = true;
+    };
+    roster.addEventListener('transitionend', hideClosedRoster);
   }
 });
 
@@ -163,6 +208,9 @@ roster.addEventListener('click', (event) => {
   if (character) {
     choose(character);
     rosterOpen = false;
+    roster.classList.remove('is-open');
+    roster.inert = true;
+    roster.setAttribute('aria-hidden', 'true');
     roster.hidden = true;
     rosterToggle.textContent = 'See all characters';
     rosterToggle.setAttribute('aria-expanded', 'false');
