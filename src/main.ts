@@ -70,15 +70,10 @@ function renderResult(character: CharacterGifts) {
   const hasGifts = visibleGroups.length > 0;
   result.innerHTML = `
     <aside class="character-rail" aria-label="Selected character"><h2>${escapeHtml(character.name)}</h2></aside>
-    ${character.unverified ? `<aside class="caution-banner" role="note" aria-label="Unverified gift information">
-      <span class="caution-mark" aria-hidden="true">✧</span>
-      <div><h3>A note from the archivist</h3><p>These gift matches are marked uncertain in the guide. Treat them as clues, not confirmed reactions.</p></div>
-      <span class="caution-mark" aria-hidden="true">✧</span>
-    </aside>` : ''}
     ${hasGifts ? `<div class="gift-columns${visibleGroups.length === 1 ? ' single' : ''}">${visibleGroups.map((group) => `
         <section class="gift-card ${group.kind}" aria-labelledby="heading-${group.kind}">
         <div class="card-heading"><span class="gift-icon" aria-hidden="true">${group.icon}</span><div><h3 id="heading-${group.kind}">${group.title}</h3><p>${group.subtitle}</p></div></div>
-        <ul class="gift-list">${group.gifts.map((gift) => `<li class="gift-item">${escapeHtml(gift)}</li>`).join('')}</ul>
+        <ul class="gift-list">${group.gifts.map((gift) => `<li class="gift-item${gift.unverified ? ' unverified' : ''}"${gift.unverified ? ' aria-label="' + escapeHtml(gift.name) + ', unverified"' : ''}><span>${escapeHtml(gift.name)}</span>${gift.unverified ? '<small class="verification-status">Unverified</small>' : ''}</li>`).join('')}</ul>
       </section>`).join('')}</div>` : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named gift preferences have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`}
     ${character.automaticRecruitment ? `<aside class="recruitment-note" role="note"><span aria-hidden="true">✦</span><p>${escapeHtml(character.automaticRecruitment)}</p></aside>` : ''}
   `;
