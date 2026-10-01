@@ -52,7 +52,7 @@ const records: Record<string, GiftRecord> = {
       "Home-Recipe Book", "Herbal Recipe Guide", "Kitten Figurine", "Protection Figurine",
       "Sturdy Rucksack", "Mane Ornament", "Dagda Beard Grass", "Crimson Bull Figure",
       "Jade Panther Figure", "Horse-Grooming Kit", "Sharp Dagger", "Joint-Relief Gloves",
-      "Skin Balm", "Exquisite Ring"
+      "Skin Balm", "Exquisite Ring", "Aromatic Shosh"
     ]
   },
   "Bonaventure": {
@@ -132,6 +132,7 @@ const records: Record<string, GiftRecord> = {
     reallyLiked: [
       "Morfis Almanac", "Crimson Ghosh", "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh",
       "Secret Ghosh", "Southern Ghosh", "Sun Ghosh", "Volcano Ghosh", "Young Ghosh",
+      "Aromatic Shosh", "Light Shosh", "Mature Shosh",
       "Common Coffee", "Select Coffee", "Southern Coffee", "Orgus Coffee",
       "Eastern Black Silk", "Rugged Blade", "Eastern Tea Leaves", "Tome from Away"
     ]
@@ -151,7 +152,7 @@ const records: Record<string, GiftRecord> = {
       "Jade Panther Figure", "Horse-Grooming Kit", "The Works of Dante", "The Knight’s Suitors",
       "Thick Foreign Tome", "Crafting Knives", "Sharp Dagger", "Training Weights",
       "Training Pillar", "Joint-Relief Gloves", "Board-Game Tactics", "Spirit Board Game",
-      "Arrowhead Gem", "Pack of Pastels"
+      "Arrowhead Gem", "Pack of Pastels", "Aromatic Shosh"
     ]
   },
   "Goliath": {
@@ -194,7 +195,7 @@ const records: Record<string, GiftRecord> = {
     reallyLiked: [
       "Alecto Garum", "Concentrated Garum", "Garum", "Smooth Garum", "Niiza Garum", "Crimson Ghosh",
       "Outdoor Cooking Set", "Strong Seasonings", "Home-Recipe Book", "Pastry Cookbook",
-      "Rare Spices", "Herbal Recipe Guide"
+      "Rare Spices", "Herbal Recipe Guide", "Aromatic Shosh"
     ]
   },
   "Lilian": {
@@ -240,13 +241,14 @@ const records: Record<string, GiftRecord> = {
   "Majide": {
     reallyLiked: ["Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh", "Southern Ghosh", "Sun Ghosh", "Volcano Ghosh", "Young Ghosh",
       { name: "Aromatic Shosh", unverified: true }, { name: "Blue Shosh", unverified: true },
-      { name: "Light Shosh", unverified: true }, { name: "Mature Shosh", unverified: true },
-      { name: "Young Shosh", unverified: true }]
+      "Light Shosh", "Mature Shosh", "Young Shosh"]
   },
   "Mikaela": {
     reallyLiked: [
       "Crimson Ghosh", "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh",
       "Southern Ghosh", "Sun Ghosh", "Volcano Ghosh", "Young Ghosh",
+      "Aromatic Shosh",
+      "Light Shosh", "Mature Shosh",
       "Common Coffee", "Select Coffee", "Southern Coffee", "Orgus Coffee", "Training Weights",
       "Training Pillar", "Arrowhead Gem", "Tome from Away", "Home-Recipe Book", "Flower Painting"
     ]
@@ -339,7 +341,8 @@ const records: Record<string, GiftRecord> = {
     ]
   },
   "Guzran": {
-    reallyLiked: ["Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh", "Southern Ghosh", "Sun Ghosh", "Young Ghosh"]
+    reallyLiked: ["Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh", "Southern Ghosh", "Sun Ghosh", "Young Ghosh",
+      "Aromatic Shosh", "Light Shosh", "Mature Shosh", "Young Shosh"]
   },
   "Orchel": {
     loved: ["Blue-Rose Bouquet", "Flower Painting", "Portrait of Yu Phas", "Shield Portrait"],
@@ -376,6 +379,7 @@ const records: Record<string, GiftRecord> = {
       { name: "Blue-Rose Bouquet", unverified: true }, { name: "Eastern Black Silk", unverified: true },
       { name: "Eastern Earrings", unverified: true }, { name: "Exquisite Ring", unverified: true },
       { name: "Flower Painting", unverified: true }, { name: "Gaudy Bangle", unverified: true },
+      "Light Shosh", "Mature Shosh", "Young Shosh",
       { name: "Pack of Pastels", unverified: true }, { name: "Red Hair Clip", unverified: true },
       { name: "Select Coffee", unverified: true }, { name: "Skin Balm", unverified: true }
     ]
@@ -401,7 +405,8 @@ const records: Record<string, GiftRecord> = {
     loved: ["Arrowhead Gem", "Crimson Ghosh", "Volcano Ghosh"],
     reallyLiked: [
       "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh",
-      "Southern Ghosh", "Sun Ghosh", "Young Ghosh", "Crimson Bull Figure",
+      "Southern Ghosh", "Sun Ghosh", "Young Ghosh", "Light Shosh", "Mature Shosh", "Young Shosh",
+      "Crimson Bull Figure",
       "Jade Panther Figure", "Pack of Pastels", "Gaudy Bangle", "Eastern Board Game"
     ]
   },
@@ -438,7 +443,9 @@ const records: Record<string, GiftRecord> = {
   "Yang Jie": {
     reallyLiked: [
       "Crimson Ghosh", "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh",
-      "Southern Ghosh", "Sun Ghosh", "Volcano Ghosh", "Young Ghosh"
+      "Southern Ghosh", "Sun Ghosh", "Volcano Ghosh", "Young Ghosh",
+      "Aromatic Shosh", "Light Shosh", "Mature Shosh",
+      "Young Shosh"
     ]
   },
   "Zarcone": {

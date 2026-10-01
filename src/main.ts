@@ -2,6 +2,15 @@ import './style.css';
 import { characters, type CharacterGifts } from './gifts';
 
 const root = document.querySelector<HTMLDivElement>('#app')!;
+const lovedByCharacter = new Map<string, Set<string>>();
+for (const character of characters) {
+  for (const gift of character.loved) {
+    const lovedBy = lovedByCharacter.get(gift.name) ?? new Set<string>();
+    lovedBy.add(character.name);
+    lovedByCharacter.set(gift.name, lovedBy);
+  }
+}
+
 let query = '';
 let selected: CharacterGifts | null = null;
 let suggestions: CharacterGifts[] = [];
@@ -63,8 +72,8 @@ function updateSuggestions() {
 
 function renderResult(character: CharacterGifts) {
   const groups = [
-    { title: 'Loved', subtitle: 'Double support', gifts: character.loved, icon: '✦', kind: 'loved' },
-    { title: 'Really liked', subtitle: 'A strong support gain', gifts: character.reallyLiked, icon: '✧', kind: 'really-liked' }
+    { title: 'Loved', subtitle: 'Double support gain', gifts: character.loved, icon: '✦', kind: 'loved' },
+    { title: 'Really liked', subtitle: 'Strong support gain', gifts: character.reallyLiked, icon: '✧', kind: 'really-liked' }
   ];
   const visibleGroups = groups.filter(({ gifts }) => gifts.length > 0);
   const hasGifts = visibleGroups.length > 0;
@@ -73,7 +82,13 @@ function renderResult(character: CharacterGifts) {
     ${hasGifts ? `<div class="gift-columns${visibleGroups.length === 1 ? ' single' : ''}">${visibleGroups.map((group) => `
         <section class="gift-card ${group.kind}" aria-labelledby="heading-${group.kind}">
         <div class="card-heading"><span class="gift-icon" aria-hidden="true">${group.icon}</span><div><h3 id="heading-${group.kind}">${group.title}</h3><p>${group.subtitle}</p></div></div>
-        <ul class="gift-list">${group.gifts.map((gift) => `<li class="gift-item${gift.unverified ? ' unverified' : ''}"${gift.unverified ? ' aria-label="' + escapeHtml(gift.name) + ', unverified"' : ''}><span>${escapeHtml(gift.name)}</span>${gift.unverified ? '<small class="verification-status">Unverified</small>' : ''}</li>`).join('')}</ul>
+        <ul class="gift-list">${group.gifts.map((gift) => {
+          const lovedByAnother = [...(lovedByCharacter.get(gift.name) ?? [])].some((name) => name !== character.name);
+          const tooltip = [gift.unverified && 'Low confidence: may be incorrect', lovedByAnother && 'Loved by another character'].filter(Boolean).join(' · ');
+          const classes = ['gift-item', gift.unverified && 'unverified', lovedByAnother && 'loved-elsewhere', tooltip && 'has-tooltip'].filter(Boolean).join(' ');
+          const labels = [gift.name, gift.unverified && 'low confidence: may be incorrect', lovedByAnother && 'loved by another character'].filter(Boolean).join(', ');
+          return `<li class="${classes}"${labels !== gift.name ? ` aria-label="${escapeHtml(labels)}"` : ''}${tooltip ? ` data-tooltip="${escapeHtml(tooltip)}" tabindex="0"` : ''}><span>${escapeHtml(gift.name)}</span>${lovedByAnother ? '<small class="loved-elsewhere-mark" aria-hidden="true">♥</small>' : ''}</li>`;
+        }).join('')}</ul>
       </section>`).join('')}</div>` : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named gift preferences have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`}
     ${character.automaticRecruitment ? `<aside class="recruitment-note" role="note"><span aria-hidden="true">✦</span><p>${escapeHtml(character.automaticRecruitment)}</p></aside>` : ''}
   `;
