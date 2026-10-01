@@ -79,10 +79,20 @@ function renderResult(character: CharacterGifts) {
   `;
 }
 
-function choose(character: CharacterGifts) {
+function updateCharacterUrl(name?: string) {
+  const url = new URL(window.location.href);
+  if (name) url.searchParams.set('character', name);
+  else url.searchParams.delete('character');
+  window.history.pushState(name ? { character: name } : {}, '', url);
+}
+
+function choose(character: CharacterGifts, updateUrl = true) {
   selected = character;
   query = character.name;
   input.value = character.name;
+  if (updateUrl && new URL(window.location.href).searchParams.get('character') !== character.name) {
+    updateCharacterUrl(character.name);
+  }
   list.hidden = true;
   input.setAttribute('aria-expanded', 'false');
   clearButton.hidden = false;
@@ -91,7 +101,10 @@ function choose(character: CharacterGifts) {
   input.setAttribute('aria-activedescendant', '');
 }
 
-function clearSearch() {
+function clearSearch(updateUrl = true) {
+  if (updateUrl && new URL(window.location.href).searchParams.has('character')) {
+    updateCharacterUrl();
+  }
   selected = null;
   query = '';
   suggestions = [];
@@ -107,6 +120,7 @@ function clearSearch() {
 
 input.addEventListener('input', () => {
   query = input.value;
+  if (selected) updateCharacterUrl();
   selected = null;
   root.querySelector('.page-shell')!.classList.remove('has-character');
   clearButton.hidden = query.length === 0;
@@ -117,7 +131,7 @@ input.addEventListener('input', () => {
     input.setAttribute('aria-expanded', 'false');
     return;
   }
-  timer = window.setTimeout(updateSuggestions, 260);
+  timer = window.setTimeout(updateSuggestions, 500);
 });
 
 input.addEventListener('keydown', (event) => {
@@ -143,9 +157,11 @@ input.addEventListener('keydown', (event) => {
   }
 });
 
-list.addEventListener('mousedown', (event) => {
+list.addEventListener('click', (event) => {
   const option = (event.target as HTMLElement).closest<HTMLElement>('[role="option"]');
-  if (option) choose(suggestions[Number(option.dataset.index)]);
+  if (!option) return;
+  const character = suggestions[Number(option.dataset.index)];
+  if (character) choose(character);
 });
 
 clearButton.addEventListener('click', () => {
@@ -211,5 +227,16 @@ roster.addEventListener('click', (event) => {
     rosterToggle.setAttribute('aria-expanded', 'false');
   }
 });
+
+window.addEventListener('popstate', () => {
+  const name = new URL(window.location.href).searchParams.get('character');
+  const character = characters.find(({ name: candidate }) => candidate.toLocaleLowerCase() === name?.toLocaleLowerCase());
+  if (character) choose(character, false);
+  else clearSearch(false);
+});
+
+const initialCharacterName = new URL(window.location.href).searchParams.get('character');
+const initialCharacter = characters.find(({ name }) => name.toLocaleLowerCase() === initialCharacterName?.toLocaleLowerCase());
+if (initialCharacter) choose(initialCharacter, false);
 
 input.focus();
