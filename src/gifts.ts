@@ -46,7 +46,7 @@ const records: Record<string, GiftRecord> = {
   "Alexandra": {
     loved: ["Tales of Adventure"],
     reallyLiked: [
-      { name: "Smooth Garum" }, { name: "Alecto Garum", unverified: true },
+      { name: "Smooth Garum" }, "Alecto Garum",
       { name: "Concentrated Garum", unverified: true },
       "Garum", "Niiza Garum", "Crimson Ghosh", "Outdoor Cooking Set", "Strong Seasonings",
       "Home-Recipe Book", "Herbal Recipe Guide", "Kitten Figurine", "Protection Figurine",
@@ -232,7 +232,7 @@ const records: Record<string, GiftRecord> = {
       "Tome from Away", { name: "Eastern Earrings", unverified: true },
       { name: "Eastern Love Story", unverified: true }, { name: "Eastern Tea Leaves", unverified: true },
       { name: "Strategy Manuscript", unverified: true }],
-    reallyLiked: ["Ceremonial Spear", "Pack of Pastels", { name: "Aromatic Shosh", unverified: true },
+    reallyLiked: ["Ceremonial Spear", "Pack of Pastels",
       { name: "Everyday Scenes", unverified: true }, { name: "Herbal Recipe Guide", unverified: true },
       { name: "Home-Recipe Book", unverified: true }, { name: "Sturdy Rucksack", unverified: true },
       { name: "The Works of Dante", unverified: true }, { name: "Trader’s Handbook", unverified: true }]
@@ -264,7 +264,7 @@ const records: Record<string, GiftRecord> = {
       "Flower Painting", "Joint-Relief Gloves", { name: "Training Pillar" },
       { name: "Eastern Tea Leaves", unverified: true }, { name: "Pickled Bulbs", unverified: true },
       { name: "Board-Game Tactics", unverified: true }, { name: "Ebony Game Board", unverified: true },
-      { name: "Eastern Board Game", unverified: true }, { name: "Pickled Vegetables", unverified: true },
+      { name: "Eastern Board Game", unverified: true }, "Pickled Vegetables",
       { name: "Potted Vegetables", unverified: true }, { name: "Rare Southern Seeds", unverified: true },
       { name: "Sturdy Rucksack", unverified: true }, { name: "Training Bracelet", unverified: true },
       { name: "Training Weights", unverified: true }, { name: "Wing Fletching", unverified: true }
@@ -355,7 +355,7 @@ const records: Record<string, GiftRecord> = {
     loved: [{ name: "Arrowhead Gem", unverified: true }],
     reallyLiked: [
       { name: "Strong Cervi" }, { name: "Mature Dried Cervi", unverified: true },
-      { name: "Weak Cervi", unverified: true }, { name: "Ginji Cervi", unverified: true },
+      { name: "Weak Cervi", unverified: true }, "Ginji Cervi",
       { name: "Pure-White Cervi", unverified: true }, { name: "Yarc Milk", unverified: true }
     ]
   },
@@ -389,7 +389,7 @@ const records: Record<string, GiftRecord> = {
   "Simon": {
     loved: ["Portrait of Yu Phas", "Rancid Garum", "Shield Portrait"],
     reallyLiked: ["Flower Painting", "Arrowhead Gem", "Crimson Ghosh", "Joint-Relief Gloves",
-      { name: "Eastern Board Game", unverified: true }, { name: "Pickled Bulbs", unverified: true },
+      { name: "Eastern Board Game", unverified: true }, "Pickled Bulbs",
       { name: "Outdoor Cooking Set", unverified: true }, { name: "Eastern Tea Leaves", unverified: true }]
   },
   "Sha Lan": {
@@ -417,7 +417,7 @@ const records: Record<string, GiftRecord> = {
   },
   "Ultand": {
     reallyLiked: [
-      "Concentrated Garum", "Garum", "Niiza Garum", "Crimson Ghosh",
+      "Alecto Garum", "Concentrated Garum", "Garum", "Niiza Garum", "Crimson Ghosh",
       "Outdoor Cooking Set", "Strong Seasonings", "Home-Recipe Book", "Herbal Recipe Guide",
       "The Knight’s Suitors", "Tome from Away", "Morfis Almanac", "Rugged Blade", "Ceremonial Spear",
       "Skin Balm", "Eastern Black Silk", "Ahm Lu Cloth", "Eastern Board Game", "Exquisite Ring",
