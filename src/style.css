@@ -68,11 +68,19 @@ h1 em { display: inline; margin-left: 5px; color: #e1c17c; font-size: var(--bran
 .gift-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 7px; }
 .gift-item { display: inline-flex; align-items: center; padding: 6px 9px; border: 1px solid #e5dccb; border-radius: 3px 7px 3px 7px; color: #494c58; font-size: 11px; line-height: 1.25; background: #fffdf8; box-shadow: 0 2px 5px rgba(47,48,57,.035); }
 .gift-item.unverified { border-style: dashed; border-color: #c5a66c; background: rgba(255,250,238,.84); }
-.gift-item.loved-elsewhere { position: relative; border-color: #aa8748; background: linear-gradient(135deg, #fff8e7, #f3e7c8); box-shadow: inset 0 0 0 1px rgba(179,145,83,.12), 0 2px 6px rgba(91,69,32,.1); }
+.gift-item.favorite { border-width: 2px; border-color: #a3374c; background: linear-gradient(135deg, #fff9fa, #f6dfe4); box-shadow: inset 0 0 0 1px rgba(163,55,76,.1), 0 2px 6px rgba(91,36,49,.1); }
+.gift-item.frequency-low { border-width: 2px; border-color: #c5b36b; background: linear-gradient(135deg, #fffef9, #fbf5e2); }
+.gift-item.frequency-mid { border-width: 2px; border-color: #9eaccf; background: linear-gradient(135deg, #fbfcff, #edf1fa); }
+.gift-item.frequency-high { border-width: 2px; border-color: #b29ac7; background: linear-gradient(135deg, #fefcff, #f3edf8); }
+.gift-item.loved-elsewhere { position: relative; }
+.frequency-legend { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 11px; color: #77716a; font-size: 10px; }
+.frequency-legend .legend-title { font-family: Georgia, serif; font-style: italic; }
+.frequency-legend ul { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.frequency-legend li { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
 .gift-item.has-tooltip { position: relative; }
 .gift-item.has-tooltip::after { position: absolute; z-index: 4; left: 50%; bottom: calc(100% + 7px); padding: 6px 8px; border-radius: 3px; color: #fff8ea; background: #292e40; content: attr(data-tooltip); font-size: 10px; line-height: 1.2; white-space: nowrap; opacity: 0; pointer-events: none; transform: translate(-50%, 2px); transition: opacity .08s ease, transform .08s ease; }
 .gift-item.has-tooltip:hover::after, .gift-item.has-tooltip:focus-visible::after { opacity: 1; transform: translate(-50%, 0); }
-.loved-elsewhere-mark { margin-left: 4px; color: #9a712d; font-size: 12px; line-height: 1; text-shadow: 0 1px rgba(255,255,255,.85); }
+.loved-elsewhere-mark { margin-left: 4px; color: #a3374c; font-size: 12px; line-height: 1; text-shadow: 0 1px rgba(255,255,255,.85); }
 .empty-state { text-align: center; padding: 32px 24px; background: rgba(251,248,240,.82); border: 1px solid var(--line); border-top: 2px solid var(--gilt); border-radius: 3px 10px 3px 10px; color: #62616b; animation: appear .24s ease-out; }
 .empty-state > span { display: block; color: var(--wine); margin-bottom: 11px; }
 .empty-state p { margin: 0 auto 6px; max-width: 440px; font: 16px/1.55 'Playfair Display', Georgia, serif; }

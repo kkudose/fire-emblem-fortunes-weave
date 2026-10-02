@@ -19,11 +19,27 @@ export type CharacterGifts = {
 
 const names = `Eshmel|Cai|Dietrich|Theodora|Leda|Hong Hua|Troy|Tialla|Peter|Ultand|Fabio|Esmeralda|Mikaela|Bonaventure|Tobias|Lysander|Lilian|Buccar|Sirocco|Mu|Olympia|Bertrand|Gaitz|Dante|Goliath|Jester|Talimun|Ursula|Simon|Ludia|Fianna|Orchel|Diego|Ninae|Seteth|Loretta|Anatolia|Sha Lan|Nezha|Dadao|Halvin|Nathan|Creek|Guzran|Nydine|Io|Catania|Noctula|Yang Jie|Nuzzuo|Majide|Sofia|Centurio|Anna|Aswan|Tahonia|Alexandra|Zarcone|Jasmine|Inyoni|Kiroc|Peppe|Klapka|Sothis|Fortuna|Aurora|Mars|Kalla|Smyrnos|Credna|Jurah|Solel|Dagda|Balor|Yu Phas|Benditz|Maria|Raksha|The Lady of Lillies`.split('|');
 
-// Sources: https://raiderking.com/fire-emblem-fortunes-weave-all-loved-gifts-guide/
-// and https://fortunesweave.co.uk/wiki/gifts.
-// Category entries are expanded to named gifts; no category labels are stored.
-// Items marked unverified are inferred from item-family preferences or other
-// incomplete reports; verified reactions remain individually unmarked.
+// Research checked: Raider King's item-by-item reaction table
+// (https://raiderking.com/fire-emblem-fortunes-weave-all-loved-gifts-guide/),
+// the community compilation (https://fortunesweave.co.uk/wiki/gifts),
+// GameWith's Japanese gift-preference table (https://gamewith.jp/fefw/577115),
+// Game8's Japanese table (https://game8.jp/fe-banshisenko/816847),
+// Altema's Japanese preference table (https://altema.jp/febansisenkou/sukinamono),
+// and Redfreshet's per-character gift database
+// (https://redfreshet.com/game-tools/fe-banshisenko/characters/). Secondary
+// category guides checked include Nintendo Insider, Keengamer, and Polygon's
+// gift guide. These sources have different coverage and are not all
+// independent: some reproduce preference categories, while some report
+// individual item reactions. Raider King distinguishes one-arrow and
+// two-arrow reactions but labels the table WIP; the Japanese tables report
+// item/category preferences at a coarser tier and do not distinguish those
+// arrow counts. No public source checked is a complete, authoritative reaction
+// matrix. Absence from this file means unknown, not disliked. Broad category
+// matches and family expansions are leads only; mark them unverified unless
+// an exact reaction is confirmed. If a source establishes the top positive
+// reaction but not whether it earns one or two arrows, place it in Really
+// Liked; reserve Loved for evidence of the two-arrow reaction. Direct in-game
+// confirmations supplied by the user are retained as verified records.
 const records: Record<string, GiftRecord> = {
   "Benditz": {
     loved: ["Eastern Black Silk"],
@@ -40,7 +56,8 @@ const records: Record<string, GiftRecord> = {
   "Anatolia": {
     reallyLiked: [
       "Eastern Tea Leaves", "Magic-Trick Set", "Protection Figurine", "Flower Painting",
-      "Eastern Black Silk", "Arrowhead Gem", "Tome from Away", "Bagua Divination Set"
+      "Eastern Black Silk", "Arrowhead Gem", "Tome from Away", "Bagua Divination Set",
+      "Ceremonial Spear"
     ]
   },
   "Alexandra": {
@@ -86,7 +103,8 @@ const records: Record<string, GiftRecord> = {
     ]
   },
   "Centurio": {
-    loved: ["Pegasus Panorama", "Portrait of Yu Phas", "Rancid Garum", "Shield Portrait"]
+    loved: ["Pegasus Panorama", "Portrait of Yu Phas", "Rancid Garum", "Shield Portrait"],
+    reallyLiked: ["Small Teff", "Sharp Dagger"]
   },
   "Dadao": {
     reallyLiked: [
@@ -119,13 +137,15 @@ const records: Record<string, GiftRecord> = {
   },
   "Theodora": {
     loved: ["Pegasus Panorama"],
-    reallyLiked: ["Arrowhead Gem", "Eastern Black Silk", "Eastern Tea Leaves", "Flower Painting", "Rugged Blade"]
+    reallyLiked: ["Arrowhead Gem", "Eastern Black Silk", "Eastern Tea Leaves", "Flower Painting", "Rugged Blade",
+      "Portrait of Yu Phas", "Ceremonial Spear"]
   },
   "Esmeralda": {
     reallyLiked: [
       "Simple Pastries", "Mellow Pastries", "Fragrant Pastries", "Coffee Pastries",
       "Saraminian Sweets", "Portrait of Yu Phas", "Red Hair Clip", "Blue-Rose Bouquet",
-      "Exquisite Ring", "Ahm Lu Cloth", "Skin Balm", "Ceremonial Spear", "Tome from Away"
+      "Exquisite Ring", "Ahm Lu Cloth", "Skin Balm", "Ceremonial Spear", "Tome from Away",
+      "Huge Fish Eyeball"
     ]
   },
   "Fabio": {
@@ -167,7 +187,7 @@ const records: Record<string, GiftRecord> = {
   "Halvin": {
     reallyLiked: [
       "Weak Cervi", "Strong Cervi", "Ginji Cervi", "Pure-White Cervi", "Mature Dried Cervi",
-      "Simple Pastries", "Mellow Pastries", "Fragrant Pastries", "Pack of Pastels", "Skin Balm"
+      "Simple Pastries", "Mellow Pastries", "Fragrant Pastries", "Honey Pastries", "Pack of Pastels", "Skin Balm"
     ]
   },
   "Inyoni": {
@@ -195,12 +215,14 @@ const records: Record<string, GiftRecord> = {
     reallyLiked: [
       "Alecto Garum", "Concentrated Garum", "Garum", "Smooth Garum", "Niiza Garum", "Crimson Ghosh",
       "Outdoor Cooking Set", "Strong Seasonings", "Home-Recipe Book", "Pastry Cookbook",
-      "Rare Spices", "Herbal Recipe Guide", "Aromatic Shosh"
+      "Rare Spices", "Herbal Recipe Guide", "Aromatic Shosh", "Village Recipes"
     ]
   },
   "Lilian": {
-    loved: ["Eastern Earrings", "Eastern Tea Leaves", "Poems of the Greats", "Strategy Manuscript",
-      { name: "Blue-Rose Bouquet", unverified: true }, { name: "Tales of Adventure", unverified: true }]
+    loved: ["Eastern Earrings", "Eastern Tea Leaves", "Poems of the Greats", "Strategy Manuscript"],
+    reallyLiked: [
+      { name: "Blue-Rose Bouquet", unverified: true }, { name: "Tales of Adventure", unverified: true }
+    ]
   },
   "Leda": {
     reallyLiked: [
@@ -209,15 +231,14 @@ const records: Record<string, GiftRecord> = {
     ]
   },
   "Lysander": {
-    loved: ["Ceremonial Spear", "Flower Painting", "Pegasus Panorama", "Portrait of Yu Phas", "Shield Portrait"]
+    loved: ["Ceremonial Spear", "Flower Painting", "Pegasus Panorama", "Portrait of Yu Phas", "Shield Portrait"],
+    reallyLiked: ["Sharp Dagger", "Training Weights"]
   },
   "Tobias": {
-    loved: [
+    reallyLiked: [
       { name: "Strategy Manuscript", unverified: true },
       { name: "Tales of Adventure", unverified: true },
-      { name: "Volcano Ghosh", unverified: true }
-    ],
-    reallyLiked: [
+      { name: "Volcano Ghosh", unverified: true },
       { name: "Aromatic Shosh", unverified: true }, { name: "Blue Shosh", unverified: true },
       { name: "Light Shosh", unverified: true }, { name: "Mature Shosh", unverified: true },
       { name: "Young Shosh", unverified: true }, { name: "Crimson Ghosh", unverified: true },
@@ -230,13 +251,13 @@ const records: Record<string, GiftRecord> = {
   "Ludia": {
     loved: ["Arrowhead Gem", "Eastern Black Silk", "Flower Painting", "History of a Master",
       "Pegasus Panorama", "Poems of the Greats", "Portrait of Yu Phas", "Shield Portrait", "Tales of Adventure",
-      "Tome from Away", { name: "Eastern Earrings", unverified: true },
-      { name: "Eastern Love Story", unverified: true }, { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Strategy Manuscript", unverified: true }],
+      "Tome from Away"],
     reallyLiked: ["Ceremonial Spear", "Pack of Pastels",
       { name: "Everyday Scenes", unverified: true }, { name: "Herbal Recipe Guide", unverified: true },
       { name: "Home-Recipe Book", unverified: true }, { name: "Sturdy Rucksack", unverified: true },
-      { name: "The Works of Dante", unverified: true }, { name: "Trader’s Handbook", unverified: true }]
+      { name: "The Works of Dante", unverified: true }, { name: "Trader’s Handbook", unverified: true },
+      { name: "Eastern Earrings", unverified: true }, { name: "Eastern Love Story", unverified: true },
+      { name: "Eastern Tea Leaves", unverified: true }, { name: "Strategy Manuscript", unverified: true }]
   },
   "Majide": {
     reallyLiked: ["Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh", "Southern Ghosh", "Sun Ghosh", "Volcano Ghosh", "Young Ghosh",
@@ -260,14 +281,14 @@ const records: Record<string, GiftRecord> = {
     ]
   },
   "Nezha": {
-    loved: ["Arrowhead Gem", "Ceremonial Spear", "Decorative Arrows", "Portrait of Yu Phas", "Shield Portrait",
-      { name: "Strategy Manuscript", unverified: true }, { name: "Tales of Adventure", unverified: true }],
+    loved: ["Arrowhead Gem", "Ceremonial Spear", "Decorative Arrows", "Portrait of Yu Phas", "Shield Portrait"],
     reallyLiked: [
+      { name: "Strategy Manuscript", unverified: true }, { name: "Tales of Adventure", unverified: true },
       "Flower Painting", "Joint-Relief Gloves", { name: "Training Pillar" },
       { name: "Eastern Tea Leaves", unverified: true }, { name: "Pickled Bulbs", unverified: true },
       { name: "Board-Game Tactics", unverified: true }, { name: "Ebony Game Board", unverified: true },
       { name: "Eastern Board Game", unverified: true }, "Pickled Vegetables",
-      { name: "Potted Vegetables", unverified: true }, { name: "Rare Southern Seeds", unverified: true },
+      "Potted Vegetables", { name: "Rare Southern Seeds", unverified: true },
       { name: "Sturdy Rucksack", unverified: true }, { name: "Training Bracelet", unverified: true },
       { name: "Training Weights", unverified: true }, { name: "Wing Fletching", unverified: true }
     ]
@@ -275,15 +296,14 @@ const records: Record<string, GiftRecord> = {
   "Nydine": {
     reallyLiked: [
       "Saraminian Sweets", "Arrowhead Gem", "Eastern Black Silk", "Training Weights",
-      "Joint-Relief Gloves", "Tome from Away", "Horse-Grooming Kit", "Kitten Figurine"
+      "Joint-Relief Gloves", "Tome from Away", "Horse-Grooming Kit", "Kitten Figurine", "Mane Ornament"
     ]
   },
   "Ninae": {
-    loved: ["Eastern Black Silk", "Portrait of Yu Phas", "Poems of the Greats", "Tales of Adventure",
-      { name: "Strategy Manuscript", unverified: true }],
+    loved: ["Eastern Black Silk", "Portrait of Yu Phas", "Poems of the Greats", "Tales of Adventure"],
     reallyLiked: [
       "Flower Painting", "Arrowhead Gem", "Ahm Lu Cloth", "Morfis Almanac", "Tome from Away",
-      { name: "Blue-Rose Bouquet", unverified: true }
+      { name: "Blue-Rose Bouquet", unverified: true }, { name: "Strategy Manuscript", unverified: true }
     ]
   },
   "Noctula": {
@@ -304,14 +324,14 @@ const records: Record<string, GiftRecord> = {
   },
   "Olympia": {
     loved: ["Arrowhead Gem", "Flower Painting", "Pegasus Panorama", "Portrait of Yu Phas", "Red Hair Clip",
-      "Shield Portrait", "Tales of Adventure", { name: "Eastern Earrings", unverified: true },
-      { name: "Eastern Tea Leaves", unverified: true }],
+      "Shield Portrait", "Tales of Adventure"],
     reallyLiked: ["Orgus Coffee", "Exquisite Ring", { name: "Coffee Pastries", unverified: true },
       { name: "Common Coffee", unverified: true }, { name: "Gaudy Bangle", unverified: true },
       { name: "Blue-Rose Bouquet", unverified: true }, { name: "Ebony Game Board", unverified: true },
       { name: "Eastern Board Game", unverified: true }, { name: "Spirit Board Game", unverified: true },
       { name: "Select Coffee", unverified: true }, { name: "Skin Balm", unverified: true },
-      { name: "Southern Coffee", unverified: true }, { name: "Pack of Pastels", unverified: true }]
+      { name: "Southern Coffee", unverified: true }, { name: "Pack of Pastels", unverified: true },
+      { name: "Eastern Earrings", unverified: true }, { name: "Eastern Tea Leaves", unverified: true }]
   },
   "Loretta": {
     reallyLiked: [
@@ -355,11 +375,11 @@ const records: Record<string, GiftRecord> = {
       { name: "Select Coffee", unverified: true }, { name: "Southern Coffee", unverified: true }]
   },
   "Peter": {
-    loved: [{ name: "Arrowhead Gem", unverified: true }],
     reallyLiked: [
+      { name: "Arrowhead Gem", unverified: true },
       { name: "Strong Cervi" }, { name: "Mature Dried Cervi", unverified: true },
       { name: "Weak Cervi", unverified: true }, "Ginji Cervi",
-      { name: "Pure-White Cervi", unverified: true }, { name: "Yarc Milk", unverified: true }
+      { name: "Pure-White Cervi", unverified: true }, { name: "Yarc Milk", unverified: true }, "Jamel Milk"
     ]
   },
   "Bertrand": {
@@ -370,12 +390,10 @@ const records: Record<string, GiftRecord> = {
       { name: "Trader’s Handbook", unverified: true }]
   },
   "Kiroc": {
-    loved: [
+    reallyLiked: [
       { name: "Arrowhead Gem", unverified: true },
       { name: "Crimson Ghosh", unverified: true },
-      { name: "Volcano Ghosh", unverified: true }
-    ],
-    reallyLiked: [
+      { name: "Volcano Ghosh", unverified: true },
       { name: "Blue-Rose Bouquet", unverified: true }, { name: "Eastern Black Silk", unverified: true },
       { name: "Eastern Earrings", unverified: true }, { name: "Exquisite Ring", unverified: true },
       { name: "Flower Painting", unverified: true }, { name: "Gaudy Bangle", unverified: true },
@@ -394,7 +412,8 @@ const records: Record<string, GiftRecord> = {
     loved: ["Portrait of Yu Phas", "Rancid Garum", "Shield Portrait"],
     reallyLiked: ["Flower Painting", "Arrowhead Gem", "Crimson Ghosh", "Joint-Relief Gloves",
       { name: "Eastern Board Game", unverified: true }, "Pickled Bulbs",
-      { name: "Outdoor Cooking Set", unverified: true }, { name: "Eastern Tea Leaves", unverified: true }]
+      { name: "Outdoor Cooking Set", unverified: true }, { name: "Eastern Tea Leaves", unverified: true },
+      "Pickled Vegetables"]
   },
   "Sha Lan": {
     loved: ["Portrait of Yu Phas", "Special “Medicine”"],
@@ -417,7 +436,7 @@ const records: Record<string, GiftRecord> = {
       "Pickled Bulbs", "Potted Vegetables", "Outdoor Cooking Set", "Strong Seasonings",
       "Home-Recipe Book", "Herbal Recipe Guide", "Protection Figurine", "The Works of Dante",
       "Ceremonial Spear", "Skin Balm", "Eastern Black Silk", "Ahm Lu Cloth", "Arrowhead Gem",
-      "Board-Game Tactics", "The Knight’s Suitors", "Thick Foreign Tome"
+      "Board-Game Tactics", "The Knight’s Suitors", "Thick Foreign Tome", "Village Recipes"
     ]
   },
   "Ultand": {
@@ -449,8 +468,7 @@ const records: Record<string, GiftRecord> = {
     ]
   },
   "Zarcone": {
-    loved: [{ name: "Eastern Tea Leaves", unverified: true }],
-    reallyLiked: ["Pickled Vegetables", { name: "Odd Vegetable Seeds", unverified: true },
+    reallyLiked: [{ name: "Eastern Tea Leaves", unverified: true }, "Pickled Vegetables", { name: "Odd Vegetable Seeds", unverified: true },
       { name: "Potted Vegetables", unverified: true }, { name: "Rare Southern Seeds", unverified: true }]
   }
 };
@@ -502,3 +520,36 @@ export const characters: CharacterGifts[] = names.map((name) => {
     automaticRecruitment: automaticRecruitment[name]
   };
 });
+
+export type GiftPreferenceCount = {
+  name: string;
+  lovedCount: number;
+  reallyLikedCount: number;
+  totalCount: number;
+};
+
+/** Rebuild item preference counts from the current character data. */
+export const getGiftPreferenceCounts = (): GiftPreferenceCount[] => {
+  const counts = new Map<string, GiftPreferenceCount>();
+
+  for (const character of characters) {
+    for (const [tier, gifts] of [
+      ['lovedCount', character.loved],
+      ['reallyLikedCount', character.reallyLiked]
+    ] as const) {
+      for (const gift of gifts) {
+        const count = counts.get(gift.name) ?? {
+          name: gift.name,
+          lovedCount: 0,
+          reallyLikedCount: 0,
+          totalCount: 0
+        };
+        count[tier] += 1;
+        count.totalCount += 1;
+        counts.set(gift.name, count);
+      }
+    }
+  }
+
+  return [...counts.values()].sort((a, b) => a.name.localeCompare(b.name));
+};

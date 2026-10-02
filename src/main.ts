@@ -1,5 +1,5 @@
 import './style.css';
-import { characters, type CharacterGifts } from './gifts';
+import { characters, getGiftPreferenceCounts, type CharacterGifts } from './gifts';
 
 const root = document.querySelector<HTMLDivElement>('#app')!;
 const lovedByCharacter = new Map<string, Set<string>>();
@@ -71,6 +71,7 @@ function updateSuggestions() {
 }
 
 function renderResult(character: CharacterGifts) {
+  const giftCounts = new Map(getGiftPreferenceCounts().map(({ name, totalCount }) => [name, totalCount]));
   const groups = [
     { title: 'Loved', subtitle: 'Double support gain', gifts: character.loved, icon: '✦', kind: 'loved' },
     { title: 'Really liked', subtitle: 'Strong support gain', gifts: character.reallyLiked, icon: '✧', kind: 'really-liked' }
@@ -84,12 +85,18 @@ function renderResult(character: CharacterGifts) {
         <div class="card-heading"><span class="gift-icon" aria-hidden="true">${group.icon}</span><div><h3 id="heading-${group.kind}">${group.title}</h3><p>${group.subtitle}</p></div></div>
         <ul class="gift-list">${group.gifts.map((gift) => {
           const lovedByAnother = [...(lovedByCharacter.get(gift.name) ?? [])].some((name) => name !== character.name);
+          const count = giftCounts.get(gift.name) ?? 0;
+          const isFavorite = group.kind === 'loved' || lovedByAnother;
+          const frequencyClass = group.kind === 'really-liked' && !isFavorite
+            ? count <= 4 ? 'frequency-low' : count <= 9 ? 'frequency-mid' : 'frequency-high'
+            : undefined;
           const tooltip = [gift.unverified && 'Low confidence: may be incorrect', lovedByAnother && 'Loved by another character'].filter(Boolean).join(' · ');
-          const classes = ['gift-item', gift.unverified && 'unverified', lovedByAnother && 'loved-elsewhere', tooltip && 'has-tooltip'].filter(Boolean).join(' ');
+          const classes = ['gift-item', gift.unverified && 'unverified', frequencyClass, isFavorite && 'favorite', lovedByAnother && 'loved-elsewhere', tooltip && 'has-tooltip'].filter(Boolean).join(' ');
           const labels = [gift.name, gift.unverified && 'low confidence: may be incorrect', lovedByAnother && 'loved by another character'].filter(Boolean).join(', ');
           return `<li class="${classes}"${labels !== gift.name ? ` aria-label="${escapeHtml(labels)}"` : ''}${tooltip ? ` data-tooltip="${escapeHtml(tooltip)}" tabindex="0"` : ''}><span>${escapeHtml(gift.name)}</span>${lovedByAnother ? '<small class="loved-elsewhere-mark" aria-hidden="true">♥</small>' : ''}</li>`;
         }).join('')}</ul>
       </section>`).join('')}</div>` : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named gift preferences have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`}
+    ${hasGifts ? `<aside class="frequency-legend" aria-label="Number of times items appear in Loved or Really liked lists across all characters"><span class="legend-title"># of times items appear in these lists</span><ul><li><span class="gift-item frequency-low">1–4</span></li><li><span class="gift-item frequency-mid">5–9</span></li><li><span class="gift-item frequency-high">10+</span></li><li><span class="gift-item favorite">Loved</span></li></ul></aside>` : ''}
     ${character.automaticRecruitment ? `<aside class="recruitment-note" role="note"><span aria-hidden="true">✦</span><p>${escapeHtml(character.automaticRecruitment)}</p></aside>` : ''}
   `;
 }
