@@ -51,7 +51,7 @@ const records: Record<string, GiftRecord> = {
   },
   "Cai": {
     loved: ["Pegasus Panorama", "Portrait of Yu Phas", "Rancid Garum"],
-    reallyLiked: ["Arrowhead Gem", "Crimson Ghosh", "Flower Painting", "Sharp Fishhook"]
+    reallyLiked: ["Flower Painting"]
   },
   "Anatolia": {
     reallyLiked: [
@@ -63,22 +63,18 @@ const records: Record<string, GiftRecord> = {
   "Alexandra": {
     loved: ["Tales of Adventure"],
     reallyLiked: [
-      { name: "Smooth Garum" }, "Alecto Garum",
+      "Garum",
       { name: "Concentrated Garum", unverified: true },
-      "Garum", "Niiza Garum", "Crimson Ghosh", "Outdoor Cooking Set", "Strong Seasonings",
-      "Home-Recipe Book", "Herbal Recipe Guide", "Kitten Figurine", "Protection Figurine",
-      "Sturdy Rucksack", "Mane Ornament", "Dagda Beard Grass", "Crimson Bull Figure",
-      "Jade Panther Figure", "Horse-Grooming Kit", "Sharp Dagger", "Joint-Relief Gloves",
-      "Skin Balm", "Exquisite Ring", "Aromatic Shosh"
+      "Niiza Garum", "Crimson Ghosh", "Outdoor Cooking Set",
+      "Kitten Figurine", "Protection Figurine", "Crimson Bull Figure", "Jade Panther Figure",
+      "Sharp Dagger", "Joint-Relief Gloves", "Skin Balm", "Exquisite Ring"
     ]
   },
   "Bonaventure": {
     reallyLiked: [
       "Alecto Garum", "Concentrated Garum", "Garum", "Smooth Garum", "Home-Recipe Book",
-      "Herbal Recipe Guide", "Energizing Ghosh", "Jade Ghosh", "Magic-Trick Set", "Niiza Garum",
-      "Pastry Cookbook", "Rare Spices", "Rugged Blade", "Secret Ghosh",
-      "Southern Ghosh", "Strong Seasonings", "Sun Ghosh", "Tales of the Arena",
-      "Thick Foreign Tome", "Village Recipes", "Mature Ghosh", "Rustic Ghosh", "Young Ghosh",
+      "Herbal Recipe Guide", "Energizing Ghosh", "Magic-Trick Set", "Niiza Garum",
+      "Rugged Blade", "Southern Ghosh", "Mature Ghosh", "Rustic Ghosh", "Young Ghosh",
       "Aromatic Shosh", "Light Shosh", "Mature Shosh", "Young Shosh",
       "Common Coffee", "Orgus Coffee", "Select Coffee", "Southern Coffee",
       "Protection Figurine", "Eastern Tea Leaves"
@@ -86,17 +82,16 @@ const records: Record<string, GiftRecord> = {
   },
   "Buccar": {
     reallyLiked: [
-      "Arrowhead Gem", "Flower Painting", "Energizing Ghosh", "Jade Ghosh",
-      "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh", "Southern Ghosh",
-      "Sun Ghosh", "Young Ghosh",
-      "Aromatic Shosh", "Light Shosh", "Mature Shosh", "Young Shosh"
+      "Flower Painting", "Energizing Ghosh", "Jade Ghosh",
+      "Mature Ghosh", "Secret Ghosh", "Southern Ghosh", "Sun Ghosh",
+      "Aromatic Shosh"
     ]
   },
   "Catania": {
     loved: ["Eastern Black Silk", "Tales of Adventure"],
     reallyLiked: [
-      "Coffee Pastries", "Common Coffee", "Crimson Ghosh", "Dagda Beard Grass",
-      "Exquisite Ring", "Horse-Grooming Kit", "Mane Ornament", "Pack of Pastels",
+      "Coffee Pastries", "Common Coffee", "Crimson Ghosh",
+      "Exquisite Ring", "Mane Ornament",
       "Select Coffee", "Skin Balm", "Southern Coffee", "Spirit Board Game",
       "Ceremonial Spear", "Sharp Dagger", "Crafting Knives",
       "Crimson Bull Figure", "Jade Panther Figure"
@@ -109,58 +104,54 @@ const records: Record<string, GiftRecord> = {
   "Dadao": {
     reallyLiked: [
       "Weak Cervi", "Strong Cervi", "Ginji Cervi", "Pure-White Cervi",
-      "Saraminian Sweets", "Crimson Ghosh", "Arrowhead Gem", "Flower Painting",
+      "Crimson Ghosh", "Arrowhead Gem", "Flower Painting",
       "Board-Game Tactics", "Eastern Black Silk"
     ]
   },
   "Dante": {
     reallyLiked: [
-      "Coffee Pastries", "Crimson Ghosh", "Common Coffee", "Select Coffee",
+      "Coffee Pastries", "Common Coffee", "Select Coffee",
       "Southern Coffee", "Home-Recipe Book", "Herbal Recipe Guide",
       "Crimson Bull Figure", "Jade Panther Figure", "Crafting Knives", "Sharp Dagger",
-      "Ceremonial Spear", "The Works of Dante", "Eastern Black Silk", "Arrowhead Gem",
-      "Pack of Pastels"
+      "Ceremonial Spear", "Eastern Black Silk"
     ]
   },
   "Diego": {
     reallyLiked: [
-      "Flower Painting", "Candy Crystals", "Crimson Ghosh", "Eastern Tea Leaves",
-      "Protection Figurine", "Bow Repair Kit", "Eastern Board Game"
+      "Flower Painting", "Candy Crystals", "Eastern Tea Leaves",
+      "Bow Repair Kit", "Eastern Board Game", "Wing Fletching"
     ]
   },
   "Dietrich": {
     reallyLiked: [
-      "Arrowhead Gem", "Board-Game Tactics", "Eastern Black Silk", "Flower Painting",
-      "Fragrant Pastries", "Ginji Cervi", "Honey Milk", "Mellow Pastries", "Pastry Cookbook",
-      "Saraminian Sweets", "Simple Pastries", "Training Pillar", "Training Weights"
+      "Eastern Black Silk", "Flower Painting",
+      "Fragrant Pastries", "Mellow Pastries",
+      "Saraminian Sweets", "Simple Pastries"
     ]
   },
   "Theodora": {
     loved: ["Pegasus Panorama"],
-    reallyLiked: ["Arrowhead Gem", "Eastern Black Silk", "Eastern Tea Leaves", "Flower Painting", "Rugged Blade",
+    reallyLiked: ["Arrowhead Gem", "Eastern Tea Leaves", "Flower Painting", "Rugged Blade",
       "Portrait of Yu Phas", "Ceremonial Spear"]
   },
   "Esmeralda": {
     reallyLiked: [
-      "Simple Pastries", "Mellow Pastries", "Fragrant Pastries", "Coffee Pastries",
+      "Fragrant Pastries", "Coffee Pastries",
       "Saraminian Sweets", "Portrait of Yu Phas", "Red Hair Clip", "Blue-Rose Bouquet",
       "Exquisite Ring", "Ahm Lu Cloth", "Skin Balm", "Ceremonial Spear", "Tome from Away",
-      "Huge Fish Eyeball"
     ]
   },
   "Fabio": {
     reallyLiked: [
-      "Morfis Almanac", "Crimson Ghosh", "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh",
-      "Secret Ghosh", "Southern Ghosh", "Sun Ghosh", "Volcano Ghosh", "Young Ghosh",
-      "Aromatic Shosh", "Light Shosh", "Mature Shosh",
+      "Morfis Almanac", "Crimson Ghosh", "Energizing Ghosh", "Volcano Ghosh",
       "Common Coffee", "Select Coffee", "Southern Coffee", "Orgus Coffee",
-      "Eastern Black Silk", "Rugged Blade", "Eastern Tea Leaves", "Tome from Away"
+      "Rugged Blade", "Eastern Tea Leaves", "Tome from Away"
     ]
   },
   "Fianna": {
     loved: ["Arrowhead Gem", "Blue-Rose Bouquet", "Volcano Ghosh"],
     reallyLiked: [
-      "Crimson Ghosh", "Rare Spices", "Common Coffee", "Select Coffee", "Southern Coffee",
+      "Rare Spices", "Common Coffee", "Select Coffee", "Southern Coffee",
       "Orgus Coffee", "Tome from Away"
     ]
   },
@@ -172,22 +163,19 @@ const records: Record<string, GiftRecord> = {
       "Jade Panther Figure", "Horse-Grooming Kit", "The Works of Dante", "The Knight’s Suitors",
       "Thick Foreign Tome", "Crafting Knives", "Sharp Dagger", "Training Weights",
       "Training Pillar", "Joint-Relief Gloves", "Board-Game Tactics", "Spirit Board Game",
-      "Arrowhead Gem", "Pack of Pastels", "Aromatic Shosh"
+      "Arrowhead Gem", "Pack of Pastels"
     ]
   },
   "Goliath": {
     loved: ["Volcano Ghosh"],
     reallyLiked: [
-      "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh",
-      "Southern Ghosh", "Sun Ghosh", "Young Ghosh",
-      "Aromatic Shosh", "Light Shosh", "Mature Shosh", "Young Shosh",
-      "Protection Figurine"
+      "Energizing Ghosh", "Mature Ghosh", "Mature Shosh", "Protection Figurine"
     ]
   },
   "Halvin": {
     reallyLiked: [
       "Weak Cervi", "Strong Cervi", "Ginji Cervi", "Pure-White Cervi", "Mature Dried Cervi",
-      "Simple Pastries", "Mellow Pastries", "Fragrant Pastries", "Honey Pastries", "Pack of Pastels", "Skin Balm"
+      "Mellow Pastries", "Fragrant Pastries", "Honey Pastries", "Pack of Pastels", "Skin Balm"
     ]
   },
   "Inyoni": {
@@ -198,24 +186,22 @@ const records: Record<string, GiftRecord> = {
   },
   "Io": {
     loved: ["Ceremonial Spear", "Pegasus Panorama", "Portrait of Yu Phas", "Shield Portrait"],
-    reallyLiked: ["Flower Painting", "Arrowhead Gem", "Training Weights", { name: "Mane Ornament", unverified: true },
-      { name: "Horse-Grooming Kit", unverified: true }]
+    reallyLiked: ["Flower Painting"]
   },
   "Jasmine": {
     reallyLiked: [
-      "Jamel Milk", "Yarc Milk", "Honey Milk", "Weak Cervi", "Strong Cervi", "Ginji Cervi",
-      "Pure-White Cervi", "Mature Dried Cervi", "Simple Pastries", "Mellow Pastries",
-      "Fragrant Pastries", "Coffee Pastries", "Honey Pastries", "Saraminian Sweets", "Training Weights",
-      "Training Pillar", "Flower Painting", "Arrowhead Gem", "Imitation Medal",
-      "Tome from Away", "Pastry Cookbook", "Protection Figurine"
+      "Yarc Milk", "Honey Milk", "Weak Cervi", "Strong Cervi", "Ginji Cervi",
+      "Mature Dried Cervi", "Simple Pastries", "Mellow Pastries", "Fragrant Pastries",
+      "Coffee Pastries", "Saraminian Sweets", "Flower Painting", "Imitation Medal",
+      "Tome from Away"
     ]
   },
   "Jester": {
     loved: ["Arrowhead Gem"],
     reallyLiked: [
-      "Alecto Garum", "Concentrated Garum", "Garum", "Smooth Garum", "Niiza Garum", "Crimson Ghosh",
+      "Alecto Garum", "Concentrated Garum", "Garum", "Smooth Garum", "Niiza Garum",
       "Outdoor Cooking Set", "Strong Seasonings", "Home-Recipe Book", "Pastry Cookbook",
-      "Rare Spices", "Herbal Recipe Guide", "Aromatic Shosh", "Village Recipes"
+      "Rare Spices", "Herbal Recipe Guide", "Village Recipes"
     ]
   },
   "Lilian": {
@@ -226,8 +212,7 @@ const records: Record<string, GiftRecord> = {
   },
   "Leda": {
     reallyLiked: [
-      "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh",
-      "Southern Ghosh", "Sun Ghosh", "Young Ghosh"
+      "Energizing Ghosh", "Jade Ghosh"
     ]
   },
   "Lysander": {
@@ -260,24 +245,20 @@ const records: Record<string, GiftRecord> = {
       { name: "Eastern Tea Leaves", unverified: true }, { name: "Strategy Manuscript", unverified: true }]
   },
   "Majide": {
-    reallyLiked: ["Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh", "Southern Ghosh", "Sun Ghosh", "Volcano Ghosh", "Young Ghosh",
-      { name: "Aromatic Shosh", unverified: true }, { name: "Blue Shosh", unverified: true },
-      "Light Shosh", "Mature Shosh", "Young Shosh"]
+    reallyLiked: ["Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Secret Ghosh", "Southern Ghosh", "Sun Ghosh",
+      { name: "Aromatic Shosh", unverified: true }]
   },
   "Mikaela": {
     reallyLiked: [
-      "Crimson Ghosh", "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh",
-      "Southern Ghosh", "Sun Ghosh", "Volcano Ghosh", "Young Ghosh",
-      "Aromatic Shosh",
-      "Light Shosh", "Mature Shosh",
+      "Crimson Ghosh", "Energizing Ghosh", "Volcano Ghosh",
       "Common Coffee", "Select Coffee", "Southern Coffee", "Orgus Coffee", "Training Weights",
-      "Training Pillar", "Arrowhead Gem", "Tome from Away", "Home-Recipe Book", "Flower Painting"
+      "Training Pillar", "Arrowhead Gem", "Tome from Away", "Flower Painting"
     ]
   },
   "Mu": {
     reallyLiked: [
-      "Weak Cervi", "Strong Cervi", "Ginji Cervi", "Pure-White Cervi", "Mature Dried Cervi",
-      "Saraminian Sweets", "Arrowhead Gem", "Orgus Coffee", "Morfis Almanac"
+      "Weak Cervi", "Strong Cervi", "Ginji Cervi", "Mature Dried Cervi",
+      "Saraminian Sweets", "Orgus Coffee", "Morfis Almanac"
     ]
   },
   "Nezha": {
@@ -289,44 +270,42 @@ const records: Record<string, GiftRecord> = {
       { name: "Board-Game Tactics", unverified: true }, { name: "Ebony Game Board", unverified: true },
       { name: "Eastern Board Game", unverified: true }, "Pickled Vegetables",
       "Potted Vegetables", { name: "Rare Southern Seeds", unverified: true },
-      { name: "Sturdy Rucksack", unverified: true }, { name: "Training Bracelet", unverified: true },
-      { name: "Training Weights", unverified: true }, { name: "Wing Fletching", unverified: true }
+      "Training Weights"
     ]
   },
   "Nydine": {
     reallyLiked: [
-      "Saraminian Sweets", "Arrowhead Gem", "Eastern Black Silk", "Training Weights",
-      "Joint-Relief Gloves", "Tome from Away", "Horse-Grooming Kit", "Kitten Figurine", "Mane Ornament"
+      "Saraminian Sweets", "Arrowhead Gem", "Eastern Black Silk",
+      "Joint-Relief Gloves", "Tome from Away", "Horse-Grooming Kit", "Mane Ornament"
     ]
   },
   "Ninae": {
     loved: ["Eastern Black Silk", "Portrait of Yu Phas", "Poems of the Greats", "Tales of Adventure"],
     reallyLiked: [
-      "Flower Painting", "Arrowhead Gem", "Ahm Lu Cloth", "Morfis Almanac", "Tome from Away",
+      "Flower Painting", "Ahm Lu Cloth", "Morfis Almanac", "Tome from Away",
       { name: "Blue-Rose Bouquet", unverified: true }, { name: "Strategy Manuscript", unverified: true }
     ]
   },
   "Noctula": {
     reallyLiked: [
-      "Crimson Ghosh", "Eastern Tea Leaves", "Protection Figurine", "Arrowhead Gem",
+      "Crimson Ghosh", "Eastern Tea Leaves", "Arrowhead Gem",
       "Morfis Almanac", "Training Weights", "Antique Medal", "Tome from Away", "Sharp Dagger"
     ]
   },
   "Nuzzuo": {
     reallyLiked: [
-      "Coffee Pastries", "Candy Crystals", "Alecto Garum", "Concentrated Garum", "Garum", "Smooth Garum",
-      "Niiza Garum", "Crimson Ghosh", "Common Coffee", "Select Coffee", "Southern Coffee",
-      "Orgus Coffee", "Pickled Vegetables", "Potted Vegetables", "Outdoor Cooking Set",
+      "Small Teff", "Arrowhead Gem", "Dual Fish Knives", "Coffee Pastries", "Candy Crystals",
+      { name: "Alecto Garum", unverified: true }, "Concentrated Garum", "Garum", "Smooth Garum",
+      "Common Coffee", "Select Coffee", "Southern Coffee", "Orgus Coffee", "Potted Vegetables",
       "Strong Seasonings", "Rare Spices", "Herbal Recipe Guide", "Eastern Tea Leaves",
-      "Kitten Figurine", "Protection Figurine", "Bow Repair Kit", "Crafting Knives", "Sharp Dagger",
-      "Flower Painting", "Eastern Black Silk", "Home-Recipe Book", "Village Recipes", "Morfis Tea"
+      "Bow Repair Kit", "Crafting Knives", "Sharp Dagger", "Flower Painting", "Eastern Black Silk"
     ]
   },
   "Olympia": {
     loved: ["Arrowhead Gem", "Flower Painting", "Pegasus Panorama", "Portrait of Yu Phas", "Red Hair Clip",
       "Shield Portrait", "Tales of Adventure"],
-    reallyLiked: ["Orgus Coffee", "Exquisite Ring", { name: "Coffee Pastries", unverified: true },
-      { name: "Common Coffee", unverified: true }, { name: "Gaudy Bangle", unverified: true },
+    reallyLiked: ["Orgus Coffee", { name: "Coffee Pastries", unverified: true },
+      { name: "Common Coffee", unverified: true },
       { name: "Blue-Rose Bouquet", unverified: true }, { name: "Ebony Game Board", unverified: true },
       { name: "Eastern Board Game", unverified: true }, { name: "Spirit Board Game", unverified: true },
       { name: "Select Coffee", unverified: true }, { name: "Skin Balm", unverified: true },
@@ -335,34 +314,32 @@ const records: Record<string, GiftRecord> = {
   },
   "Loretta": {
     reallyLiked: [
-      "Flower Painting", "Arrowhead Gem", "Saraminian Sweets",
-      "Eastern Black Silk", "Crimson Ghosh", { name: "Fragrant Pastries" },
+      "Flower Painting", "Saraminian Sweets",
+      "Eastern Black Silk", { name: "Fragrant Pastries" },
       { name: "Candy Crystals", unverified: true }, { name: "Coffee Pastries", unverified: true },
-      { name: "Honey Milk", unverified: true }, { name: "Honey Pastries", unverified: true },
+      { name: "Honey Pastries", unverified: true },
       { name: "Jamel Milk", unverified: true },
-      { name: "Mellow Pastries", unverified: true }, { name: "Pastry Cookbook", unverified: true },
+      { name: "Pastry Cookbook", unverified: true },
       { name: "Simple Pastries", unverified: true }
     ]
   },
   "Sofia": {
     reallyLiked: [
-      "Jamel Milk", "Yarc Milk", "Honey Milk", "Weak Cervi", "Strong Cervi", "Ginji Cervi",
-      "Pure-White Cervi", "Mature Dried Cervi", "Simple Pastries", "Mellow Pastries",
-      "Fragrant Pastries", "Coffee Pastries", "Honey Pastries", "Saraminian Sweets", "Alecto Garum",
-      "Concentrated Garum", "Garum", "Niiza Garum", "Crimson Ghosh", "Common Coffee",
-      "Select Coffee", "Southern Coffee", "Orgus Coffee", "Pickled Vegetables", "Meaty Delicacy",
-      "Outdoor Cooking Set", "Eastern Tea Leaves"
+      "Honey Milk", "Weak Cervi", "Strong Cervi", "Mature Dried Cervi",
+      "Simple Pastries", "Mellow Pastries", "Fragrant Pastries", "Coffee Pastries",
+      "Saraminian Sweets", "Alecto Garum", "Concentrated Garum", "Garum",
+      "Common Coffee", "Select Coffee", "Southern Coffee", "Orgus Coffee",
+      "Meaty Delicacy", "Eastern Tea Leaves"
     ]
   },
   "Talimun": {
     reallyLiked: [
       "Crimson Ghosh", "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh",
-      "Southern Ghosh", "Sun Ghosh", "Young Ghosh", "Ceremonial Spear"
+      "Southern Ghosh", "Sun Ghosh", "Young Ghosh"
     ]
   },
   "Guzran": {
-    reallyLiked: ["Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh", "Southern Ghosh", "Sun Ghosh", "Young Ghosh",
-      "Aromatic Shosh", "Light Shosh", "Mature Shosh", "Young Shosh"]
+    reallyLiked: ["Energizing Ghosh", "Mature Ghosh"]
   },
   "Orchel": {
     loved: ["Blue-Rose Bouquet", "Flower Painting", "Portrait of Yu Phas", "Shield Portrait"],
@@ -370,20 +347,20 @@ const records: Record<string, GiftRecord> = {
   },
   "Peppe": {
     loved: ["Pegasus Panorama", "Portrait of Yu Phas", "Rancid Garum", "Shield Portrait"],
-    reallyLiked: ["Crimson Ghosh", { name: "Common Coffee", unverified: true },
+    reallyLiked: [{ name: "Common Coffee", unverified: true },
       { name: "Orgus Coffee", unverified: true }, { name: "Protection Figurine", unverified: true },
       { name: "Select Coffee", unverified: true }, { name: "Southern Coffee", unverified: true }]
   },
   "Peter": {
     reallyLiked: [
       { name: "Arrowhead Gem", unverified: true },
-      { name: "Strong Cervi" }, { name: "Mature Dried Cervi", unverified: true },
-      { name: "Weak Cervi", unverified: true }, "Ginji Cervi",
+      { name: "Strong Cervi" },
+      { name: "Weak Cervi", unverified: true },
       { name: "Pure-White Cervi", unverified: true }, { name: "Yarc Milk", unverified: true }, "Jamel Milk"
     ]
   },
   "Bertrand": {
-    reallyLiked: ["Garum", { name: "Eastern Love Story", unverified: true },
+    reallyLiked: [{ name: "Eastern Love Story", unverified: true },
       { name: "Herbal Recipe Guide", unverified: true }, { name: "Home-Recipe Book", unverified: true },
       { name: "Poems of the Greats", unverified: true }, { name: "Strategy Manuscript", unverified: true },
       { name: "Tales of Adventure", unverified: true }, { name: "The Works of Dante", unverified: true },
@@ -405,12 +382,12 @@ const records: Record<string, GiftRecord> = {
   "Seteth": {
     reallyLiked: [
       "Eastern Black Silk", "Ceremonial Spear", "Crimson Ghosh", "Orgus Coffee",
-      "Flower Painting", "Flexible Fishing Rod", "Sharp Fishhook"
+      "Flower Painting", "Sharp Fishhook"
     ]
   },
   "Simon": {
     loved: ["Portrait of Yu Phas", "Rancid Garum", "Shield Portrait"],
-    reallyLiked: ["Flower Painting", "Arrowhead Gem", "Crimson Ghosh", "Joint-Relief Gloves",
+    reallyLiked: ["Flower Painting", "Arrowhead Gem", "Joint-Relief Gloves",
       { name: "Eastern Board Game", unverified: true }, "Pickled Bulbs",
       { name: "Outdoor Cooking Set", unverified: true }, { name: "Eastern Tea Leaves", unverified: true },
       "Pickled Vegetables"]
@@ -423,10 +400,8 @@ const records: Record<string, GiftRecord> = {
   "Sirocco": {
     loved: ["Arrowhead Gem", "Crimson Ghosh", "Volcano Ghosh"],
     reallyLiked: [
-      "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Rustic Ghosh", "Secret Ghosh",
-      "Southern Ghosh", "Sun Ghosh", "Young Ghosh", "Light Shosh", "Mature Shosh", "Young Shosh",
-      "Crimson Bull Figure",
-      "Jade Panther Figure", "Pack of Pastels", "Gaudy Bangle", "Eastern Board Game"
+      "Energizing Ghosh", "Young Ghosh", "Crimson Bull Figure",
+      "Jade Panther Figure", "Gaudy Bangle", "Eastern Board Game"
     ]
   },
   "Tialla": {
@@ -436,21 +411,16 @@ const records: Record<string, GiftRecord> = {
       "Pickled Bulbs", "Potted Vegetables", "Outdoor Cooking Set", "Strong Seasonings",
       "Home-Recipe Book", "Herbal Recipe Guide", "Protection Figurine", "The Works of Dante",
       "Ceremonial Spear", "Skin Balm", "Eastern Black Silk", "Ahm Lu Cloth", "Arrowhead Gem",
-      "Board-Game Tactics", "The Knight’s Suitors", "Thick Foreign Tome", "Village Recipes"
+      "Board-Game Tactics", "The Knight’s Suitors", "Thick Foreign Tome", "Trader’s Handbook", "Village Recipes"
     ]
   },
   "Ultand": {
     reallyLiked: [
-      "Alecto Garum", "Concentrated Garum", "Garum", "Niiza Garum", "Crimson Ghosh",
-      "Outdoor Cooking Set", "Strong Seasonings", "Home-Recipe Book", "Herbal Recipe Guide",
-      "The Knight’s Suitors", "Tome from Away", "Morfis Almanac", "Rugged Blade", "Ceremonial Spear",
+      { name: "Alecto Garum", unverified: true }, "Concentrated Garum", "Garum", "Niiza Garum",
+      "Strong Seasonings", "Home-Recipe Book", "Herbal Recipe Guide", "Village Recipes", "Dual Fish Knives",
+      "Secret Ghosh", "Tome from Away", "Morfis Almanac", "Rugged Blade", "Ceremonial Spear",
       "Skin Balm", "Eastern Black Silk", "Ahm Lu Cloth", "Eastern Board Game", "Exquisite Ring",
-      "Arrowhead Gem", "Flower Painting",
-      "Aromatic Shosh", "Special “Medicine”", "Orgus Coffee", "Rare Southern Seeds", "Morfis Tea",
-      "Fodlan Tea", "Sharp Fishhook", "Sturdy Rucksack", "Divination Bagua", "Horse-Grooming Kit",
-      "The Works of Dante", "Thick Foreign Tome", "School Scandal", "Crafting Knives", "Sharp Dagger",
-      "Training Pillar", "Imitation Medal", "Joint-Relief Gloves", "Decorative Arrows", "Spirit Board Game",
-      "Ebony Game Board", "Red Hair Clip", "Pack of Pastels", "Pegasus Panorama", "Shield Portrait"
+      "Arrowhead Gem", "Flower Painting"
     ]
   },
   "Ursula": {
@@ -469,7 +439,7 @@ const records: Record<string, GiftRecord> = {
   },
   "Zarcone": {
     reallyLiked: [{ name: "Eastern Tea Leaves", unverified: true }, "Pickled Vegetables", { name: "Odd Vegetable Seeds", unverified: true },
-      { name: "Potted Vegetables", unverified: true }, { name: "Rare Southern Seeds", unverified: true }]
+      { name: "Rare Southern Seeds", unverified: true }]
   }
 };
 
