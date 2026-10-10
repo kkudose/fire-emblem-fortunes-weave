@@ -26,6 +26,8 @@ button, input { font: inherit; }
 .hero-inner { position: relative; z-index: 1; max-width: 986px; margin: 0 auto; padding: 12px 28px 26px; }
 .page-shell { position: relative; max-width: 930px; margin: 0 auto; padding: 18px 28px 36px; }
 .masthead { position: relative; display: flex; align-items: center; justify-content: center; min-height: 52px; margin-bottom: 12px; text-align: center; }
+.home-link { color: inherit; text-decoration: none; }
+.home-link:focus-visible { outline: 2px solid #e4c47e; outline-offset: 5px; }
 h1, h2, h3, p { margin-top: 0; }
 h1 { margin: 0; font: 500 var(--brand-title-size)/1 'Playfair Display', Georgia, serif; letter-spacing: -.04em; color: #fbf5e9; white-space: nowrap; text-shadow: 0 1px 12px rgba(0,0,0,.18); }
 h1 em { display: inline; margin-left: 5px; color: #e1c17c; font-size: var(--brand-subtitle-size); font-weight: 500; }
@@ -51,13 +53,34 @@ h1 em { display: inline; margin-left: 5px; color: #e1c17c; font-size: var(--bran
 .suggestions li:hover, .suggestions li:focus-visible, .suggestions li[aria-selected="true"] { color: #292e40; background: #e9ddc6; box-shadow: inset 3px 0 var(--gilt); }
 .option-arrow { color: var(--gilt); }
 .result { position: relative; max-width: 720px; margin: 0 auto; }
-.character-rail { position: absolute; top: 0; bottom: 0; left: -48px; width: 36px; display: flex; align-items: center; justify-content: center; pointer-events: none; }
-.character-rail h2 { margin: 0; color: var(--wine); font: 500 var(--brand-subtitle-size)/1.1 'Playfair Display', Georgia, serif; letter-spacing: .14em; text-shadow: 0 1px rgba(255,255,255,.75); writing-mode: vertical-rl; transform: rotate(180deg); }
 .gift-columns { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 15px; animation: appear .24s ease-out; }
 .gift-columns.single { grid-template-columns: minmax(0, 1fr); }
 .recruitment-note { display: flex; align-items: flex-start; gap: 9px; margin-top: 12px; padding: 11px 14px; border: 1px solid rgba(216,199,164,.82); color: #5d5140; background: linear-gradient(110deg, rgba(247,240,225,.82), rgba(251,248,240,.74)); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); box-shadow: inset 0 1px rgba(255,255,255,.62); }
 .recruitment-note > span { flex: 0 0 auto; color: #9a7540; font: 16px/1.2 'Playfair Display', Georgia, serif; }
 .recruitment-note p { margin: 0; font: 12px/1.5 Georgia, serif; }
+.character-actions-row { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 8px 14px; margin-top: 11px; }
+.bookmark-banner { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; gap: 8px; width: fit-content; margin: 0; padding: 8px 16px; border: 1px solid rgba(179,145,83,.55); border-radius: 999px; color: #5e4b30; background: linear-gradient(110deg, rgba(247,240,225,.94), rgba(251,248,240,.92)); box-shadow: inset 0 1px rgba(255,255,255,.72); font: 13px Georgia, serif; cursor: pointer; transition: background .16s ease, border-color .16s ease, box-shadow .16s ease; }
+.character-actions-row > .bookmark-banner { grid-column: 1; justify-self: start; }
+.bookmark-banner:hover, .bookmark-banner:focus-visible { border-color: #a77c3c; background: #fffaf0; box-shadow: 0 3px 10px rgba(63,49,31,.1), inset 0 1px rgba(255,255,255,.85); }
+.bookmark-icon { width: 12px; height: 15px; fill: currentColor; }
+.bookmark-banner.is-bookmarked { border-color: #a3374c; color: #7c3447; background: linear-gradient(110deg, #f9e8e9, #fff8f3); }
+.bookmark-action { display: none; }
+.bookmark-current-row { display: flex; align-items: center; justify-content: center; gap: 8px; }
+.bookmark-current-character { min-width: 0; margin: 0; color: #33394c; font: 500 19px/1.1 'Playfair Display', Georgia, serif; overflow-wrap: anywhere; }
+.bookmark-icon-button { position: relative; display: grid; place-items: center; flex: 0 0 34px; width: 34px; height: 34px; padding: 0; border: 1px solid rgba(179,145,83,.65); border-radius: 50%; color: #5e4b30; background: linear-gradient(110deg, rgba(247,240,225,.94), rgba(251,248,240,.92)); box-shadow: inset 0 1px rgba(255,255,255,.72); cursor: pointer; transition: background .16s ease, border-color .16s ease, box-shadow .16s ease; }
+.bookmark-icon-button .bookmark-icon { width: 13px; height: 17px; }
+.bookmark-icon-button::after { position: absolute; z-index: 4; left: 50%; bottom: calc(100% + 7px); padding: 6px 8px; border-radius: 3px; color: #fff8ea; background: #292e40; content: attr(data-tooltip); font-size: 10px; line-height: 1.2; white-space: nowrap; opacity: 0; pointer-events: none; transform: translate(-50%, 2px); transition: opacity .08s ease .4s, transform .08s ease .4s; }
+.bookmark-icon-button:hover::after, .bookmark-icon-button:focus-visible::after { opacity: 1; transform: translate(-50%, 0); transition-delay: .2s; }
+.bookmark-icon-button:hover, .bookmark-icon-button:focus-visible { border-color: #a77c3c; background: #fffaf0; box-shadow: 0 3px 10px rgba(63,49,31,.1), inset 0 1px rgba(255,255,255,.85); }
+.bookmark-icon-button.is-bookmarked { border-color: #a3374c; color: #7c3447; background: linear-gradient(110deg, #f9e8e9, #fff8f3); }
+.bookmark-home { max-width: 720px; margin: 0 auto 18px; padding: 17px 20px; border: 1px solid rgba(222,213,196,.9); border-right: 2px solid var(--gilt); background: linear-gradient(145deg, rgba(255,253,247,.88), rgba(247,243,233,.82)); box-shadow: 0 8px 24px rgba(40,43,55,.06); }
+.bookmark-home h2 { padding-bottom: 14px; margin: 0 0 13px; border-bottom: 1px solid #e9e1d2; color: #33394c; font: 500 19px/1.1 'Playfair Display', Georgia, serif; white-space: nowrap; }
+.bookmark-home p { margin: 0; color: #77716a; font: 12px/1.5 Georgia, serif; }
+.bookmark-home ul { display: flex; flex-direction: column; gap: 7px; margin: 0; padding: 0; list-style: none; }
+.bookmark-home a { display: inline-flex; align-items: center; gap: 8px; min-width: 0; padding: 7px 10px; border: 1px solid #e5dccb; color: #494c58; background: #fffdf8; font-size: 12px; text-decoration: none; overflow-wrap: anywhere; }
+.bookmark-home a:hover, .bookmark-home a:focus-visible { border-color: #c5a66c; color: #292e40; background: #fbf5e7; }
+.bookmark-home a span { color: var(--gilt); }
+.page-shell.has-character .bookmark-home { display: none; }
 .gift-card { position: relative; padding: 21px 22px 20px; background: linear-gradient(145deg, rgba(255,253,247,.84), rgba(247,243,233,.76)); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); border: 1px solid rgba(222,213,196,.9); border-top: 2px solid var(--gilt); border-radius: 3px 10px 3px 10px; min-height: 173px; box-shadow: 0 8px 24px rgba(40,43,55,.07); }
 .gift-card:hover, .gift-card:focus-within { z-index: 2; }
 .card-heading { display: flex; align-items: center; gap: 11px; padding-bottom: 14px; margin-bottom: 13px; border-bottom: 1px solid #e9e1d2; }
@@ -75,13 +98,15 @@ h1 em { display: inline; margin-left: 5px; color: #e1c17c; font-size: var(--bran
 .gift-item.frequency-high { border-width: 2px; border-color: #b29ac7; background: linear-gradient(135deg, #fefcff, #f3edf8); }
 .gift-item.loved-elsewhere { position: relative; }
 .frequency-legend { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 11px; color: #77716a; font-size: 10px; }
+.character-actions-row .frequency-legend { grid-column: 2; justify-content: center; margin-top: 0; }
 .frequency-legend .legend-title { font-family: Georgia, serif; font-style: italic; }
 .frequency-legend ul { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.character-actions-row .frequency-legend ul { justify-content: center; }
 .frequency-legend li { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
 .gift-item.has-tooltip { position: relative; }
-.gift-item.has-tooltip::after { position: absolute; z-index: 4; left: 50%; bottom: calc(100% + 7px); padding: 6px 8px; border-radius: 3px; color: #fff8ea; background: #292e40; content: attr(data-tooltip); font-size: 10px; line-height: 1.2; white-space: nowrap; opacity: 0; pointer-events: none; transform: translate(-50%, 2px); transition: opacity .08s ease, transform .08s ease; }
+.gift-item.has-tooltip::after { position: absolute; z-index: 4; left: 50%; bottom: calc(100% + 7px); padding: 6px 8px; border-radius: 3px; color: #fff8ea; background: #292e40; content: attr(data-tooltip); font-size: 10px; line-height: 1.2; white-space: nowrap; opacity: 0; pointer-events: none; transform: translate(-50%, 2px); transition: opacity .08s ease .4s, transform .08s ease .4s; }
 .frequency-legend .gift-item.has-tooltip::after { width: max-content; max-width: min(420px, calc(100vw - 32px)); white-space: normal; text-align: center; }
-.gift-item.has-tooltip:hover::after, .gift-item.has-tooltip:focus-visible::after { opacity: 1; transform: translate(-50%, 0); }
+.gift-item.has-tooltip:hover::after, .gift-item.has-tooltip:focus-visible::after { opacity: 1; transform: translate(-50%, 0); transition-delay: .2s; }
 .loved-elsewhere-mark { margin-left: 4px; color: #a3374c; font-size: 12px; line-height: 1; text-shadow: 0 1px rgba(255,255,255,.85); }
 .empty-state { text-align: center; padding: 32px 24px; background: rgba(251,248,240,.82); border: 1px solid var(--line); border-top: 2px solid var(--gilt); border-radius: 3px 10px 3px 10px; color: #62616b; animation: appear .24s ease-out; }
 .empty-state > span { display: block; color: var(--wine); margin-bottom: 11px; }
@@ -89,5 +114,14 @@ h1 em { display: inline; margin-left: 5px; color: #e1c17c; font-size: var(--bran
 .empty-state small { color: #99998e; font-size: 11px; }
 [hidden] { display: none !important; }
 @keyframes appear { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
-@media (max-width: 600px) { :root { --brand-title-size: clamp(23px, 7vw, 29px); --brand-subtitle-size: clamp(17.94px, 5.46vw, 22.62px); } .hero-inner { padding: 10px 18px 26px; } .page-shell { padding: 18px 18px 28px; } .masthead { min-height: 44px; margin-bottom: 9px; } .search-panel { padding: 13px 0 11px; } .character-rail { left: -28px; width: 24px; } .gift-columns { grid-template-columns: 1fr; gap: 10px; } .gift-card { min-height: auto; padding: 18px; } .all-characters ul { grid-template-columns: repeat(2, 1fr); } }
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+@media (max-width: 600px) { :root { --brand-title-size: clamp(23px, 7vw, 29px); --brand-subtitle-size: clamp(17.94px, 5.46vw, 22.62px); } .hero-inner { padding: 10px 18px 26px; } .page-shell { padding: 18px 18px 28px; } .masthead { min-height: 44px; margin-bottom: 9px; } .search-panel { padding: 13px 0 11px; } .gift-columns { grid-template-columns: 1fr; gap: 10px; } .gift-card { min-height: auto; padding: 18px; } .all-characters ul { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1240px) {
+  .page-shell { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 720px) minmax(0, 1fr); justify-content: stretch; align-items: start; gap: 0; max-width: 1320px; }
+  .bookmark-sidebar { grid-column: 1; position: sticky; z-index: 2; align-self: start; justify-self: end; top: 18px; display: flex; flex-direction: column; gap: 12px; width: fit-content; max-width: 210px; margin: 0 22px 0 0; }
+  .bookmark-action { display: block; width: 100%; }
+  .bookmark-home { width: 100%; margin: 0; padding: 16px; }
+  .page-shell.has-character .bookmark-home { display: block; }
+  .character-actions-row .bookmark-banner { display: none; }
+  .result { grid-column: 2; width: 100%; margin: 0; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; transition-delay: 0ms !important; } }
