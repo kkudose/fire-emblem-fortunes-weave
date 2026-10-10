@@ -83,4 +83,6 @@ export const knownItemOrder = [
   'Pegasus Panorama'
 ] as const;
 
-export const knownItemRanks = new Map(knownItemOrder.map((name, index) => [name, index]));
+export const knownItemRanks: ReadonlyMap<string, number> = new Map(
+  knownItemOrder.map((name, index): [string, number] => [name, index])
+);
