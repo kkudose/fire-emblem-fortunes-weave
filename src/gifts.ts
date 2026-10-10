@@ -34,9 +34,13 @@ const names = `Eshmel|Cai|Dietrich|Theodora|Leda|Hong Hua|Troy|Tialla|Peter|Ulta
 // two-arrow reactions but labels the table WIP; the Japanese tables report
 // item/category preferences at a coarser tier and do not distinguish those
 // arrow counts. No public source checked is a complete, authoritative reaction
-// matrix. Absence from this file means unknown, not disliked. Broad category
-// matches and family expansions are leads only; mark them unverified unless
-// an exact reaction is confirmed. If a source establishes the top positive
+// matrix. Absence from this file means unknown, not disliked. A confirmed
+// general-family preference (for example, fermented drinks/Ghosh) is a strong
+// directional lead for that family's variants; a preference for one named,
+// distinctive variant does not imply a preference for the whole family.
+// Keep these expansions marked unverified until each exact reaction is
+// confirmed. A family-level lead does not establish the same reaction tier
+// for every variant. If a source establishes the top positive
 // reaction but not whether it earns one or two arrows, place it in Really
 // Liked; reserve Loved for evidence of the two-arrow reaction. Direct in-game
 // confirmations supplied by the user are retained as verified records.
@@ -239,7 +243,7 @@ const records: Record<string, GiftRecord> = {
       "Tome from Away"],
     reallyLiked: ["Ceremonial Spear", "Pack of Pastels",
       { name: "Everyday Scenes", unverified: true }, { name: "Herbal Recipe Guide", unverified: true },
-      { name: "Home-Recipe Book", unverified: true }, { name: "Sturdy Rucksack", unverified: true },
+      { name: "Home-Recipe Book", unverified: true }, "Sturdy Rucksack",
       { name: "The Works of Dante", unverified: true }, { name: "Trader’s Handbook", unverified: true },
       { name: "Eastern Earrings", unverified: true }, { name: "Eastern Love Story", unverified: true },
       { name: "Eastern Tea Leaves", unverified: true }, { name: "Strategy Manuscript", unverified: true }]
@@ -265,7 +269,7 @@ const records: Record<string, GiftRecord> = {
     loved: ["Arrowhead Gem", "Ceremonial Spear", "Decorative Arrows", "Portrait of Yu Phas", "Shield Portrait"],
     reallyLiked: [
       { name: "Strategy Manuscript", unverified: true }, { name: "Tales of Adventure", unverified: true },
-      "Flower Painting", "Joint-Relief Gloves", { name: "Training Pillar" },
+      "Flower Painting", "Joint-Relief Gloves", "Training Pillar", "Training Bracelet",
       { name: "Eastern Tea Leaves", unverified: true }, { name: "Pickled Bulbs", unverified: true },
       { name: "Board-Game Tactics", unverified: true }, { name: "Ebony Game Board", unverified: true },
       { name: "Eastern Board Game", unverified: true }, "Pickled Vegetables",
@@ -289,7 +293,7 @@ const records: Record<string, GiftRecord> = {
   "Noctula": {
     reallyLiked: [
       "Crimson Ghosh", "Eastern Tea Leaves", "Arrowhead Gem",
-      "Morfis Almanac", "Training Weights", "Antique Medal", "Tome from Away", "Sharp Dagger"
+      "Morfis Almanac", "Training Weights", "Training Bracelet", "Antique Medal", "Tome from Away", "Sharp Dagger"
     ]
   },
   "Nuzzuo": {

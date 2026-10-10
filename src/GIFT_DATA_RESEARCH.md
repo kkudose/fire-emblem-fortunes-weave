@@ -68,3 +68,38 @@ Audited the remaining 24 characters with non-empty Really Liked lists after the 
 Removed these exact pairs because a source explicitly put them in a weaker category: Cai (Arrowhead Gem, Crimson Ghosh, Sharp Fishhook); Diego (Crimson Ghosh, Protection Figurine); Fianna (Crimson Ghosh); Io (Arrowhead Gem, Training Weights, Mane Ornament, Horse-Grooming Kit); Leda (Mature, Rustic, Secret, Southern, Sun, and Young Ghosh); Mu (Arrowhead Gem, Pure-White Cervi); Nydine (Training Weights, Kitten Figurine); Ninae (Arrowhead Gem); Noctula (Protection Figurine); Peppe (Crimson Ghosh); Peter (Ginji Cervi, Mature Dried Cervi); Seteth (Flexible Fishing Rod); Simon (Crimson Ghosh); Theodora (Eastern Black Silk); Zarcone (Potted Vegetables); and Bertrand (Garum, listed in Raider King's Liked rather than Really Liked column).
 
 Kept direct user confirmations even where a source differed: Peter — Jamel Milk; Nydine — Mane Ornament; Simon — Pickled Vegetables. Those pairs are therefore not counted among removals. Several remaining entries still lack exact item-level coverage and retain their `unverified` marker. Characters with empty Really Liked lists have no existing positives to downgrade; source omissions were not used to invent preferences or assert that no strong preferences exist.
+
+## Orgus Coffee tier recheck (2026-10-03)
+
+Rechecked every `Orgus Coffee` entry in `gifts.ts` against Raider King's column labels, including entries covered by a broad “Any Coffee” group. Raider King places Ultand's Orgus Coffee in the weaker Liked column, not Really Liked. It was removed from Ultand's Really Liked list and remains absent there. Game8's Ultand page does not list Orgus Coffee in its stronger, liked, or somewhat-liked groups, so it does not override Raider King's explicit lower-tier placement.
+
+The current Really Liked entries for Bonaventure, Fabio, Fianna, Gaitz, Mikaela, Mu, Nuzzuo, Olympia, Seteth, Sofia, and Ursula align with Raider King's Really Liked column or a broad coffee group in that column. Peppe's Orgus Coffee entry remains marked `unverified`; Raider King's table does not establish that pair. Raider King also places Orgus Coffee in a weaker tier for Anatolia, Diego, Goliath, Jasmine, and Sirocco; those pairs are absent from this app's Really Liked arrays. This recheck validates tier assignment only where a source has an explicit entry; omission remains unknown.
+
+## User-confirmed equipment reactions (2026-10-04)
+
+The user verified these exact Really Liked pairs in-game: Ludia — Sturdy Rucksack; Nezha — Training Bracelet and Training Pillar; Noctula — Training Bracelet. Removed the `unverified` marker from Ludia's Sturdy Rucksack and recorded the remaining confirmations as verified entries in `gifts.ts`.
+
+## Gift-family inference and directionality (2026-10-04)
+
+### Working rule
+
+Record exact character/item reactions as the source of truth. A confirmed preference for a broad family is a strong directional clue that sibling variants will also be positive, but it is not proof that every variant has the same reaction tier. A confirmed preference for one named variant does not justify expanding that reaction to its whole family. In particular, never infer “likes all Ghosh” from liking Southern Ghosh alone. Keep inferred exact pairs marked `unverified` until checked in-game or established by an exact item reaction source.
+
+This matches the user's in-game observations so far: they have not found a counterexample to general/common family affinity extending positively to distinctive variants, and have observed the reverse not to hold. The public sources reviewed here show the same directional pattern and no explicit contrary example, but their coverage is incomplete; treat “likely, perhaps nearly universal” as a strong working heuristic, not a proven game mechanic.
+
+### Family vocabulary
+
+- **Fermented drinks** is the broad description family. It includes **Ghosh** and **Shosh**, which remain separate subfamilies for tracking. The Ghosh variants in this catalogue are Young, Mature, Sun, Energizing, Rustic, Jade, Secret, Southern, Volcano, and Crimson Ghosh. Shosh variants are Young, Mature, Light, Blue, and Aromatic Shosh.
+- **Training gifts** is a practical family for Training Weights, Training Pillar, and Training Bracelet. Keep this separate from the character-profile interest “training” or “鍛錬” until an item description or exact reaction establishes the scope: a profile interest is a family-level clue, not an exact item reaction.
+- Other source-described gift families (books, pastries, coffee, etc.) may be tracked by the same rule, but only where the item's in-game description or an explicit source category defines membership. Similar names or themes alone are insufficient grounds to add an item to a family.
+
+### Evidence checked
+
+- [GameWith's preference table](https://gamewith.jp/fefw/577115) explicitly uses broad categories, including “fermented drinks (such as Young Ghosh)” and “training gifts (such as Training Weights).” Its character profile-interest lists include drinking/alcohol and training. This supports using the game's stated category as a family-level predictor. It does not give exact reactions for every sibling or the Loved-versus-Really-Liked arrow count.
+- [Game8's character-specific gift tables](https://game8.jp/fe-banshisenko/816847) separate the strongest, weaker, and somewhat-positive reactions by exact item. [Guzran's table](https://game8.jp/fe-banshisenko/816440), for example, places several distinct Ghosh variants across positive tiers: Mature, Crimson, and Volcano in the strongest tier; variants including Jade, Secret, Southern, Sun, Rustic, and Young in a weaker tier. That is broad positive coverage with tier variation, rather than evidence that every variant earns the same response. [Jester's table](https://game8.jp/fe-banshisenko/816452) likewise puts Crimson Ghosh and Mature Ghosh in different positive tiers. These examples support separating “positive family affinity” from “identical tier for all members.”
+- [Raider King's WIP reaction table](https://raiderking.com/fire-emblem-fortunes-weave-all-loved-gifts-guide/) labels broad groups such as “All Ghosh” / “Any Ghosh” separately from individually named variants, and places some characters' distinctive variants in different positive columns from the general group. The author says `?` marks pairs not personally verified, so use it as corroboration, not a complete authority. Examples include Buccar (broad Ghosh/Shosh affinity with Volcano and Crimson Ghosh listed at the top tier), Leda (Any Ghosh with Volcano/Crimson at the top tier), and Jester (Any Ghosh stronger than some named Ghosh variants). Again, reaction strength can differ while the variants remain positive.
+- The inspected tables do not establish a fully tested universal implication. Their omissions cannot prove dislike or disconfirm the directional rule. A unique-variant preference is therefore evidence for that exact variant only; without a separately stated family category or checks of sibling items, do not fill in the family.
+
+### Data handling
+
+Keep family membership and exact reactions conceptually distinct. When a source confirms a general family preference, use it to prioritize sibling checks and, if useful, record sibling pairs as low-confidence leads. Do not silently turn a broad category into verified exact pairs or promote every sibling to the same tier. When only one unusual variant is confirmed, retain only that pair. Update this section if an in-game check finds a character with a confirmed positive general/common variant and a confirmed neutral or negative distinctive sibling; that would be a real counterexample to the proposed direction.

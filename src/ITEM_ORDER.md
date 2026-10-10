@@ -1,12 +1,150 @@
 # Gift Menu Item Order
 
-This file tracks gift item order as supplied from the in-game menu. It is not used by the app yet.
+This file compiles gift item order supplied from the in-game menu. It is not used by the app yet.
 
-**Unknown** means an item's position has not been supplied; it does not mean that the item or its character preferences are unknown. The working inventory combines the 117 names in `gifts.ts` with three additional gift names supplied for this list (`Dual Fish Knives`, `Full Sewing Kit`, and `Red-Rose Bouquet`). This is a working list, not a verified complete inventory of every in-game gift.
+**Unknown** means an item's position has not been supplied; it does not mean that the item or its character preferences are unknown. This working list combines names in `gifts.ts` with additional gifts identified in order observations, including `Dual Fish Knives`, `Full Sewing Kit`, `Red-Rose Bouquet`, and `Box of Treats`. It is not a verified complete inventory of every in-game gift.
 
-The Oct 3 sequence reorders several items from the Oct 2 sequence. Both are retained as observations; use the newer sequence as the latest transcription, and keep the earlier one for comparison until the conflict is resolved.
+The numbered list below is a deduplicated working order. Oct 3 is the backbone where available; Oct 2 and the Oct 4 screenshots add entries and relative-order constraints. Screenshot gaps are not evidence that an item is absent from the full catalog.
 
-## Latest order sequence (Oct 3)
+## Compiled working order (Oct 4)
+
+This is a linearized working order, not a claim that every adjacent pair has been directly confirmed. See discrepancies below for inserted entries whose exact slots are not fixed by the available evidence.
+
+1. Yarc Milk
+2. Jamel Milk
+3. Weak Cervi
+4. Strong Cervi
+5. Pure-White Cervi
+6. Simple Pastries
+7. Mellow Pastries
+8. Fragrant Pastries
+9. Coffee Pastries
+10. Saraminian Sweets
+11. Box of Treats
+12. Candy Crystals
+13. Niiza Garum
+14. Rancid Garum
+15. Garum
+16. Smooth Garum
+17. Young Ghosh
+18. Mature Ghosh
+19. Sun Ghosh
+20. Energizing Ghosh
+21. Rustic Ghosh
+22. Jade Ghosh
+23. Secret Ghosh
+24. Southern Ghosh
+25. Volcano Ghosh
+26. Crimson Ghosh
+27. Special “Medicine”
+28. Young Shosh
+29. Mature Shosh
+30. Light Shosh
+31. Common Coffee
+32. Select Coffee
+33. Southern Coffee
+34. Orgus Coffee
+35. Huge Fish Eyeball
+36. Meaty Delicacy
+37. Odd Vegetable Seeds
+38. Outdoor Cooking Set
+39. Strong Seasonings
+40. Home-Recipe Book
+41. Pastry Cookbook
+42. Herbal Recipe Guide
+43. Village Recipes
+44. Fodlan Tea
+45. Eastern Tea Leaves
+46. Kitten Figurine
+47. Magic-Trick Set
+48. Protection Figurine
+49. Sharp Fishhook
+50. Sturdy Rucksack
+51. Mane Ornament
+52. Dagda Beard Grass
+53. Crimson Bull Figure
+54. Jade Panther Figure
+55. The Works of Dante
+56. The Knight’s Suitors
+57. Trader’s Handbook
+58. Thick Foreign Tome
+59. Tales of the Arena
+60. School Scandal
+61. Sharp Dagger
+62. Dual Fish Knives
+63. Rugged Blade
+64. Ceremonial Spear
+65. Training Weights
+66. Training Pillar
+67. Training Bracelet
+68. Imitation Medal
+69. Joint-Relief Gloves
+70. Full Sewing Kit
+71. Skin Balm
+72. Eastern Black Silk
+73. Board-Game Tactics
+74. Spirit Board Game
+75. Ebony Game Board
+76. Exquisite Ring
+77. Red-Rose Bouquet
+78. Gaudy Bangle
+79. Blue-Rose Bouquet
+80. Eastern Earrings
+81. Pack of Pastels
+82. Pegasus Panorama
+
+## Unknown positions
+
+These names have appeared in the working inventory or preference data but have not been placed by an order sequence or the screenshots:
+
+- Ahm Lu Cloth
+- Alecto Garum
+- Antique Medal
+- Aromatic Shosh
+- Arrowhead Gem
+- Bagua Divination Set
+- Blue Shosh
+- Bow Repair Kit
+- Concentrated Garum
+- Crafting Knives
+- Decorative Arrows
+- Divination Bagua
+- Eastern Board Game
+- Eastern Love Story
+- Everyday Scenes
+- Flexible Fishing Rod
+- Flower Painting
+- Ginji Cervi
+- History of a Master
+- Honey Milk
+- Honey Pastries
+- Horse-Grooming Kit
+- Mature Dried Cervi
+- Morfis Almanac
+- Morfis Tea
+- Pickled Bulbs
+- Pickled Vegetables
+- Poems of the Greats
+- Portrait of Yu Phas
+- Potted Vegetables
+- Rare Southern Seeds
+- Rare Spices
+- Red Hair Clip
+- Shield Portrait
+- Small Teff
+- Strategy Manuscript
+- Tales of Adventure
+- Tome from Away
+
+## Discrepancies and limits
+
+- **Oct 2 vs Oct 3:** The Oct 3 list adds many entries and leaves out Home-Recipe Book and Wing Fletching, but preserves the relative order of entries shared with Oct 2. There is no confirmed shared-item reorder between those two transcriptions.
+- **Oct 4 screenshot insertions:** Screenshots place Yarc Milk before Jamel Milk; Strong Cervi after Weak Cervi and before Mellow Pastries; Mellow Pastries before Fragrant Pastries; Fragrant Pastries before Box of Treats before Candy Crystals; Garum before Smooth Garum before Young Ghosh; Crimson Ghosh before Young Shosh; Meaty Delicacy before Strong Seasonings; Home-Recipe Book before Herbal Recipe Guide; and Sharp Dagger between School Scandal and Training Bracelet. The exact slots of these additions relative to nearby unseen items are not all established. Home-Recipe Book was absent from the Oct 3 transcription but appears in the Oct 4 screenshot.
+- **Linearization choices:** The exact relative slots of Strong Cervi vs Pure-White Cervi/Simple Pastries; Box of Treats vs Coffee Pastries/Saraminian Sweets; Garum/Smooth Garum vs Niiza/Rancid Garum; Meaty Delicacy vs the other entries before Strong Seasonings; and Crimson Ghosh vs Special “Medicine” are not established. The numbered list picks one usable sequence where the evidence leaves these open.
+- **Repeated rows:** Crimson Bull Figure at the end of screenshot 2 and start of screenshot 1 is one item. Young Ghosh at the end of screenshot 4 and start of screenshot 3 is one item. The row after Crimson Ghosh in screenshot 3 is Young Shosh, so there is no duplicate Young Ghosh there.
+- **Remaining gaps:** The images are partial menu views. They do not establish adjacency, or the order of unseen entries such as Common Coffee through Southern Coffee, nor every item's exact slot in the complete catalog.
+
+## Earlier order sequence (Oct 3)
 
 1. Jamel Milk
 2. Weak Cervi
@@ -125,59 +263,9 @@ The Oct 3 sequence reorders several items from the Oct 2 sequence. Both are reta
 40. Pack of Pastels
 41. Pegasus Panorama
 
-## Previously listed, absent from latest sequence
+## Oct 2 entries absent from the Oct 3 transcription
 
-- Home-Recipe Book
 - Wing Fletching
-
-## Still unknown in the order
-
-- Ahm Lu Cloth
-- Alecto Garum
-- Antique Medal
-- Aromatic Shosh
-- Arrowhead Gem
-- Bagua Divination Set
-- Blue Shosh
-- Bow Repair Kit
-- Concentrated Garum
-- Crafting Knives
-- Crimson Ghosh
-- Decorative Arrows
-- Divination Bagua
-- Eastern Board Game
-- Eastern Love Story
-- Everyday Scenes
-- Flexible Fishing Rod
-- Flower Painting
-- Fragrant Pastries
-- Garum
-- Ginji Cervi
-- History of a Master
-- Honey Milk
-- Honey Pastries
-- Horse-Grooming Kit
-- Mature Dried Cervi
-- Meaty Delicacy
-- Morfis Almanac
-- Morfis Tea
-- Pickled Bulbs
-- Pickled Vegetables
-- Poems of the Greats
-- Portrait of Yu Phas
-- Potted Vegetables
-- Rare Southern Seeds
-- Rare Spices
-- Red Hair Clip
-- Sharp Dagger
-- Shield Portrait
-- Small Teff
-- Smooth Garum
-- Strategy Manuscript
-- Strong Cervi
-- Tales of Adventure
-- Tome from Away
-- Yarc Milk
 
 ## Name normalization notes
 

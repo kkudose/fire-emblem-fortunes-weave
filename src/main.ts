@@ -1,5 +1,6 @@
 import './style.css';
 import { characters, getGiftPreferenceCounts, type CharacterGifts } from './gifts';
+import { knownItemRanks } from './item-order';
 
 const charactersWithPreferences = characters.filter(({ loved, reallyLiked }) => loved.length > 0 || reallyLiked.length > 0);
 
@@ -74,18 +75,25 @@ function updateSuggestions() {
 
 function renderResult(character: CharacterGifts) {
   const giftCounts = new Map(getGiftPreferenceCounts().map(({ name, totalCount }) => [name, totalCount]));
+  const orderGifts = (gifts: CharacterGifts['loved']) => {
+    const known = gifts.filter(({ name }) => knownItemRanks.has(name))
+      .sort((a, b) => knownItemRanks.get(a.name)! - knownItemRanks.get(b.name)!);
+    const unknown = gifts.filter(({ name }) => !knownItemRanks.has(name))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    return { known, unknown };
+  };
   const groups = [
-    { title: 'Loved', subtitle: 'Double support gain', gifts: character.loved, icon: '♥', kind: 'loved' },
-    { title: 'Really liked', subtitle: 'Strong support gain', gifts: character.reallyLiked, icon: '✧', kind: 'really-liked' }
+    { title: 'Loved', subtitle: 'Double support gain', gifts: orderGifts(character.loved), icon: '♥', kind: 'loved' },
+    { title: 'Really liked', subtitle: 'Strong support gain', gifts: orderGifts(character.reallyLiked), icon: '✧', kind: 'really-liked' }
   ];
-  const visibleGroups = groups.filter(({ gifts }) => gifts.length > 0);
+  const visibleGroups = groups.filter(({ gifts }) => gifts.known.length + gifts.unknown.length > 0);
   const hasGifts = visibleGroups.length > 0;
   result.innerHTML = `
     <aside class="character-rail" aria-label="Selected character"><h2>${escapeHtml(character.name)}</h2></aside>
     ${hasGifts ? `<div class="gift-columns${visibleGroups.length === 1 ? ' single' : ''}">${visibleGroups.map((group) => `
         <section class="gift-card ${group.kind}" aria-labelledby="heading-${group.kind}">
         <div class="card-heading"><span class="gift-icon" aria-hidden="true">${group.icon}</span><div><h3 id="heading-${group.kind}">${group.title}</h3><p>${group.subtitle}</p></div></div>
-        <ul class="gift-list">${group.gifts.map((gift) => {
+        ${[group.gifts.known, group.gifts.unknown].map((items) => items.length ? `<ul class="gift-list">${items.map((gift) => {
           const lovedByAnother = [...(lovedByCharacter.get(gift.name) ?? [])].some((name) => name !== character.name);
           const count = giftCounts.get(gift.name) ?? 0;
           const isFavorite = group.kind === 'loved' || lovedByAnother;
@@ -96,9 +104,9 @@ function renderResult(character: CharacterGifts) {
           const classes = ['gift-item', gift.unverified && 'unverified', frequencyClass, isFavorite && 'favorite', lovedByAnother && 'loved-elsewhere', tooltip && 'has-tooltip'].filter(Boolean).join(' ');
           const labels = [gift.name, gift.unverified && 'low confidence: may be incorrect', lovedByAnother && 'loved by another character'].filter(Boolean).join(', ');
           return `<li class="${classes}"${labels !== gift.name ? ` aria-label="${escapeHtml(labels)}"` : ''}${tooltip ? ` data-tooltip="${escapeHtml(tooltip)}" tabindex="0"` : ''}><span>${escapeHtml(gift.name)}</span>${lovedByAnother ? '<small class="loved-elsewhere-mark" aria-hidden="true">♥</small>' : ''}</li>`;
-        }).join('')}</ul>
+        }).join('')}</ul>` : '').join('')}
       </section>`).join('')}</div>` : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named gift preferences have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`}
-    ${hasGifts ? `<aside class="frequency-legend" aria-label="Number of times items appear in Loved or Really liked lists across all characters"><span class="legend-title"># of times items appear in these lists</span><ul><li><span class="gift-item frequency-low">1–4</span></li><li><span class="gift-item frequency-mid">5–9</span></li><li><span class="gift-item frequency-high">10+</span></li><li><span class="gift-item favorite">Loved</span></li></ul></aside>` : ''}
+    ${hasGifts ? `<aside class="frequency-legend" aria-label="Number of times items appear in Loved or Really liked lists across all characters"><span class="legend-title"># of times items appear in these lists</span><ul><li><span class="gift-item frequency-low">1–4</span></li><li><span class="gift-item frequency-mid">5–9</span></li><li><span class="gift-item frequency-high">10+</span></li><li><span class="gift-item favorite">Loved<small class="loved-elsewhere-mark" aria-hidden="true">♥</small></span></li></ul></aside>` : ''}
     ${character.automaticRecruitment ? `<aside class="recruitment-note" role="note"><span aria-hidden="true">✦</span><p>${escapeHtml(character.automaticRecruitment)}</p></aside>` : ''}
   `;
 }
