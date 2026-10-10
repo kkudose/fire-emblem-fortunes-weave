@@ -1,6 +1,8 @@
 import './style.css';
 import { characters, getGiftPreferenceCounts, type CharacterGifts } from './gifts';
 
+const charactersWithPreferences = characters.filter(({ loved, reallyLiked }) => loved.length > 0 || reallyLiked.length > 0);
+
 const root = document.querySelector<HTMLDivElement>('#app')!;
 const lovedByCharacter = new Map<string, Set<string>>();
 for (const character of characters) {
@@ -55,7 +57,7 @@ const escapeHtml = (value: string) => value.replace(/[&<>"']/g, (char) => ({ '&'
 
 function updateSuggestions() {
   const needle = query.trim().toLocaleLowerCase();
-  suggestions = needle ? characters.filter(({ name }) => name.toLocaleLowerCase().includes(needle)).slice(0, 7) : [];
+  suggestions = needle ? charactersWithPreferences.filter(({ name }) => name.toLocaleLowerCase().includes(needle)).slice(0, 7) : [];
   activeIndex = -1;
   list.innerHTML = suggestions.map(({ name }, index) => `
     <li id="suggestion-${index}" role="option" aria-selected="false" data-index="${index}">
@@ -65,7 +67,7 @@ function updateSuggestions() {
   list.hidden = !open;
   input.setAttribute('aria-expanded', String(open));
   if (suggestions.length === 0 && needle) {
-    const exact = characters.find(({ name }) => name.toLocaleLowerCase() === needle);
+    const exact = charactersWithPreferences.find(({ name }) => name.toLocaleLowerCase() === needle);
     if (exact) choose(exact);
   }
 }
@@ -73,7 +75,7 @@ function updateSuggestions() {
 function renderResult(character: CharacterGifts) {
   const giftCounts = new Map(getGiftPreferenceCounts().map(({ name, totalCount }) => [name, totalCount]));
   const groups = [
-    { title: 'Loved', subtitle: 'Double support gain', gifts: character.loved, icon: '✦', kind: 'loved' },
+    { title: 'Loved', subtitle: 'Double support gain', gifts: character.loved, icon: '♥', kind: 'loved' },
     { title: 'Really liked', subtitle: 'Strong support gain', gifts: character.reallyLiked, icon: '✧', kind: 'really-liked' }
   ];
   const visibleGroups = groups.filter(({ gifts }) => gifts.length > 0);
@@ -159,7 +161,7 @@ input.addEventListener('input', () => {
 input.addEventListener('keydown', (event) => {
   if (list.hidden || !suggestions.length) {
     if (event.key === 'Enter') {
-      const exact = characters.find(({ name }) => name.toLocaleLowerCase() === input.value.trim().toLocaleLowerCase());
+      const exact = charactersWithPreferences.find(({ name }) => name.toLocaleLowerCase() === input.value.trim().toLocaleLowerCase());
       if (exact) choose(exact);
     }
     return;
@@ -215,7 +217,7 @@ rosterToggle.addEventListener('click', () => {
     roster.inert = false;
     roster.removeAttribute('aria-hidden');
     if (!roster.childElementCount) {
-      const ordered = [...characters].sort((a, b) => a.name.localeCompare(b.name));
+      const ordered = [...charactersWithPreferences].sort((a, b) => a.name.localeCompare(b.name));
       roster.innerHTML = `<ul>${ordered.map(({ name }) => `<li><button type="button" data-character="${escapeHtml(name)}">${escapeHtml(name)}</button></li>`).join('')}</ul>`;
     }
     roster.style.setProperty('--roster-open-height', `${roster.scrollHeight + 20}px`);
@@ -237,7 +239,7 @@ rosterToggle.addEventListener('click', () => {
 roster.addEventListener('click', (event) => {
   const button = (event.target as HTMLElement).closest<HTMLButtonElement>('[data-character]');
   if (!button) return;
-  const character = characters.find(({ name }) => name === button.dataset.character);
+  const character = charactersWithPreferences.find(({ name }) => name === button.dataset.character);
   if (character) {
     choose(character);
     rosterOpen = false;
@@ -252,13 +254,13 @@ roster.addEventListener('click', (event) => {
 
 window.addEventListener('popstate', () => {
   const name = new URL(window.location.href).searchParams.get('character');
-  const character = characters.find(({ name: candidate }) => candidate.toLocaleLowerCase() === name?.toLocaleLowerCase());
+  const character = charactersWithPreferences.find(({ name: candidate }) => candidate.toLocaleLowerCase() === name?.toLocaleLowerCase());
   if (character) choose(character, false);
   else clearSearch(false);
 });
 
 const initialCharacterName = new URL(window.location.href).searchParams.get('character');
-const initialCharacter = characters.find(({ name }) => name.toLocaleLowerCase() === initialCharacterName?.toLocaleLowerCase());
+const initialCharacter = charactersWithPreferences.find(({ name }) => name.toLocaleLowerCase() === initialCharacterName?.toLocaleLowerCase());
 if (initialCharacter) choose(initialCharacter, false);
 
 input.focus();
