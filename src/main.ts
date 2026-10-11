@@ -65,6 +65,7 @@ const clearButton = root.querySelector<HTMLButtonElement>(".clear-button")!;
 const result = root.querySelector<HTMLElement>("#result")!;
 const bookmarkAction = root.querySelector<HTMLElement>("#bookmark-action")!;
 const bookmarkHome = root.querySelector<HTMLElement>("#bookmark-home")!;
+const bookmarkSidebar = root.querySelector<HTMLElement>(".bookmark-sidebar")!;
 const rosterToggle = root.querySelector<HTMLButtonElement>("#roster-toggle")!;
 const roster = root.querySelector<HTMLDivElement>("#all-characters")!;
 
@@ -101,6 +102,27 @@ function saveBookmarks() {
     window.localStorage.setItem(bookmarkStorageKey, JSON.stringify(bookmarks));
   } catch {
     // Keep bookmarks available for the current page even if browser storage is unavailable.
+  }
+}
+
+function syncBookmarkHomePlacement() {
+  const mobileSlot = result.querySelector<HTMLElement>("#bookmark-panel-slot");
+  const viewportWidth = document.documentElement.clientWidth;
+  const hasWideBookmarkLayout = viewportWidth >= 455;
+  const pageShell = root.querySelector<HTMLElement>(".page-shell")!;
+  pageShell.classList.toggle("has-wide-bookmarks", hasWideBookmarkLayout);
+  document.documentElement.classList.toggle(
+    "has-wide-bookmarks",
+    hasWideBookmarkLayout,
+  );
+  pageShell.classList.toggle(
+    "compact-wide-results",
+    hasWideBookmarkLayout && viewportWidth < 720,
+  );
+  if (selected && !hasWideBookmarkLayout && mobileSlot) {
+    mobileSlot.append(bookmarkHome);
+  } else {
+    bookmarkSidebar.append(bookmarkHome);
   }
 }
 
@@ -267,11 +289,13 @@ function renderResult(character: CharacterGifts) {
         : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named gift preferences have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`
     }
     <div class="character-actions-row">
-      <button type="button" class="bookmark-banner${bookmarks.includes(character.name) ? " is-bookmarked" : ""}" data-bookmark-character="${escapeHtml(character.name)}" aria-pressed="${bookmarks.includes(character.name)}"><svg class="bookmark-icon" viewBox="0 0 16 20" aria-hidden="true" focusable="false"><path d="M3 1.5h10v17l-5-3.5-5 3.5z" /></svg><span class="bookmark-label">${bookmarks.includes(character.name) ? "Bookmarked" : "Bookmark"}</span></button>
       ${hasGifts ? `<aside class="frequency-legend" aria-label="Relative popularity"><span class="legend-title">Relative popularity</span><ul><li><span class="gift-item frequency-low has-tooltip" data-tooltip="Items appearing on fewer than 5 preference lists" tabindex="0" aria-label="Unpopular: Items appearing on fewer than 5 preference lists">Unpopular</span></li><li><span class="gift-item frequency-mid has-tooltip" data-tooltip="Items appearing on 5-9 preference lists" tabindex="0" aria-label="Average: Items appearing on 5-9 preference lists">Average</span></li><li><span class="gift-item frequency-high has-tooltip" data-tooltip="Items appearing on more than 9 preference lists" tabindex="0" aria-label="Popular: Items appearing on more than 9 preference lists">Popular</span></li><li><span class="gift-item favorite has-tooltip" data-tooltip="Items loved by at least 1 other character" tabindex="0" aria-label="Loved: items loved by at least 1 other character">Loved<small class="loved-elsewhere-mark" aria-hidden="true">♥</small></span></li></ul></aside>` : ""}
+      <button type="button" class="bookmark-banner${bookmarks.includes(character.name) ? " is-bookmarked" : ""}" data-bookmark-character="${escapeHtml(character.name)}" aria-pressed="${bookmarks.includes(character.name)}"><svg class="bookmark-icon" viewBox="0 0 16 20" aria-hidden="true" focusable="false"><path d="M3 1.5h10v17l-5-3.5-5 3.5z" /></svg><span class="bookmark-label">${bookmarks.includes(character.name) ? "Bookmarked" : "Bookmark"} ${escapeHtml(character.name)}</span></button>
     </div>
+    <div id="bookmark-panel-slot"></div>
     ${character.automaticRecruitment ? `<aside class="recruitment-note" role="note"><span aria-hidden="true">✦</span><p>${escapeHtml(character.automaticRecruitment)}</p></aside>` : ""}
   `;
+  syncBookmarkHomePlacement();
 }
 
 function updateCharacterUrl(name?: string) {
@@ -313,6 +337,7 @@ function clearSearch(updateUrl = true) {
   suggestions = [];
   input.value = "";
   result.innerHTML = "";
+  syncBookmarkHomePlacement();
   renderBookmarkHome();
   root.querySelector(".page-shell")!.classList.remove("has-character");
   clearButton.hidden = true;
@@ -321,6 +346,8 @@ function clearSearch(updateUrl = true) {
   input.removeAttribute("aria-activedescendant");
   window.clearTimeout(timer);
 }
+
+window.addEventListener("resize", syncBookmarkHomePlacement);
 
 root.addEventListener("click", (event) => {
   const button = (event.target as HTMLElement).closest<HTMLButtonElement>(
@@ -354,7 +381,9 @@ function syncBookmarkButtons() {
   );
   button.dataset.tooltip = `${isBookmarked ? "Unbookmark" : "Bookmark"} ${button.dataset.bookmarkCharacter ?? "character"}`;
   const label = button.querySelector<HTMLElement>(".bookmark-label");
-  if (label) label.textContent = isBookmarked ? "Bookmarked" : "Bookmark";
+  if (label) {
+    label.textContent = `${isBookmarked ? "Bookmarked" : "Bookmark"} ${button.dataset.bookmarkCharacter ?? "character"}`;
+  }
   });
 }
 
@@ -385,6 +414,7 @@ input.addEventListener("input", () => {
   root.querySelector(".page-shell")!.classList.remove("has-character");
   clearButton.hidden = query.length === 0;
   result.innerHTML = "";
+  syncBookmarkHomePlacement();
   window.clearTimeout(timer);
   if (!query.trim()) {
     list.hidden = true;
@@ -531,6 +561,7 @@ const initialCharacter = charactersWithPreferences.find(
   ({ name }) =>
     name.toLocaleLowerCase() === initialCharacterName?.toLocaleLowerCase(),
 );
+syncBookmarkHomePlacement();
 if (initialCharacter) choose(initialCharacter, false);
 else renderBookmarkHome();
 

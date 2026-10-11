@@ -13,6 +13,7 @@
   --gilt: #b39153;
   --wine: #813e4e;
   --indigo: #464c70;
+  --bookmark-panel-width: 170px;
   --brand-title-size: clamp(25px, 3.5vw, 32px);
   --brand-subtitle-size: clamp(19.5px, 2.73vw, 25px);
 }
@@ -53,12 +54,12 @@ h1 em { display: inline; margin-left: 5px; color: #e1c17c; font-size: var(--bran
 .suggestions li:hover, .suggestions li:focus-visible, .suggestions li[aria-selected="true"] { color: #292e40; background: #e9ddc6; box-shadow: inset 3px 0 var(--gilt); }
 .option-arrow { color: var(--gilt); }
 .result { position: relative; max-width: 720px; margin: 0 auto; }
-.gift-columns { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 15px; animation: appear .24s ease-out; }
-.gift-columns.single { grid-template-columns: minmax(0, 1fr); }
+.gift-columns { display: grid; grid-template-columns: repeat(2, minmax(255px,355px)); justify-content: center; gap: 10px; animation: appear .24s ease-out; }
+.gift-columns.single { grid-template-columns: minmax(0, 355px); }
 .recruitment-note { display: flex; align-items: flex-start; gap: 9px; margin-top: 12px; padding: 11px 14px; border: 1px solid rgba(216,199,164,.82); color: #5d5140; background: linear-gradient(110deg, rgba(247,240,225,.82), rgba(251,248,240,.74)); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); box-shadow: inset 0 1px rgba(255,255,255,.62); }
 .recruitment-note > span { flex: 0 0 auto; color: #9a7540; font: 16px/1.2 'Playfair Display', Georgia, serif; }
 .recruitment-note p { margin: 0; font: 12px/1.5 Georgia, serif; }
-.character-actions-row { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 8px 14px; margin-top: 11px; }
+.character-actions-row { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 11px; margin-top: 11px; }
 .bookmark-banner { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; gap: 8px; width: fit-content; margin: 0; padding: 8px 16px; border: 1px solid rgba(179,145,83,.55); border-radius: 999px; color: #5e4b30; background: linear-gradient(110deg, rgba(247,240,225,.94), rgba(251,248,240,.92)); box-shadow: inset 0 1px rgba(255,255,255,.72); font: 13px Georgia, serif; cursor: pointer; transition: background .16s ease, border-color .16s ease, box-shadow .16s ease; }
 .character-actions-row > .bookmark-banner { grid-column: 1; justify-self: start; }
 .bookmark-banner:hover, .bookmark-banner:focus-visible { border-color: #a77c3c; background: #fffaf0; box-shadow: 0 3px 10px rgba(63,49,31,.1), inset 0 1px rgba(255,255,255,.85); }
@@ -74,13 +75,14 @@ h1 em { display: inline; margin-left: 5px; color: #e1c17c; font-size: var(--bran
 .bookmark-icon-button:hover, .bookmark-icon-button:focus-visible { border-color: #a77c3c; background: #fffaf0; box-shadow: 0 3px 10px rgba(63,49,31,.1), inset 0 1px rgba(255,255,255,.85); }
 .bookmark-icon-button.is-bookmarked { border-color: #a3374c; color: #7c3447; background: linear-gradient(110deg, #f9e8e9, #fff8f3); }
 .bookmark-home { max-width: 720px; margin: 0 auto 18px; padding: 17px 20px; border: 1px solid rgba(222,213,196,.9); border-right: 2px solid var(--gilt); background: linear-gradient(145deg, rgba(255,253,247,.88), rgba(247,243,233,.82)); box-shadow: 0 8px 24px rgba(40,43,55,.06); }
+#bookmark-panel-slot .bookmark-home { margin-top: 11px; }
 .bookmark-home h2 { padding-bottom: 14px; margin: 0 0 13px; border-bottom: 1px solid #e9e1d2; color: #33394c; font: 500 19px/1.1 'Playfair Display', Georgia, serif; white-space: nowrap; }
 .bookmark-home p { margin: 0; color: #77716a; font: 12px/1.5 Georgia, serif; }
 .bookmark-home ul { display: flex; flex-direction: column; gap: 7px; margin: 0; padding: 0; list-style: none; }
 .bookmark-home a { display: inline-flex; align-items: center; gap: 8px; min-width: 0; padding: 7px 10px; border: 1px solid #e5dccb; color: #494c58; background: #fffdf8; font-size: 12px; text-decoration: none; overflow-wrap: anywhere; }
+@media (min-width: 601px) { .bookmark-home a { width: 100%; } }
 .bookmark-home a:hover, .bookmark-home a:focus-visible { border-color: #c5a66c; color: #292e40; background: #fbf5e7; }
-.bookmark-home a span { color: var(--gilt); }
-.page-shell.has-character .bookmark-home { display: none; }
+.bookmark-home a span { margin-left: auto; color: var(--gilt); }
 .gift-card { position: relative; padding: 21px 22px 20px; background: linear-gradient(145deg, rgba(255,253,247,.84), rgba(247,243,233,.76)); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); border: 1px solid rgba(222,213,196,.9); border-top: 2px solid var(--gilt); border-radius: 3px 10px 3px 10px; min-height: 173px; box-shadow: 0 8px 24px rgba(40,43,55,.07); }
 .gift-card:hover, .gift-card:focus-within { z-index: 2; }
 .card-heading { display: flex; align-items: center; gap: 11px; padding-bottom: 14px; margin-bottom: 13px; border-bottom: 1px solid #e9e1d2; }
@@ -114,14 +116,22 @@ h1 em { display: inline; margin-left: 5px; color: #e1c17c; font-size: var(--bran
 .empty-state small { color: #99998e; font-size: 11px; }
 [hidden] { display: none !important; }
 @keyframes appear { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
-@media (max-width: 600px) { :root { --brand-title-size: clamp(23px, 7vw, 29px); --brand-subtitle-size: clamp(17.94px, 5.46vw, 22.62px); } .hero-inner { padding: 10px 18px 26px; } .page-shell { padding: 18px 18px 28px; } .masthead { min-height: 44px; margin-bottom: 9px; } .search-panel { padding: 13px 0 11px; } .gift-columns { grid-template-columns: 1fr; gap: 10px; } .gift-card { min-height: auto; padding: 18px; } .all-characters ul { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1240px) {
-  .page-shell { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 720px) minmax(0, 1fr); justify-content: stretch; align-items: start; gap: 0; max-width: 1320px; }
-  .bookmark-sidebar { grid-column: 1; position: sticky; z-index: 2; align-self: start; justify-self: end; top: 18px; display: flex; flex-direction: column; gap: 12px; width: fit-content; max-width: 210px; margin: 0 22px 0 0; }
-  .bookmark-action { display: block; width: 100%; }
-  .bookmark-home { width: 100%; margin: 0; padding: 16px; }
-  .page-shell.has-character .bookmark-home { display: block; }
-  .character-actions-row .bookmark-banner { display: none; }
-  .result { grid-column: 2; width: 100%; margin: 0; }
+@media (max-width: 1239px) {
+  .character-actions-row { grid-template-columns: minmax(0, 1fr); justify-items: center; }
+  .character-actions-row > .bookmark-banner { grid-column: 1; justify-self: center; }
+  .character-actions-row .frequency-legend { grid-column: 1; width: 100%; }
 }
+@media (max-width: 600px) { :root { --brand-title-size: clamp(23px, 7vw, 29px); --brand-subtitle-size: clamp(17.94px, 5.46vw, 22.62px); } .hero-inner { padding: 10px 18px 26px; } .page-shell { padding: 18px 18px 28px; } .masthead { min-height: 44px; margin-bottom: 9px; } .search-panel { padding: 13px 0 11px; } .gift-columns { grid-template-columns: minmax(0, 1fr); gap: 10px; } .gift-card { min-height: auto; padding: 18px; } .all-characters ul { grid-template-columns: repeat(2, 1fr); } }
+.page-shell.has-wide-bookmarks { max-width: none; padding-right: 0; padding-left: 0; }
+.page-shell.has-wide-bookmarks .bookmark-sidebar { position: absolute; z-index: 2; top: 18px; left: max(10px, calc(50% - 540px)); display: flex; flex-direction: column; gap: 12px; width: var(--bookmark-panel-width); max-width: var(--bookmark-panel-width); margin: 0; }
+.page-shell.has-wide-bookmarks .bookmark-action { display: block; width: 100%; }
+.page-shell.has-wide-bookmarks .bookmark-home { width: 100%; margin: 0; padding: 16px; }
+.page-shell.has-wide-bookmarks.has-character .bookmark-home { display: block; }
+.page-shell.has-wide-bookmarks .character-actions-row .bookmark-banner { display: none; }
+.page-shell.has-wide-bookmarks .result { position: relative; left: max(190px, calc(50% - 360px)); width: min(720px, calc(100% - 200px)); max-width: 720px; margin: 0; }
+.page-shell.compact-wide-results .gift-columns { grid-template-columns: minmax(0, 1fr); justify-content: stretch; }
+html.has-wide-bookmarks .hero-inner { max-width: none; padding-right: 0; padding-left: 0; }
+html.has-wide-bookmarks .search-panel { position: relative; left: auto; width: min(720px, calc(100% - 200px)); margin: 0 auto; }
+@media (max-width: 719px) { .gift-columns.single { grid-template-columns: minmax(0, 1fr); justify-content: stretch; } }
+@media (min-width: 455px) and (max-width: 1100px) { .hero-band::after { display: none; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; transition-delay: 0ms !important; } }
