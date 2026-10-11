@@ -75,7 +75,7 @@ const records: Record<string, GiftRecord> = {
       { name: "Concentrated Garum", unverified: true },
       "Niiza Garum", "Crimson Ghosh", "Outdoor Cooking Set",
       "Kitten Figurine", "Protection Figurine", "Crimson Bull Figure", "Jade Panther Figure",
-      "Sharp Dagger", "Joint-Relief Gloves", "Skin Balm", "Exquisite Ring"
+      "Sharp Dagger", "Joint-Relief Gloves", "Skin Balm", "Exquisite Ring", "Dual Fish Knives"
     ]
   },
   "Bonaventure": {
@@ -151,7 +151,7 @@ const records: Record<string, GiftRecord> = {
   },
   "Fabio": {
     reallyLiked: [
-      "Morfis Almanac", "Crimson Ghosh", "Energizing Ghosh", "Volcano Ghosh",
+      "Morfis Almanac", "Crimson Ghosh", "Energizing Ghosh", "Jade Ghosh", "Volcano Ghosh",
       "Common Coffee", "Select Coffee", "Southern Coffee", "Orgus Coffee",
       "Rugged Blade", "Eastern Tea Leaves", "Tome from Away"
     ]
@@ -177,7 +177,7 @@ const records: Record<string, GiftRecord> = {
   "Goliath": {
     loved: ["Volcano Ghosh"],
     reallyLiked: [
-      "Energizing Ghosh", "Mature Ghosh", "Mature Shosh", "Protection Figurine",
+      "Energizing Ghosh", "Jade Ghosh", "Mature Ghosh", "Mature Shosh", "Protection Figurine",
       "Simple Pastries", "Strategy Manuscript"
     ]
   },
@@ -301,7 +301,7 @@ const records: Record<string, GiftRecord> = {
   },
   "Noctula": {
     reallyLiked: [
-      "Crimson Ghosh", "Eastern Tea Leaves", "Arrowhead Gem",
+      "Crimson Ghosh", "Eastern Tea Leaves", "Arrowhead Gem", "Strategy Manuscript",
       "Morfis Almanac", "Training Weights", "Training Bracelet", "Antique Medal", "Tome from Away", "Sharp Dagger"
     ]
   },
@@ -399,21 +399,21 @@ const records: Record<string, GiftRecord> = {
     reallyLiked: [
       "Eastern Black Silk", "Ceremonial Spear", "Crimson Ghosh", "Orgus Coffee",
       "Flower Painting", "Sharp Fishhook", "Morfis Almanac", "Poems of the Greats",
-      "Strategy Manuscript"
+      "Strategy Manuscript", "The Works of Dante"
     ]
   },
   "Simon": {
     loved: ["Portrait of Yu Phas", "Rancid Garum", "Shield Portrait"],
     reallyLiked: ["Flower Painting", "Arrowhead Gem", "Joint-Relief Gloves",
       { name: "Eastern Board Game", unverified: true }, "Pickled Bulbs",
-      { name: "Outdoor Cooking Set", unverified: true }, { name: "Eastern Tea Leaves", unverified: true },
+      { name: "Eastern Tea Leaves", unverified: true },
       "Pickled Vegetables"]
   },
   "Sha Lan": {
     loved: ["Portrait of Yu Phas", "Special “Medicine”"],
     reallyLiked: [
-      "Energizing Ghosh", "Garum", "Small Teff", "Kitten Figurine", "Blue-Rose Bouquet", "Rare Spices",
-      { name: "Pastry Cookbook", unverified: true }, { name: "Eastern Tea Leaves", unverified: true },
+      "Energizing Ghosh", "Garum", "Alecto Garum", "Smooth Garum", "Small Teff", "Kitten Figurine", "Blue-Rose Bouquet", "Rare Spices",
+      "Pastry Cookbook", { name: "Eastern Tea Leaves", unverified: true },
       { name: "Sturdy Rucksack", unverified: true },
       { name: "Ceremonial Spear", unverified: true }, { name: "Arrowhead Gem", unverified: true }
     ]
