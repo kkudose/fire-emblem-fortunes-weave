@@ -398,8 +398,14 @@ const records: Record<string, GiftRecord> = {
   },
   "Sha Lan": {
     loved: ["Portrait of Yu Phas", "Special “Medicine”"],
-    reallyLiked: [{ name: "Ceremonial Spear", unverified: true }, { name: "Arrowhead Gem", unverified: true },
-      { name: "Flexible Fishing Rod", unverified: true }, { name: "Sharp Fishhook", unverified: true }]
+    reallyLiked: [
+      { name: "Energizing Ghosh", unverified: true }, { name: "Garum", unverified: true },
+      { name: "Small Teff", unverified: true }, { name: "Kitten Figurine", unverified: true },
+      { name: "Blue-Rose Bouquet", unverified: true }, { name: "Rare Spices", unverified: true },
+      { name: "Pastry Cookbook", unverified: true }, { name: "Eastern Tea Leaves", unverified: true },
+      { name: "Sturdy Rucksack", unverified: true },
+      { name: "Ceremonial Spear", unverified: true }, { name: "Arrowhead Gem", unverified: true }
+    ]
   },
   "Sirocco": {
     loved: ["Arrowhead Gem", "Crimson Ghosh", "Volcano Ghosh"],
