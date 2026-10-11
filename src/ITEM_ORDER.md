@@ -4,9 +4,9 @@ This file compiles gift item order supplied from the in-game menu. It is not use
 
 **Unknown** means an item's position has not been supplied; it does not mean that the item or its character preferences are unknown. This working list combines names in `gifts.ts` with additional gifts identified in order observations, including `Dual Fish Knives`, `Full Sewing Kit`, `Red-Rose Bouquet`, and `Box of Treats`. It is not a verified complete inventory of every in-game gift.
 
-The numbered list below is a deduplicated working order. Oct 3 is the backbone where available; Oct 2 and the Oct 4 screenshots add entries and relative-order constraints. Screenshot gaps are not evidence that an item is absent from the full catalog.
+The numbered list below is a deduplicated working order. Oct 3 is the backbone where available; Oct 2 and the Oct 4 and Oct 11 screenshots add entries and relative-order constraints. Screenshot gaps are not evidence that an item is absent from the full catalog. Repeated rows across screenshots are continuity overlaps; an item appears only once in the compiled list.
 
-## Compiled working order (Oct 4)
+## Compiled working order (Oct 11)
 
 This is a linearized working order, not a claim that every adjacent pair has been directly confirmed. See discrepancies below for inserted entries whose exact slots are not fixed by the available evidence.
 
@@ -40,58 +40,59 @@ This is a linearized working order, not a claim that every adjacent pair has bee
 28. Young Shosh
 29. Mature Shosh
 30. Light Shosh
-31. Common Coffee
-32. Select Coffee
-33. Southern Coffee
-34. Orgus Coffee
-35. Huge Fish Eyeball
-36. Meaty Delicacy
-37. Odd Vegetable Seeds
-38. Outdoor Cooking Set
-39. Strong Seasonings
-40. Home-Recipe Book
-41. Pastry Cookbook
-42. Herbal Recipe Guide
-43. Village Recipes
-44. Fodlan Tea
-45. Eastern Tea Leaves
-46. Kitten Figurine
-47. Magic-Trick Set
-48. Protection Figurine
-49. Sharp Fishhook
-50. Sturdy Rucksack
-51. Mane Ornament
-52. Dagda Beard Grass
-53. Crimson Bull Figure
-54. Jade Panther Figure
-55. The Works of Dante
-56. The Knight’s Suitors
-57. Trader’s Handbook
-58. Thick Foreign Tome
-59. Tales of the Arena
-60. School Scandal
-61. Sharp Dagger
-62. Dual Fish Knives
-63. Rugged Blade
-64. Ceremonial Spear
-65. Training Weights
-66. Training Pillar
-67. Training Bracelet
-68. Imitation Medal
-69. Joint-Relief Gloves
-70. Full Sewing Kit
-71. Skin Balm
-72. Eastern Black Silk
-73. Board-Game Tactics
-74. Spirit Board Game
-75. Ebony Game Board
-76. Exquisite Ring
-77. Red-Rose Bouquet
-78. Gaudy Bangle
-79. Blue-Rose Bouquet
-80. Eastern Earrings
-81. Pack of Pastels
-82. Pegasus Panorama
+31. Aromatic Shosh
+32. Common Coffee
+33. Select Coffee
+34. Southern Coffee
+35. Orgus Coffee
+36. Huge Fish Eyeball
+37. Meaty Delicacy
+38. Odd Vegetable Seeds
+39. Outdoor Cooking Set
+40. Strong Seasonings
+41. Home-Recipe Book
+42. Pastry Cookbook
+43. Herbal Recipe Guide
+44. Village Recipes
+45. Fodlan Tea
+46. Eastern Tea Leaves
+47. Kitten Figurine
+48. Magic-Trick Set
+49. Protection Figurine
+50. Sharp Fishhook
+51. Sturdy Rucksack
+52. Mane Ornament
+53. Dagda Beard Grass
+54. Crimson Bull Figure
+55. Jade Panther Figure
+56. The Works of Dante
+57. The Knight’s Suitors
+58. Trader’s Handbook
+59. Thick Foreign Tome
+60. Tales of the Arena
+61. School Scandal
+62. Sharp Dagger
+63. Dual Fish Knives
+64. Rugged Blade
+65. Ceremonial Spear
+66. Training Weights
+67. Training Pillar
+68. Training Bracelet
+69. Imitation Medal
+70. Joint-Relief Gloves
+71. Full Sewing Kit
+72. Skin Balm
+73. Eastern Black Silk
+74. Board-Game Tactics
+75. Spirit Board Game
+76. Ebony Game Board
+77. Exquisite Ring
+78. Red-Rose Bouquet
+79. Gaudy Bangle
+80. Blue-Rose Bouquet
+81. Eastern Earrings
+82. Pack of Pastels
+83. Pegasus Panorama
 
 ## Unknown positions
 
@@ -100,7 +101,6 @@ These names have appeared in the working inventory or preference data but have n
 - Ahm Lu Cloth
 - Alecto Garum
 - Antique Medal
-- Aromatic Shosh
 - Arrowhead Gem
 - Bagua Divination Set
 - Blue Shosh
@@ -140,8 +140,9 @@ These names have appeared in the working inventory or preference data but have n
 
 - **Oct 2 vs Oct 3:** The Oct 3 list adds many entries and leaves out Home-Recipe Book and Wing Fletching, but preserves the relative order of entries shared with Oct 2. There is no confirmed shared-item reorder between those two transcriptions.
 - **Oct 4 screenshot insertions:** Screenshots place Yarc Milk before Jamel Milk; Strong Cervi after Weak Cervi and before Mellow Pastries; Mellow Pastries before Fragrant Pastries; Fragrant Pastries before Box of Treats before Candy Crystals; Garum before Smooth Garum before Young Ghosh; Crimson Ghosh before Young Shosh; Meaty Delicacy before Strong Seasonings; Home-Recipe Book before Herbal Recipe Guide; and Sharp Dagger between School Scandal and Training Bracelet. The exact slots of these additions relative to nearby unseen items are not all established. Home-Recipe Book was absent from the Oct 3 transcription but appears in the Oct 4 screenshot.
+- **Oct 11 screenshot sequence:** Jamel Milk → Weak Cervi → Strong Cervi → Simple Pastries → Box of Treats → Candy Crystals → Garum → Smooth Garum → Young Ghosh → Mature Ghosh → Jade Ghosh → Secret Ghosh → Southern Ghosh → Volcano Ghosh → Crimson Ghosh → Young Shosh → Mature Shosh → Light Shosh → Aromatic Shosh → Common Coffee → Select Coffee → Huge Fish Eyeball → Strong Seasonings → Home-Recipe Book → Village Recipes → Fodlan Tea → Kitten Figurine → Sharp Fishhook → Mane Ornament → Dagda Beard Grass → Crimson Bull Figure → The Knight’s Suitors → Trader’s Handbook → School Scandal → Sharp Dagger → Full Sewing Kit → Skin Balm → Spirit Board Game → Pack of Pastels → Pegasus Panorama. Repeated rows at image boundaries (Jade Ghosh, Select Coffee, Dagda Beard Grass, and Crimson Bull Figure) are continuity overlaps and are counted once.
 - **Linearization choices:** The exact relative slots of Strong Cervi vs Pure-White Cervi/Simple Pastries; Box of Treats vs Coffee Pastries/Saraminian Sweets; Garum/Smooth Garum vs Niiza/Rancid Garum; Meaty Delicacy vs the other entries before Strong Seasonings; and Crimson Ghosh vs Special “Medicine” are not established. The numbered list picks one usable sequence where the evidence leaves these open.
-- **Repeated rows:** Crimson Bull Figure at the end of screenshot 2 and start of screenshot 1 is one item. Young Ghosh at the end of screenshot 4 and start of screenshot 3 is one item. The row after Crimson Ghosh in screenshot 3 is Young Shosh, so there is no duplicate Young Ghosh there.
+- **Repeated rows:** Repeated names at screenshot boundaries are continuity overlaps, not extra items. Across the screenshots, Jade Ghosh, Select Coffee, Dagda Beard Grass, Crimson Bull Figure, and Young Ghosh are each counted once. After Crimson Ghosh, the screenshot shows Young Shosh.
 - **Remaining gaps:** The images are partial menu views. They do not establish adjacency, or the order of unseen entries such as Common Coffee through Southern Coffee, nor every item's exact slot in the complete catalog.
 
 ## Earlier order sequence (Oct 3)

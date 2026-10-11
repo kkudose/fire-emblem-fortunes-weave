@@ -29,6 +29,7 @@ export const knownItemOrder = [
   'Young Shosh',
   'Mature Shosh',
   'Light Shosh',
+  'Aromatic Shosh',
   'Common Coffee',
   'Select Coffee',
   'Southern Coffee',
