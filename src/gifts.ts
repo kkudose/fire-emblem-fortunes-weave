@@ -75,7 +75,8 @@ const records: Record<string, GiftRecord> = {
       { name: "Concentrated Garum", unverified: true },
       "Niiza Garum", "Crimson Ghosh", "Outdoor Cooking Set",
       "Kitten Figurine", "Protection Figurine", "Crimson Bull Figure", "Jade Panther Figure",
-      "Sharp Dagger", "Joint-Relief Gloves", "Skin Balm", "Exquisite Ring", "Dual Fish Knives"
+      "Sharp Dagger", "Joint-Relief Gloves", "Skin Balm", "Exquisite Ring", "Dual Fish Knives",
+      "Pegasus Panorama"
     ]
   },
   "Bonaventure": {
@@ -121,7 +122,7 @@ const records: Record<string, GiftRecord> = {
       "Coffee Pastries", "Common Coffee", "Select Coffee",
       "Southern Coffee", "Home-Recipe Book", "Herbal Recipe Guide",
       "Crimson Bull Figure", "Jade Panther Figure", "Crafting Knives", "Sharp Dagger",
-      "Ceremonial Spear", "Eastern Black Silk"
+      "School Scandal", "Ceremonial Spear", "Eastern Black Silk"
     ]
   },
   "Diego": {

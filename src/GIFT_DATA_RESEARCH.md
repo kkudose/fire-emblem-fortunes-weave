@@ -152,4 +152,8 @@ The exact-item check found no second, non-derivative source establishing another
 
 The user confirmed these exact Really Liked reactions in-game: Alexandra — Dual Fish Knives and Niiza Garum; Sha Lan — Alecto Garum and Pastry Cookbook; Fabio — Jade Ghosh; Goliath — Jade Ghosh; Noctula — Strategy Manuscript; Seteth — The Works of Dante. Alexandra's Niiza Garum was already listed as verified; the other five were added, and Sha Lan's Pastry Cookbook was promoted from unverified. User shorthand “Alexa” was resolved to Alexandra and “Noctu” to Noctula from the matching roster names and item context.
 
+The user additionally confirmed Dante — School Scandal as Really Liked in-game; added it as verified.
+
+The user also confirmed Alexandra — Pegasus Panorama as Really Liked in-game; added it as verified. This tier differs from published guides that place it in their top `++`/Loved category, so the direct in-game arrow count takes precedence.
+
 The user also confirmed that Simon does not Love or Really Like Outdoor Cooking Set. Removed that unverified candidate from his lists. This does not establish a negative reaction; it only rules out the two tiers tracked in this catalogue.
