@@ -76,6 +76,8 @@ h1 em { display: inline; margin-left: 5px; color: #e1c17c; font-size: var(--bran
 .bookmark-icon-button.is-bookmarked { border-color: #a3374c; color: #7c3447; background: linear-gradient(110deg, #f9e8e9, #fff8f3); }
 .bookmark-home { max-width: 720px; margin: 0 auto 18px; padding: 17px 20px; border: 1px solid rgba(222,213,196,.9); border-right: 2px solid var(--gilt); background: linear-gradient(145deg, rgba(255,253,247,.88), rgba(247,243,233,.82)); box-shadow: 0 8px 24px rgba(40,43,55,.06); }
 #bookmark-panel-slot .bookmark-home { margin-top: 11px; border-top: 2px solid var(--gilt); border-right: 1px solid rgba(222,213,196,.9); }
+#bookmark-panel-slot .bookmark-home ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; }
+#bookmark-panel-slot .bookmark-home a { width: 100%; }
 .bookmark-home h2 { padding-bottom: 14px; margin: 0 0 13px; border-bottom: 1px solid #e9e1d2; color: #33394c; font: 500 19px/1.1 'Playfair Display', Georgia, serif; white-space: nowrap; }
 .bookmark-home p { margin: 0; color: #77716a; font: 12px/1.5 Georgia, serif; }
 .bookmark-home ul { display: flex; flex-direction: column; gap: 7px; margin: 0; padding: 0; list-style: none; }
