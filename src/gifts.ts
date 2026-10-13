@@ -128,7 +128,8 @@ const records: Record<string, GiftRecord> = {
   "Diego": {
     reallyLiked: [
       "Flower Painting", "Candy Crystals", "Eastern Tea Leaves",
-      "Bow Repair Kit", "Eastern Board Game", "Wing Fletching"
+      "Bow Repair Kit", "Eastern Board Game", "Wing Fletching",
+      "Joint-Relief Gloves"
     ]
   },
   "Dietrich": {
@@ -303,7 +304,8 @@ const records: Record<string, GiftRecord> = {
   "Noctula": {
     reallyLiked: [
       "Crimson Ghosh", "Eastern Tea Leaves", "Arrowhead Gem", "Strategy Manuscript",
-      "Morfis Almanac", "Training Weights", "Training Bracelet", "Antique Medal", "Tome from Away", "Sharp Dagger"
+      "Morfis Almanac", "Training Weights", "Training Bracelet", "Antique Medal",
+      "Tome from Away", "Sharp Dagger", "Training Pillar"
     ]
   },
   "Nuzzuo": {

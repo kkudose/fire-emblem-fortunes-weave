@@ -157,3 +157,7 @@ The user additionally confirmed Dante — School Scandal as Really Liked in-game
 The user also confirmed Alexandra — Pegasus Panorama as Really Liked in-game; added it as verified. This tier differs from published guides that place it in their top `++`/Loved category, so the direct in-game arrow count takes precedence.
 
 The user also confirmed that Simon does not Love or Really Like Outdoor Cooking Set. Removed that unverified candidate from his lists. This does not establish a negative reaction; it only rules out the two tiers tracked in this catalogue.
+
+## Additional direct gift confirmations (2026-10-12)
+
+The user confirmed in-game that Diego Really Likes Joint-Relief Gloves and Noctula Really Likes Training Pillar. Added both exact item-character pairs to their verified Really Liked lists.
