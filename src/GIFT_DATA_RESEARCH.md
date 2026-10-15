@@ -154,6 +154,10 @@ The user confirmed these exact Really Liked reactions in-game: Alexandra — Dua
 
 The user additionally confirmed Dante — School Scandal as Really Liked in-game; added it as verified.
 
+The user confirmed Seteth — Tales of the Arena as Really Liked in-game; added it as verified.
+
+The user corrected Ninae — Blue-Rose Bouquet: she Likes it, but does not Really Like it. Removed it from Ninae's Really Liked candidates. This is a tier correction only; it is not a disliked reaction.
+
 The user also confirmed Alexandra — Pegasus Panorama as Really Liked in-game; added it as verified. This tier differs from published guides that place it in their top `++`/Loved category, so the direct in-game arrow count takes precedence.
 
 The user also confirmed that Simon does not Love or Really Like Outdoor Cooking Set. Removed that unverified candidate from his lists. This does not establish a negative reaction; it only rules out the two tiers tracked in this catalogue.

@@ -298,7 +298,7 @@ const records: Record<string, GiftRecord> = {
     loved: ["Eastern Black Silk", "Portrait of Yu Phas", "Poems of the Greats", "Tales of Adventure"],
     reallyLiked: [
       "Flower Painting", "Ahm Lu Cloth", "Morfis Almanac", "Tome from Away",
-      { name: "Blue-Rose Bouquet", unverified: true }, { name: "Strategy Manuscript", unverified: true }
+      { name: "Strategy Manuscript", unverified: true }
     ]
   },
   "Noctula": {
@@ -402,7 +402,7 @@ const records: Record<string, GiftRecord> = {
     reallyLiked: [
       "Eastern Black Silk", "Ceremonial Spear", "Crimson Ghosh", "Orgus Coffee",
       "Flower Painting", "Sharp Fishhook", "Morfis Almanac", "Poems of the Greats",
-      "Strategy Manuscript", "The Works of Dante"
+      "Strategy Manuscript", "Tales of the Arena", "The Works of Dante"
     ]
   },
   "Simon": {
