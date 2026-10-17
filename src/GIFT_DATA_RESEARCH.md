@@ -171,3 +171,5 @@ The user confirmed in-game that Diego Really Likes Joint-Relief Gloves and Noctu
 The user confirmed in-game that Esmeralda Really Likes Gaudy Bangle; added it as verified.
 
 The user confirmed in-game that Nydine Really Likes Sturdy Rucksack; added it as verified.
+
+The user confirmed in-game that Sha Lan Really Likes Concentrated Garum; added it as verified.

@@ -416,7 +416,7 @@ const records: Record<string, GiftRecord> = {
   "Sha Lan": {
     loved: ["Portrait of Yu Phas", "Special “Medicine”"],
     reallyLiked: [
-      "Energizing Ghosh", "Garum", "Alecto Garum", "Smooth Garum", "Small Teff", "Kitten Figurine", "Blue-Rose Bouquet", "Rare Spices",
+      "Energizing Ghosh", "Garum", "Alecto Garum", "Concentrated Garum", "Smooth Garum", "Small Teff", "Kitten Figurine", "Blue-Rose Bouquet", "Rare Spices",
       "Pastry Cookbook", { name: "Eastern Tea Leaves", unverified: true },
       { name: "Sturdy Rucksack", unverified: true },
       { name: "Ceremonial Spear", unverified: true }, { name: "Arrowhead Gem", unverified: true }
