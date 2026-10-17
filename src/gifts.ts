@@ -292,7 +292,7 @@ const records: Record<string, GiftRecord> = {
     reallyLiked: [
       "Saraminian Sweets", "Arrowhead Gem", "Eastern Black Silk",
       "Joint-Relief Gloves", "Tome from Away", "Horse-Grooming Kit", "Mane Ornament",
-      "Morfis Almanac", "Strategy Manuscript"
+      "Morfis Almanac", "Strategy Manuscript", "Sturdy Rucksack"
     ]
   },
   "Ninae": {

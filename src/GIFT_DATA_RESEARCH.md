@@ -169,3 +169,5 @@ The user confirmed in-game that Diego Really Likes Joint-Relief Gloves and Noctu
 ## Additional direct gift confirmation (2026-10-16)
 
 The user confirmed in-game that Esmeralda Really Likes Gaudy Bangle; added it as verified.
+
+The user confirmed in-game that Nydine Really Likes Sturdy Rucksack; added it as verified.
