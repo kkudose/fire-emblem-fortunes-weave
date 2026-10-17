@@ -149,6 +149,7 @@ const records: Record<string, GiftRecord> = {
       "Fragrant Pastries", "Coffee Pastries",
       "Saraminian Sweets", "Portrait of Yu Phas", "Red Hair Clip", "Blue-Rose Bouquet",
       "Exquisite Ring", "Ahm Lu Cloth", "Skin Balm", "Ceremonial Spear", "Tome from Away",
+      "Gaudy Bangle",
     ]
   },
   "Fabio": {

@@ -165,3 +165,7 @@ The user also confirmed that Simon does not Love or Really Like Outdoor Cooking 
 ## Additional direct gift confirmations (2026-10-12)
 
 The user confirmed in-game that Diego Really Likes Joint-Relief Gloves and Noctula Really Likes Training Pillar. Added both exact item-character pairs to their verified Really Liked lists.
+
+## Additional direct gift confirmation (2026-10-16)
+
+The user confirmed in-game that Esmeralda Really Likes Gaudy Bangle; added it as verified.
