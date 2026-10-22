@@ -111,6 +111,10 @@ The current Really Liked entries for Bonaventure, Fabio, Fianna, Gaitz, Mikaela,
 
 The user verified these exact Really Liked pairs in-game: Ludia — Sturdy Rucksack; Nezha — Training Bracelet and Training Pillar; Noctula — Training Bracelet. Removed the `unverified` marker from Ludia's Sturdy Rucksack and recorded the remaining confirmations as verified entries in `gifts.ts`.
 
+## User-confirmed Peppe coffee reactions (2026-10-21)
+
+The user confirmed Peppe — Common Coffee and Peppe — Select Coffee as Really Liked. Removed their `unverified` markers in `gifts.ts`. Public guides do not agree on or independently establish both exact tiers; this change follows the user's confirmation.
+
 ## Gift-family inference and directionality (2026-10-04)
 
 ### Working rule
