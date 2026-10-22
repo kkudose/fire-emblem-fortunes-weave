@@ -369,7 +369,7 @@ const records: Record<string, GiftRecord> = {
     reallyLiked: [{ name: "Common Coffee", unverified: true },
       { name: "Orgus Coffee", unverified: true }, { name: "Protection Figurine", unverified: true },
       { name: "Select Coffee", unverified: true }, { name: "Southern Coffee", unverified: true },
-      "Simple Pastries", "Small Teff", "Arrowhead Gem"]
+      "Small Teff", "Arrowhead Gem"]
   },
   "Peter": {
     reallyLiked: [
