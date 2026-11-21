@@ -403,7 +403,7 @@ Cai,Eastern Board Game,Really Liked,verified,2,Altema; Dork,false,false
 Cai,Eastern Tea Leaves,Really Liked,unverified,1,Dork,false,false
 Cai,Flexible Fishing Rod,Really Liked,verified,2,Dork; Yuphas Temple,false,false
 Cai,Flower Painting,Really Liked,verified,2,Dork; Raider King,false,false
-Cai,Herbal Recipe Guide,Really Liked,unverified,1,Yuphas Temple,false,false
+Cai,Herbal Recipe Guide,Really Liked,verified,1,Yuphas Temple,false,true
 Cai,History of a Master,Loved,verified,2,Dork; Yuphas Temple,false,false
 Cai,Horse-Grooming Kit,Really Liked,verified,3,Altema; Dork; Yuphas Temple,false,false
 Cai,Huge Fish Eyeball,Really Liked,verified,3,Altema; Dork; Yuphas Temple,false,false
@@ -825,7 +825,7 @@ Dietrich,Protection Figurine,Really Liked,verified,2,Game8 JP; Yuphas Temple,fal
 Dietrich,Pure-White Cervi,Really Liked,verified,3,Dork; Game8 JP; Yuphas Temple,false,false
 Dietrich,Rancid Garum,Loved,verified,2,Dork; Yuphas Temple,false,false
 Dietrich,Rugged Blade,Really Liked,verified,3,Dork; Raider King; Yuphas Temple,true,false
-Dietrich,Saraminian Sweets,Really Liked,verified,4,Altema; Dork; Raider King; Yuphas Temple,false,false
+Dietrich,Saraminian Sweets,Really Liked,verified,4,Altema; Dork; Raider King; Yuphas Temple,false,true
 Dietrich,Sharp Dagger,Really Liked,unverified,1,Yuphas Temple,false,false
 Dietrich,Shield Portrait,Loved,unverified,1,Yuphas Temple,false,false
 Dietrich,Simple Pastries,Really Liked,verified,5,Altema; Dork; Game8 JP; Redfreshet; Yuphas Temple,false,false
@@ -1880,7 +1880,8 @@ Ludia,Jade Panther Figure,Really Liked,verified,2,Dork; Yuphas Temple,false,fals
 Ludia,Kitten Figurine,Really Liked,unverified,1,Altema,false,false
 Ludia,Legendary Garum,Really Liked,verified,3,Altema; Dork; Yuphas Temple,true,false
 Ludia,Magic-Trick Set,Really Liked,verified,3,Altema; Game8 JP; Yuphas Temple,false,false
-Ludia,Mature Shosh,Really Liked,unverified,1,Altema,false,false
+Ludia,Mature Ghosh,Liked,verified,0,,false,true
+Ludia,Mature Shosh,Liked,verified,0,,false,true
 Ludia,Morfis Almanac,Really Liked,verified,2,Dork; Yuphas Temple,true,false
 Ludia,Orgus Coffee,Really Liked,verified,4,Altema; Dork; Game8 JP; Yuphas Temple,false,false
 Ludia,Outdoor Cooking Set,Really Liked,verified,2,Altema; Yuphas Temple,false,false
@@ -1917,7 +1918,7 @@ Ludia,Tome from Away,Loved,verified,2,Dork; Yuphas Temple,false,false
 Ludia,Trader’s Handbook,Really Liked,verified,3,Dork; Game8 JP; Yuphas Temple,true,false
 Ludia,Training Bracelet,Really Liked,verified,4,Altema; Dork; Game8 JP; Yuphas Temple,false,false
 Ludia,Village Recipes,Really Liked,verified,4,Altema; Dork; Game8 JP; Yuphas Temple,false,false
-Ludia,Young Ghosh,Really Liked,unverified,1,Game8 JP,false,false
+Ludia,Young Ghosh,Liked,verified,1,Redfreshet,false,true
 Lysander,Ahm Lu Cloth,Really Liked,unverified,1,Dork,false,false
 Lysander,Antique Medal,Really Liked,verified,2,Altema; Yuphas Temple,false,false
 Lysander,Arrowhead Gem,Loved,unverified,1,Dork,false,false
@@ -2646,7 +2647,7 @@ Peter,Eastern Board Game,Really Liked,unverified,1,Dork,false,false
 Peter,Eastern Tea Leaves,Really Liked,verified,2,Dork; Yuphas Temple,false,false
 Peter,Flower Painting,Really Liked,unverified,1,Dork,false,false
 Peter,Fragrant Pastries,Really Liked,verified,2,Dork; Yuphas Temple,false,false
-Peter,Garum,Really Liked,unverified,1,Yuphas Temple,false,false
+Peter,Garum,Liked,verified,1,Redfreshet,false,true
 Peter,Ginji Cervi,Really Liked,verified,4,Altema; Dork; Game8 JP; Yuphas Temple,false,false
 Peter,Herbal Recipe Guide,Really Liked,verified,2,Altema; Yuphas Temple,false,false
 Peter,History of a Master,Loved,verified,2,Dork; Yuphas Temple,false,false
@@ -2683,7 +2684,7 @@ Peter,Rugged Blade,Really Liked,unverified,1,Dork,false,false
 Peter,Saraminian Sweets,Really Liked,verified,5,Altema; Dork; Game8 JP; Redfreshet; Yuphas Temple,false,false
 Peter,School Scandal,Really Liked,unverified,1,Yuphas Temple,false,false
 Peter,Simple Pastries,Really Liked,verified,4,Altema; Dork; Game8 JP; Yuphas Temple,false,false
-Peter,Smooth Garum,Really Liked,unverified,1,Yuphas Temple,false,false
+Peter,Smooth Garum,Liked,verified,0,,false,true
 Peter,Strong Cervi,Really Liked,verified,5,Altema; Dork; Game8 JP; Redfreshet; Yuphas Temple,false,false
 Peter,Strong Seasonings,Really Liked,unverified,1,Yuphas Temple,false,false
 Peter,Tales of Adventure,Loved,verified,2,Dork; Yuphas Temple,false,false
@@ -3406,7 +3407,7 @@ Ultand,Spirit Board Game,Really Liked,verified,2,Game8 JP; Yuphas Temple,false,f
 Ultand,Strong Seasonings,Really Liked,verified,4,Altema; Dork; Raider King; Yuphas Temple,false,false
 Ultand,Tales of Adventure,Loved,verified,3,Dork; Raider King; Yuphas Temple,false,false
 Ultand,The Knight’s Suitors,Really Liked,verified,3,Game8 JP; Raider King; Yuphas Temple,false,false
-Ultand,The Works of Dante,Really Liked,unverified,1,Yuphas Temple,false,false
+Ultand,The Works of Dante,Really Liked,verified,1,Yuphas Temple,false,true
 Ultand,Tome from Away,Really Liked,verified,2,Dork; Raider King,false,false
 Ultand,Village Recipes,Really Liked,verified,5,Altema; Dork; Game8 JP; Redfreshet; Yuphas Temple,false,false
 Ursula,Ahm Lu Cloth,Really Liked,verified,2,Dork; Raider King,false,false

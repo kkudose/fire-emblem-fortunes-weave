@@ -4,128 +4,129 @@ This file compiles gift item order supplied from the in-game menu. It is not use
 
 **Unknown** means an item's position has not been supplied; it does not mean that the item or its character preferences are unknown. This working list combines names in `gifts.ts` with additional gifts identified in order observations, including `Dual Fish Knives`, `Full Sewing Kit`, `Red-Rose Bouquet`, and `Box of Treats`. It is not a verified complete inventory of every in-game gift.
 
-The numbered list below is a deduplicated working order. Oct 3 is the backbone where available; Oct 2 and the Oct 4 and Oct 11 screenshots add entries and relative-order constraints. The Oct 24 user-supplied dataset adds a further ordered sequence. Gaps in partial observations are not evidence that an item is absent from the full catalog. Repeated rows across observations are continuity overlaps; an item appears only once in the compiled list.
+The numbered list below is a deduplicated working order. Oct 3 is the backbone where available; Oct 2 and the Oct 4 and Oct 11 screenshots add entries and relative-order constraints. The Oct 24 user-supplied dataset and later user-supplied sequences add further ordering evidence. Gaps in partial observations are not evidence that an item is absent from the full catalog. Repeated rows across observations are continuity overlaps; an item appears only once in the compiled list.
 
-## Compiled working order (Oct 24)
+## Compiled working order
 
-This is a linearized working order, not a claim that every adjacent pair has been directly confirmed. See discrepancies below for inserted entries whose exact slots are not fixed by the available evidence.
+This is one linearized working order consistent with the observations, not a claim that every adjacent pair has been directly confirmed. Each supplied sequence records only relative constraints among its named items: for example, `A → F → H` means A precedes F and F precedes H; other items may occur between them. Items omitted from a partial sequence are not thereby absent, and adjacency in this compiled list is not evidence unless a source explicitly establishes it. See discrepancies below for items whose exact slots remain open.
 
 1. Yarc Milk
-2. Jamel Milk
-3. Weak Cervi
-4. Strong Cervi
-5. Pure-White Cervi
-6. Mature Dried Cervi
-7. Ginji Cervi
-8. Simple Pastries
-9. Mellow Pastries
-10. Fragrant Pastries
-11. Coffee Pastries
-12. Saraminian Sweets
-13. Box of Treats
-14. Candy Crystals
-15. Garum
-16. Smooth Garum
-17. Niiza Garum
-18. Rancid Garum
-19. Young Ghosh
-20. Mature Ghosh
-21. Sun Ghosh
-22. Energizing Ghosh
-23. Rustic Ghosh
-24. Jade Ghosh
-25. Secret Ghosh
-26. Southern Ghosh
-27. Volcano Ghosh
-28. Crimson Ghosh
-29. Special “Medicine”
-30. Young Shosh
-31. Mature Shosh
-32. Light Shosh
-33. Blue Shosh
-34. Aromatic Shosh
-35. Common Coffee
-36. Select Coffee
-37. Southern Coffee
-38. Orgus Coffee
-39. Pickled Vegetables
-40. Potted Vegetables
-41. Meaty Delicacy
-42. Huge Fish Eyeball
-43. Odd Vegetable Seeds
-44. Outdoor Cooking Set
-45. Strong Seasonings
-46. Home-Recipe Book
-47. Pastry Cookbook
-48. Herbal Recipe Guide
-49. Village Recipes
-50. Morfis Tea
-51. Fodlan Tea
-52. Eastern Tea Leaves
-53. Kitten Figurine
-54. Magic-Trick Set
-55. Protection Figurine
-56. Flexible Fishing Rod
-57. Bow Repair Kit
-58. Sharp Fishhook
-59. Sturdy Rucksack
-60. Divination Bagua
-61. Mane Ornament
-62. Dagda Beard Grass
-63. Crimson Bull Figure
-64. Jade Panther Figure
-65. The Works of Dante
-66. Horse-Grooming Kit
-67. The Knight’s Suitors
-68. Trader’s Handbook
-69. Thick Foreign Tome
-70. Tales of the Arena
-71. Poems of the Greats
-72. School Scandal
-73. Tome from Away
-74. Strategy Manuscript
-75. Tales of Adventure
-76. Sharp Dagger
-77. Crafting Knives
-78. Dual Fish Knives
-79. Rugged Blade
-80. Ceremonial Spear
-81. Training Weights
-82. Training Pillar
-83. Training Bracelet
-84. Antique Medal
-85. Imitation Medal
-86. Joint-Relief Gloves
-87. History of a Master
-88. Full Sewing Kit
-89. Skin Balm
-90. Decorative Arrows
-91. Eastern Black Silk
-92. Ahm Lu Cloth
-93. Board-Game Tactics
-94. Spirit Board Game
-95. Ebony Game Board
-96. Exquisite Ring
-97. Red-Rose Bouquet
-98. Gaudy Bangle
-99. Blue-Rose Bouquet
-100. Eastern Earrings
-101. Arrowhead Gem
-102. Pack of Pastels
-103. Pegasus Panorama
-104. Flower Painting
-105. Portrait of Yu Phas
+2. Honey Milk
+3. Jamel Milk
+4. Weak Cervi
+5. Strong Cervi
+6. Pure-White Cervi
+7. Mature Dried Cervi
+8. Ginji Cervi
+9. Simple Pastries
+10. Mellow Pastries
+11. Fragrant Pastries
+12. Coffee Pastries
+13. Saraminian Sweets
+14. Box of Treats
+15. Candy Crystals
+16. Garum
+17. Smooth Garum
+18. Alecto Garum
+19. Niiza Garum
+20. Rancid Garum
+21. Young Ghosh
+22. Mature Ghosh
+23. Sun Ghosh
+24. Energizing Ghosh
+25. Rustic Ghosh
+26. Jade Ghosh
+27. Secret Ghosh
+28. Southern Ghosh
+29. Volcano Ghosh
+30. Crimson Ghosh
+31. Special “Medicine”
+32. Young Shosh
+33. Mature Shosh
+34. Light Shosh
+35. Blue Shosh
+36. Aromatic Shosh
+37. Common Coffee
+38. Select Coffee
+39. Southern Coffee
+40. Orgus Coffee
+41. Pickled Vegetables
+42. Potted Vegetables
+43. Meaty Delicacy
+44. Huge Fish Eyeball
+45. Odd Vegetable Seeds
+46. Outdoor Cooking Set
+47. Strong Seasonings
+48. Home-Recipe Book
+49. Pastry Cookbook
+50. Herbal Recipe Guide
+51. Village Recipes
+52. Morfis Tea
+53. Fodlan Tea
+54. Eastern Tea Leaves
+55. Kitten Figurine
+56. Magic-Trick Set
+57. Protection Figurine
+58. Flexible Fishing Rod
+59. Bow Repair Kit
+60. Sharp Fishhook
+61. Sturdy Rucksack
+62. Divination Bagua
+63. Mane Ornament
+64. Dagda Beard Grass
+65. Crimson Bull Figure
+66. Jade Panther Figure
+67. The Works of Dante
+68. Horse-Grooming Kit
+69. The Knight’s Suitors
+70. Trader’s Handbook
+71. Thick Foreign Tome
+72. Tales of the Arena
+73. Poems of the Greats
+74. Wing Fletching
+75. School Scandal
+76. Tome from Away
+77. Strategy Manuscript
+78. Tales of Adventure
+79. Sharp Dagger
+80. Crafting Knives
+81. Dual Fish Knives
+82. Rugged Blade
+83. Ceremonial Spear
+84. Training Weights
+85. Training Pillar
+86. Training Bracelet
+87. Antique Medal
+88. Imitation Medal
+89. Joint-Relief Gloves
+90. History of a Master
+91. Full Sewing Kit
+92. Skin Balm
+93. Decorative Arrows
+94. Eastern Black Silk
+95. Ahm Lu Cloth
+96. Board-Game Tactics
+97. Spirit Board Game
+98. Ebony Game Board
+99. Exquisite Ring
+100. Red-Rose Bouquet
+101. Gaudy Bangle
+102. Blue-Rose Bouquet
+103. Eastern Earrings
+104. Arrowhead Gem
+105. Pack of Pastels
+106. Pegasus Panorama
+107. Flower Painting
+108. Portrait of Yu Phas
 
 ## Unknown positions
 
 These names have appeared in the working inventory or preference data but have not been placed by an order sequence or the screenshots:
 
-- Alecto Garum
 - Concentrated Garum
 - Eastern Board Game
 - Eastern Love Story
 - Everyday Scenes
-- Honey Milk
 - Honey Pastries
 - Morfis Almanac
 - Pickled Bulbs
@@ -143,6 +144,7 @@ These names have appeared in the working inventory or preference data but have n
 - **Oct 24 user-supplied sequence:** Jamel Milk → Weak Cervi → Strong Cervi → Mature Dried Cervi → Ginji Cervi → Simple Pastries → Mellow Pastries → Fragrant Pastries → Coffee Pastries → Saraminian Sweets → Candy Crystals → Garum → Young Ghosh → Mature Ghosh → Sun Ghosh → Energizing Ghosh → Rustic Ghosh → Jade Ghosh → Southern Ghosh → Volcano Ghosh → Crimson Ghosh → Young Shosh → Mature Shosh → Light Shosh → Aromatic Shosh → Common Coffee → Select Coffee → Southern Coffee → Orgus Coffee → Pickled Vegetables → Potted Vegetables → Odd Vegetable Seeds → Outdoor Cooking Set → Strong Seasonings → Morfis Tea → Fódlan Tea → Kitten Figurine → Magic-Trick Set → Flexible Fishing Rod → Bow Repair Kit → Sharp Fishhook → Sturdy Rucksack → Mane Ornament → Dagda Beard Grass → Jade Panther Figure → Horse-Grooming Kit → The Knight’s Suitors → Trader’s Handbook → Thick Foreign Tome → Tales of the Arena → School Scandal → Tome from Away → Crafting Knives → Dual Fish Knives → Ceremonial Spear → Training Weights → Training Pillar → Training Bracelet → Antique Medal → Joint-Relief Gloves → History of a Master → Full Sewing Kit → Skin Balm → Eastern Black Silk → Board-Game Tactics → Spirit Board Game → Exquisite Ring → Gaudy Bangle → Arrowhead Gem → Pack of Pastels → Flower Painting. This adds order information for listed items; unlisted catalog items retain their prior evidence status.
 - **Oct 24 user-supplied sequence:** Tales of the Arena → Poems of the Greats → School Scandal → Strategy Manuscript → Tales of Adventure → Dual Fish Knives. The sequence places three previously unknown items and adds relative-order constraints around already placed items.
 - **Oct 24 user-supplied sequences:** Candy Crystals → Garum → Smooth Garum → Niiza Garum → Rancid Garum → Young Ghosh; Pickled Vegetables → Meaty Delicacy → Huge Fish Eyeball; Volcano Ghosh → Crimson Ghosh → Young Shosh; Light Shosh → Blue Shosh → Aromatic Shosh. These supply the order for Blue Shosh and resolve the previously open relative placements among the garums, Pickled Vegetables/Meaty Delicacy/Huge Fish Eyeball, and Blue Shosh.
+- **New user-supplied sequences:** Poems of the Greats → Wing Fletching → Full Sewing Kit; Smooth Garum → Alecto Garum → Rustic Ghosh; Yarc Milk → Honey Milk → Jamel Milk. These place Honey Milk and Alecto Garum in the compiled list and add the shown relative-order constraints for Wing Fletching.
 - **New user-supplied sequences:** Skin Balm → Decorative Arrows → Eastern Black Silk → Ahm Lu Cloth → Board-Game Tactics; Sturdy Rucksack → Divination Bagua → Dagda Beard Grass; Flower Painting → Portrait of Yu Phas. “Decorative arrow” is normalized to the catalog name Decorative Arrows, and “Dagda beard” to Dagda Beard Grass. The user identified Portrait of Yu Phas as the end of the gift list, so it is placed last; its status as the final item may not be certain.
 - **Linearization choices:** The exact relative slots of Strong Cervi vs Pure-White Cervi/Simple Pastries; Box of Treats vs Coffee Pastries/Saraminian Sweets; and Crimson Ghosh vs Special “Medicine” are not established. The numbered list picks one usable sequence where the evidence leaves these open.
 - **Repeated rows:** Repeated names at screenshot boundaries are continuity overlaps, not extra items. Across the screenshots, Jade Ghosh, Select Coffee, Dagda Beard Grass, Crimson Bull Figure, and Young Ghosh are each counted once. After Crimson Ghosh, the screenshot shows Young Shosh.

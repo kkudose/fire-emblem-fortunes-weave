@@ -1402,8 +1402,7 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; unveri
         "name": "Flower Painting"
       },
       {
-        "name": "Herbal Recipe Guide",
-        "unverified": true
+        "name": "Herbal Recipe Guide"
       },
       {
         "name": "Horse-Grooming Kit"
@@ -6307,10 +6306,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; unveri
         "name": "Magic-Trick Set"
       },
       {
-        "name": "Mature Shosh",
-        "unverified": true
-      },
-      {
         "name": "Morfis Almanac"
       },
       {
@@ -6395,10 +6390,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; unveri
       },
       {
         "name": "Village Recipes"
-      },
-      {
-        "name": "Young Ghosh",
-        "unverified": true
       }
     ]
   },
@@ -8844,10 +8835,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; unveri
         "name": "Fragrant Pastries"
       },
       {
-        "name": "Garum",
-        "unverified": true
-      },
-      {
         "name": "Ginji Cervi"
       },
       {
@@ -8927,10 +8914,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; unveri
       },
       {
         "name": "Simple Pastries"
-      },
-      {
-        "name": "Smooth Garum",
-        "unverified": true
       },
       {
         "name": "Strong Cervi"
@@ -11318,8 +11301,7 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; unveri
         "name": "The Knight’s Suitors"
       },
       {
-        "name": "The Works of Dante",
-        "unverified": true
+        "name": "The Works of Dante"
       },
       {
         "name": "Tome from Away"

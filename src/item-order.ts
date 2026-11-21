@@ -1,5 +1,8 @@
+// One linear extension of the partial order evidence in ITEM_ORDER.md.
+// Rank adjacency does not imply that two gifts were adjacent in a source sequence.
 export const knownItemOrder = [
   'Yarc Milk',
+  'Honey Milk',
   'Jamel Milk',
   'Weak Cervi',
   'Strong Cervi',
@@ -15,6 +18,7 @@ export const knownItemOrder = [
   'Candy Crystals',
   'Garum',
   'Smooth Garum',
+  'Alecto Garum',
   'Niiza Garum',
   'Rancid Garum',
   'Young Ghosh',
@@ -70,6 +74,7 @@ export const knownItemOrder = [
   'Thick Foreign Tome',
   'Tales of the Arena',
   'Poems of the Greats',
+  'Wing Fletching',
   'School Scandal',
   'Tome from Away',
   'Strategy Manuscript',

@@ -7,7 +7,7 @@
 - 64 characters and 127 canonical gifts, drawn from source rows and manual confirmations.
 - 6 external sources: Altema, Dork, Game8 JP, Raider King, Redfreshet, and Yuphas Temple. The direct in-game confirmation ledger is stored as a separate seventh source.
 - 15,657 source rows across the six external sources; all source labels, lower tiers, statuses, and available scores are retained.
-- 48 active manual confirmations: 43 Really Liked, 2 Loved, and 3 Liked.
+- 56 active manual confirmations: 46 Really Liked, 2 Loved, and 8 Liked.
 - 3,563 compiled high-tier candidates and their outcomes: 2,626 verified and 937 unverified. Outcomes are 490 verified Loved, 2,081 verified Really Liked, 55 verified Liked, 215 unverified Loved, and 722 unverified Really Liked.
 - 52 previously unverified higher-tier candidates now resolve to a lower tier because two independent sources agree on that lower tier. Those lower-tier sources are listed in `eligible_sources`; the higher-tier outlier is omitted. Three additional Liked outcomes are direct user confirmations.
 - Loved/Really Liked disagreements resolve to Really Liked when at least two independent sources support those upper-positive tiers. A tier disagreement by itself does not make such a pair unverified.
