@@ -15,9 +15,9 @@ To build the site, run `bun run build`.
 
 ## Gift data
 
-Named gifts come from Game8’s “Preferred Gift” list and are checked against the [Fortunes-Weave-Helper reference database](https://github.com/Rico0319/Fortunes-Weave-Helper). [GameSpot](https://www.gamespot.com/articles/fire-emblem-fortunes-weave-gifts-guide/) and provides additional context, but does not confirm each item’s reaction tier.
+Gift reactions are generated from the consolidated `data/gifts.sqlite` database during each production build. Loved and Really Liked entries marked unverified in the database receive the low-confidence indicator in the app. Lower-tier results are omitted from the Loved and Really Liked lists. Do not edit generated gift data by hand; update and recalculate the SQLite database, then rebuild.
 
-For that reason, listed items appear as “Preferred.” “Loved” gifts will be added only when at least two independent sources confirm the top-tier reaction. Characters without named gifts remain searchable.
+Characters without a Loved or Really Liked database entry remain searchable.
 
 ## Recruitment notes
 

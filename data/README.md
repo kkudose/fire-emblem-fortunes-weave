@@ -12,7 +12,7 @@
 - 52 previously unverified higher-tier candidates now resolve to a lower tier because two independent sources agree on that lower tier. Those lower-tier sources are listed in `eligible_sources`; the higher-tier outlier is omitted. Three additional Liked outcomes are direct user confirmations.
 - Loved/Really Liked disagreements resolve to Really Liked when at least two independent sources support those upper-positive tiers. A tier disagreement by itself does not make such a pair unverified.
 
-The previous 1,441-pair app compilation was removed from SQLite. The app's own arrays remain separate from this research database and are not used by its import or consolidation scripts.
+The app reads its Loved and Really Liked lists from a generated TypeScript export of the consolidated SQLite `reactions` table. The export is regenerated as part of every production build; `src/gifts.ts` retains the roster and automatic-recruitment notes, not gift reaction assignments.
 
 ## Source and manual data
 
