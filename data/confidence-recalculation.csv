@@ -1,0 +1,1442 @@
+character,gift,old_tier,new_tier,eligible_source_count,eligible_sources,tier_conflict_normalized,unverified_after_recalculation
+Cai,Ceremonial Spear,loved,loved,1,Yuphas Temple,false,true
+Cai,Dagda Beard Grass,loved,loved,1,Yuphas Temple,false,true
+Cai,Horse-Grooming Kit,loved,loved,1,Yuphas Temple,false,true
+Cai,Mane Ornament,loved,loved,1,Yuphas Temple,false,true
+Cai,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Cai,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Cai,Rancid Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Cai,Strategy Manuscript,loved,loved,1,Yuphas Temple,false,true
+Cai,Training Bracelet,loved,loved,1,Yuphas Temple,false,true
+Cai,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Cai,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Cai,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Cai,Sharp Dagger,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Cai,Sharp Fishhook,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dietrich,Candy Crystals,loved,loved,1,Yuphas Temple,false,true
+Dietrich,Ebony Game Board,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dietrich,Fragrant Pastries,loved,loved,1,Yuphas Temple,false,true
+Dietrich,Mellow Pastries,loved,loved,1,Yuphas Temple,false,true
+Dietrich,Portrait of Yu Phas,loved,loved,1,Yuphas Temple,false,true
+Dietrich,Rugged Blade,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dietrich,Shield Portrait,loved,loved,1,Yuphas Temple,false,true
+Dietrich,Strategy Manuscript,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dietrich,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dietrich,Blue-Rose Bouquet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dietrich,Board-Game Tactics,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dietrich,Crimson Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dietrich,Eastern Black Silk,reallyLiked,reallyLiked,1,Raider King,false,true
+Dietrich,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Dietrich,Ginji Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dietrich,Honey Milk,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dietrich,Honey Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dietrich,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dietrich,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dietrich,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dietrich,Pastry Cookbook,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dietrich,Pegasus Panorama,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dietrich,Protection Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dietrich,Pure-White Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dietrich,Saraminian Sweets,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dietrich,Simple Pastries,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Dietrich,Spirit Board Game,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dietrich,Training Pillar,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dietrich,Training Weights,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Theodora,Ceremonial Spear,loved,loved,1,Yuphas Temple,false,true
+Theodora,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Theodora,Portrait of Yu Phas,loved,loved,1,Yuphas Temple,false,true
+Theodora,Arrowhead Gem,reallyLiked,reallyLiked,1,Raider King,false,true
+Theodora,Dagda Beard Grass,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Decorative Arrows,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Decorative Bow,reallyLiked,reallyLiked,0,,false,true
+Theodora,Dual Fish Knives,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Eastern Black Silk,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Theodora,Eastern Earrings,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Eastern Tea Leaves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Theodora,Exquisite Ring,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Theodora,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Horse-Grooming Kit,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Rare Spices,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Rugged Blade,reallyLiked,reallyLiked,1,Raider King,false,true
+Theodora,Sharp Dagger,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Shield Portrait,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Strong Seasonings,reallyLiked,reallyLiked,0,,false,true
+Theodora,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Theodora,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Arrowhead Gem,loved,loved,2,Yuphas Temple; Raider King,false,false
+Leda,Exquisite Ring,loved,loved,1,Yuphas Temple,false,true
+Leda,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Leda,Full Sewing Kit,loved,loved,1,Yuphas Temple,false,true
+Leda,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Leda,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Leda,Skin Balm,loved,loved,1,Yuphas Temple,false,true
+Leda,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Leda,Aromatic Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Blue Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Brined Fish Guts,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Leda,Dagda Beard Grass,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Eastern Black Silk,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Leda,Eastern Earrings,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Leda,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Leda,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Horse-Grooming Kit,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Jade Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Leda,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Light Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Magic-Trick Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Mature Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Leda,Mature Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Meaty Delicacy,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Pack of Pastels,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Pegasus Panorama,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Leda,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Leda,Shield Portrait,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Southern Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Leda,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Leda,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Leda,Volcano Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Leda,Young Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Hong Hua,Fodlan Tea,loved,loved,1,Yuphas Temple,false,true
+Hong Hua,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Hong Hua,Portrait of Yu Phas,loved,loved,1,Yuphas Temple,false,true
+Hong Hua,Ahm Lu Cloth,reallyLiked,reallyLiked,0,,false,true
+Hong Hua,Candy Crystals,reallyLiked,reallyLiked,0,,false,true
+Hong Hua,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Hong Hua,Common Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Hong Hua,Flower Painting,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Hong Hua,Magic-Trick Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Hong Hua,Mature Dried Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Hong Hua,Mellow Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Hong Hua,Morfis Almanac,reallyLiked,reallyLiked,0,,false,true
+Hong Hua,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Hong Hua,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Hong Hua,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Hong Hua,Strong Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Hong Hua,Tome from Away,reallyLiked,reallyLiked,0,,false,true
+Hong Hua,Weak Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Troy,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Troy,Morfis Almanac,loved,loved,1,Yuphas Temple,false,true
+Troy,Portrait of Yu Phas,loved,loved,1,Yuphas Temple,false,true
+Troy,Rancid Garum,loved,loved,1,Yuphas Temple,false,true
+Troy,Ahm Lu Cloth,reallyLiked,reallyLiked,0,,false,true
+Troy,Board-Game Tactics,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Troy,Candy Crystals,reallyLiked,reallyLiked,0,,false,true
+Troy,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Troy,Flower Painting,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Troy,Fodlan Tea,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Troy,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Troy,Magic-Trick Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Troy,Mature Dried Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Troy,Spirit Board Game,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Troy,Strong Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Troy,Tome from Away,reallyLiked,reallyLiked,0,,false,true
+Troy,Weak Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,Dual Fish Knives,loved,loved,2,Yuphas Temple; Raider King,false,false
+Tialla,Eastern Board Game,loved,loved,2,Yuphas Temple; Raider King,false,false
+Tialla,Ebony Game Board,loved,loved,2,Yuphas Temple; Raider King,false,false
+Tialla,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Tialla,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Tialla,Morfis Almanac,loved,loved,2,Yuphas Temple; Raider King,false,false
+Tialla,Morfis Tea,loved,loved,2,Yuphas Temple; Raider King,false,false
+Tialla,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Tialla,School Scandal,loved,loved,1,Yuphas Temple,false,true
+Tialla,Tome from Away,loved,loved,2,Yuphas Temple; Raider King,false,false
+Tialla,Ahm Lu Cloth,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Tialla,Alecto Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Tialla,Blue-Rose Bouquet,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Tialla,Board-Game Tactics,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Ceremonial Spear,reallyLiked,reallyLiked,1,Raider King,false,true
+Tialla,Concentrated Garum,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Eastern Black Silk,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Tialla,Eastern Love Story,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,Everyday Scenes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,Garum,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Tialla,Ginji Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,Herbal Recipe Guide,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Home-Recipe Book,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Jamel Milk,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Mature Dried Cervi,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Tialla,Niiza Garum,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Outdoor Cooking Set,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,Pickled Bulbs,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Potted Vegetables,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Skin Balm,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Smooth Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,Solomon Coffee,reallyLiked,reallyLiked,0,,false,true
+Tialla,Spirit Board Game,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Strategy Manuscript,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,Strong Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,Strong Seasonings,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Tales of Adventure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Tales of the Arena,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tialla,The Knight’s Suitors,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,The Works of Dante,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Thick Foreign Tome,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tialla,Trader’s Handbook,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Tialla,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Tialla,Weak Cervi,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Tialla,Yarc Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Arrowhead Gem,loved,loved,1,Yuphas Temple,false,true
+Peter,Candy Crystals,loved,loved,1,Yuphas Temple,false,true
+Peter,Decorative Arrows,loved,loved,1,Yuphas Temple,false,true
+Peter,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Peter,Portrait of Yu Phas,loved,loved,1,Yuphas Temple,false,true
+Peter,Ceremonial Spear,reallyLiked,reallyLiked,0,,false,true
+Peter,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Dagda Beard Grass,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Flower Painting,reallyLiked,reallyLiked,0,,false,true
+Peter,Fragrant Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Ginji Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Honey Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Jamel Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Peter,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Mature Dried Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Mellow Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Saraminian Sweets,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Peter,Simple Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Strong Cervi,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Peter,Tales of Adventure,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Weak Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peter,Yarc Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ultand,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Ultand,Legendary Garum,loved,loved,1,Yuphas Temple,false,true
+Ultand,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ultand,Rancid Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ultand,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ultand,Ahm Lu Cloth,reallyLiked,reallyLiked,1,Raider King,false,true
+Ultand,Arrowhead Gem,reallyLiked,reallyLiked,1,Raider King,false,true
+Ultand,Blue-Rose Bouquet,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ultand,Candy Crystals,reallyLiked,reallyLiked,0,,false,true
+Ultand,Ceremonial Spear,reallyLiked,reallyLiked,1,Raider King,false,true
+Ultand,Concentrated Garum,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ultand,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ultand,Dual Fish Knives,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Ultand,Eastern Black Silk,reallyLiked,reallyLiked,1,Raider King,false,true
+Ultand,Eastern Board Game,reallyLiked,reallyLiked,1,Raider King,false,true
+Ultand,Eastern Love Story,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ultand,Exquisite Ring,reallyLiked,reallyLiked,1,Raider King,false,true
+Ultand,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Ultand,Full Sewing Kit,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ultand,Garum,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Ultand,Herbal Recipe Guide,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ultand,Home-Recipe Book,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ultand,Morfis Almanac,reallyLiked,reallyLiked,1,Raider King,false,true
+Ultand,Niiza Garum,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ultand,Outdoor Cooking Set,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ultand,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ultand,Rugged Blade,reallyLiked,reallyLiked,1,Raider King,false,true
+Ultand,Skin Balm,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ultand,Strong Seasonings,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ultand,The Knight’s Suitors,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ultand,Tome from Away,reallyLiked,reallyLiked,1,Raider King,false,true
+Fabio,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Fabio,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Fabio,Rare Southern Seeds,loved,loved,2,Yuphas Temple; Raider King,false,false
+Fabio,Tales of Adventure,loved,loved,1,Yuphas Temple,false,true
+Fabio,Aromatic Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fabio,Brined Fish Guts,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fabio,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fabio,Common Coffee,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Fabio,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Fabio,Dagda Beard Grass,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fabio,Eastern Black Silk,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Eastern Tea Leaves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fabio,Jade Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Light Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fabio,Mature Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Mature Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fabio,Morfis Almanac,reallyLiked,reallyLiked,1,Raider King,false,true
+Fabio,Orgus Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Pack of Pastels,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fabio,Potted Vegetables,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fabio,Rugged Blade,reallyLiked,reallyLiked,1,Raider King,false,true
+Fabio,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Select Coffee,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Fabio,Southern Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Southern Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fabio,Tome from Away,reallyLiked,reallyLiked,1,Raider King,false,true
+Fabio,Volcano Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Fabio,Young Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Esmeralda,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Esmeralda,Ahm Lu Cloth,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Esmeralda,Alecto Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Esmeralda,Blue-Rose Bouquet,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Esmeralda,Bow Repair Kit,reallyLiked,reallyLiked,2,Game8; Redfreshet,false,false
+Esmeralda,Ceremonial Spear,reallyLiked,reallyLiked,1,Raider King,false,true
+Esmeralda,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Dagda Beard Grass,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Dual Fish Knives,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Esmeralda,Eastern Black Silk,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Esmeralda,Eastern Earrings,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Esmeralda,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Exquisite Ring,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Esmeralda,Flexible Fishing Rod,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Esmeralda,Flower Painting,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Esmeralda,Fragrant Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Garum,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Esmeralda,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Esmeralda,Herbal Recipe Guide,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Home-Recipe Book,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Horse-Grooming Kit,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Mellow Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Portrait of Yu Phas,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Esmeralda,Red Hair Clip,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Esmeralda,Saraminian Sweets,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Esmeralda,Sharp Fishhook,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Esmeralda,Simple Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Skin Balm,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Esmeralda,Smooth Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Strong Seasonings,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Tome from Away,reallyLiked,reallyLiked,1,Raider King,false,true
+Esmeralda,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Esmeralda,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Rugged Blade,loved,loved,2,Yuphas Temple; Raider King,false,false
+Mikaela,Tales of Adventure,loved,loved,1,Yuphas Temple,false,true
+Mikaela,Alecto Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Aromatic Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Arrowhead Gem,reallyLiked,reallyLiked,1,Raider King,false,true
+Mikaela,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Common Coffee,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Mikaela,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Mikaela,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Mikaela,Garum,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Mikaela,Herbal Recipe Guide,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Home-Recipe Book,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Jade Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Light Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Mature Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Mature Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Orgus Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Rare Spices,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Select Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Southern Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Southern Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Strategy Manuscript,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Strong Seasonings,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Tome from Away,reallyLiked,reallyLiked,1,Raider King,false,true
+Mikaela,Training Pillar,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Training Weights,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mikaela,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Volcano Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Mikaela,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mikaela,Young Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Bonaventure,Aromatic Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Blue Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Ceremonial Spear,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bonaventure,Common Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Crimson Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Bonaventure,Dual Fish Knives,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Eastern Black Silk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bonaventure,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Raider King,false,true
+Bonaventure,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Garum,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Bonaventure,Herbal Recipe Guide,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Home-Recipe Book,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Jade Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Light Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Magic-Trick Set,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Mature Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Mature Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Morfis Almanac,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Orgus Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Pastry Cookbook,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Poems of the Greats,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Rare Spices,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Rugged Blade,reallyLiked,reallyLiked,1,Raider King,false,true
+Bonaventure,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,School Scandal,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Select Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Southern Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Southern Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Strategy Manuscript,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Bonaventure,Strong Seasonings,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bonaventure,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Tales of the Arena,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,The Works of Dante,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bonaventure,Thick Foreign Tome,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bonaventure,Tome from Away,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bonaventure,Volcano Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Bonaventure,Young Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bonaventure,Young Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Tobias,Tales of Adventure,loved,loved,1,Yuphas Temple,false,true
+Tobias,Alecto Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Dagda Beard Grass,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Eastern Black Silk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Garum,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Tobias,Herbal Recipe Guide,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Home-Recipe Book,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Horse-Grooming Kit,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Jade Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Mature Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Mature Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Rustic Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Secret Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Sharp Fishhook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Smooth Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Southern Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Strategy Manuscript,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Tobias,Strong Seasonings,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Sun Ghosh,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Tobias,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Volcano Ghosh,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Tobias,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tobias,Young Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lysander,Ceremonial Spear,loved,loved,2,Yuphas Temple; Raider King,false,false
+Lysander,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Lysander,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Lysander,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Lysander,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Lysander,Dagda Beard Grass,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lysander,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lysander,Horse-Grooming Kit,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lysander,Mane Ornament,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lysander,Sharp Dagger,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lysander,Training Weights,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lysander,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Eastern Tea Leaves,loved,loved,2,Yuphas Temple; Raider King,false,false
+Lilian,Tales of Adventure,loved,loved,1,Yuphas Temple,false,true
+Lilian,Decorative Arrows,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Eastern Earrings,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Lilian,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Herbal Recipe Guide,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Home-Recipe Book,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Morfis Almanac,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Poems of the Greats,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Lilian,Rare Spices,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Strategy Manuscript,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Lilian,Strong Seasonings,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Trader’s Handbook,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Lilian,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Lilian,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Buccar,Legendary Garum,loved,loved,1,Yuphas Temple,false,true
+Buccar,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Buccar,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Buccar,Rancid Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Buccar,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Buccar,Special “Medicine”,loved,loved,2,Yuphas Temple; Raider King,false,false
+Buccar,Aromatic Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Blue Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Ceremonial Spear,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Buccar,Crimson Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Buccar,Dual Fish Knives,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Buccar,Eastern Tea Leaves,reallyLiked,reallyLiked,0,,false,true
+Buccar,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Buccar,Garum,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Buccar,Home-Recipe Book,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Buccar,Jade Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Light Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Mature Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Buccar,Mature Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Niiza Garum,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Outdoor Cooking Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Buccar,Rare Spices,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Buccar,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Southern Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Buccar,Volcano Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Buccar,Young Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Buccar,Young Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Eastern Earrings,loved,loved,2,Yuphas Temple; Raider King,false,false
+Sirocco,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Sirocco,History of a Master,loved,loved,2,Yuphas Temple; Raider King,false,false
+Sirocco,Poems of the Greats,loved,loved,1,Yuphas Temple,false,true
+Sirocco,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Sirocco,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Sirocco,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Sirocco,Arrowhead Gem,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Sirocco,Crimson Bull Figure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Crimson Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Sirocco,Eastern Board Game,reallyLiked,reallyLiked,1,Raider King,false,true
+Sirocco,Eastern Love Story,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sirocco,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Gaudy Bangle,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Jade Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Jade Panther Figure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sirocco,Light Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sirocco,Mature Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Mature Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sirocco,Pack of Pastels,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Skin Balm,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sirocco,Southern Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sirocco,Tome from Away,reallyLiked,reallyLiked,0,,false,true
+Sirocco,Volcano Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Sirocco,Young Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Sirocco,Young Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mu,Candy Crystals,loved,loved,2,Yuphas Temple; Raider King,false,false
+Mu,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Mu,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Mu,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Mu,Ginji Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mu,Honey Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mu,Jamel Milk,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mu,Mature Dried Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mu,Morfis Almanac,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Mu,Morfis Tea,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Mu,Orgus Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mu,Outdoor Cooking Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mu,Pickled Vegetables,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mu,Portrait of Yu Phas,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Mu,Pure-White Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mu,Saraminian Sweets,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Mu,Strong Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Mu,Tome from Away,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Mu,Weak Cervi,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Mu,Yarc Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Olympia,Arrowhead Gem,loved,loved,2,Yuphas Temple; Raider King,false,false
+Olympia,Blue-Rose Bouquet,loved,loved,1,Yuphas Temple,false,true
+Olympia,Eastern Tea Leaves,loved,loved,1,Yuphas Temple,false,true
+Olympia,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Olympia,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Olympia,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Olympia,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Olympia,Red Hair Clip,loved,loved,2,Yuphas Temple; Raider King,false,false
+Olympia,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Olympia,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Olympia,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Olympia,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Olympia,Eastern Earrings,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Olympia,Exquisite Ring,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Olympia,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Olympia,Morfis Almanac,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Olympia,Orgus Coffee,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Olympia,Pack of Pastels,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Olympia,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Olympia,Skin Balm,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Olympia,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,Dual Fish Knives,loved,loved,1,Yuphas Temple,false,true
+Bertrand,Ebony Game Board,loved,loved,1,Yuphas Temple,false,true
+Bertrand,Legendary Garum,loved,loved,1,Yuphas Temple,false,true
+Bertrand,Rancid Garum,loved,loved,1,Yuphas Temple,false,true
+Bertrand,Strategy Manuscript,loved,loved,1,Yuphas Temple,false,true
+Bertrand,Ahm Lu Cloth,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,Alecto Garum,reallyLiked,reallyLiked,2,Game8; Yuphas Temple,false,false
+Bertrand,Ceremonial Spear,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,Concentrated Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,Eastern Love Story,reallyLiked,reallyLiked,0,,false,true
+Bertrand,Garum,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Bertrand,Herbal Recipe Guide,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,Home-Recipe Book,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,Morfis Almanac,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,Poems of the Greats,reallyLiked,reallyLiked,0,,false,true
+Bertrand,Smooth Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,Tales of Adventure,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,The Works of Dante,reallyLiked,reallyLiked,0,,false,true
+Bertrand,Tome from Away,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Bertrand,Trader’s Handbook,reallyLiked,reallyLiked,0,,false,true
+Bertrand,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Gaitz,Ahm Lu Cloth,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Ceremonial Spear,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Decorative Arrows,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Eastern Black Silk,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Eastern Board Game,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Ebony Game Board,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Gaitz,Morfis Almanac,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Rancid Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Rugged Blade,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,School Scandal,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Tome from Away,loved,loved,2,Yuphas Temple; Raider King,false,false
+Gaitz,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Board-Game Tactics,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Coffee Pastries,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Gaitz,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Gaitz,Crafting Knives,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Crimson Bull Figure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Dagda Beard Grass,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Herbal Recipe Guide,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Home-Recipe Book,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Horse-Grooming Kit,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Jade Panther Figure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Joint-Relief Gloves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Mane Ornament,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Gaitz,Pack of Pastels,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Sharp Dagger,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Spirit Board Game,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Sturdy Rucksack,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,The Knight’s Suitors,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,The Works of Dante,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Thick Foreign Tome,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Training Pillar,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Gaitz,Training Weights,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Ahm Lu Cloth,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dante,Decorative Arrows,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dante,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dante,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Dante,Morfis Almanac,loved,loved,1,Yuphas Temple,false,true
+Dante,Poems of the Greats,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dante,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dante,Rancid Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dante,School Scandal,loved,loved,1,Yuphas Temple,false,false
+Dante,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dante,Tome from Away,loved,loved,1,Yuphas Temple,false,true
+Dante,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Ceremonial Spear,reallyLiked,reallyLiked,1,Raider King,false,true
+Dante,Coffee Pastries,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Dante,Crafting Knives,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Crimson Bull Figure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Eastern Black Silk,reallyLiked,reallyLiked,1,Raider King,false,true
+Dante,Everyday Scenes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dante,Herbal Recipe Guide,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Home-Recipe Book,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Jade Panther Figure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Magic-Trick Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dante,Pack of Pastels,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dante,Sharp Dagger,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dante,Tales of the Arena,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dante,The Works of Dante,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Rancid Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Goliath,Special “Medicine”,loved,loved,2,Yuphas Temple; Raider King,false,false
+Goliath,Aromatic Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Blue Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Goliath,Eastern Board Game,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Goliath,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Goliath,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Jade Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Kitten Figurine,reallyLiked,reallyLiked,0,,false,true
+Goliath,Light Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Mature Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Goliath,Mature Shosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Goliath,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Southern Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Spirit Board Game,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Goliath,Strategy Manuscript,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Goliath,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Goliath,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Goliath,Volcano Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Goliath,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Goliath,Young Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Goliath,Young Shosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jester,Legendary Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Jester,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Jester,Arrowhead Gem,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Jester,Board-Game Tactics,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jester,Ceremonial Spear,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Jester,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Jester,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jester,Dual Fish Knives,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Jester,Herbal Recipe Guide,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jester,Home-Recipe Book,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jester,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jester,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jester,Outdoor Cooking Set,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jester,Pastry Cookbook,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jester,Rare Spices,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jester,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jester,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jester,Spirit Board Game,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jester,Strong Seasonings,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jester,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Talimun,Blue-Rose Bouquet,loved,loved,1,Yuphas Temple,false,true
+Talimun,Flower Painting,loved,loved,1,Yuphas Temple,false,true
+Talimun,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Talimun,Portrait of Yu Phas,loved,loved,1,Yuphas Temple,false,true
+Talimun,Arrowhead Gem,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Talimun,Ceremonial Spear,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Talimun,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Talimun,Crimson Bull Figure,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Talimun,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Talimun,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Talimun,Jade Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Talimun,Jade Panther Figure,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Talimun,Mature Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Talimun,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Talimun,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Talimun,Southern Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Talimun,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Talimun,Volcano Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Talimun,Young Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Ursula,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ursula,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Ursula,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ursula,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ursula,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ursula,Ahm Lu Cloth,reallyLiked,reallyLiked,1,Raider King,false,true
+Ursula,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ursula,Coffee Pastries,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ursula,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Ursula,Crimson Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ursula,Eastern Black Silk,reallyLiked,reallyLiked,1,Raider King,false,true
+Ursula,Eastern Love Story,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ursula,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ursula,Mane Ornament,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ursula,Pack of Pastels,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ursula,Select Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Simon,Ceremonial Spear,loved,loved,1,Yuphas Temple,false,true
+Simon,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Simon,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Simon,Rancid Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Simon,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Simon,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Simon,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Simon,Dual Fish Knives,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Simon,Eastern Board Game,reallyLiked,reallyLiked,0,,false,true
+Simon,Eastern Tea Leaves,reallyLiked,reallyLiked,0,,false,true
+Simon,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Simon,Joint-Relief Gloves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Simon,Pickled Vegetables,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Simon,Protection Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Simon,Solomon Coffee,reallyLiked,reallyLiked,0,,false,true
+Ludia,Arrowhead Gem,loved,loved,1,Yuphas Temple,false,true
+Ludia,Eastern Love Story,loved,loved,1,Yuphas Temple,false,true
+Ludia,Eastern Tea Leaves,loved,loved,1,Yuphas Temple,false,true
+Ludia,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ludia,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ludia,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ludia,Red Hair Clip,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ludia,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ludia,Ceremonial Spear,reallyLiked,reallyLiked,0,,false,true
+Ludia,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Ludia,Eastern Black Silk,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Ludia,Eastern Earrings,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Ludia,Everyday Scenes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Herbal Recipe Guide,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Home-Recipe Book,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Magic-Trick Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Pack of Pastels,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Sharp Fishhook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Skin Balm,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Strategy Manuscript,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Ludia,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Ludia,Trader’s Handbook,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Ludia,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ludia,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fianna,Eastern Black Silk,loved,loved,2,Yuphas Temple; Raider King,false,false
+Fianna,Eastern Earrings,loved,loved,2,Yuphas Temple; Raider King,false,false
+Fianna,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Fianna,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Fianna,Rare Southern Seeds,loved,loved,2,Yuphas Temple; Raider King,false,false
+Fianna,Arrowhead Gem,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Fianna,Blue-Rose Bouquet,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Fianna,Common Coffee,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Fianna,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fianna,Eastern Tea Leaves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fianna,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fianna,Morfis Almanac,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fianna,Orgus Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fianna,Rare Spices,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Fianna,Select Coffee,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Fianna,Skin Balm,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Fianna,Southern Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Fianna,Tome from Away,reallyLiked,reallyLiked,1,Raider King,false,true
+Fianna,Volcano Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Orchel,Dual Fish Knives,loved,loved,1,Yuphas Temple,false,true
+Orchel,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Orchel,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Orchel,Pegasus Panorama,loved,loved,1,Yuphas Temple,false,true
+Orchel,Poems of the Greats,loved,loved,1,Yuphas Temple,false,true
+Orchel,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Orchel,School Scandal,loved,loved,1,Yuphas Temple,false,true
+Orchel,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Orchel,Blue-Rose Bouquet,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Orchel,Crimson Bull Figure,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,Garum,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Orchel,Herbal Recipe Guide,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,Home-Recipe Book,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Orchel,Horse-Grooming Kit,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,Jade Panther Figure,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,Outdoor Cooking Set,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Orchel,Saraminian Sweets,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Orchel,Strong Seasonings,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,Tales of Adventure,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,Tales of the Arena,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,The Knight’s Suitors,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,The Works of Dante,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,Trader’s Handbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Orchel,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Diego,Ceremonial Spear,loved,loved,2,Yuphas Temple; Raider King,false,false
+Diego,Decorative Arrows,loved,loved,2,Yuphas Temple; Raider King,false,false
+Diego,History of a Master,loved,loved,2,Yuphas Temple; Raider King,false,false
+Diego,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Diego,Rugged Blade,loved,loved,2,Yuphas Temple; Raider King,false,false
+Diego,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Diego,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Diego,Arrowhead Gem,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Diego,Bow Repair Kit,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Diego,Candy Crystals,reallyLiked,reallyLiked,1,Raider King,false,true
+Diego,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Diego,Eastern Board Game,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Diego,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Raider King,false,true
+Diego,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Diego,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Diego,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Diego,Sharp Dagger,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Diego,Tome from Away,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Diego,Training Pillar,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Diego,Training Weights,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ninae,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ninae,Strategy Manuscript,loved,loved,3,Game8; Yuphas Temple; Redfreshet,false,false
+Ninae,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Ninae,Ahm Lu Cloth,reallyLiked,reallyLiked,1,Raider King,false,true
+Ninae,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ninae,Crimson Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ninae,Eastern Black Silk,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ninae,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Ninae,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Ninae,Morfis Almanac,reallyLiked,reallyLiked,1,Raider King,false,true
+Ninae,Poems of the Greats,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Ninae,Tome from Away,reallyLiked,reallyLiked,1,Raider King,false,true
+Seteth,Morfis Almanac,loved,loved,2,Yuphas Temple; Raider King,false,false
+Seteth,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Seteth,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Seteth,Ceremonial Spear,reallyLiked,reallyLiked,1,Raider King,false,true
+Seteth,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Seteth,Crimson Ghosh,reallyLiked,reallyLiked,1,Raider King,false,true
+Seteth,Eastern Black Silk,reallyLiked,reallyLiked,1,Raider King,false,true
+Seteth,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Seteth,Everyday Scenes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Seteth,Flexible Fishing Rod,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Seteth,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Seteth,Herbal Recipe Guide,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Seteth,Home-Recipe Book,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Seteth,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Seteth,Orgus Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Seteth,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Seteth,Poems of the Greats,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Seteth,School Scandal,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Seteth,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Seteth,Sharp Fishhook,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Seteth,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Seteth,Strategy Manuscript,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Seteth,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Seteth,Tales of the Arena,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Seteth,The Works of Dante,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Seteth,Trader’s Handbook,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Seteth,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Loretta,Ceremonial Spear,loved,loved,2,Yuphas Temple; Raider King,false,false
+Loretta,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Loretta,Rugged Blade,loved,loved,2,Yuphas Temple; Raider King,false,false
+Loretta,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Loretta,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Loretta,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Loretta,Eastern Black Silk,reallyLiked,reallyLiked,1,Raider King,false,true
+Loretta,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Loretta,Ginji Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Loretta,Honey Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Loretta,Honey Pastries,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Loretta,Jamel Milk,reallyLiked,reallyLiked,0,,false,true
+Loretta,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Loretta,Mellow Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Loretta,Pastry Cookbook,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Loretta,Pure-White Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Loretta,Saraminian Sweets,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Loretta,Simple Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Loretta,Training Pillar,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Loretta,Training Weights,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Anatolia,History of a Master,loved,loved,2,Yuphas Temple; Raider King,false,false
+Anatolia,Morfis Almanac,loved,loved,2,Yuphas Temple; Raider King,false,false
+Anatolia,Rugged Blade,loved,loved,2,Yuphas Temple; Raider King,false,false
+Anatolia,Strategy Manuscript,loved,loved,2,Yuphas Temple; Raider King,false,false
+Anatolia,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Anatolia,Ahm Lu Cloth,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Anatolia,Arrowhead Gem,reallyLiked,reallyLiked,1,Raider King,false,true
+Anatolia,Bagua Divination Set,reallyLiked,reallyLiked,1,Raider King,false,true
+Anatolia,Candy Crystals,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Anatolia,Ceremonial Spear,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Anatolia,Eastern Black Silk,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Anatolia,Eastern Tea Leaves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Anatolia,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Anatolia,Magic-Trick Set,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Anatolia,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Anatolia,Tome from Away,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sha Lan,Special “Medicine”,loved,loved,1,Yuphas Temple,false,false
+Sha Lan,Alecto Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Sha Lan,Arrowhead Gem,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sha Lan,Ceremonial Spear,reallyLiked,reallyLiked,0,,false,true
+Sha Lan,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Sha Lan,Concentrated Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Sha Lan,Energizing Ghosh,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Sha Lan,Niiza Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sha Lan,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sha Lan,Outdoor Cooking Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sha Lan,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Sha Lan,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sha Lan,Smooth Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Sha Lan,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sha Lan,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nezha,Arrowhead Gem,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nezha,Ceremonial Spear,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nezha,Decorative Arrows,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nezha,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nezha,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nezha,Tales of Adventure,loved,loved,1,Yuphas Temple,false,true
+Nezha,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nezha,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Nezha,Joint-Relief Gloves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nezha,Pickled Bulbs,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Nezha,Pickled Vegetables,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Nezha,Potted Vegetables,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Nezha,Rare Southern Seeds,reallyLiked,reallyLiked,0,,false,true
+Nezha,Strategy Manuscript,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Nezha,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nezha,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Nezha,Training Pillar,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Nezha,Training Weights,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Nezha,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dadao,Rugged Blade,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dadao,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Dadao,Arrowhead Gem,reallyLiked,reallyLiked,1,Raider King,false,true
+Dadao,Board-Game Tactics,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dadao,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dadao,Eastern Black Silk,reallyLiked,reallyLiked,1,Raider King,false,true
+Dadao,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Dadao,Fragrant Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Ginji Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Honey Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Honey Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Jamel Milk,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Dadao,Mature Dried Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Mellow Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Poems of the Greats,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Dadao,Potted Vegetables,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Saraminian Sweets,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Dadao,Simple Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Strategy Manuscript,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Dadao,Strong Cervi,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Dadao,Weak Cervi,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Dadao,Yarc Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Halvin,Blue-Rose Bouquet,loved,loved,2,Yuphas Temple; Raider King,false,false
+Halvin,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Halvin,Red Hair Clip,loved,loved,2,Yuphas Temple; Raider King,false,false
+Halvin,Crimson Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Halvin,Eastern Black Silk,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Halvin,Eastern Earrings,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Halvin,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Halvin,Exquisite Ring,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Halvin,Garum,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Halvin,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Halvin,Ginji Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Halvin,Honey Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Halvin,Jade Panther Figure,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Halvin,Magic-Trick Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Halvin,Mature Dried Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Halvin,Pack of Pastels,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Halvin,Pickled Bulbs,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Halvin,Potted Vegetables,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Halvin,Pure-White Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Halvin,Simple Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Halvin,Skin Balm,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Halvin,Strong Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Halvin,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Halvin,Weak Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nathan,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Nathan,Secret Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nathan,Sharp Dagger,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nathan,Sun Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Creek,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Creek,Sharp Dagger,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Creek,The Works of Dante,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Guzran,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Guzran,Aromatic Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Guzran,Crimson Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Guzran,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Guzran,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Jade Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Guzran,Light Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Mature Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Guzran,Mature Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Morfis Almanac,reallyLiked,reallyLiked,0,,false,true
+Guzran,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Guzran,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Guzran,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Southern Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Guzran,Strategy Manuscript,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Guzran,Strong Seasonings,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Guzran,Volcano Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Guzran,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Guzran,Young Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Guzran,Young Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nydine,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nydine,Rugged Blade,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nydine,Tales of Adventure,loved,loved,1,Yuphas Temple,false,true
+Nydine,Arrowhead Gem,reallyLiked,reallyLiked,1,Raider King,false,true
+Nydine,Eastern Black Silk,reallyLiked,reallyLiked,1,Raider King,false,true
+Nydine,Eastern Love Story,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nydine,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nydine,Horse-Grooming Kit,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nydine,Joint-Relief Gloves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nydine,Kitten Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nydine,Mane Ornament,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Nydine,Morfis Almanac,reallyLiked,reallyLiked,0,,false,true
+Nydine,Saraminian Sweets,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Nydine,Strategy Manuscript,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Nydine,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Nydine,Tome from Away,reallyLiked,reallyLiked,1,Raider King,false,true
+Nydine,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nydine,Training Weights,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nydine,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Ceremonial Spear,loved,loved,2,Yuphas Temple; Raider King,false,false
+Io,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Io,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Io,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Io,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Io,Board-Game Tactics,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Common Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Crimson Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Io,Horse-Grooming Kit,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Kitten Figurine,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Io,Mane Ornament,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Protection Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Spirit Board Game,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Training Pillar,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Io,Training Weights,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Arrowhead Gem,loved,loved,2,Yuphas Temple; Raider King,false,false
+Catania,Blue-Rose Bouquet,loved,loved,2,Yuphas Temple; Raider King,false,false
+Catania,Decorative Arrows,loved,loved,2,Yuphas Temple; Raider King,false,false
+Catania,Eastern Tea Leaves,loved,loved,1,Yuphas Temple,false,true
+Catania,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Catania,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Catania,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Catania,Red Hair Clip,loved,loved,2,Yuphas Temple; Raider King,false,false
+Catania,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Catania,Ahm Lu Cloth,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Catania,Ceremonial Spear,reallyLiked,reallyLiked,1,Raider King,false,true
+Catania,Coffee Pastries,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Catania,Crafting Knives,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Crimson Bull Figure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Crimson Ghosh,reallyLiked,reallyLiked,1,Raider King,false,true
+Catania,Dagda Beard Grass,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Eastern Black Silk,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Catania,Eastern Earrings,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Catania,Exquisite Ring,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Catania,Horse-Grooming Kit,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Jade Panther Figure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Kitten Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Magic-Trick Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Catania,Mane Ornament,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Catania,Pack of Pastels,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Catania,Sharp Dagger,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Skin Balm,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Catania,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Catania,Spirit Board Game,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Noctula,Ceremonial Spear,loved,loved,2,Yuphas Temple; Raider King,false,false
+Noctula,History of a Master,loved,loved,2,Yuphas Temple; Raider King,false,false
+Noctula,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Noctula,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Noctula,Antique Medal,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Noctula,Arrowhead Gem,reallyLiked,reallyLiked,1,Raider King,false,true
+Noctula,Crimson Ghosh,reallyLiked,reallyLiked,1,Raider King,false,true
+Noctula,Eastern Tea Leaves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Noctula,Morfis Almanac,reallyLiked,reallyLiked,1,Raider King,false,true
+Noctula,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Noctula,Sharp Dagger,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Noctula,Strategy Manuscript,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Noctula,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Noctula,Tome from Away,reallyLiked,reallyLiked,1,Raider King,false,true
+Noctula,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Noctula,Training Pillar,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Noctula,Training Weights,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Noctula,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Eastern Tea Leaves,loved,loved,1,Yuphas Temple,false,true
+Yang Jie,Tales of Adventure,loved,loved,1,Yuphas Temple,false,true
+Yang Jie,Aromatic Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Yang Jie,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Yang Jie,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Yang Jie,Flexible Fishing Rod,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Herbal Recipe Guide,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Home-Recipe Book,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Jade Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Yang Jie,Kitten Figurine,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Yang Jie,Light Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Mature Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Yang Jie,Mature Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Poems of the Greats,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Yang Jie,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Yang Jie,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Yang Jie,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Sharp Fishhook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Southern Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Yang Jie,Strategy Manuscript,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Yang Jie,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Yang Jie,The Works of Dante,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Trader’s Handbook,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Yang Jie,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Yang Jie,Volcano Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Yang Jie,Young Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Ceremonial Spear,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Odd Vegetable Seeds,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Rare Southern Seeds,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Rugged Blade,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Strategy Manuscript,loved,loved,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Arrowhead Gem,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Nuzzuo,Bow Repair Kit,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Candy Crystals,reallyLiked,reallyLiked,1,Raider King,false,true
+Nuzzuo,Coffee Pastries,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Common Coffee,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Nuzzuo,Crafting Knives,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Dual Fish Knives,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Nuzzuo,Eastern Black Silk,reallyLiked,reallyLiked,1,Raider King,false,true
+Nuzzuo,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Raider King,false,true
+Nuzzuo,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Nuzzuo,Herbal Recipe Guide,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nuzzuo,Kitten Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Niiza Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nuzzuo,Orgus Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Outdoor Cooking Set,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Pickled Vegetables,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Potted Vegetables,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Rare Spices,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Select Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Sharp Dagger,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Southern Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Strong Seasonings,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Nuzzuo,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nuzzuo,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nuzzuo,Training Pillar,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Nuzzuo,Training Weights,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Majide,Aromatic Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Majide,Arrowhead Gem,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Majide,Crimson Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Majide,Energizing Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Majide,Jade Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Majide,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Majide,Light Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Majide,Mature Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Majide,Mature Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Majide,Rustic Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Majide,Secret Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Majide,Southern Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Majide,Sun Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Majide,Training Pillar,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Majide,Training Weights,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Majide,Volcano Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,true,false
+Majide,Young Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Majide,Young Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Sofia,Odd Vegetable Seeds,loved,loved,2,Yuphas Temple; Raider King,false,false
+Sofia,Rare Southern Seeds,loved,loved,2,Yuphas Temple; Raider King,false,false
+Sofia,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Sofia,Alecto Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Arrowhead Gem,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Blue-Rose Bouquet,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Sofia,Candy Crystals,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Common Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Concentrated Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Dual Fish Knives,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Sofia,Eastern Tea Leaves,reallyLiked,reallyLiked,1,Raider King,false,true
+Sofia,Fragrant Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Garum,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Sofia,Ginji Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Honey Milk,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Sofia,Honey Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Jamel Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Magic-Trick Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Mature Dried Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Meaty Delicacy,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Mellow Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Niiza Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Orgus Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Outdoor Cooking Set,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Pack of Pastels,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Pickled Vegetables,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Protection Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Pure-White Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Rare Spices,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Saraminian Sweets,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Select Coffee,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Sofia,Sharp Fishhook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Simple Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Sofia,Southern Coffee,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Strong Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Volcano Ghosh,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Sofia,Weak Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Sofia,Yarc Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Centurio,Ceremonial Spear,loved,loved,1,Yuphas Temple,false,true
+Centurio,Eastern Board Game,loved,loved,1,Yuphas Temple,false,true
+Centurio,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Centurio,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Centurio,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Centurio,Rancid Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Centurio,School Scandal,loved,loved,1,Yuphas Temple,false,true
+Centurio,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Centurio,Strategy Manuscript,loved,loved,1,Yuphas Temple,false,true
+Centurio,Antique Medal,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Centurio,Board-Game Tactics,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Centurio,Spirit Board Game,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Centurio,Tales of the Arena,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Centurio,Trader’s Handbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Centurio,Training Pillar,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Centurio,Training Weights,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Aswan,Full Sewing Kit,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Aswan,Pack of Pastels,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Aswan,The Works of Dante,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tahonia,History of a Master,loved,loved,1,Yuphas Temple,false,true
+Tahonia,Full Sewing Kit,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Tahonia,The Works of Dante,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Alexandra,Ahm Lu Cloth,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Arrowhead Gem,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Blue-Rose Bouquet,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Ceremonial Spear,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Decorative Arrows,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Eastern Black Silk,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Flower Painting,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Red Hair Clip,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Alexandra,Alecto Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Alexandra,Concentrated Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Alexandra,Crimson Bull Figure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Crimson Ghosh,reallyLiked,reallyLiked,1,Raider King,false,true
+Alexandra,Dagda Beard Grass,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Dual Fish Knives,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Eastern Earrings,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Alexandra,Exquisite Ring,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Garum,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Alexandra,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Alexandra,Herbal Recipe Guide,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Home-Recipe Book,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Horse-Grooming Kit,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Jade Panther Figure,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Joint-Relief Gloves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Kitten Figurine,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Alexandra,Mane Ornament,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Niiza Garum,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Outdoor Cooking Set,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Alexandra,Pegasus Panorama,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Sharp Dagger,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Skin Balm,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Smooth Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Alexandra,Strategy Manuscript,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Alexandra,Strong Seasonings,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Sturdy Rucksack,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Alexandra,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Alexandra,Village Recipes,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Alexandra,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Zarcone,Eastern Tea Leaves,loved,loved,1,Yuphas Temple,false,true
+Zarcone,Eastern Earrings,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Zarcone,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Zarcone,Odd Vegetable Seeds,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Zarcone,Pickled Bulbs,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Zarcone,Pickled Vegetables,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Zarcone,Potted Vegetables,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Zarcone,Rare Southern Seeds,reallyLiked,reallyLiked,0,,false,true
+Zarcone,Strategy Manuscript,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Zarcone,Tales of Adventure,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Zarcone,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Jasmine,Rugged Blade,loved,loved,2,Yuphas Temple; Raider King,false,false
+Jasmine,Strategy Manuscript,loved,loved,2,Yuphas Temple; Raider King,false,false
+Jasmine,Arrowhead Gem,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Crimson Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Dual Fish Knives,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Jasmine,Fragrant Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Ginji Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Honey Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Honey Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Imitation Medal,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Jamel Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Magic-Trick Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Mature Dried Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Mellow Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Niiza Garum,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Outdoor Cooking Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Pack of Pastels,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Pastry Cookbook,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Pure-White Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Rare Spices,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Jasmine,Saraminian Sweets,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,false,false
+Jasmine,Simple Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Strong Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Jasmine,Tome from Away,reallyLiked,reallyLiked,1,Raider King,false,true
+Jasmine,Training Pillar,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Training Weights,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Weak Cervi,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Jasmine,Yarc Milk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Inyoni,Arrowhead Gem,loved,loved,2,Yuphas Temple; Raider King,false,false
+Inyoni,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Inyoni,Tales of Adventure,loved,loved,2,Yuphas Temple; Raider King,false,false
+Inyoni,Bow Repair Kit,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Inyoni,Crimson Ghosh,reallyLiked,reallyLiked,1,Raider King,false,true
+Inyoni,Eastern Black Silk,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Inyoni,Eastern Board Game,reallyLiked,reallyLiked,1,Raider King,false,true
+Inyoni,Eastern Tea Leaves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Inyoni,Flexible Fishing Rod,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Inyoni,Huge Fish Eyeball,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Inyoni,Joint-Relief Gloves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Inyoni,Protection Figurine,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Inyoni,Sharp Fishhook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Inyoni,Strategy Manuscript,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Inyoni,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Inyoni,Training Bracelet,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Inyoni,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Coffee Pastries,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Kiroc,Crimson Ghosh,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Kiroc,Flower Painting,reallyLiked,reallyLiked,0,,false,true
+Kiroc,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Light Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Mature Ghosh,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Kiroc,Mature Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Pack of Pastels,reallyLiked,reallyLiked,0,,false,true
+Kiroc,Red Hair Clip,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Rustic Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Sharp Fishhook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Training Pillar,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Training Weights,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Volcano Ghosh,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Kiroc,Young Ghosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Kiroc,Young Shosh,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Pegasus Panorama,loved,loved,2,Yuphas Temple; Raider King,false,false
+Peppe,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Peppe,Rancid Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Peppe,Shield Portrait,loved,loved,2,Yuphas Temple; Raider King,false,false
+Peppe,Arrowhead Gem,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Peppe,Board-Game Tactics,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Coffee Pastries,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Peppe,Common Coffee,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,false,false
+Peppe,Crimson Ghosh,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Peppe,Herbal Recipe Guide,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Joint-Relief Gloves,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Kitten Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Magic-Trick Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Outdoor Cooking Set,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Pack of Pastels,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Pastry Cookbook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Protection Figurine,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,false
+Peppe,Sharp Fishhook,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Spirit Board Game,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Sturdy Rucksack,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,The Works of Dante,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Training Pillar,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Peppe,Training Weights,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Klapka,Strategy Manuscript,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Klapka,Training Weights,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Benditz,Arrowhead Gem,loved,loved,2,Yuphas Temple; Raider King,false,false
+Benditz,Blue-Rose Bouquet,loved,loved,2,Yuphas Temple; Raider King,false,false
+Benditz,Decorative Arrows,loved,loved,2,Yuphas Temple; Raider King,false,false
+Benditz,Eastern Tea Leaves,loved,loved,1,Yuphas Temple,false,true
+Benditz,Portrait of Yu Phas,loved,loved,2,Yuphas Temple; Raider King,false,false
+Benditz,Rancid Garum,loved,loved,2,Yuphas Temple; Raider King,false,false
+Benditz,Red Hair Clip,loved,loved,2,Yuphas Temple; Raider King,false,false
+Benditz,Tales of Adventure,loved,loved,1,Yuphas Temple,false,true
+Benditz,Ahm Lu Cloth,reallyLiked,reallyLiked,1,Raider King,false,true
+Benditz,Ceremonial Spear,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Benditz,Coffee Pastries,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Benditz,Common Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Benditz,Crimson Ghosh,reallyLiked,reallyLiked,1,Raider King,false,true
+Benditz,Eastern Black Silk,reallyLiked,reallyLiked,4,Game8; Yuphas Temple; Raider King; Redfreshet,true,false
+Benditz,Eastern Earrings,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Benditz,Eastern Love Story,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Benditz,Exquisite Ring,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Benditz,Flower Painting,reallyLiked,reallyLiked,1,Raider King,false,true
+Benditz,Gaudy Bangle,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Benditz,Joint-Relief Gloves,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Benditz,Orgus Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Benditz,Select Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Benditz,Southern Coffee,reallyLiked,reallyLiked,1,Yuphas Temple,false,true
+Benditz,Spirit Board Game,reallyLiked,reallyLiked,2,Yuphas Temple; Raider King,false,false
+Benditz,Strategy Manuscript,reallyLiked,reallyLiked,3,Game8; Yuphas Temple; Redfreshet,true,false
+Benditz,Wing Fletching,reallyLiked,reallyLiked,1,Yuphas Temple,false,true

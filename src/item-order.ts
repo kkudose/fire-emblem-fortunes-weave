@@ -58,6 +58,7 @@ export const knownItemOrder = [
   'Bow Repair Kit',
   'Sharp Fishhook',
   'Sturdy Rucksack',
+  'Divination Bagua',
   'Mane Ornament',
   'Dagda Beard Grass',
   'Crimson Bull Figure',
@@ -87,7 +88,9 @@ export const knownItemOrder = [
   'History of a Master',
   'Full Sewing Kit',
   'Skin Balm',
+  'Decorative Arrows',
   'Eastern Black Silk',
+  'Ahm Lu Cloth',
   'Board-Game Tactics',
   'Spirit Board Game',
   'Ebony Game Board',
@@ -98,8 +101,9 @@ export const knownItemOrder = [
   'Eastern Earrings',
   'Arrowhead Gem',
   'Pack of Pastels',
+  'Pegasus Panorama',
   'Flower Painting',
-  'Pegasus Panorama'
+  'Portrait of Yu Phas'
 ] as const;
 
 export const knownItemRanks: ReadonlyMap<string, number> = new Map(

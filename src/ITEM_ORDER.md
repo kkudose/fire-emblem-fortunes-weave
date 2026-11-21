@@ -69,59 +69,59 @@ This is a linearized working order, not a claim that every adjacent pair has bee
 57. Bow Repair Kit
 58. Sharp Fishhook
 59. Sturdy Rucksack
-60. Mane Ornament
-61. Dagda Beard Grass
-62. Crimson Bull Figure
-63. Jade Panther Figure
-64. The Works of Dante
-65. Horse-Grooming Kit
-66. The Knight’s Suitors
-67. Trader’s Handbook
-68. Thick Foreign Tome
-69. Tales of the Arena
-70. Poems of the Greats
-71. School Scandal
-72. Tome from Away
-73. Strategy Manuscript
-74. Tales of Adventure
-75. Sharp Dagger
-76. Crafting Knives
-77. Dual Fish Knives
-78. Rugged Blade
-79. Ceremonial Spear
-80. Training Weights
-81. Training Pillar
-82. Training Bracelet
-83. Antique Medal
-84. Imitation Medal
-85. Joint-Relief Gloves
-86. History of a Master
-87. Full Sewing Kit
-88. Skin Balm
-89. Eastern Black Silk
-90. Board-Game Tactics
-91. Spirit Board Game
-92. Ebony Game Board
-93. Exquisite Ring
-94. Red-Rose Bouquet
-95. Gaudy Bangle
-96. Blue-Rose Bouquet
-97. Eastern Earrings
-98. Arrowhead Gem
-99. Pack of Pastels
-100. Flower Painting
-101. Pegasus Panorama
+60. Divination Bagua
+61. Mane Ornament
+62. Dagda Beard Grass
+63. Crimson Bull Figure
+64. Jade Panther Figure
+65. The Works of Dante
+66. Horse-Grooming Kit
+67. The Knight’s Suitors
+68. Trader’s Handbook
+69. Thick Foreign Tome
+70. Tales of the Arena
+71. Poems of the Greats
+72. School Scandal
+73. Tome from Away
+74. Strategy Manuscript
+75. Tales of Adventure
+76. Sharp Dagger
+77. Crafting Knives
+78. Dual Fish Knives
+79. Rugged Blade
+80. Ceremonial Spear
+81. Training Weights
+82. Training Pillar
+83. Training Bracelet
+84. Antique Medal
+85. Imitation Medal
+86. Joint-Relief Gloves
+87. History of a Master
+88. Full Sewing Kit
+89. Skin Balm
+90. Decorative Arrows
+91. Eastern Black Silk
+92. Ahm Lu Cloth
+93. Board-Game Tactics
+94. Spirit Board Game
+95. Ebony Game Board
+96. Exquisite Ring
+97. Red-Rose Bouquet
+98. Gaudy Bangle
+99. Blue-Rose Bouquet
+100. Eastern Earrings
+101. Arrowhead Gem
+102. Pack of Pastels
+103. Pegasus Panorama
+104. Flower Painting
+105. Portrait of Yu Phas
 
 ## Unknown positions
 
 These names have appeared in the working inventory or preference data but have not been placed by an order sequence or the screenshots:
 
-- Ahm Lu Cloth
 - Alecto Garum
-- Bagua Divination Set
 - Concentrated Garum
-- Decorative Arrows
-- Divination Bagua
 - Eastern Board Game
 - Eastern Love Story
 - Everyday Scenes
@@ -129,7 +129,6 @@ These names have appeared in the working inventory or preference data but have n
 - Honey Pastries
 - Morfis Almanac
 - Pickled Bulbs
-- Portrait of Yu Phas
 - Rare Southern Seeds
 - Rare Spices
 - Red Hair Clip
@@ -144,9 +143,10 @@ These names have appeared in the working inventory or preference data but have n
 - **Oct 24 user-supplied sequence:** Jamel Milk → Weak Cervi → Strong Cervi → Mature Dried Cervi → Ginji Cervi → Simple Pastries → Mellow Pastries → Fragrant Pastries → Coffee Pastries → Saraminian Sweets → Candy Crystals → Garum → Young Ghosh → Mature Ghosh → Sun Ghosh → Energizing Ghosh → Rustic Ghosh → Jade Ghosh → Southern Ghosh → Volcano Ghosh → Crimson Ghosh → Young Shosh → Mature Shosh → Light Shosh → Aromatic Shosh → Common Coffee → Select Coffee → Southern Coffee → Orgus Coffee → Pickled Vegetables → Potted Vegetables → Odd Vegetable Seeds → Outdoor Cooking Set → Strong Seasonings → Morfis Tea → Fódlan Tea → Kitten Figurine → Magic-Trick Set → Flexible Fishing Rod → Bow Repair Kit → Sharp Fishhook → Sturdy Rucksack → Mane Ornament → Dagda Beard Grass → Jade Panther Figure → Horse-Grooming Kit → The Knight’s Suitors → Trader’s Handbook → Thick Foreign Tome → Tales of the Arena → School Scandal → Tome from Away → Crafting Knives → Dual Fish Knives → Ceremonial Spear → Training Weights → Training Pillar → Training Bracelet → Antique Medal → Joint-Relief Gloves → History of a Master → Full Sewing Kit → Skin Balm → Eastern Black Silk → Board-Game Tactics → Spirit Board Game → Exquisite Ring → Gaudy Bangle → Arrowhead Gem → Pack of Pastels → Flower Painting. This adds order information for listed items; unlisted catalog items retain their prior evidence status.
 - **Oct 24 user-supplied sequence:** Tales of the Arena → Poems of the Greats → School Scandal → Strategy Manuscript → Tales of Adventure → Dual Fish Knives. The sequence places three previously unknown items and adds relative-order constraints around already placed items.
 - **Oct 24 user-supplied sequences:** Candy Crystals → Garum → Smooth Garum → Niiza Garum → Rancid Garum → Young Ghosh; Pickled Vegetables → Meaty Delicacy → Huge Fish Eyeball; Volcano Ghosh → Crimson Ghosh → Young Shosh; Light Shosh → Blue Shosh → Aromatic Shosh. These supply the order for Blue Shosh and resolve the previously open relative placements among the garums, Pickled Vegetables/Meaty Delicacy/Huge Fish Eyeball, and Blue Shosh.
+- **New user-supplied sequences:** Skin Balm → Decorative Arrows → Eastern Black Silk → Ahm Lu Cloth → Board-Game Tactics; Sturdy Rucksack → Divination Bagua → Dagda Beard Grass; Flower Painting → Portrait of Yu Phas. “Decorative arrow” is normalized to the catalog name Decorative Arrows, and “Dagda beard” to Dagda Beard Grass. The user identified Portrait of Yu Phas as the end of the gift list, so it is placed last; its status as the final item may not be certain.
 - **Linearization choices:** The exact relative slots of Strong Cervi vs Pure-White Cervi/Simple Pastries; Box of Treats vs Coffee Pastries/Saraminian Sweets; and Crimson Ghosh vs Special “Medicine” are not established. The numbered list picks one usable sequence where the evidence leaves these open.
 - **Repeated rows:** Repeated names at screenshot boundaries are continuity overlaps, not extra items. Across the screenshots, Jade Ghosh, Select Coffee, Dagda Beard Grass, Crimson Bull Figure, and Young Ghosh are each counted once. After Crimson Ghosh, the screenshot shows Young Shosh.
-- **Remaining gaps:** These observations are partial and do not establish the complete catalog order. Items in the unknown list have not been placed by any supplied sequence or screenshot.
+- **Remaining gaps:** These observations are partial and do not establish the complete catalog order. Items remaining in the unknown list have not been placed by any supplied sequence or screenshot.
 
 ## Earlier order sequence (Oct 3)
 
@@ -272,9 +272,3 @@ These names have appeared in the working inventory or preference data but have n
 - Wing Fletching
 
 ## Name normalization notes
-
-- “Red rose” → Red-Rose Bouquet ([gift catalog](https://fortunesweave.co.uk/wiki/gifts)).
-- “Tales of arena” → Tales of the Arena.
-- “Rancide garum” → Rancid Garum; “souhern coffee” → Southern Coffee; “training weight” → Training Weights.
-- Shortened names such as “jade g”, “home recipe”, “odd veg”, and “eastern tea leave” are recorded with the full names used in the preference data.
-- Dual Fish Knives is listed as a gift in [Raider King’s gift guide](https://raiderking.com/fire-emblem-fortunes-weave-all-loved-gifts-guide/); Full Sewing Kit appears by that name in a [chapter item list](https://www.neoseeker.com/fire-emblem-fortunes-weave/walkthrough/Chapter_Four_The_Indelible_Past).

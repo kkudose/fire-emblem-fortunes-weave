@@ -22,37 +22,13 @@ const names =
     "|",
   );
 
-// Research checked: Raider King's item-by-item reaction table
-// (https://raiderking.com/fire-emblem-fortunes-weave-all-loved-gifts-guide/),
-// the community compilation (https://fortunesweave.co.uk/wiki/gifts),
-// GameWith's Japanese gift-preference table (https://gamewith.jp/fefw/577115),
-// Game8's Japanese table (https://game8.jp/fe-banshisenko/816847),
-// Altema's Japanese preference table (https://altema.jp/febansisenkou/sukinamono),
-// and Redfreshet's per-character gift database
-// (https://redfreshet.com/game-tools/fe-banshisenko/characters/). Secondary
-// category guides checked include Nintendo Insider, Keengamer, and Polygon's
-// gift guide. These sources have different coverage and are not all
-// independent: some reproduce preference categories, while some report
-// individual item reactions. Raider King distinguishes one-arrow and
-// two-arrow reactions but labels the table WIP; the Japanese tables report
-// item/category preferences at a coarser tier and do not distinguish those
-// arrow counts. No public source checked is a complete, authoritative reaction
-// matrix. Absence from this file means unknown, not disliked. Explicitly tiered
-// umbrella rows are expanded only across the documented family membership and
-// count as one source assignment per variant; a same-source named item row
-// overrides its umbrella. Recommendation-only categories remain candidate
-// leads and do not establish an arrow tier. For public-source verification,
-// require two independent sources supporting the exact item and tier; derivative
-// copies do not count as corroboration. If Loved and Really Liked conflict,
-// default to Really Liked and keep the pair unverified unless direct in-game
-// confirmation resolves it. If sources establish the top positive reaction but
-// not whether it earns one or two
-// arrows, place it in Really Liked; reserve Loved for two-arrow evidence.
-// Yuphas Temple is excluded from guide inclusion and confidence decisions: a
-// Yuphas-only positive claim is omitted unless directly confirmed in-game, and
-// a Yuphas-only disagreement does not create an unreliable flag.
-// Direct in-game confirmations supplied by the user override source conflicts.
-// See GIFT_DATA_RESEARCH.md for the audit workflow and provenance notes.
+// Research uses eligible exact-pair evidence from Game8, Yuphas Temple,
+// Raider King, and Redfreshet. Banned sources and category-only recommendations are excluded.
+// Require two independent eligible sources for public-source verification;
+// direct in-game confirmations are authoritative. A Loved/Really Liked-only
+// conflict is recorded as Really Liked without an unverified flag. Check for
+// translation or tier-label mapping issues when mismatches appear systematic.
+// Source omissions mean unknown, not disliked. See GIFT_DATA_RESEARCH.md.
 const records: Record<string, GiftRecord> = {
   Cai: {
     loved: [
@@ -60,9 +36,9 @@ const records: Record<string, GiftRecord> = {
       { name: "Dagda Beard Grass", unverified: true },
       { name: "Horse-Grooming Kit", unverified: true },
       { name: "Mane Ornament", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Rancid Garum", unverified: true },
+      "Pegasus Panorama",
+      "Portrait of Yu Phas",
+      "Rancid Garum",
       { name: "Strategy Manuscript", unverified: true },
       { name: "Training Bracelet", unverified: true }
     ],
@@ -78,12 +54,11 @@ const records: Record<string, GiftRecord> = {
   Dietrich: {
     loved: [
       { name: "Candy Crystals", unverified: true },
-      { name: "Ebony Game Board", unverified: true },
+      "Ebony Game Board",
       { name: "Fragrant Pastries", unverified: true },
       { name: "Mellow Pastries", unverified: true },
-      "Pegasus Panorama",
       { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Rugged Blade", unverified: true },
+      "Rugged Blade",
       { name: "Shield Portrait", unverified: true },
       "Strategy Manuscript"
     ],
@@ -94,18 +69,19 @@ const records: Record<string, GiftRecord> = {
       { name: "Crimson Ghosh", unverified: true },
       { name: "Eastern Black Silk", unverified: true },
       { name: "Flower Painting", unverified: true },
-      { name: "Ginji Cervi", unverified: true },
+      "Ginji Cervi",
       "Honey Milk",
-      "Honey Pastries",
+      { name: "Honey Pastries", unverified: true },
       { name: "Huge Fish Eyeball", unverified: true },
-      "Joint-Relief Gloves",
-      "Kitten Figurine",
+      { name: "Joint-Relief Gloves", unverified: true },
+      { name: "Kitten Figurine", unverified: true },
       "Pastry Cookbook",
-      "Protection Figurine",
-      "Pure-White Cervi",
-      { name: "Saraminian Sweets", unverified: true },
+      "Pegasus Panorama",
+      { name: "Protection Figurine", unverified: true },
+      { name: "Pure-White Cervi", unverified: true },
+      "Saraminian Sweets",
       "Simple Pastries",
-      "Spirit Board Game",
+      { name: "Spirit Board Game", unverified: true },
       "Training Pillar",
       "Training Weights"
     ]
@@ -119,7 +95,7 @@ const records: Record<string, GiftRecord> = {
     ],
     reallyLiked: [
       { name: "Arrowhead Gem", unverified: true },
-      "Dagda Beard Grass",
+      { name: "Dagda Beard Grass", unverified: true },
       { name: "Decorative Arrows", unverified: true },
       { name: "Decorative Bow", unverified: true },
       { name: "Dual Fish Knives", unverified: true },
@@ -129,7 +105,7 @@ const records: Record<string, GiftRecord> = {
       { name: "Exquisite Ring", unverified: true },
       { name: "Flower Painting", unverified: true },
       { name: "Gaudy Bangle", unverified: true },
-      "Horse-Grooming Kit",
+      { name: "Horse-Grooming Kit", unverified: true },
       { name: "Joint-Relief Gloves", unverified: true },
       { name: "Orgus Coffee", unverified: true },
       { name: "Rare Spices", unverified: true },
@@ -144,44 +120,44 @@ const records: Record<string, GiftRecord> = {
 
   Leda: {
     loved: [
-      { name: "Arrowhead Gem", unverified: true },
-      { name: "Crimson Ghosh", unverified: true },
-      "Eastern Black Silk",
-      "Eastern Earrings",
+      "Arrowhead Gem",
       { name: "Exquisite Ring", unverified: true },
-      { name: "Flower Painting", unverified: true },
+      "Flower Painting",
       { name: "Full Sewing Kit", unverified: true },
       { name: "History of a Master", unverified: true },
       "Portrait of Yu Phas",
       { name: "Skin Balm", unverified: true },
-      "Tales of Adventure",
-      "Volcano Ghosh"
+      "Tales of Adventure"
     ],
     reallyLiked: [
-      "Aromatic Shosh",
+      { name: "Aromatic Shosh", unverified: true },
       { name: "Blue Shosh", unverified: true },
-      "Brined Fish Guts",
-      "Dagda Beard Grass",
-      "Eastern Tea Leaves",
-      { name: "Energizing Ghosh", unverified: true },
+      { name: "Brined Fish Guts", unverified: true },
+      "Crimson Ghosh",
+      { name: "Dagda Beard Grass", unverified: true },
+      "Eastern Black Silk",
+      "Eastern Earrings",
+      { name: "Eastern Tea Leaves", unverified: true },
+      "Energizing Ghosh",
       { name: "Gaudy Bangle", unverified: true },
-      "Horse-Grooming Kit",
-      "Huge Fish Eyeball",
+      { name: "Horse-Grooming Kit", unverified: true },
+      { name: "Huge Fish Eyeball", unverified: true },
       "Jade Ghosh",
-      "Kitten Figurine",
-      "Light Shosh",
-      "Magic-Trick Set",
+      { name: "Kitten Figurine", unverified: true },
+      { name: "Light Shosh", unverified: true },
+      { name: "Magic-Trick Set", unverified: true },
       "Mature Ghosh",
-      "Mature Shosh",
+      { name: "Mature Shosh", unverified: true },
       { name: "Meaty Delicacy", unverified: true },
-      "Pack of Pastels",
+      { name: "Pack of Pastels", unverified: true },
       { name: "Pegasus Panorama", unverified: true },
       "Rustic Ghosh",
       "Secret Ghosh",
       { name: "Shield Portrait", unverified: true },
       "Southern Ghosh",
       "Sun Ghosh",
-      "Training Bracelet",
+      { name: "Training Bracelet", unverified: true },
+      "Volcano Ghosh",
       "Young Ghosh"
     ]
   },
@@ -195,7 +171,7 @@ const records: Record<string, GiftRecord> = {
     reallyLiked: [
       { name: "Ahm Lu Cloth", unverified: true },
       { name: "Candy Crystals", unverified: true },
-      "Coffee Pastries",
+      { name: "Coffee Pastries", unverified: true },
       { name: "Common Coffee", unverified: true },
       { name: "Flower Painting", unverified: true },
       { name: "Magic-Trick Set", unverified: true },
@@ -237,53 +213,53 @@ const records: Record<string, GiftRecord> = {
 
   Tialla: {
     loved: [
-      { name: "Blue-Rose Bouquet", unverified: true },
-      { name: "Dual Fish Knives", unverified: true },
+      "Dual Fish Knives",
       "Eastern Board Game",
       "Ebony Game Board",
-      { name: "Flower Painting", unverified: true },
+      "Flower Painting",
       { name: "History of a Master", unverified: true },
       "Morfis Almanac",
-      { name: "Morfis Tea", unverified: true },
+      "Morfis Tea",
       "Portrait of Yu Phas",
       { name: "School Scandal", unverified: true },
       "Tome from Away"
     ],
     reallyLiked: [
-      { name: "Ahm Lu Cloth", unverified: true },
+      "Ahm Lu Cloth",
       { name: "Alecto Garum", unverified: true },
-      { name: "Arrowhead Gem", unverified: true },
+      "Arrowhead Gem",
+      "Blue-Rose Bouquet",
       "Board-Game Tactics",
       { name: "Ceremonial Spear", unverified: true },
-      { name: "Concentrated Garum", unverified: true },
-      { name: "Eastern Black Silk", unverified: true },
+      "Concentrated Garum",
+      "Eastern Black Silk",
       { name: "Eastern Love Story", unverified: true },
       { name: "Eastern Tea Leaves", unverified: true },
       { name: "Everyday Scenes", unverified: true },
       "Garum",
-      "Ginji Cervi",
+      { name: "Ginji Cervi", unverified: true },
       "Herbal Recipe Guide",
       "Home-Recipe Book",
       "Jamel Milk",
       "Mature Dried Cervi",
-      { name: "Niiza Garum", unverified: true },
-      { name: "Outdoor Cooking Set", unverified: true },
+      "Niiza Garum",
+      "Outdoor Cooking Set",
       { name: "Pastry Cookbook", unverified: true },
       "Pickled Bulbs",
-      { name: "Potted Vegetables", unverified: true },
-      { name: "Protection Figurine", unverified: true },
-      { name: "Skin Balm", unverified: true },
+      "Potted Vegetables",
+      "Protection Figurine",
+      "Skin Balm",
       { name: "Smooth Garum", unverified: true },
       { name: "Solomon Coffee", unverified: true },
       "Spirit Board Game",
       { name: "Strategy Manuscript", unverified: true },
-      "Strong Cervi",
+      { name: "Strong Cervi", unverified: true },
       "Strong Seasonings",
-      { name: "Tales of Adventure", unverified: true },
+      "Tales of Adventure",
       { name: "Tales of the Arena", unverified: true },
       "The Knight’s Suitors",
-      { name: "The Works of Dante", unverified: true },
-      { name: "Thick Foreign Tome", unverified: true },
+      "The Works of Dante",
+      "Thick Foreign Tome",
       "Trader’s Handbook",
       "Village Recipes",
       "Weak Cervi",
@@ -325,37 +301,37 @@ const records: Record<string, GiftRecord> = {
 
   Ultand: {
     loved: [
-      { name: "Dual Fish Knives", unverified: true },
       { name: "History of a Master", unverified: true },
       { name: "Legendary Garum", unverified: true },
       "Portrait of Yu Phas",
       "Rancid Garum",
-      { name: "Tales of Adventure", unverified: true }
+      "Tales of Adventure"
     ],
     reallyLiked: [
       { name: "Ahm Lu Cloth", unverified: true },
       { name: "Arrowhead Gem", unverified: true },
-      { name: "Blue-Rose Bouquet", unverified: true },
+      "Blue-Rose Bouquet",
       { name: "Candy Crystals", unverified: true },
-      "Ceremonial Spear",
-      { name: "Concentrated Garum", unverified: true },
+      { name: "Ceremonial Spear", unverified: true },
+      "Concentrated Garum",
       "Crimson Ghosh",
+      "Dual Fish Knives",
       { name: "Eastern Black Silk", unverified: true },
       { name: "Eastern Board Game", unverified: true },
       { name: "Eastern Love Story", unverified: true },
       { name: "Exquisite Ring", unverified: true },
-      "Flower Painting",
+      { name: "Flower Painting", unverified: true },
       { name: "Full Sewing Kit", unverified: true },
       "Garum",
-      { name: "Herbal Recipe Guide", unverified: true },
-      { name: "Home-Recipe Book", unverified: true },
-      "Morfis Almanac",
+      "Herbal Recipe Guide",
+      "Home-Recipe Book",
+      { name: "Morfis Almanac", unverified: true },
       "Niiza Garum",
       "Outdoor Cooking Set",
       { name: "Pastry Cookbook", unverified: true },
       { name: "Rugged Blade", unverified: true },
-      { name: "Skin Balm", unverified: true },
-      { name: "Strong Seasonings", unverified: true },
+      "Skin Balm",
+      "Strong Seasonings",
       "The Knight’s Suitors",
       { name: "Tome from Away", unverified: true }
     ]
@@ -363,21 +339,21 @@ const records: Record<string, GiftRecord> = {
 
   Fabio: {
     loved: [
-      { name: "Flower Painting", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Rare Southern Seeds", unverified: true },
+      "Flower Painting",
+      "Pegasus Panorama",
+      "Rare Southern Seeds",
       { name: "Tales of Adventure", unverified: true }
     ],
     reallyLiked: [
       { name: "Aromatic Shosh", unverified: true },
       { name: "Brined Fish Guts", unverified: true },
-      "Coffee Pastries",
+      { name: "Coffee Pastries", unverified: true },
       "Common Coffee",
-      { name: "Crimson Ghosh", unverified: true },
+      "Crimson Ghosh",
       { name: "Dagda Beard Grass", unverified: true },
       "Eastern Black Silk",
       "Eastern Tea Leaves",
-      { name: "Energizing Ghosh", unverified: true },
+      "Energizing Ghosh",
       { name: "Huge Fish Eyeball", unverified: true },
       "Jade Ghosh",
       { name: "Light Shosh", unverified: true },
@@ -395,47 +371,47 @@ const records: Record<string, GiftRecord> = {
       "Southern Ghosh",
       "Sun Ghosh",
       { name: "Tome from Away", unverified: true },
-      { name: "Volcano Ghosh", unverified: true },
+      "Volcano Ghosh",
       "Young Ghosh"
     ]
   },
 
   Esmeralda: {
     loved: [
-      { name: "Arrowhead Gem", unverified: true },
-      { name: "Dual Fish Knives", unverified: true },
-      { name: "Eastern Black Silk", unverified: true },
-      "Eastern Earrings",
-      { name: "Flower Painting", unverified: true },
       "Tales of Adventure"
     ],
     reallyLiked: [
-      { name: "Ahm Lu Cloth", unverified: true },
+      "Ahm Lu Cloth",
       { name: "Alecto Garum", unverified: true },
-      { name: "Blue-Rose Bouquet", unverified: true },
-      { name: "Bow Repair Kit", unverified: true },
+      "Arrowhead Gem",
+      "Blue-Rose Bouquet",
+      "Bow Repair Kit",
       { name: "Ceremonial Spear", unverified: true },
-      "Coffee Pastries",
+      { name: "Coffee Pastries", unverified: true },
       { name: "Dagda Beard Grass", unverified: true },
+      "Dual Fish Knives",
+      "Eastern Black Silk",
+      "Eastern Earrings",
       { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Exquisite Ring", unverified: true },
+      "Exquisite Ring",
       "Flexible Fishing Rod",
+      "Flower Painting",
       { name: "Fragrant Pastries", unverified: true },
       "Garum",
       "Gaudy Bangle",
       { name: "Herbal Recipe Guide", unverified: true },
       { name: "Home-Recipe Book", unverified: true },
       { name: "Horse-Grooming Kit", unverified: true },
-      "Huge Fish Eyeball",
+      { name: "Huge Fish Eyeball", unverified: true },
       { name: "Kitten Figurine", unverified: true },
       { name: "Mellow Pastries", unverified: true },
       { name: "Pastry Cookbook", unverified: true },
       "Portrait of Yu Phas",
-      { name: "Red Hair Clip", unverified: true },
+      "Red Hair Clip",
       "Saraminian Sweets",
       "Sharp Fishhook",
       { name: "Simple Pastries", unverified: true },
-      { name: "Skin Balm", unverified: true },
+      "Skin Balm",
       { name: "Smooth Garum", unverified: true },
       { name: "Strong Seasonings", unverified: true },
       { name: "Tome from Away", unverified: true },
@@ -446,8 +422,7 @@ const records: Record<string, GiftRecord> = {
 
   Mikaela: {
     loved: [
-      { name: "Rugged Blade", unverified: true },
-      { name: "Strategy Manuscript", unverified: true },
+      "Rugged Blade",
       { name: "Tales of Adventure", unverified: true }
     ],
     reallyLiked: [
@@ -456,16 +431,16 @@ const records: Record<string, GiftRecord> = {
       { name: "Arrowhead Gem", unverified: true },
       { name: "Coffee Pastries", unverified: true },
       "Common Coffee",
-      { name: "Crimson Ghosh", unverified: true },
+      "Crimson Ghosh",
       { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Energizing Ghosh", unverified: true },
+      "Energizing Ghosh",
       { name: "Flower Painting", unverified: true },
       "Garum",
       { name: "Herbal Recipe Guide", unverified: true },
       "Home-Recipe Book",
       { name: "Huge Fish Eyeball", unverified: true },
       "Jade Ghosh",
-      "Light Shosh",
+      { name: "Light Shosh", unverified: true },
       "Mature Ghosh",
       { name: "Mature Shosh", unverified: true },
       "Orgus Coffee",
@@ -476,13 +451,14 @@ const records: Record<string, GiftRecord> = {
       "Select Coffee",
       "Southern Coffee",
       "Southern Ghosh",
+      "Strategy Manuscript",
       { name: "Strong Seasonings", unverified: true },
       "Sun Ghosh",
       { name: "Tome from Away", unverified: true },
-      { name: "Training Pillar", unverified: true },
-      { name: "Training Weights", unverified: true },
+      "Training Pillar",
+      "Training Weights",
       { name: "Village Recipes", unverified: true },
-      { name: "Volcano Ghosh", unverified: true },
+      "Volcano Ghosh",
       { name: "Wing Fletching", unverified: true },
       "Young Ghosh"
     ]
@@ -490,57 +466,56 @@ const records: Record<string, GiftRecord> = {
 
   Bonaventure: {
     loved: [
-      { name: "Dual Fish Knives", unverified: true },
-      { name: "Morfis Almanac", unverified: true },
-      { name: "Poems of the Greats", unverified: true },
-      { name: "School Scandal", unverified: true },
-      "Strategy Manuscript",
-      { name: "Tome from Away", unverified: true }
+
     ],
     reallyLiked: [
-      { name: "Aromatic Shosh", unverified: true },
-      { name: "Blue Shosh", unverified: true },
+      "Aromatic Shosh",
+      "Blue Shosh",
       { name: "Ceremonial Spear", unverified: true },
-      { name: "Common Coffee", unverified: true },
-      { name: "Crimson Ghosh", unverified: true },
+      "Common Coffee",
+      "Crimson Ghosh",
+      "Dual Fish Knives",
       { name: "Eastern Black Silk", unverified: true },
       { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Energizing Ghosh", unverified: true },
+      "Energizing Ghosh",
       "Garum",
-      { name: "Herbal Recipe Guide", unverified: true },
+      "Herbal Recipe Guide",
       "Home-Recipe Book",
       "Jade Ghosh",
-      { name: "Light Shosh", unverified: true },
-      { name: "Magic-Trick Set", unverified: true },
-      { name: "Mature Ghosh", unverified: true },
-      { name: "Mature Shosh", unverified: true },
-      { name: "Orgus Coffee", unverified: true },
+      "Light Shosh",
+      "Magic-Trick Set",
+      "Mature Ghosh",
+      "Mature Shosh",
+      "Morfis Almanac",
+      "Orgus Coffee",
       "Pastry Cookbook",
-      { name: "Protection Figurine", unverified: true },
+      "Poems of the Greats",
+      "Protection Figurine",
       "Rare Spices",
       { name: "Rugged Blade", unverified: true },
-      { name: "Rustic Ghosh", unverified: true },
+      "Rustic Ghosh",
+      "School Scandal",
       "Secret Ghosh",
-      { name: "Select Coffee", unverified: true },
-      { name: "Southern Coffee", unverified: true },
-      { name: "Southern Ghosh", unverified: true },
+      "Select Coffee",
+      "Southern Coffee",
+      "Southern Ghosh",
+      "Strategy Manuscript",
       { name: "Strong Seasonings", unverified: true },
       "Sun Ghosh",
       "Tales of the Arena",
       { name: "The Works of Dante", unverified: true },
       { name: "Thick Foreign Tome", unverified: true },
+      "Tome from Away",
       { name: "Village Recipes", unverified: true },
-      { name: "Volcano Ghosh", unverified: true },
-      { name: "Young Ghosh", unverified: true },
-      { name: "Young Shosh", unverified: true }
+      "Volcano Ghosh",
+      "Young Ghosh",
+      "Young Shosh"
     ]
   },
 
   Tobias: {
     loved: [
-      { name: "Strategy Manuscript", unverified: true },
-      { name: "Tales of Adventure", unverified: true },
-      { name: "Volcano Ghosh", unverified: true }
+      { name: "Tales of Adventure", unverified: true }
     ],
     reallyLiked: [
       { name: "Alecto Garum", unverified: true },
@@ -562,11 +537,13 @@ const records: Record<string, GiftRecord> = {
       { name: "Sharp Fishhook", unverified: true },
       { name: "Smooth Garum", unverified: true },
       { name: "Southern Ghosh", unverified: true },
+      "Strategy Manuscript",
       { name: "Strong Seasonings", unverified: true },
       { name: "Sturdy Rucksack", unverified: true },
       "Sun Ghosh",
       { name: "Training Bracelet", unverified: true },
       { name: "Village Recipes", unverified: true },
+      "Volcano Ghosh",
       { name: "Wing Fletching", unverified: true },
       { name: "Young Ghosh", unverified: true }
     ]
@@ -574,11 +551,11 @@ const records: Record<string, GiftRecord> = {
 
   Lysander: {
     loved: [
-      { name: "Ceremonial Spear", unverified: true },
-      { name: "Flower Painting", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Shield Portrait", unverified: true }
+      "Ceremonial Spear",
+      "Flower Painting",
+      "Pegasus Panorama",
+      "Portrait of Yu Phas",
+      "Shield Portrait"
     ],
     reallyLiked: [
       { name: "Dagda Beard Grass", unverified: true },
@@ -586,29 +563,29 @@ const records: Record<string, GiftRecord> = {
       { name: "Horse-Grooming Kit", unverified: true },
       { name: "Mane Ornament", unverified: true },
       { name: "Sharp Dagger", unverified: true },
-      "Training Weights",
+      { name: "Training Weights", unverified: true },
       { name: "Wing Fletching", unverified: true }
     ]
   },
 
   Lilian: {
     loved: [
-      "Eastern Earrings",
       "Eastern Tea Leaves",
-      "Poems of the Greats",
-      "Strategy Manuscript",
       { name: "Tales of Adventure", unverified: true }
     ],
     reallyLiked: [
       { name: "Decorative Arrows", unverified: true },
+      "Eastern Earrings",
       { name: "Gaudy Bangle", unverified: true },
       { name: "Herbal Recipe Guide", unverified: true },
       { name: "Home-Recipe Book", unverified: true },
       { name: "Morfis Almanac", unverified: true },
       { name: "Pastry Cookbook", unverified: true },
+      "Poems of the Greats",
       { name: "Rare Spices", unverified: true },
+      "Strategy Manuscript",
       { name: "Strong Seasonings", unverified: true },
-      { name: "Trader’s Handbook", unverified: true },
+      "Trader’s Handbook",
       { name: "Training Bracelet", unverified: true },
       { name: "Village Recipes", unverified: true },
       { name: "Wing Fletching", unverified: true }
@@ -617,26 +594,26 @@ const records: Record<string, GiftRecord> = {
 
   Buccar: {
     loved: [
-      "Crimson Ghosh",
-      { name: "Dual Fish Knives", unverified: true },
       { name: "Legendary Garum", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
+      "Pegasus Panorama",
+      "Portrait of Yu Phas",
       "Rancid Garum",
-      { name: "Shield Portrait", unverified: true },
-      { name: "Special “Medicine”", unverified: true }
+      "Shield Portrait",
+      "Special “Medicine”"
     ],
     reallyLiked: [
-      { name: "Aromatic Shosh", unverified: true },
+      "Aromatic Shosh",
       "Arrowhead Gem",
-      { name: "Blue Shosh", unverified: true },
+      "Blue Shosh",
       { name: "Ceremonial Spear", unverified: true },
+      "Crimson Ghosh",
+      "Dual Fish Knives",
       { name: "Eastern Tea Leaves", unverified: true },
       "Energizing Ghosh",
       { name: "Flower Painting", unverified: true },
       "Garum",
       { name: "Home-Recipe Book", unverified: true },
-      { name: "Jade Ghosh", unverified: true },
+      "Jade Ghosh",
       "Light Shosh",
       "Mature Ghosh",
       "Mature Shosh",
@@ -644,11 +621,11 @@ const records: Record<string, GiftRecord> = {
       { name: "Outdoor Cooking Set", unverified: true },
       { name: "Rare Spices", unverified: true },
       "Rustic Ghosh",
-      { name: "Secret Ghosh", unverified: true },
-      { name: "Southern Ghosh", unverified: true },
-      { name: "Sun Ghosh", unverified: true },
+      "Secret Ghosh",
+      "Southern Ghosh",
+      "Sun Ghosh",
       { name: "Village Recipes", unverified: true },
-      { name: "Volcano Ghosh", unverified: true },
+      "Volcano Ghosh",
       "Young Ghosh",
       "Young Shosh"
     ]
@@ -656,36 +633,36 @@ const records: Record<string, GiftRecord> = {
 
   Sirocco: {
     loved: [
-      "Arrowhead Gem",
-      "Crimson Ghosh",
-      { name: "Eastern Earrings", unverified: true },
+      "Eastern Earrings",
       "Flower Painting",
       "History of a Master",
       { name: "Poems of the Greats", unverified: true },
       "Portrait of Yu Phas",
-      { name: "Shield Portrait", unverified: true },
-      { name: "Tales of Adventure", unverified: true },
-      "Volcano Ghosh"
+      "Shield Portrait",
+      "Tales of Adventure"
     ],
     reallyLiked: [
-      { name: "Crimson Bull Figure", unverified: true },
+      "Arrowhead Gem",
+      "Crimson Bull Figure",
+      "Crimson Ghosh",
       { name: "Eastern Board Game", unverified: true },
       { name: "Eastern Love Story", unverified: true },
-      { name: "Energizing Ghosh", unverified: true },
-      { name: "Gaudy Bangle", unverified: true },
+      "Energizing Ghosh",
+      "Gaudy Bangle",
       "Jade Ghosh",
-      { name: "Jade Panther Figure", unverified: true },
+      "Jade Panther Figure",
       { name: "Joint-Relief Gloves", unverified: true },
       { name: "Light Shosh", unverified: true },
       "Mature Ghosh",
       { name: "Mature Shosh", unverified: true },
       "Pack of Pastels",
       "Rustic Ghosh",
-      { name: "Secret Ghosh", unverified: true },
+      "Secret Ghosh",
       { name: "Skin Balm", unverified: true },
-      { name: "Southern Ghosh", unverified: true },
-      { name: "Sun Ghosh", unverified: true },
+      "Southern Ghosh",
+      "Sun Ghosh",
       { name: "Tome from Away", unverified: true },
+      "Volcano Ghosh",
       "Young Ghosh",
       { name: "Young Shosh", unverified: true }
     ]
@@ -693,25 +670,25 @@ const records: Record<string, GiftRecord> = {
 
   Mu: {
     loved: [
-      { name: "Candy Crystals", unverified: true },
+      "Candy Crystals",
       { name: "History of a Master", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Tales of Adventure", unverified: true }
+      "Tales of Adventure"
     ],
     reallyLiked: [
       "Arrowhead Gem",
-      { name: "Ginji Cervi", unverified: true },
+      "Ginji Cervi",
       { name: "Honey Pastries", unverified: true },
       "Jamel Milk",
-      { name: "Mature Dried Cervi", unverified: true },
-      { name: "Morfis Almanac", unverified: true },
-      { name: "Morfis Tea", unverified: true },
+      "Mature Dried Cervi",
+      "Morfis Almanac",
+      "Morfis Tea",
       "Orgus Coffee",
       { name: "Outdoor Cooking Set", unverified: true },
       { name: "Pickled Vegetables", unverified: true },
+      "Portrait of Yu Phas",
       "Pure-White Cervi",
       "Saraminian Sweets",
-      { name: "Strong Cervi", unverified: true },
+      "Strong Cervi",
       { name: "Tome from Away", unverified: true },
       "Weak Cervi",
       { name: "Yarc Milk", unverified: true }
@@ -720,29 +697,29 @@ const records: Record<string, GiftRecord> = {
 
   Olympia: {
     loved: [
-      { name: "Arrowhead Gem", unverified: true },
+      "Arrowhead Gem",
       { name: "Blue-Rose Bouquet", unverified: true },
-      { name: "Eastern Earrings", unverified: true },
       { name: "Eastern Tea Leaves", unverified: true },
       "Flower Painting",
       { name: "History of a Master", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
+      "Pegasus Panorama",
       "Portrait of Yu Phas",
-      { name: "Red Hair Clip", unverified: true },
-      { name: "Shield Portrait", unverified: true },
+      "Red Hair Clip",
+      "Shield Portrait",
       "Tales of Adventure"
     ],
     reallyLiked: [
-      "Coffee Pastries",
+      { name: "Coffee Pastries", unverified: true },
       "Common Coffee",
-      { name: "Exquisite Ring", unverified: true },
+      "Eastern Earrings",
+      "Exquisite Ring",
       { name: "Gaudy Bangle", unverified: true },
       { name: "Morfis Almanac", unverified: true },
-      { name: "Orgus Coffee", unverified: true },
+      "Orgus Coffee",
       { name: "Pack of Pastels", unverified: true },
-      "Select Coffee",
+      { name: "Select Coffee", unverified: true },
       { name: "Skin Balm", unverified: true },
-      "Southern Coffee"
+      { name: "Southern Coffee", unverified: true }
     ]
   },
 
@@ -760,7 +737,7 @@ const records: Record<string, GiftRecord> = {
       { name: "Ceremonial Spear", unverified: true },
       { name: "Concentrated Garum", unverified: true },
       { name: "Eastern Love Story", unverified: true },
-      { name: "Garum", unverified: true },
+      "Garum",
       { name: "Herbal Recipe Guide", unverified: true },
       { name: "Home-Recipe Book", unverified: true },
       { name: "Morfis Almanac", unverified: true },
@@ -771,54 +748,54 @@ const records: Record<string, GiftRecord> = {
       { name: "The Works of Dante", unverified: true },
       { name: "Tome from Away", unverified: true },
       { name: "Trader’s Handbook", unverified: true },
-      "Training Bracelet"
+      { name: "Training Bracelet", unverified: true }
     ]
   },
 
   Gaitz: {
     loved: [
-      { name: "Ahm Lu Cloth", unverified: true },
+      "Ahm Lu Cloth",
       "Ceremonial Spear",
-      { name: "Decorative Arrows", unverified: true },
-      { name: "Eastern Black Silk", unverified: true },
-      { name: "Eastern Board Game", unverified: true },
-      { name: "Ebony Game Board", unverified: true },
+      "Decorative Arrows",
+      "Eastern Black Silk",
+      "Eastern Board Game",
+      "Ebony Game Board",
       "Flower Painting",
       { name: "History of a Master", unverified: true },
       "Morfis Almanac",
-      { name: "Pegasus Panorama", unverified: true },
+      "Pegasus Panorama",
       "Portrait of Yu Phas",
-      { name: "Rancid Garum", unverified: true },
-      { name: "Rugged Blade", unverified: true },
-      { name: "School Scandal", unverified: true },
-      { name: "Shield Portrait", unverified: true },
-      { name: "Tales of Adventure", unverified: true },
+      "Rancid Garum",
+      "Rugged Blade",
+      "School Scandal",
+      "Shield Portrait",
+      "Tales of Adventure",
       "Tome from Away"
     ],
     reallyLiked: [
       "Arrowhead Gem",
-      { name: "Board-Game Tactics", unverified: true },
+      "Board-Game Tactics",
       "Coffee Pastries",
       "Common Coffee",
-      { name: "Crafting Knives", unverified: true },
-      { name: "Crimson Bull Figure", unverified: true },
+      "Crafting Knives",
+      "Crimson Bull Figure",
       "Crimson Ghosh",
-      { name: "Dagda Beard Grass", unverified: true },
-      { name: "Herbal Recipe Guide", unverified: true },
-      { name: "Home-Recipe Book", unverified: true },
+      "Dagda Beard Grass",
+      "Herbal Recipe Guide",
+      "Home-Recipe Book",
       "Horse-Grooming Kit",
-      { name: "Jade Panther Figure", unverified: true },
+      "Jade Panther Figure",
       "Joint-Relief Gloves",
-      { name: "Mane Ornament", unverified: true },
-      "Orgus Coffee",
-      { name: "Pack of Pastels", unverified: true },
-      { name: "Protection Figurine", unverified: true },
-      { name: "Sharp Dagger", unverified: true },
-      { name: "Spirit Board Game", unverified: true },
-      { name: "Sturdy Rucksack", unverified: true },
-      { name: "The Knight’s Suitors", unverified: true },
+      "Mane Ornament",
+      { name: "Orgus Coffee", unverified: true },
+      "Pack of Pastels",
+      "Protection Figurine",
+      "Sharp Dagger",
+      "Spirit Board Game",
+      "Sturdy Rucksack",
+      "The Knight’s Suitors",
       "The Works of Dante",
-      { name: "Thick Foreign Tome", unverified: true },
+      "Thick Foreign Tome",
       "Training Pillar",
       "Training Weights"
     ]
@@ -826,35 +803,35 @@ const records: Record<string, GiftRecord> = {
 
   Dante: {
     loved: [
-      { name: "Ahm Lu Cloth", unverified: true },
-      { name: "Decorative Arrows", unverified: true },
-      { name: "Flower Painting", unverified: true },
+      "Ahm Lu Cloth",
+      "Decorative Arrows",
+      "Flower Painting",
       { name: "History of a Master", unverified: true },
       { name: "Morfis Almanac", unverified: true },
       "Poems of the Greats",
       "Portrait of Yu Phas",
-      { name: "Rancid Garum", unverified: true },
+      "Rancid Garum",
       "School Scandal",
-      { name: "Tales of Adventure", unverified: true },
+      "Tales of Adventure",
       { name: "Tome from Away", unverified: true }
     ],
     reallyLiked: [
       "Arrowhead Gem",
       { name: "Ceremonial Spear", unverified: true },
-      { name: "Coffee Pastries", unverified: true },
+      "Coffee Pastries",
       "Common Coffee",
-      { name: "Crafting Knives", unverified: true },
-      { name: "Crimson Bull Figure", unverified: true },
+      "Crafting Knives",
+      "Crimson Bull Figure",
       "Crimson Ghosh",
       { name: "Eastern Black Silk", unverified: true },
       { name: "Everyday Scenes", unverified: true },
-      { name: "Herbal Recipe Guide", unverified: true },
-      { name: "Home-Recipe Book", unverified: true },
-      { name: "Jade Panther Figure", unverified: true },
+      "Herbal Recipe Guide",
+      "Home-Recipe Book",
+      "Jade Panther Figure",
       { name: "Magic-Trick Set", unverified: true },
       "Pack of Pastels",
-      "Select Coffee",
-      { name: "Sharp Dagger", unverified: true },
+      { name: "Select Coffee", unverified: true },
+      "Sharp Dagger",
       { name: "Tales of the Arena", unverified: true },
       "The Works of Dante"
     ]
@@ -862,60 +839,60 @@ const records: Record<string, GiftRecord> = {
 
   Goliath: {
     loved: [
-      { name: "Crimson Ghosh", unverified: true },
-      { name: "Rancid Garum", unverified: true },
-      { name: "Special “Medicine”", unverified: true },
-      "Strategy Manuscript",
-      "Volcano Ghosh"
+      "Rancid Garum",
+      "Special “Medicine”"
     ],
     reallyLiked: [
       "Aromatic Shosh",
-      { name: "Blue Shosh", unverified: true },
+      "Blue Shosh",
+      "Crimson Ghosh",
       { name: "Eastern Board Game", unverified: true },
       { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Energizing Ghosh", unverified: true },
+      "Energizing Ghosh",
       "Jade Ghosh",
       { name: "Kitten Figurine", unverified: true },
       "Light Shosh",
       "Mature Ghosh",
       "Mature Shosh",
-      { name: "Protection Figurine", unverified: true },
+      "Protection Figurine",
       "Rustic Ghosh",
       "Secret Ghosh",
       "Southern Ghosh",
       { name: "Spirit Board Game", unverified: true },
+      "Strategy Manuscript",
       { name: "Sturdy Rucksack", unverified: true },
       "Sun Ghosh",
       { name: "Training Bracelet", unverified: true },
+      "Volcano Ghosh",
       { name: "Wing Fletching", unverified: true },
       "Young Ghosh",
-      { name: "Young Shosh", unverified: true }
+      "Young Shosh"
     ]
   },
 
   Jester: {
     loved: [
-      "Arrowhead Gem",
-      { name: "Legendary Garum", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true }
+      "Legendary Garum",
+      "Portrait of Yu Phas"
     ],
     reallyLiked: [
+      "Arrowhead Gem",
       { name: "Board-Game Tactics", unverified: true },
       "Ceremonial Spear",
       "Common Coffee",
       "Crimson Ghosh",
       "Dual Fish Knives",
-      { name: "Herbal Recipe Guide", unverified: true },
-      { name: "Home-Recipe Book", unverified: true },
+      "Herbal Recipe Guide",
+      "Home-Recipe Book",
       { name: "Joint-Relief Gloves", unverified: true },
-      "Orgus Coffee",
-      { name: "Outdoor Cooking Set", unverified: true },
+      { name: "Orgus Coffee", unverified: true },
+      "Outdoor Cooking Set",
       "Pastry Cookbook",
       "Rare Spices",
-      "Select Coffee",
-      "Southern Coffee",
+      { name: "Select Coffee", unverified: true },
+      { name: "Southern Coffee", unverified: true },
       { name: "Spirit Board Game", unverified: true },
-      { name: "Strong Seasonings", unverified: true },
+      "Strong Seasonings",
       "Village Recipes"
     ]
   },
@@ -925,23 +902,23 @@ const records: Record<string, GiftRecord> = {
       { name: "Blue-Rose Bouquet", unverified: true },
       { name: "Flower Painting", unverified: true },
       { name: "History of a Master", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      "Volcano Ghosh"
+      { name: "Portrait of Yu Phas", unverified: true }
     ],
     reallyLiked: [
       { name: "Arrowhead Gem", unverified: true },
       "Ceremonial Spear",
       { name: "Coffee Pastries", unverified: true },
       { name: "Crimson Bull Figure", unverified: true },
-      { name: "Crimson Ghosh", unverified: true },
-      { name: "Energizing Ghosh", unverified: true },
-      { name: "Jade Ghosh", unverified: true },
+      "Crimson Ghosh",
+      "Energizing Ghosh",
+      "Jade Ghosh",
       { name: "Jade Panther Figure", unverified: true },
-      { name: "Mature Ghosh", unverified: true },
-      { name: "Rustic Ghosh", unverified: true },
+      "Mature Ghosh",
+      "Rustic Ghosh",
       "Secret Ghosh",
       "Southern Ghosh",
-      { name: "Sun Ghosh", unverified: true },
+      "Sun Ghosh",
+      "Volcano Ghosh",
       "Young Ghosh"
     ]
   },
@@ -952,7 +929,7 @@ const records: Record<string, GiftRecord> = {
       { name: "History of a Master", unverified: true },
       "Pegasus Panorama",
       "Portrait of Yu Phas",
-      { name: "Shield Portrait", unverified: true }
+      "Shield Portrait"
     ],
     reallyLiked: [
       { name: "Ahm Lu Cloth", unverified: true },
@@ -975,7 +952,7 @@ const records: Record<string, GiftRecord> = {
       { name: "History of a Master", unverified: true },
       "Portrait of Yu Phas",
       "Rancid Garum",
-      { name: "Shield Portrait", unverified: true }
+      "Shield Portrait"
     ],
     reallyLiked: [
       "Arrowhead Gem",
@@ -984,7 +961,7 @@ const records: Record<string, GiftRecord> = {
       { name: "Eastern Board Game", unverified: true },
       { name: "Eastern Tea Leaves", unverified: true },
       { name: "Flower Painting", unverified: true },
-      { name: "Joint-Relief Gloves", unverified: true },
+      "Joint-Relief Gloves",
       "Pickled Vegetables",
       { name: "Protection Figurine", unverified: true },
       { name: "Solomon Coffee", unverified: true }
@@ -994,35 +971,35 @@ const records: Record<string, GiftRecord> = {
   Ludia: {
     loved: [
       { name: "Arrowhead Gem", unverified: true },
-      "Eastern Black Silk",
-      { name: "Eastern Earrings", unverified: true },
       { name: "Eastern Love Story", unverified: true },
       { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Flower Painting", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Red Hair Clip", unverified: true },
-      { name: "Strategy Manuscript", unverified: true },
+      "Flower Painting",
+      "Pegasus Panorama",
+      "Portrait of Yu Phas",
+      "Red Hair Clip",
       "Tales of Adventure"
     ],
     reallyLiked: [
       { name: "Ceremonial Spear", unverified: true },
       { name: "Coffee Pastries", unverified: true },
       "Common Coffee",
+      "Eastern Black Silk",
+      "Eastern Earrings",
       { name: "Everyday Scenes", unverified: true },
       { name: "Gaudy Bangle", unverified: true },
       { name: "Herbal Recipe Guide", unverified: true },
       { name: "Home-Recipe Book", unverified: true },
       { name: "Magic-Trick Set", unverified: true },
-      "Orgus Coffee",
+      { name: "Orgus Coffee", unverified: true },
       { name: "Pack of Pastels", unverified: true },
       { name: "Pastry Cookbook", unverified: true },
-      "Select Coffee",
+      { name: "Select Coffee", unverified: true },
       { name: "Sharp Fishhook", unverified: true },
       { name: "Skin Balm", unverified: true },
-      "Southern Coffee",
+      { name: "Southern Coffee", unverified: true },
+      "Strategy Manuscript",
       "Sturdy Rucksack",
-      { name: "Trader’s Handbook", unverified: true },
+      "Trader’s Handbook",
       { name: "Training Bracelet", unverified: true },
       { name: "Village Recipes", unverified: true }
     ]
@@ -1030,43 +1007,43 @@ const records: Record<string, GiftRecord> = {
 
   Fianna: {
     loved: [
-      "Arrowhead Gem",
-      "Blue-Rose Bouquet",
-      { name: "Eastern Black Silk", unverified: true },
-      { name: "Eastern Earrings", unverified: true },
-      { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Flower Painting", unverified: true },
-      { name: "Morfis Almanac", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Rare Southern Seeds", unverified: true },
-      "Volcano Ghosh"
+      "Eastern Black Silk",
+      "Eastern Earrings",
+      "Flower Painting",
+      "Portrait of Yu Phas",
+      "Rare Southern Seeds"
     ],
     reallyLiked: [
+      "Arrowhead Gem",
+      "Blue-Rose Bouquet",
       "Common Coffee",
       "Crimson Ghosh",
+      "Eastern Tea Leaves",
       { name: "Joint-Relief Gloves", unverified: true },
+      "Morfis Almanac",
       "Orgus Coffee",
       "Rare Spices",
       "Select Coffee",
       { name: "Skin Balm", unverified: true },
       "Southern Coffee",
-      { name: "Tome from Away", unverified: true }
+      { name: "Tome from Away", unverified: true },
+      "Volcano Ghosh"
     ]
   },
 
   Orchel: {
     loved: [
-      { name: "Blue-Rose Bouquet", unverified: true },
       { name: "Dual Fish Knives", unverified: true },
-      { name: "Flower Painting", unverified: true },
+      "Flower Painting",
       { name: "History of a Master", unverified: true },
       { name: "Pegasus Panorama", unverified: true },
       { name: "Poems of the Greats", unverified: true },
       "Portrait of Yu Phas",
       { name: "School Scandal", unverified: true },
-      { name: "Shield Portrait", unverified: true }
+      "Shield Portrait"
     ],
     reallyLiked: [
+      "Blue-Rose Bouquet",
       { name: "Crimson Bull Figure", unverified: true },
       "Garum",
       { name: "Herbal Recipe Guide", unverified: true },
@@ -1088,17 +1065,17 @@ const records: Record<string, GiftRecord> = {
 
   Diego: {
     loved: [
-      { name: "Arrowhead Gem", unverified: true },
-      { name: "Ceremonial Spear", unverified: true },
+      "Ceremonial Spear",
       "Decorative Arrows",
-      { name: "History of a Master", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Rugged Blade", unverified: true },
-      { name: "Shield Portrait", unverified: true },
-      { name: "Tales of Adventure", unverified: true }
+      "History of a Master",
+      "Portrait of Yu Phas",
+      "Rugged Blade",
+      "Shield Portrait",
+      "Tales of Adventure"
     ],
     reallyLiked: [
-      { name: "Bow Repair Kit", unverified: true },
+      "Arrowhead Gem",
+      "Bow Repair Kit",
       { name: "Candy Crystals", unverified: true },
       "Crimson Ghosh",
       "Eastern Board Game",
@@ -1115,29 +1092,27 @@ const records: Record<string, GiftRecord> = {
 
   Ninae: {
     loved: [
-      { name: "Poems of the Greats", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Strategy Manuscript", unverified: true },
+      "Portrait of Yu Phas",
+      "Strategy Manuscript",
       "Tales of Adventure"
     ],
     reallyLiked: [
       { name: "Ahm Lu Cloth", unverified: true },
       "Arrowhead Gem",
       { name: "Crimson Ghosh", unverified: true },
-      { name: "Eastern Black Silk", unverified: true },
+      "Eastern Black Silk",
       { name: "Eastern Tea Leaves", unverified: true },
       { name: "Flower Painting", unverified: true },
       { name: "Morfis Almanac", unverified: true },
+      "Poems of the Greats",
       { name: "Tome from Away", unverified: true }
     ]
   },
 
   Seteth: {
     loved: [
-      { name: "Morfis Almanac", unverified: true },
-      "Poems of the Greats",
-      { name: "Portrait of Yu Phas", unverified: true },
-      "Strategy Manuscript",
+      "Morfis Almanac",
+      "Portrait of Yu Phas",
       "Tales of Adventure"
     ],
     reallyLiked: [
@@ -1154,24 +1129,26 @@ const records: Record<string, GiftRecord> = {
       { name: "Huge Fish Eyeball", unverified: true },
       "Orgus Coffee",
       { name: "Pastry Cookbook", unverified: true },
-      { name: "School Scandal", unverified: true },
-      "Select Coffee",
+      "Poems of the Greats",
+      "School Scandal",
+      { name: "Select Coffee", unverified: true },
       "Sharp Fishhook",
-      "Southern Coffee",
+      { name: "Southern Coffee", unverified: true },
+      "Strategy Manuscript",
       { name: "Sturdy Rucksack", unverified: true },
       "Tales of the Arena",
       "The Works of Dante",
-      { name: "Trader’s Handbook", unverified: true },
+      "Trader’s Handbook",
       { name: "Village Recipes", unverified: true }
     ]
   },
 
   Loretta: {
     loved: [
-      { name: "Ceremonial Spear", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Rugged Blade", unverified: true },
-      { name: "Shield Portrait", unverified: true }
+      "Ceremonial Spear",
+      "Portrait of Yu Phas",
+      "Rugged Blade",
+      "Shield Portrait"
     ],
     reallyLiked: [
       "Arrowhead Gem",
@@ -1197,8 +1174,8 @@ const records: Record<string, GiftRecord> = {
     loved: [
       "History of a Master",
       "Morfis Almanac",
-      { name: "Rugged Blade", unverified: true },
-      { name: "Strategy Manuscript", unverified: true },
+      "Rugged Blade",
+      "Strategy Manuscript",
       "Tales of Adventure"
     ],
     reallyLiked: [
@@ -1206,7 +1183,7 @@ const records: Record<string, GiftRecord> = {
       { name: "Arrowhead Gem", unverified: true },
       { name: "Bagua Divination Set", unverified: true },
       { name: "Candy Crystals", unverified: true },
-      { name: "Ceremonial Spear", unverified: true },
+      "Ceremonial Spear",
       "Eastern Black Silk",
       "Eastern Tea Leaves",
       { name: "Flower Painting", unverified: true },
@@ -1231,7 +1208,7 @@ const records: Record<string, GiftRecord> = {
       { name: "Orgus Coffee", unverified: true },
       { name: "Outdoor Cooking Set", unverified: true },
       "Pastry Cookbook",
-      "Select Coffee",
+      { name: "Select Coffee", unverified: true },
       "Smooth Garum",
       { name: "Southern Coffee", unverified: true },
       { name: "Sturdy Rucksack", unverified: true }
@@ -1240,22 +1217,22 @@ const records: Record<string, GiftRecord> = {
 
   Nezha: {
     loved: [
-      { name: "Arrowhead Gem", unverified: true },
-      { name: "Ceremonial Spear", unverified: true },
-      { name: "Decorative Arrows", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Shield Portrait", unverified: true },
-      { name: "Strategy Manuscript", unverified: true },
+      "Arrowhead Gem",
+      "Ceremonial Spear",
+      "Decorative Arrows",
+      "Portrait of Yu Phas",
+      "Shield Portrait",
       { name: "Tales of Adventure", unverified: true }
     ],
     reallyLiked: [
       { name: "Eastern Tea Leaves", unverified: true },
       { name: "Flower Painting", unverified: true },
-      { name: "Joint-Relief Gloves", unverified: true },
+      "Joint-Relief Gloves",
       "Pickled Bulbs",
       "Pickled Vegetables",
       "Potted Vegetables",
       { name: "Rare Southern Seeds", unverified: true },
+      "Strategy Manuscript",
       { name: "Sturdy Rucksack", unverified: true },
       "Training Bracelet",
       "Training Pillar",
@@ -1266,17 +1243,15 @@ const records: Record<string, GiftRecord> = {
 
   Dadao: {
     loved: [
-      { name: "Poems of the Greats", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Rugged Blade", unverified: true },
-      { name: "Strategy Manuscript", unverified: true },
+      "Portrait of Yu Phas",
+      "Rugged Blade",
       "Tales of Adventure"
     ],
     reallyLiked: [
       { name: "Arrowhead Gem", unverified: true },
-      { name: "Board-Game Tactics", unverified: true },
+      "Board-Game Tactics",
       { name: "Coffee Pastries", unverified: true },
-      { name: "Crimson Ghosh", unverified: true },
+      "Crimson Ghosh",
       { name: "Eastern Black Silk", unverified: true },
       { name: "Flower Painting", unverified: true },
       { name: "Fragrant Pastries", unverified: true },
@@ -1288,9 +1263,11 @@ const records: Record<string, GiftRecord> = {
       { name: "Mature Dried Cervi", unverified: true },
       { name: "Mellow Pastries", unverified: true },
       { name: "Pastry Cookbook", unverified: true },
+      "Poems of the Greats",
       { name: "Potted Vegetables", unverified: true },
       "Saraminian Sweets",
       { name: "Simple Pastries", unverified: true },
+      "Strategy Manuscript",
       { name: "Strong Cervi", unverified: true },
       "Weak Cervi",
       { name: "Yarc Milk", unverified: true }
@@ -1299,32 +1276,32 @@ const records: Record<string, GiftRecord> = {
 
   Halvin: {
     loved: [
-      { name: "Blue-Rose Bouquet", unverified: true },
-      { name: "Eastern Black Silk", unverified: true },
-      { name: "Eastern Earrings", unverified: true },
-      { name: "Flower Painting", unverified: true },
-      { name: "Red Hair Clip", unverified: true }
+      "Blue-Rose Bouquet",
+      "Flower Painting",
+      "Red Hair Clip"
     ],
     reallyLiked: [
       { name: "Crimson Ghosh", unverified: true },
+      "Eastern Black Silk",
+      "Eastern Earrings",
       { name: "Eastern Tea Leaves", unverified: true },
       { name: "Exquisite Ring", unverified: true },
       "Garum",
       { name: "Gaudy Bangle", unverified: true },
-      { name: "Ginji Cervi", unverified: true },
+      "Ginji Cervi",
       "Honey Pastries",
       { name: "Jade Panther Figure", unverified: true },
       { name: "Magic-Trick Set", unverified: true },
-      { name: "Mature Dried Cervi", unverified: true },
-      { name: "Pack of Pastels", unverified: true },
+      "Mature Dried Cervi",
+      "Pack of Pastels",
       { name: "Pickled Bulbs", unverified: true },
       "Potted Vegetables",
-      { name: "Pure-White Cervi", unverified: true },
+      "Pure-White Cervi",
       { name: "Simple Pastries", unverified: true },
       "Skin Balm",
-      { name: "Strong Cervi", unverified: true },
+      "Strong Cervi",
       { name: "Village Recipes", unverified: true },
-      { name: "Weak Cervi", unverified: true }
+      "Weak Cervi"
     ]
   },
 
@@ -1351,15 +1328,13 @@ const records: Record<string, GiftRecord> = {
 
   Guzran: {
     loved: [
-      { name: "Crimson Ghosh", unverified: true },
-      { name: "Shield Portrait", unverified: true },
-      { name: "Strategy Manuscript", unverified: true },
-      "Tales of Adventure",
-      "Volcano Ghosh"
+      "Shield Portrait",
+      "Tales of Adventure"
     ],
     reallyLiked: [
       { name: "Aromatic Shosh", unverified: true },
       "Common Coffee",
+      "Crimson Ghosh",
       { name: "Eastern Tea Leaves", unverified: true },
       "Energizing Ghosh",
       { name: "Huge Fish Eyeball", unverified: true },
@@ -1368,14 +1343,16 @@ const records: Record<string, GiftRecord> = {
       "Mature Ghosh",
       { name: "Mature Shosh", unverified: true },
       { name: "Morfis Almanac", unverified: true },
-      "Orgus Coffee",
+      { name: "Orgus Coffee", unverified: true },
       "Rustic Ghosh",
       "Secret Ghosh",
-      "Select Coffee",
-      "Southern Coffee",
+      { name: "Select Coffee", unverified: true },
+      { name: "Southern Coffee", unverified: true },
       "Southern Ghosh",
+      "Strategy Manuscript",
       { name: "Strong Seasonings", unverified: true },
       "Sun Ghosh",
+      "Volcano Ghosh",
       { name: "Wing Fletching", unverified: true },
       "Young Ghosh",
       { name: "Young Shosh", unverified: true }
@@ -1384,9 +1361,8 @@ const records: Record<string, GiftRecord> = {
 
   Nydine: {
     loved: [
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Rugged Blade", unverified: true },
-      "Strategy Manuscript",
+      "Pegasus Panorama",
+      "Rugged Blade",
       { name: "Tales of Adventure", unverified: true }
     ],
     reallyLiked: [
@@ -1394,12 +1370,13 @@ const records: Record<string, GiftRecord> = {
       { name: "Eastern Black Silk", unverified: true },
       { name: "Eastern Love Story", unverified: true },
       { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Horse-Grooming Kit", unverified: true },
-      { name: "Joint-Relief Gloves", unverified: true },
+      "Horse-Grooming Kit",
+      "Joint-Relief Gloves",
       "Kitten Figurine",
       "Mane Ornament",
       { name: "Morfis Almanac", unverified: true },
       "Saraminian Sweets",
+      "Strategy Manuscript",
       "Sturdy Rucksack",
       { name: "Tome from Away", unverified: true },
       { name: "Training Bracelet", unverified: true },
@@ -1410,10 +1387,10 @@ const records: Record<string, GiftRecord> = {
 
   Io: {
     loved: [
-      { name: "Ceremonial Spear", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Shield Portrait", unverified: true }
+      "Ceremonial Spear",
+      "Pegasus Panorama",
+      "Portrait of Yu Phas",
+      "Shield Portrait"
     ],
     reallyLiked: [
       "Arrowhead Gem",
@@ -1435,65 +1412,65 @@ const records: Record<string, GiftRecord> = {
 
   Catania: {
     loved: [
-      { name: "Ahm Lu Cloth", unverified: true },
-      { name: "Arrowhead Gem", unverified: true },
-      { name: "Blue-Rose Bouquet", unverified: true },
-      { name: "Decorative Arrows", unverified: true },
-      "Eastern Black Silk",
-      { name: "Eastern Earrings", unverified: true },
+      "Arrowhead Gem",
+      "Blue-Rose Bouquet",
+      "Decorative Arrows",
       { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Flower Painting", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Red Hair Clip", unverified: true },
+      "Flower Painting",
+      "Pegasus Panorama",
+      "Portrait of Yu Phas",
+      "Red Hair Clip",
       "Tales of Adventure"
     ],
     reallyLiked: [
+      "Ahm Lu Cloth",
       { name: "Ceremonial Spear", unverified: true },
       "Coffee Pastries",
       "Common Coffee",
       "Crafting Knives",
-      { name: "Crimson Bull Figure", unverified: true },
+      "Crimson Bull Figure",
       { name: "Crimson Ghosh", unverified: true },
       "Dagda Beard Grass",
-      { name: "Exquisite Ring", unverified: true },
+      "Eastern Black Silk",
+      "Eastern Earrings",
+      "Exquisite Ring",
       { name: "Gaudy Bangle", unverified: true },
       "Horse-Grooming Kit",
-      { name: "Jade Panther Figure", unverified: true },
+      "Jade Panther Figure",
       "Kitten Figurine",
       { name: "Magic-Trick Set", unverified: true },
-      { name: "Mane Ornament", unverified: true },
-      "Orgus Coffee",
+      "Mane Ornament",
+      { name: "Orgus Coffee", unverified: true },
       "Pack of Pastels",
-      "Select Coffee",
-      { name: "Sharp Dagger", unverified: true },
+      { name: "Select Coffee", unverified: true },
+      "Sharp Dagger",
       "Skin Balm",
-      "Southern Coffee",
-      { name: "Spirit Board Game", unverified: true }
+      { name: "Southern Coffee", unverified: true },
+      "Spirit Board Game"
     ]
   },
 
   Noctula: {
     loved: [
-      { name: "Ceremonial Spear", unverified: true },
-      { name: "History of a Master", unverified: true },
-      { name: "Shield Portrait", unverified: true },
+      "Ceremonial Spear",
+      "History of a Master",
+      "Shield Portrait",
       "Tales of Adventure"
     ],
     reallyLiked: [
-      { name: "Antique Medal", unverified: true },
+      "Antique Medal",
       { name: "Arrowhead Gem", unverified: true },
       { name: "Crimson Ghosh", unverified: true },
       "Eastern Tea Leaves",
       { name: "Morfis Almanac", unverified: true },
       "Protection Figurine",
-      { name: "Sharp Dagger", unverified: true },
+      "Sharp Dagger",
       "Strategy Manuscript",
       { name: "Sturdy Rucksack", unverified: true },
       { name: "Tome from Away", unverified: true },
       "Training Bracelet",
       "Training Pillar",
-      { name: "Training Weights", unverified: true },
+      "Training Weights",
       { name: "Wing Fletching", unverified: true }
     ]
   },
@@ -1501,77 +1478,77 @@ const records: Record<string, GiftRecord> = {
   "Yang Jie": {
     loved: [
       { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Poems of the Greats", unverified: true },
-      { name: "Strategy Manuscript", unverified: true },
       { name: "Tales of Adventure", unverified: true }
     ],
     reallyLiked: [
       { name: "Aromatic Shosh", unverified: true },
       { name: "Coffee Pastries", unverified: true },
-      { name: "Common Coffee", unverified: true },
-      { name: "Crimson Ghosh", unverified: true },
-      { name: "Energizing Ghosh", unverified: true },
+      "Common Coffee",
+      "Crimson Ghosh",
+      "Energizing Ghosh",
       { name: "Flexible Fishing Rod", unverified: true },
       { name: "Herbal Recipe Guide", unverified: true },
       { name: "Home-Recipe Book", unverified: true },
       { name: "Huge Fish Eyeball", unverified: true },
       "Jade Ghosh",
-      { name: "Kitten Figurine", unverified: true },
+      "Kitten Figurine",
       { name: "Light Shosh", unverified: true },
       "Mature Ghosh",
       { name: "Mature Shosh", unverified: true },
       { name: "Orgus Coffee", unverified: true },
       { name: "Pastry Cookbook", unverified: true },
+      "Poems of the Greats",
       "Rustic Ghosh",
       "Secret Ghosh",
       { name: "Select Coffee", unverified: true },
       { name: "Sharp Fishhook", unverified: true },
       { name: "Southern Coffee", unverified: true },
       "Southern Ghosh",
+      "Strategy Manuscript",
       "Sun Ghosh",
       { name: "The Works of Dante", unverified: true },
-      { name: "Trader’s Handbook", unverified: true },
+      "Trader’s Handbook",
       { name: "Village Recipes", unverified: true },
-      { name: "Volcano Ghosh", unverified: true },
+      "Volcano Ghosh",
       "Young Ghosh"
     ]
   },
 
   Nuzzuo: {
     loved: [
-      "Arrowhead Gem",
-      { name: "Ceremonial Spear", unverified: true },
-      "Dual Fish Knives",
-      { name: "Odd Vegetable Seeds", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Rare Southern Seeds", unverified: true },
-      { name: "Rugged Blade", unverified: true },
-      { name: "Strategy Manuscript", unverified: true }
+      "Ceremonial Spear",
+      "Odd Vegetable Seeds",
+      "Pegasus Panorama",
+      "Rare Southern Seeds",
+      "Rugged Blade",
+      "Strategy Manuscript"
     ],
     reallyLiked: [
-      { name: "Bow Repair Kit", unverified: true },
+      "Arrowhead Gem",
+      "Bow Repair Kit",
       { name: "Candy Crystals", unverified: true },
-      { name: "Coffee Pastries", unverified: true },
+      "Coffee Pastries",
       "Common Coffee",
-      { name: "Crafting Knives", unverified: true },
+      "Crafting Knives",
       "Crimson Ghosh",
+      "Dual Fish Knives",
       { name: "Eastern Black Silk", unverified: true },
       { name: "Eastern Tea Leaves", unverified: true },
       { name: "Flower Painting", unverified: true },
-      { name: "Herbal Recipe Guide", unverified: true },
+      "Herbal Recipe Guide",
       { name: "Joint-Relief Gloves", unverified: true },
       "Kitten Figurine",
       { name: "Niiza Garum", unverified: true },
       "Orgus Coffee",
       "Outdoor Cooking Set",
       "Pickled Vegetables",
-      { name: "Potted Vegetables", unverified: true },
+      "Potted Vegetables",
       "Protection Figurine",
-      { name: "Rare Spices", unverified: true },
+      "Rare Spices",
       "Select Coffee",
-      { name: "Sharp Dagger", unverified: true },
+      "Sharp Dagger",
       "Southern Coffee",
-      { name: "Strong Seasonings", unverified: true },
+      "Strong Seasonings",
       { name: "Sturdy Rucksack", unverified: true },
       { name: "Training Bracelet", unverified: true },
       { name: "Training Pillar", unverified: true },
@@ -1581,10 +1558,11 @@ const records: Record<string, GiftRecord> = {
 
   Majide: {
     loved: [
-      { name: "Arrowhead Gem", unverified: true }
+
     ],
     reallyLiked: [
       "Aromatic Shosh",
+      "Arrowhead Gem",
       "Crimson Ghosh",
       "Energizing Ghosh",
       "Jade Ghosh",
@@ -1606,23 +1584,22 @@ const records: Record<string, GiftRecord> = {
 
   Sofia: {
     loved: [
-      "Blue-Rose Bouquet",
-      { name: "Candy Crystals", unverified: true },
-      "Dual Fish Knives",
-      { name: "Flower Painting", unverified: true },
-      { name: "Odd Vegetable Seeds", unverified: true },
-      { name: "Rare Southern Seeds", unverified: true },
-      { name: "Tales of Adventure", unverified: true },
-      "Volcano Ghosh"
+      "Flower Painting",
+      "Odd Vegetable Seeds",
+      "Rare Southern Seeds",
+      "Tales of Adventure"
     ],
     reallyLiked: [
-      "Alecto Garum",
+      { name: "Alecto Garum", unverified: true },
       { name: "Arrowhead Gem", unverified: true },
+      "Blue-Rose Bouquet",
+      "Candy Crystals",
       "Common Coffee",
-      "Concentrated Garum",
+      { name: "Concentrated Garum", unverified: true },
       "Crimson Ghosh",
+      "Dual Fish Knives",
       { name: "Eastern Tea Leaves", unverified: true },
-      "Fragrant Pastries",
+      { name: "Fragrant Pastries", unverified: true },
       "Garum",
       "Ginji Cervi",
       "Honey Milk",
@@ -1632,7 +1609,7 @@ const records: Record<string, GiftRecord> = {
       { name: "Magic-Trick Set", unverified: true },
       "Mature Dried Cervi",
       "Meaty Delicacy",
-      "Mellow Pastries",
+      { name: "Mellow Pastries", unverified: true },
       { name: "Niiza Garum", unverified: true },
       "Orgus Coffee",
       "Outdoor Cooking Set",
@@ -1641,13 +1618,14 @@ const records: Record<string, GiftRecord> = {
       "Pickled Vegetables",
       { name: "Protection Figurine", unverified: true },
       "Pure-White Cervi",
-      "Rare Spices",
-      { name: "Saraminian Sweets", unverified: true },
+      { name: "Rare Spices", unverified: true },
+      "Saraminian Sweets",
       "Select Coffee",
       { name: "Sharp Fishhook", unverified: true },
-      "Simple Pastries",
+      { name: "Simple Pastries", unverified: true },
       "Southern Coffee",
       "Strong Cervi",
+      "Volcano Ghosh",
       "Weak Cervi",
       { name: "Yarc Milk", unverified: true }
     ]
@@ -1658,11 +1636,11 @@ const records: Record<string, GiftRecord> = {
       { name: "Ceremonial Spear", unverified: true },
       { name: "Eastern Board Game", unverified: true },
       { name: "History of a Master", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
+      "Pegasus Panorama",
       "Portrait of Yu Phas",
-      { name: "Rancid Garum", unverified: true },
+      "Rancid Garum",
       { name: "School Scandal", unverified: true },
-      { name: "Shield Portrait", unverified: true },
+      "Shield Portrait",
       { name: "Strategy Manuscript", unverified: true }
     ],
     reallyLiked: [
@@ -1677,6 +1655,9 @@ const records: Record<string, GiftRecord> = {
   },
 
   Aswan: {
+    loved: [
+
+    ],
     reallyLiked: [
       { name: "Full Sewing Kit", unverified: true },
       { name: "Pack of Pastels", unverified: true },
@@ -1696,45 +1677,45 @@ const records: Record<string, GiftRecord> = {
 
   Alexandra: {
     loved: [
-      { name: "Ahm Lu Cloth", unverified: true },
-      { name: "Arrowhead Gem", unverified: true },
-      { name: "Blue-Rose Bouquet", unverified: true },
-      { name: "Ceremonial Spear", unverified: true },
-      { name: "Decorative Arrows", unverified: true },
-      { name: "Eastern Black Silk", unverified: true },
-      { name: "Eastern Earrings", unverified: true },
-      { name: "Flower Painting", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Red Hair Clip", unverified: true },
-      { name: "Shield Portrait", unverified: true },
-      { name: "Strategy Manuscript", unverified: true },
+      "Ahm Lu Cloth",
+      "Arrowhead Gem",
+      "Blue-Rose Bouquet",
+      "Ceremonial Spear",
+      "Decorative Arrows",
+      "Eastern Black Silk",
+      "Flower Painting",
+      "Portrait of Yu Phas",
+      "Red Hair Clip",
+      "Shield Portrait",
       "Tales of Adventure"
     ],
     reallyLiked: [
       { name: "Alecto Garum", unverified: true },
       { name: "Concentrated Garum", unverified: true },
-      { name: "Crimson Bull Figure", unverified: true },
+      "Crimson Bull Figure",
       { name: "Crimson Ghosh", unverified: true },
       "Dagda Beard Grass",
       "Dual Fish Knives",
-      { name: "Exquisite Ring", unverified: true },
+      "Eastern Earrings",
+      "Exquisite Ring",
       "Garum",
       { name: "Gaudy Bangle", unverified: true },
       "Herbal Recipe Guide",
       "Home-Recipe Book",
       "Horse-Grooming Kit",
-      { name: "Jade Panther Figure", unverified: true },
-      { name: "Joint-Relief Gloves", unverified: true },
+      "Jade Panther Figure",
+      "Joint-Relief Gloves",
       "Kitten Figurine",
       "Mane Ornament",
       "Niiza Garum",
-      { name: "Outdoor Cooking Set", unverified: true },
+      "Outdoor Cooking Set",
       { name: "Pastry Cookbook", unverified: true },
       "Pegasus Panorama",
-      { name: "Protection Figurine", unverified: true },
-      { name: "Sharp Dagger", unverified: true },
-      { name: "Skin Balm", unverified: true },
+      "Protection Figurine",
+      "Sharp Dagger",
+      "Skin Balm",
       { name: "Smooth Garum", unverified: true },
+      "Strategy Manuscript",
       "Strong Seasonings",
       "Sturdy Rucksack",
       { name: "Training Bracelet", unverified: true },
@@ -1752,7 +1733,7 @@ const records: Record<string, GiftRecord> = {
       { name: "Gaudy Bangle", unverified: true },
       { name: "Odd Vegetable Seeds", unverified: true },
       { name: "Pickled Bulbs", unverified: true },
-      { name: "Pickled Vegetables", unverified: true },
+      "Pickled Vegetables",
       { name: "Potted Vegetables", unverified: true },
       { name: "Rare Southern Seeds", unverified: true },
       { name: "Strategy Manuscript", unverified: true },
@@ -1763,9 +1744,9 @@ const records: Record<string, GiftRecord> = {
 
   Jasmine: {
     loved: [
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Rugged Blade", unverified: true },
-      { name: "Strategy Manuscript", unverified: true }
+      "Pegasus Panorama",
+      "Rugged Blade",
+      "Strategy Manuscript"
     ],
     reallyLiked: [
       "Arrowhead Gem",
@@ -1774,15 +1755,15 @@ const records: Record<string, GiftRecord> = {
       { name: "Dual Fish Knives", unverified: true },
       { name: "Flower Painting", unverified: true },
       { name: "Fragrant Pastries", unverified: true },
-      { name: "Ginji Cervi", unverified: true },
+      "Ginji Cervi",
       { name: "Honey Milk", unverified: true },
       { name: "Honey Pastries", unverified: true },
-      { name: "Imitation Medal", unverified: true },
+      "Imitation Medal",
       { name: "Jamel Milk", unverified: true },
       { name: "Joint-Relief Gloves", unverified: true },
       { name: "Kitten Figurine", unverified: true },
       { name: "Magic-Trick Set", unverified: true },
-      { name: "Mature Dried Cervi", unverified: true },
+      "Mature Dried Cervi",
       { name: "Mellow Pastries", unverified: true },
       { name: "Niiza Garum", unverified: true },
       { name: "Outdoor Cooking Set", unverified: true },
@@ -1793,34 +1774,34 @@ const records: Record<string, GiftRecord> = {
       "Rare Spices",
       "Saraminian Sweets",
       { name: "Simple Pastries", unverified: true },
-      { name: "Strong Cervi", unverified: true },
+      "Strong Cervi",
       { name: "Sturdy Rucksack", unverified: true },
       { name: "Tome from Away", unverified: true },
       "Training Pillar",
       "Training Weights",
-      { name: "Weak Cervi", unverified: true },
+      "Weak Cervi",
       { name: "Yarc Milk", unverified: true }
     ]
   },
 
   Inyoni: {
     loved: [
-      { name: "Arrowhead Gem", unverified: true },
-      { name: "Shield Portrait", unverified: true },
-      "Strategy Manuscript",
+      "Arrowhead Gem",
+      "Shield Portrait",
       "Tales of Adventure"
     ],
     reallyLiked: [
-      { name: "Bow Repair Kit", unverified: true },
+      "Bow Repair Kit",
       { name: "Crimson Ghosh", unverified: true },
       { name: "Eastern Black Silk", unverified: true },
       { name: "Eastern Board Game", unverified: true },
       "Eastern Tea Leaves",
-      { name: "Flexible Fishing Rod", unverified: true },
+      "Flexible Fishing Rod",
       { name: "Huge Fish Eyeball", unverified: true },
-      { name: "Joint-Relief Gloves", unverified: true },
-      { name: "Protection Figurine", unverified: true },
+      "Joint-Relief Gloves",
+      "Protection Figurine",
       { name: "Sharp Fishhook", unverified: true },
+      "Strategy Manuscript",
       { name: "Sturdy Rucksack", unverified: true },
       { name: "Training Bracelet", unverified: true },
       { name: "Wing Fletching", unverified: true }
@@ -1829,12 +1810,12 @@ const records: Record<string, GiftRecord> = {
 
   Kiroc: {
     loved: [
-      { name: "Crimson Ghosh", unverified: true },
-      { name: "Volcano Ghosh", unverified: true }
+
     ],
     reallyLiked: [
       { name: "Coffee Pastries", unverified: true },
       "Common Coffee",
+      "Crimson Ghosh",
       { name: "Flower Painting", unverified: true },
       { name: "Joint-Relief Gloves", unverified: true },
       { name: "Light Shosh", unverified: true },
@@ -1844,11 +1825,12 @@ const records: Record<string, GiftRecord> = {
       { name: "Pack of Pastels", unverified: true },
       { name: "Red Hair Clip", unverified: true },
       { name: "Rustic Ghosh", unverified: true },
-      "Select Coffee",
+      { name: "Select Coffee", unverified: true },
       { name: "Sharp Fishhook", unverified: true },
-      "Southern Coffee",
+      { name: "Southern Coffee", unverified: true },
       { name: "Training Pillar", unverified: true },
       { name: "Training Weights", unverified: true },
+      "Volcano Ghosh",
       { name: "Young Ghosh", unverified: true },
       { name: "Young Shosh", unverified: true }
     ]
@@ -1856,13 +1838,13 @@ const records: Record<string, GiftRecord> = {
 
   Peppe: {
     loved: [
-      { name: "Arrowhead Gem", unverified: true },
-      { name: "Pegasus Panorama", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Rancid Garum", unverified: true },
-      { name: "Shield Portrait", unverified: true }
+      "Pegasus Panorama",
+      "Portrait of Yu Phas",
+      "Rancid Garum",
+      "Shield Portrait"
     ],
     reallyLiked: [
+      "Arrowhead Gem",
       { name: "Board-Game Tactics", unverified: true },
       "Coffee Pastries",
       "Common Coffee",
@@ -1873,7 +1855,7 @@ const records: Record<string, GiftRecord> = {
       { name: "Magic-Trick Set", unverified: true },
       { name: "Outdoor Cooking Set", unverified: true },
       { name: "Pack of Pastels", unverified: true },
-      "Pastry Cookbook",
+      { name: "Pastry Cookbook", unverified: true },
       { name: "Protection Figurine", unverified: true },
       "Select Coffee",
       { name: "Sharp Fishhook", unverified: true },
@@ -1886,6 +1868,9 @@ const records: Record<string, GiftRecord> = {
   },
 
   Klapka: {
+    loved: [
+
+    ],
     reallyLiked: [
       { name: "Strategy Manuscript", unverified: true },
       { name: "Training Weights", unverified: true }
@@ -1894,16 +1879,13 @@ const records: Record<string, GiftRecord> = {
 
   Benditz: {
     loved: [
-      { name: "Arrowhead Gem", unverified: true },
-      { name: "Blue-Rose Bouquet", unverified: true },
-      { name: "Decorative Arrows", unverified: true },
-      "Eastern Black Silk",
-      { name: "Eastern Earrings", unverified: true },
+      "Arrowhead Gem",
+      "Blue-Rose Bouquet",
+      "Decorative Arrows",
       { name: "Eastern Tea Leaves", unverified: true },
-      { name: "Portrait of Yu Phas", unverified: true },
-      { name: "Rancid Garum", unverified: true },
-      { name: "Red Hair Clip", unverified: true },
-      { name: "Strategy Manuscript", unverified: true },
+      "Portrait of Yu Phas",
+      "Rancid Garum",
+      "Red Hair Clip",
       { name: "Tales of Adventure", unverified: true }
     ],
     reallyLiked: [
@@ -1912,15 +1894,18 @@ const records: Record<string, GiftRecord> = {
       "Coffee Pastries",
       { name: "Common Coffee", unverified: true },
       { name: "Crimson Ghosh", unverified: true },
+      "Eastern Black Silk",
+      "Eastern Earrings",
       { name: "Eastern Love Story", unverified: true },
-      { name: "Exquisite Ring", unverified: true },
+      "Exquisite Ring",
       { name: "Flower Painting", unverified: true },
       { name: "Gaudy Bangle", unverified: true },
-      { name: "Joint-Relief Gloves", unverified: true },
+      "Joint-Relief Gloves",
       { name: "Orgus Coffee", unverified: true },
       { name: "Select Coffee", unverified: true },
       { name: "Southern Coffee", unverified: true },
-      { name: "Spirit Board Game", unverified: true },
+      "Spirit Board Game",
+      "Strategy Manuscript",
       { name: "Wing Fletching", unverified: true }
     ]
   }
