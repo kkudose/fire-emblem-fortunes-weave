@@ -248,9 +248,9 @@ function renderResult(character: CharacterGifts) {
                     const isFavorite = lovedByAnother;
                     const frequencyClass =
                       !isFavorite
-                        ? count <= 4
+                        ? count <= 19
                           ? "frequency-low"
-                          : count <= 9
+                          : count <= 30
                             ? "frequency-mid"
                             : "frequency-high"
                         : undefined;
@@ -289,7 +289,7 @@ function renderResult(character: CharacterGifts) {
         : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named gift preferences have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`
     }
     <div class="character-actions-row">
-      ${hasGifts ? `<aside class="frequency-legend" aria-label="Relative popularity"><span class="legend-title">Relative popularity</span><ul><li><span class="gift-item frequency-low has-tooltip" data-tooltip="Items appearing on fewer than 5 preference lists" tabindex="0" aria-label="Unpopular: Items appearing on fewer than 5 preference lists">Unpopular</span></li><li><span class="gift-item frequency-mid has-tooltip" data-tooltip="Items appearing on 5-9 preference lists" tabindex="0" aria-label="Average: Items appearing on 5-9 preference lists">Average</span></li><li><span class="gift-item frequency-high has-tooltip" data-tooltip="Items appearing on more than 9 preference lists" tabindex="0" aria-label="Popular: Items appearing on more than 9 preference lists">Popular</span></li><li><span class="gift-item favorite has-tooltip" data-tooltip="Items loved by at least 1 other character" tabindex="0" aria-label="Loved: items loved by at least 1 other character">Loved<small class="loved-elsewhere-mark" aria-hidden="true">♥</small></span></li></ul></aside>` : ""}
+      ${hasGifts ? `<aside class="frequency-legend" aria-label="Relative popularity"><span class="legend-title">Relative popularity</span><ul><li><span class="gift-item frequency-low has-tooltip" data-tooltip="Items appearing on 1–19 preference lists" tabindex="0" aria-label="Uncommon: Items appearing on 1 to 19 preference lists">Uncommon</span></li><li><span class="gift-item frequency-mid has-tooltip" data-tooltip="Items appearing on 20–30 preference lists" tabindex="0" aria-label="Average: Items appearing on 20 to 30 preference lists">Average</span></li><li><span class="gift-item frequency-high has-tooltip" data-tooltip="Items appearing on 31 or more preference lists" tabindex="0" aria-label="Popular: Items appearing on 31 or more preference lists">Popular</span></li><li><span class="gift-item favorite has-tooltip" data-tooltip="Items loved by at least 1 other character" tabindex="0" aria-label="Loved: items loved by at least 1 other character">Loved<small class="loved-elsewhere-mark" aria-hidden="true">♥</small></span></li></ul></aside>` : ""}
       <button type="button" class="bookmark-banner${bookmarks.includes(character.name) ? " is-bookmarked" : ""}" data-bookmark-character="${escapeHtml(character.name)}" aria-pressed="${bookmarks.includes(character.name)}"><svg class="bookmark-icon" viewBox="0 0 16 20" aria-hidden="true" focusable="false"><path d="M3 1.5h10v17l-5-3.5-5 3.5z" /></svg><span class="bookmark-label">${bookmarks.includes(character.name) ? "Bookmarked" : "Bookmark"} ${escapeHtml(character.name)}</span></button>
     </div>
     <div id="bookmark-panel-slot"></div>
