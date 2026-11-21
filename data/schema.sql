@@ -68,7 +68,7 @@ CREATE TABLE reactions (
   reaction_id INTEGER PRIMARY KEY,
   character_id INTEGER NOT NULL REFERENCES characters(character_id),
   gift_id INTEGER NOT NULL REFERENCES gifts(gift_id),
-  tier TEXT NOT NULL CHECK (tier IN ('Loved', 'Really Liked')),
+  tier TEXT NOT NULL CHECK (tier IN ('Loved', 'Really Liked', 'Liked', 'Neutral', 'Disliked')),
   verification_status TEXT NOT NULL CHECK (verification_status IN ('verified', 'unverified')),
   eligible_source_count INTEGER NOT NULL CHECK (eligible_source_count >= 0),
   eligible_sources TEXT NOT NULL,

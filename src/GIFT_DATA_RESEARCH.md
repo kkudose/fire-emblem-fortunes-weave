@@ -10,7 +10,7 @@ Do not consult, cite, or use Anna's Notebook, GameWith, the Fortune's Weave comm
 
 The database was rebuilt from external source captures and 48 explicit user confirmations. The previous 1,441-pair result came from imported app data and is not the current database population. App arrays are no longer read by the SQLite import or consolidation scripts. Current counts, source handling, and tier mappings are in [`../data/README.md`](../data/README.md).
 
-Game8 US was not added as a source. Its supplied gift transcription was used only to inform the Japanese label crosswalk; the original labels remain preserved in source rows. Dork's Confirmed and Consistent entries are eligible as one source; Inferred, Suspected, and Not known entries remain stored but do not corroborate reactions.
+Game8 US was not added as a source. Its supplied gift transcription was used only to inform the Japanese label crosswalk; the original labels remain preserved in source rows. Dork's Confirmed, Consistent, and Inferred entries are eligible as one source; Suspected and Not known entries remain stored but do not corroborate reactions.
 
 ## Audit consistency postmortem and required workflow (2026-10-10)
 

@@ -38,7 +38,7 @@ SOURCE_INFO = {
     "Dork": (
         None,
         "community compilation",
-        "User-supplied CSV captured 2026-11-21. The source's Confirmed and Consistent rows count as one Dork source; Inferred, Suspected, and Not known rows are retained but do not count as corroborating evidence. Underlying sources are not listed row by row.",
+        "User-supplied CSV captured 2026-11-21. Confirmed, Consistent, and Inferred reaction rows can count as one Dork source; Suspected and Not known rows do not. Underlying sources are not listed row by row.",
     ),
     "Direct in-game confirmation": (
         None,
@@ -176,7 +176,7 @@ def rebuild():
             )
         eligible = mapping["eligible_for_confidence"].lower() == "true"
         if record["source"] == "Dork":
-            eligible = eligible and record["status"] in ("Confirmed", "Consistent")
+            eligible = eligible and record["status"] in ("Confirmed", "Consistent", "Inferred")
         if record["context"]:
             eligible = False
         con.execute(
