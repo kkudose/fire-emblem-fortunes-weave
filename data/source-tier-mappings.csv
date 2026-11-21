@@ -1,0 +1,19 @@
+source,source_tier_raw,normalized_tier,eligible_for_confidence,notes
+Game8 JP,とても気に入った,Really Liked,true,Highest Japanese label; mapped conservatively because the label does not distinguish the app's Loved arrow tier
+Game8 JP,気に入った,Really Liked,true,Label crosswalk: matched US Really Liked on 472 of 475 shared pairs; US transcription is mapping evidence only and is not counted as a source
+Altema,大好き,Really Liked,true,Conservative upper-positive mapping; among 430 shared pairs US labels were Really Liked 376 times and Loved 54 times
+Altema,好き,Liked,false,Lower Japanese positive label; only 13 shared pairs were available for crosswalk, insufficient for mapping to a tracked high tier
+Redfreshet,大好き,Really Liked,true,Strong-positive source label; source does not distinguish the app's Loved arrow tier
+Redfreshet,好き,Liked,false,Lower positive label; retained as source data but not as a tracked high tier
+Redfreshet,まあまあ気に入った,Liked,false,Lower positive label; retained as source data but not as a tracked high tier
+Yuphas Temple,loved,Loved,true,Source labels an explicit Loved tier
+Yuphas Temple,liked,Really Liked,true,Source labels an explicit Liked tier
+Yuphas Temple,disliked,Disliked,false,Negative tier retained as source data
+Raider King,Loved,Loved,true,Explicit source tier
+Raider King,Really Liked,Really Liked,true,Explicit source tier
+Dork,Loved,Loved,true,Explicit Dork tier; eligibility also requires Confirmed or Consistent source status
+Dork,Really liked,Really Liked,true,Explicit Dork tier; eligibility also requires Confirmed or Consistent source status
+Dork,Liked,Liked,false,Lower tier retained as source data
+Dork,Neutral,Neutral,false,Neutral tier retained as source data
+Dork,Disliked,Disliked,false,Negative tier retained as source data
+Dork,Not known,Unknown,false,Absence of a known reaction is not a reaction assignment

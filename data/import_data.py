@@ -1,159 +1,223 @@
+"""Rebuild SQLite from source captures and explicit user confirmations only."""
 import csv
-import json
 import re
 import sqlite3
-import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / 'data' / 'gifts.sqlite'
+DB = ROOT / "data/gifts.sqlite"
+RESEARCH = ROOT / "src/research/gift-sources/2026-11-21"
+REFRESH = RESEARCH / "current-refresh"
+
 SOURCE_INFO = {
-    'Game8': ('https://game8.jp/fe-banshisenko/816847', 'guide', 'Eligible; current Japanese preference table captured 2026-11-21. Strongest positive tier does not distinguish arrow counts.'),
-    'Raider King': ('https://raiderking.com/fire-emblem-fortunes-weave-all-loved-gifts-guide/', 'guide', 'Eligible; rechecked 2026-11-21; source labels its reaction table WIP and page publication date is 2026-09-30.'),
-    'Redfreshet': ('https://redfreshet.com/game-tools/fe-banshisenko/characters/', 'database', 'Eligible; current character gift tables captured 2026-11-21.'),
-    'Altema': ('https://altema.jp/febansisenkou/sukinamono', 'guide', 'Eligible; captured 2026-11-21; page last updated 2026-11-01; preference tiers do not establish arrow counts.'),
-    'Yuphas Temple': ('https://yuphastemple.com/gifts/', 'database', 'Eligible by user instruction; current data endpoint captured 2026-11-21; community-contributed data, provenance not documented row by row.'),
-    'Current guide data': (None, 'compiled dataset', 'Current application records; source provenance is not encoded per pair.'),
-    'Direct in-game confirmation': (None, 'user confirmation', 'Direct confirmations recorded in the research log; individual provenance needs structured audit.'),
+    "Game8 JP": (
+        "https://game8.jp/fe-banshisenko/816847",
+        "guide",
+        "Japanese Game8 gift table captured 2026-11-21. Both positive labels are retained; the tier crosswalk is documented separately.",
+    ),
+    "Raider King": (
+        "https://raiderking.com/fire-emblem-fortunes-weave-all-loved-gifts-guide/",
+        "guide",
+        "Rechecked 2026-11-21; the visible table labels itself WIP and the page publication date is 2026-09-30.",
+    ),
+    "Redfreshet": (
+        "https://redfreshet.com/game-tools/fe-banshisenko/characters/",
+        "database",
+        "Current character gift tables captured 2026-11-21.",
+    ),
+    "Altema": (
+        "https://altema.jp/febansisenkou/sukinamono",
+        "guide",
+        "Captured 2026-11-21; page last updated 2026-11-01. The source labels are preserved with a conservative tier mapping.",
+    ),
+    "Yuphas Temple": (
+        "https://yuphastemple.com/gifts/",
+        "database",
+        "Current data endpoint captured 2026-11-21; community-contributed data, with row-level provenance not documented.",
+    ),
+    "Dork": (
+        None,
+        "community compilation",
+        "User-supplied CSV captured 2026-11-21. The source's Confirmed and Consistent rows count as one Dork source; Inferred, Suspected, and Not known rows are retained but do not count as corroborating evidence. Underlying sources are not listed row by row.",
+    ),
+    "Direct in-game confirmation": (
+        None,
+        "user confirmation",
+        "Active, explicit user confirmations only. Retractions and statements that merely rule out a top-tier reaction are not stored as reactions.",
+    ),
 }
 
-con = sqlite3.connect(DB)
-con.execute('DROP TABLE IF EXISTS source_reactions')
-con.execute('DROP TABLE IF EXISTS source_reactions_raw')
-con.executescript((ROOT / 'data' / 'schema.sql').read_text())
-con.execute('DELETE FROM source_reactions_raw')
-con.execute('DELETE FROM reactions')
-con.execute('DELETE FROM gifts')
-con.execute('DELETE FROM characters')
-con.execute('DELETE FROM data_sources')
 
-for name, (url, kind, notes) in SOURCE_INFO.items():
-    status = 'historical' if name == 'Current guide data' else 'eligible'
-    con.execute('INSERT INTO data_sources(name,url,source_type,use_status,notes) VALUES(?,?,?,?,?)', (name,url,kind,status,notes))
-source_ids = {name: sid for sid, name in con.execute('SELECT source_id,name FROM data_sources')}
+def read_csv(path):
+    with path.open(newline="", encoding="utf-8-sig") as f:
+        return list(csv.DictReader(f))
 
-chars = json.loads(subprocess.check_output(
-    ['bun', '-e', 'import { characters } from "./src/gifts.ts"; console.log(JSON.stringify(characters))'],
-    cwd=ROOT,
-    text=True,
-))
-for c in chars:
-    con.execute('INSERT INTO characters(name,automatic_recruitment) VALUES(?,?)', (c['name'], c.get('automaticRecruitment')))
-character_ids = {name: cid for cid, name in con.execute('SELECT character_id,name FROM characters')}
 
-order_text = (ROOT / 'src' / 'item-order.ts').read_text()
-ordered = re.findall(r"'([^']+)'", order_text.split('] as const')[0])
-all_gifts = set(ordered)
-for c in chars:
-    for tier in ('loved','reallyLiked'):
-        all_gifts.update(g['name'] for g in c[tier])
-for pos, name in enumerate(ordered, 1):
-    con.execute('INSERT OR IGNORE INTO gifts(name,menu_position) VALUES(?,?)', (name,pos))
+GIFT_ALIASES = {
+    row["source_name"]: row["canonical_name"]
+    for row in read_csv(ROOT / "data/gift-name-aliases.csv")
+}
 
-def canonical_source_gift(name):
-    return {
-        "The Knight's Suitors": "The Knight’s Suitors",
-        "Trader's Handbook": "Trader’s Handbook",
-    }.get(name, name)
 
-yuphas_path = ROOT / 'src/research/gift-sources/2026-11-21/current-refresh/yuphas-reactions.csv'
-with yuphas_path.open(newline='', encoding='utf-8-sig') as f:
-    for row in csv.DictReader(f):
-        all_gifts.add(canonical_source_gift(row['gift']))
-for filename in ('game8-reactions-mapped.csv', 'redfreshet-reactions-mapped.csv'):
-    path = ROOT / 'src/research/gift-sources/2026-11-21/current-refresh' / filename
-    with path.open(newline='', encoding='utf-8-sig') as f:
-        for row in csv.DictReader(f):
-            all_gifts.add(row['gift'])
-ledger = ROOT / 'src/research/gift-sources/2026-11-21/current-refresh/reaction-pair-evidence.csv'
-with ledger.open(newline='', encoding='utf-8-sig') as f:
-    all_gifts.update(row['gift'] for row in csv.DictReader(f))
-positive = ROOT / 'src/research/gift-sources/2026-11-21/current-refresh/strong-positive-evidence.csv'
-with positive.open(newline='', encoding='utf-8-sig') as f:
-    all_gifts.update(row['gift'] for row in csv.DictReader(f))
-for name in sorted(all_gifts - {row[0] for row in con.execute('SELECT name FROM gifts')}):
-    con.execute('INSERT OR IGNORE INTO gifts(name) VALUES(?)', (name,))
-gift_ids = {name: gid for gid, name in con.execute('SELECT gift_id,name FROM gifts')}
+def canonical_gift(name):
+    return GIFT_ALIASES.get(name, name)
 
-# Current application records; a NULL source means pair-level provenance was not encoded.
-for c in chars:
-    for tier, entries in (('Loved', c['loved']), ('Really Liked', c['reallyLiked'])):
-        for g in entries:
-            con.execute('''INSERT INTO reactions(character_id,gift_id,source_id,tier,verification_status,evidence_type,notes)
-                           VALUES(?,?,NULL,?,?,?,?)''', (character_ids[c['name']],gift_ids[g['name']],tier,
-                           'unverified' if g.get('unverified') else 'verified','current_guide',
-                           'Current gifts.ts record; pair-level source provenance is not encoded.'))
 
-# Source-specific exact tier evidence from eligible sources.
-with ledger.open(newline='') as f:
-    for row in csv.DictReader(f):
-        for source in ('Game8','Yuphas Temple','Raider King'):
-            tier = row.get(source, '').strip()
-            if not tier:
-                continue
-            con.execute('''INSERT OR IGNORE INTO reactions(character_id,gift_id,source_id,tier,verification_status,evidence_type,notes)
-                           VALUES(?,?,?,?,?,?,?)''', (character_ids[row['character']],gift_ids.setdefault(row['gift'], None),source_ids[source],tier,
-                           'source_record','published_source','Exact tier captured in archived source ledger.'))
-            if source == 'Raider King':
-                con.execute('''INSERT INTO source_reactions_raw(source_id,character_name_raw,gift_name_raw,source_tier_raw)
-                               VALUES(?,?,?,?)''', (source_ids[source], row['character'], row['gift'], tier))
-                con.execute('''INSERT INTO source_reactions(source_id,character_id,gift_id,source_tier_raw,source_reaction_class)
-                               VALUES(?,?,?,?,?)''', (source_ids[source], character_ids[row['character']],
-                               gift_ids[row['gift']], tier, tier))
+def exact_score(value):
+    if not value:
+        return None
+    if re.fullmatch(r"\d+", value):
+        return int(value)
+    return None
 
-# Redfreshet's strongest-positive class establishes a positive reaction, but
-# does not distinguish one-arrow Really Liked from two-arrow Loved.
-with positive.open(newline='', encoding='utf-8-sig') as f:
-    for row in csv.DictReader(f):
-        if not row['Redfreshet original label'].strip():
-            continue
-        con.execute('''INSERT OR IGNORE INTO reactions(character_id,gift_id,source_id,tier,verification_status,evidence_type,notes)
-                       VALUES(?,?,?,?,?,?,?)''', (character_ids[row['character']], gift_ids[row['gift']],
-                       source_ids['Redfreshet'], 'Really Liked', 'source_record', 'published_source',
-                       'Strong positive only; arrow count unspecified in source.'))
 
-refresh = ROOT / 'src/research/gift-sources/2026-11-21/current-refresh'
-altema = ROOT / 'src/research/gift-sources/2026-11-21/altema-reactions.csv'
-with altema.open(newline='', encoding='utf-8-sig') as f:
-    for row in csv.DictReader(f):
-        con.execute('''INSERT INTO source_reactions_raw(source_id,character_name_raw,gift_name_raw,source_tier_raw,source_page_line)
-                       VALUES(?,?,?,?,?)''', (source_ids['Altema'], row['character_name_ja'], row['gift_name_ja'],
-                       row['source_tier_ja'], row['source_page_line']))
-with (ROOT / 'src/research/gift-sources/2026-11-21/altema-reactions-mapped.csv').open(newline='', encoding='utf-8-sig') as f:
-    for row in csv.DictReader(f):
-        con.execute('''INSERT INTO source_reactions(source_id,character_id,gift_id,source_tier_raw,source_reaction_class,source_page_line)
-                       VALUES(?,?,?,?,?,?)''', (source_ids['Altema'], character_ids[row['character']],
-                       gift_ids[row['gift']], row['source_tier_ja'], None, row['source_page_line']))
+def source_records():
+    records = []
 
-source_files = [
-    ('game8-reactions.csv', 'game8-reactions-mapped.csv', 'Game8',
-     'character_name_ja', 'gift_name_ja', 'source_tier_ja', 'source_tier_ja'),
-    ('redfreshet-reactions.csv', 'redfreshet-reactions-mapped.csv', 'Redfreshet',
-     'character_name_ja', 'gift_name_ja', 'reaction_label_ja', 'source_tier_ja'),
-]
-for raw_file, mapped_file, source_name, char_col, gift_col, raw_tier_col, mapped_tier_col in source_files:
-    with (refresh / raw_file).open(newline='', encoding='utf-8-sig') as f:
-        raw_rows = list(csv.DictReader(f))
-    with (refresh / mapped_file).open(newline='', encoding='utf-8-sig') as f:
-        mapped_rows = {(r[char_col], r[gift_col], r[mapped_tier_col]): r for r in csv.DictReader(f)}
-    for row in raw_rows:
-        mapped = mapped_rows[(row[char_col], row[gift_col], row[raw_tier_col])]
-        con.execute('''INSERT INTO source_reactions_raw(source_id,character_name_raw,gift_name_raw,source_tier_raw)
-                       VALUES(?,?,?,?)''', (source_ids[source_name], row[char_col], row[gift_col], row[raw_tier_col]))
-        con.execute('''INSERT INTO source_reactions(source_id,character_id,gift_id,source_tier_raw,source_reaction_class)
-                       VALUES(?,?,?,?,?)''', (source_ids[source_name], character_ids[mapped['character']],
-                       gift_ids[mapped['gift']], row[raw_tier_col], mapped.get('source_reaction_class') or row[raw_tier_col]))
+    def add(source, character, gift, tier, status="Published", score="", context="", row=None,
+            character_raw=None, gift_raw=None):
+        records.append({
+            "source": source,
+            "character": character.strip(),
+            "character_raw": (character_raw or character).strip(),
+            "gift": canonical_gift(gift.strip()),
+            "gift_raw": (gift_raw or gift).strip(),
+            "tier": tier.strip(),
+            "status": status.strip() or "Published",
+            "score": score.strip(),
+            "context": context.strip(),
+            "row": row,
+        })
 
-with (refresh / 'yuphas-reactions.csv').open(newline='', encoding='utf-8-sig') as f:
-    for row in csv.DictReader(f):
-        gift = canonical_source_gift(row['gift'])
-        score = int(row['source_score']) if row['source_score'] else None
-        con.execute('''INSERT INTO source_reactions_raw(source_id,character_name_raw,gift_name_raw,source_tier_raw)
-                       VALUES(?,?,?,?)''', (source_ids['Yuphas Temple'], row['character'], row['gift'], row['source_tier_raw']))
-        con.execute('''INSERT INTO source_reactions(source_id,character_id,gift_id,source_tier_raw,source_reaction_class,source_score)
-                       VALUES(?,?,?,?,?,?)''', (source_ids['Yuphas Temple'], character_ids[row['character']],
-                       gift_ids[gift], row['source_tier_raw'], row['source_tier_raw'], score))
+    for index, row in enumerate(read_csv(REFRESH / "game8-reactions-mapped.csv"), 2):
+        add("Game8 JP", row["character"], row["gift"], row["source_tier_ja"], row=index,
+            character_raw=row["character_name_ja"], gift_raw=row["gift_name_ja"])
 
-# Ensure ledger-only gift names exist before relying on their IDs (repair any absent names).
-con.commit()
-con.close()
+    for row in read_csv(RESEARCH / "altema-reactions-mapped.csv"):
+        add("Altema", row["character"], row["gift"], row["source_tier_ja"],
+            row=int(row["source_page_line"]), character_raw=row["character_name_ja"],
+            gift_raw=row["gift_name_ja"])
+
+    for index, row in enumerate(read_csv(REFRESH / "redfreshet-reactions-mapped.csv"), 2):
+        add("Redfreshet", row["character"], row["gift"], row["source_tier_ja"], row=index,
+            character_raw=row["character_name_ja"], gift_raw=row["gift_name_ja"])
+
+    for index, row in enumerate(read_csv(REFRESH / "yuphas-reactions.csv"), 2):
+        add("Yuphas Temple", row["character"], row["gift"], row["source_tier_raw"],
+            score=row["source_score"], row=index, gift_raw=row["gift"])
+
+    for index, row in enumerate(read_csv(REFRESH / "reaction-pair-evidence.csv"), 2):
+        if row["Raider King"].strip():
+            add("Raider King", row["character"], row["gift"], row["Raider King"], row=index)
+
+    for row in read_csv(RESEARCH / "dork-reactions.csv"):
+        add("Dork", row["character"], row["gift"], row["source_tier_raw"],
+            status=row["source_status"], score=row["source_score_raw"],
+            context=row["source_context"], row=int(row["source_row"]),
+            character_raw=row["character_raw"], gift_raw=row["gift_raw"])
+
+    return records
+
+
+def rebuild():
+    DB.parent.mkdir(parents=True, exist_ok=True)
+    con = sqlite3.connect(DB)
+    con.execute("PRAGMA foreign_keys = OFF")
+    for table in (
+        "reactions", "manual_confirmations", "source_reactions", "source_reactions_raw",
+        "source_tier_mappings", "data_sources", "gifts", "characters",
+    ):
+        con.execute(f"DROP TABLE IF EXISTS {table}")
+    con.executescript((ROOT / "data/schema.sql").read_text())
+    con.execute("PRAGMA foreign_keys = ON")
+
+    source_ids = {}
+    for name, (url, source_type, notes) in SOURCE_INFO.items():
+        use_status = "eligible"
+        cur = con.execute(
+            "INSERT INTO data_sources(name,url,source_type,use_status,notes) VALUES(?,?,?,?,?)",
+            (name, url, source_type, use_status, notes),
+        )
+        source_ids[name] = cur.lastrowid
+
+    mappings = {}
+    for row in read_csv(ROOT / "data/source-tier-mappings.csv"):
+        source = row["source"]
+        if source not in source_ids:
+            raise ValueError(f"Tier mapping references unknown source {source!r}")
+        key = (source, row["source_tier_raw"])
+        mappings[key] = row
+        con.execute(
+            """INSERT INTO source_tier_mappings
+               (source_id,source_tier_raw,normalized_tier,eligible_for_confidence,notes)
+               VALUES(?,?,?,?,?)""",
+            (source_ids[source], row["source_tier_raw"], row["normalized_tier"],
+             int(row["eligible_for_confidence"].lower() == "true"), row["notes"]),
+        )
+
+    records = source_records()
+    manual = read_csv(ROOT / "data/manual-confirmations.csv")
+    characters = {row["character"].strip() for row in manual}
+    gifts = {canonical_gift(row["gift"].strip()) for row in manual}
+    for record in records:
+        characters.add(record["character"])
+        gifts.add(record["gift"])
+
+    con.executemany("INSERT INTO characters(name) VALUES(?)", [(name,) for name in sorted(characters)])
+    con.executemany("INSERT INTO gifts(name) VALUES(?)", [(name,) for name in sorted(gifts)])
+    character_ids = {name: cid for cid, name in con.execute("SELECT character_id,name FROM characters")}
+    gift_ids = {name: gid for gid, name in con.execute("SELECT gift_id,name FROM gifts")}
+
+    for record in records:
+        mapping = mappings.get((record["source"], record["tier"]))
+        if mapping is None:
+            raise ValueError(
+                f"No tier mapping for {record['source']!r} label {record['tier']!r}"
+            )
+        eligible = mapping["eligible_for_confidence"].lower() == "true"
+        if record["source"] == "Dork":
+            eligible = eligible and record["status"] in ("Confirmed", "Consistent")
+        if record["context"]:
+            eligible = False
+        con.execute(
+            """INSERT INTO source_reactions_raw
+               (source_id,character_name_raw,gift_name_raw,source_tier_raw,source_status,
+                source_score_raw,source_context,source_row)
+               VALUES(?,?,?,?,?,?,?,?)""",
+            (source_ids[record["source"]], record["character_raw"], record["gift_raw"],
+             record["tier"], record["status"], record["score"], record["context"], record["row"]),
+        )
+        con.execute(
+            """INSERT INTO source_reactions
+               (source_id,character_id,gift_id,source_tier_raw,normalized_tier,source_status,
+                source_context,source_score_raw,eligible_for_confidence,source_row)
+               VALUES(?,?,?,?,?,?,?,?,?,?)""",
+            (source_ids[record["source"]], character_ids[record["character"]],
+             gift_ids[record["gift"]], record["tier"], mapping["normalized_tier"],
+             record["status"], record["context"], record["score"], int(eligible), record["row"]),
+        )
+
+    for row in manual:
+        character = row["character"].strip()
+        gift = canonical_gift(row["gift"].strip())
+        con.execute(
+            """INSERT INTO manual_confirmations(character_id,gift_id,source_id,tier,notes)
+               VALUES(?,?,?,?,?)""",
+            (character_ids[character], gift_ids[gift], source_ids["Direct in-game confirmation"],
+             row["tier"].strip(), row["notes"].strip()),
+        )
+
+    con.commit()
+    result = {
+        "characters": con.execute("SELECT COUNT(*) FROM characters").fetchone()[0],
+        "gifts": con.execute("SELECT COUNT(*) FROM gifts").fetchone()[0],
+        "sources": con.execute("SELECT COUNT(*) FROM data_sources").fetchone()[0],
+        "source_rows": con.execute("SELECT COUNT(*) FROM source_reactions").fetchone()[0],
+        "manual_confirmations": con.execute("SELECT COUNT(*) FROM manual_confirmations").fetchone()[0],
+    }
+    con.close()
+    return result
+
+
+if __name__ == "__main__":
+    print(rebuild())
