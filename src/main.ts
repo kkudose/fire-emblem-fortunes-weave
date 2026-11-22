@@ -27,9 +27,9 @@ let activeIndex = -1;
 let timer: number | undefined;
 let rosterOpen = false;
 const bookmarkStorageKey = "fortunes-weave-bookmarks";
-const hideUncommonStorageKey = "fortunes-weave-hide-uncommon-really-liked";
+const lovedByOthersFilterStorageKey = "fortunes-weave-hide-uncommon-really-liked";
 let bookmarks = readBookmarks();
-let hideUncommonReallyLiked = readHideUncommonReallyLiked();
+let hideLovedByOthersInReallyLiked = readHideLovedByOthersInReallyLiked();
 
 root.innerHTML = `
   <header class="hero-band">
@@ -107,19 +107,19 @@ function saveBookmarks() {
   }
 }
 
-function readHideUncommonReallyLiked(): boolean {
+function readHideLovedByOthersInReallyLiked(): boolean {
   try {
-    return window.localStorage.getItem(hideUncommonStorageKey) === "true";
+    return window.localStorage.getItem(lovedByOthersFilterStorageKey) === "true";
   } catch {
     return false;
   }
 }
 
-function saveHideUncommonReallyLiked() {
+function saveHideLovedByOthersInReallyLiked() {
   try {
     window.localStorage.setItem(
-      hideUncommonStorageKey,
-      String(hideUncommonReallyLiked),
+      lovedByOthersFilterStorageKey,
+      String(hideLovedByOthersInReallyLiked),
     );
   } catch {
     // Keep the setting available for the current page if browser storage is unavailable.
@@ -164,7 +164,7 @@ function renderBookmarkHome(animateListChange = false) {
     savedCharacters.length
       ? `<ul>${savedCharacters.map(({ name }) => `<li><a href="?character=${encodeURIComponent(name)}" data-character="${escapeHtml(name)}">${escapeHtml(name)} <span aria-hidden="true">↗</span></a></li>`).join("")}</ul>`
       : "<p>Your bookmarked characters will appear here.</p>"
-  }<label class="gift-filter-setting" for="hide-uncommon-really-liked"><input id="hide-uncommon-really-liked" type="checkbox"${hideUncommonReallyLiked ? " checked" : ""}><span>Hide uncommon items in Really Liked</span></label>`;
+  }<label class="gift-filter-setting" for="hide-loved-by-others-really-liked"><input id="hide-loved-by-others-really-liked" type="checkbox"${hideLovedByOthersInReallyLiked ? " checked" : ""}><span>Hide items loved by other characters from showing in Really Liked</span></label>`;
   const newHeight = bookmarkHome.getBoundingClientRect().height;
   if (
     animateListChange &&
@@ -229,8 +229,13 @@ function renderResult(character: CharacterGifts) {
       .sort((a, b) => a.name.localeCompare(b.name));
     return { known, unknown };
   };
-  const reallyLikedGifts = hideUncommonReallyLiked
-    ? character.reallyLiked.filter((gift) => gift.rarity !== "Common/Uncommon")
+  const reallyLikedGifts = hideLovedByOthersInReallyLiked
+    ? character.reallyLiked.filter(
+        (gift) =>
+          ![...(lovedByCharacter.get(gift.name) ?? [])].some(
+            (name) => name !== character.name,
+          ),
+      )
     : character.reallyLiked;
   const groups = [
     {
@@ -310,7 +315,7 @@ function renderResult(character: CharacterGifts) {
       </section>`,
             )
             .join("")}</div>`
-        : hideUncommonReallyLiked && character.reallyLiked.length > 0
+        : hideLovedByOthersInReallyLiked && character.reallyLiked.length > 0
           ? `<div class="empty-state"><span aria-hidden="true">✧</span><p>No Really Liked items are visible with this filter.</p></div>`
           : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named gift preferences have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`
     }
@@ -427,11 +432,11 @@ bookmarkHome.addEventListener("click", (event) => {
 
 bookmarkHome.addEventListener("change", (event) => {
   const checkbox = (event.target as HTMLElement).closest<HTMLInputElement>(
-    "#hide-uncommon-really-liked",
+    "#hide-loved-by-others-really-liked",
   );
   if (!checkbox) return;
-  hideUncommonReallyLiked = checkbox.checked;
-  saveHideUncommonReallyLiked();
+  hideLovedByOthersInReallyLiked = checkbox.checked;
+  saveHideLovedByOthersInReallyLiked();
   if (selected) renderResult(selected);
 });
 
@@ -440,8 +445,8 @@ window.addEventListener("storage", (event) => {
     bookmarks = readBookmarks();
     renderBookmarkHome(true);
     syncBookmarkButtons();
-  } else if (event.key === hideUncommonStorageKey) {
-    hideUncommonReallyLiked = readHideUncommonReallyLiked();
+  } else if (event.key === lovedByOthersFilterStorageKey) {
+    hideLovedByOthersInReallyLiked = readHideLovedByOthersInReallyLiked();
     renderBookmarkHome();
     if (selected) renderResult(selected);
   }
