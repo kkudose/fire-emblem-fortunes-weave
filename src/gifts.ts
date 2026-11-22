@@ -2,6 +2,7 @@ import { databaseGiftRecords } from "./gift-data.generated";
 
 export type GiftItem = {
   name: string;
+  rarity: "Common" | "Common/Uncommon" | "Unknown";
   unverified?: boolean;
 };
 

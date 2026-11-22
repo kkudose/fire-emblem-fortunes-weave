@@ -7,7 +7,8 @@ CREATE TABLE characters (
 
 CREATE TABLE gifts (
   gift_id INTEGER PRIMARY KEY,
-  name TEXT NOT NULL UNIQUE
+  name TEXT NOT NULL UNIQUE,
+  rarity TEXT NOT NULL CHECK (rarity IN ('Common', 'Common/Uncommon', 'Unknown'))
 );
 
 CREATE TABLE data_sources (

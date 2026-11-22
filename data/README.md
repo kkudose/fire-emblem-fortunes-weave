@@ -17,6 +17,7 @@ The app reads its Loved and Really Liked lists from a generated TypeScript expor
 ## Source and manual data
 
 - [`schema.sql`](schema.sql) defines `characters`, `gifts`, `data_sources`, `source_tier_mappings`, raw and normalized source reaction tables, `manual_confirmations`, and the consolidated `reactions` table.
+- [`item-rarities.csv`](item-rarities.csv) records visible gift icon rarity: plain icons are Common, sparkle icons are Common/Uncommon (the screenshots do not distinguish Uncommon from Rare), and gifts absent from the screenshots are Unknown.
 - [`manual-confirmations.csv`](manual-confirmations.csv) contains only active direct user reports. Retracted confirmations and statements that merely rule out the top two tiers are not entered as reactions. The three direct Liked records remain in this ledger and suppress any conflicting top-tier source compilation for the same pair.
 - [`source-tier-mappings.csv`](source-tier-mappings.csv) documents source label mappings. Known mapped tiers can support tier consensus; Unknown and source statuses marked Suspected or Not known do not count.
 - [`gift-name-aliases.csv`](gift-name-aliases.csv) maps alternate source spellings to canonical gift names. In particular, `Bagua Divination Set` is normalized to `Divination Bagua`.

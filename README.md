@@ -17,6 +17,8 @@ To build the site, run `bun run build`.
 
 Gift reactions are generated from the consolidated `data/gifts.sqlite` database during each production build. Loved and Really Liked entries marked unverified in the database receive the low-confidence indicator in the app. Lower-tier results are omitted from the Loved and Really Liked lists. Do not edit generated gift data by hand; update and recalculate the SQLite database, then rebuild.
 
+Gift rarity is stored from the item icon screenshots: `Common` for plain icons and `Common/Uncommon` for sparkle icons, since the screenshots do not distinguish Uncommon from Rare. Items not visible in those screenshots are `Unknown`.
+
 Characters without a Loved or Really Liked database entry remain searchable.
 
 ## Recruitment notes

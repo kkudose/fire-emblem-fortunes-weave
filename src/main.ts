@@ -27,7 +27,9 @@ let activeIndex = -1;
 let timer: number | undefined;
 let rosterOpen = false;
 const bookmarkStorageKey = "fortunes-weave-bookmarks";
+const hideUncommonStorageKey = "fortunes-weave-hide-uncommon-really-liked";
 let bookmarks = readBookmarks();
+let hideUncommonReallyLiked = readHideUncommonReallyLiked();
 
 root.innerHTML = `
   <header class="hero-band">
@@ -105,6 +107,25 @@ function saveBookmarks() {
   }
 }
 
+function readHideUncommonReallyLiked(): boolean {
+  try {
+    return window.localStorage.getItem(hideUncommonStorageKey) === "true";
+  } catch {
+    return false;
+  }
+}
+
+function saveHideUncommonReallyLiked() {
+  try {
+    window.localStorage.setItem(
+      hideUncommonStorageKey,
+      String(hideUncommonReallyLiked),
+    );
+  } catch {
+    // Keep the setting available for the current page if browser storage is unavailable.
+  }
+}
+
 function syncBookmarkHomePlacement() {
   const mobileSlot = result.querySelector<HTMLElement>("#bookmark-panel-slot");
   const viewportWidth = document.documentElement.clientWidth;
@@ -143,7 +164,7 @@ function renderBookmarkHome(animateListChange = false) {
     savedCharacters.length
       ? `<ul>${savedCharacters.map(({ name }) => `<li><a href="?character=${encodeURIComponent(name)}" data-character="${escapeHtml(name)}">${escapeHtml(name)} <span aria-hidden="true">↗</span></a></li>`).join("")}</ul>`
       : "<p>Your bookmarked characters will appear here.</p>"
-  }`;
+  }<label class="gift-filter-setting" for="hide-uncommon-really-liked"><input id="hide-uncommon-really-liked" type="checkbox"${hideUncommonReallyLiked ? " checked" : ""}><span>Hide uncommon items in Really Liked</span></label>`;
   const newHeight = bookmarkHome.getBoundingClientRect().height;
   if (
     animateListChange &&
@@ -208,6 +229,9 @@ function renderResult(character: CharacterGifts) {
       .sort((a, b) => a.name.localeCompare(b.name));
     return { known, unknown };
   };
+  const reallyLikedGifts = hideUncommonReallyLiked
+    ? character.reallyLiked.filter((gift) => gift.rarity !== "Common/Uncommon")
+    : character.reallyLiked;
   const groups = [
     {
       title: "Loved",
@@ -219,7 +243,7 @@ function renderResult(character: CharacterGifts) {
     {
       title: "Really liked",
       subtitle: "Strong support gain",
-      gifts: orderGifts(character.reallyLiked),
+      gifts: orderGifts(reallyLikedGifts),
       icon: "✧",
       kind: "really-liked",
     },
@@ -286,7 +310,9 @@ function renderResult(character: CharacterGifts) {
       </section>`,
             )
             .join("")}</div>`
-        : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named gift preferences have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`
+        : hideUncommonReallyLiked && character.reallyLiked.length > 0
+          ? `<div class="empty-state"><span aria-hidden="true">✧</span><p>No Really Liked items are visible with this filter.</p></div>`
+          : `<div class="empty-state"><span aria-hidden="true">✧</span><p>No named gift preferences have been confirmed for ${escapeHtml(character.name)} yet.</p><small>We’ll add items here as reliable information becomes available.</small></div>`
     }
     <div class="character-actions-row">
       ${hasGifts ? `<aside class="frequency-legend" aria-label="Relative popularity"><span class="legend-title">Relative popularity</span><ul><li><span class="gift-item frequency-low has-tooltip" data-tooltip="Items appearing on 1–19 preference lists" tabindex="0" aria-label="Uncommon: Items appearing on 1 to 19 preference lists">Uncommon</span></li><li><span class="gift-item frequency-mid has-tooltip" data-tooltip="Items appearing on 20–30 preference lists" tabindex="0" aria-label="Average: Items appearing on 20 to 30 preference lists">Average</span></li><li><span class="gift-item frequency-high has-tooltip" data-tooltip="Items appearing on 31 or more preference lists" tabindex="0" aria-label="Popular: Items appearing on 31 or more preference lists">Popular</span></li><li><span class="gift-item favorite has-tooltip" data-tooltip="Items loved by at least 1 other character" tabindex="0" aria-label="Loved: items loved by at least 1 other character">Loved<small class="loved-elsewhere-mark" aria-hidden="true">♥</small></span></li></ul></aside>` : ""}
@@ -399,11 +425,26 @@ bookmarkHome.addEventListener("click", (event) => {
   if (character) choose(character);
 });
 
+bookmarkHome.addEventListener("change", (event) => {
+  const checkbox = (event.target as HTMLElement).closest<HTMLInputElement>(
+    "#hide-uncommon-really-liked",
+  );
+  if (!checkbox) return;
+  hideUncommonReallyLiked = checkbox.checked;
+  saveHideUncommonReallyLiked();
+  if (selected) renderResult(selected);
+});
+
 window.addEventListener("storage", (event) => {
-  if (event.key !== bookmarkStorageKey) return;
-  bookmarks = readBookmarks();
-  renderBookmarkHome(true);
-  syncBookmarkButtons();
+  if (event.key === bookmarkStorageKey) {
+    bookmarks = readBookmarks();
+    renderBookmarkHome(true);
+    syncBookmarkButtons();
+  } else if (event.key === hideUncommonStorageKey) {
+    hideUncommonReallyLiked = readHideUncommonReallyLiked();
+    renderBookmarkHome();
+    if (selected) renderResult(selected);
+  }
 });
 
 input.addEventListener("input", () => {

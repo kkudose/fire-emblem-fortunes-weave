@@ -57,6 +57,10 @@ GIFT_ALIASES = {
     row["source_name"]: row["canonical_name"]
     for row in read_csv(ROOT / "data/gift-name-aliases.csv")
 }
+ITEM_RARITIES = {
+    row["gift"].strip(): row["rarity"].strip()
+    for row in read_csv(ROOT / "data/item-rarities.csv")
+}
 
 
 def canonical_gift(name):
@@ -159,12 +163,19 @@ def rebuild():
     manual = read_csv(ROOT / "data/manual-confirmations.csv")
     characters = {row["character"].strip() for row in manual}
     gifts = {canonical_gift(row["gift"].strip()) for row in manual}
+    gifts.update(ITEM_RARITIES)
     for record in records:
         characters.add(record["character"])
         gifts.add(record["gift"])
 
     con.executemany("INSERT INTO characters(name) VALUES(?)", [(name,) for name in sorted(characters)])
-    con.executemany("INSERT INTO gifts(name) VALUES(?)", [(name,) for name in sorted(gifts)])
+    missing_rarities = gifts - ITEM_RARITIES.keys()
+    if missing_rarities:
+        raise ValueError(f"Missing item rarity for gifts: {', '.join(sorted(missing_rarities))}")
+    con.executemany(
+        "INSERT INTO gifts(name,rarity) VALUES(?,?)",
+        [(name, ITEM_RARITIES[name]) for name in sorted(gifts)],
+    )
     character_ids = {name: cid for cid, name in con.execute("SELECT character_id,name FROM characters")}
     gift_ids = {name: gid for gid, name in con.execute("SELECT gift_id,name FROM gifts")}
 
