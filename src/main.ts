@@ -164,7 +164,7 @@ function renderBookmarkHome(animateListChange = false) {
     savedCharacters.length
       ? `<ul>${savedCharacters.map(({ name }) => `<li><a href="?character=${encodeURIComponent(name)}" data-character="${escapeHtml(name)}">${escapeHtml(name)} <span aria-hidden="true">↗</span></a></li>`).join("")}</ul>`
       : "<p>Your bookmarked characters will appear here.</p>"
-  }<label class="gift-filter-setting" for="hide-loved-by-others-really-liked"><input id="hide-loved-by-others-really-liked" type="checkbox"${hideLovedByOthersInReallyLiked ? " checked" : ""}><span>Hide items loved by other characters from showing in Really Liked</span></label>`;
+  }<label class="gift-filter-setting" for="hide-loved-by-others-really-liked"><input id="hide-loved-by-others-really-liked" type="checkbox"${hideLovedByOthersInReallyLiked ? " checked" : ""}><span>Hide items loved by other characters from appearing in really liked</span></label>`;
   const newHeight = bookmarkHome.getBoundingClientRect().height;
   if (
     animateListChange &&
@@ -285,7 +285,7 @@ function renderResult(character: CharacterGifts) {
                         : undefined;
                     const tooltip = [
                       gift.unverified && "Low confidence: may be incorrect",
-                      lovedByAnother && "Loved by another character",
+                      lovedByAnother && "Loved by other characters",
                     ]
                       .filter(Boolean)
                       .join(" · ");
@@ -302,7 +302,7 @@ function renderResult(character: CharacterGifts) {
                     const labels = [
                       gift.name,
                       gift.unverified && "low confidence: may be incorrect",
-                      lovedByAnother && "loved by another character",
+                      lovedByAnother && "loved by other characters",
                     ]
                       .filter(Boolean)
                       .join(", ");
