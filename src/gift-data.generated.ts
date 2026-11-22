@@ -3,6 +3,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Alexandra": {
     "loved": [
       {
+        "name": "Ahm Lu Cloth",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Arrowhead Gem",
         "rarity": "Common/Uncommon"
       },
@@ -76,10 +80,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       }
     ],
     "reallyLiked": [
-      {
-        "name": "Ahm Lu Cloth",
-        "rarity": "Common/Uncommon"
-      },
       {
         "name": "Alecto Garum",
         "rarity": "Common/Uncommon"
@@ -287,6 +287,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
+        "name": "Morfis Almanac",
+        "rarity": "Common"
+      },
+      {
         "name": "Odd Vegetable Seeds",
         "rarity": "Common/Uncommon",
         "unverified": true
@@ -305,9 +309,17 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Rugged Blade",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Shield Portrait",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
       },
       {
         "name": "Tales of Adventure",
@@ -370,10 +382,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Morfis Almanac",
-        "rarity": "Common"
-      },
-      {
         "name": "Potted Vegetables",
         "rarity": "Common"
       },
@@ -382,17 +390,9 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Rugged Blade",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Solomon Coffee",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
       },
       {
         "name": "Sturdy Rucksack",
@@ -481,6 +481,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Poems of the Greats",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Portrait of Yu Phas",
+        "rarity": "Common"
       },
       {
         "name": "Rancid Garum",
@@ -637,10 +641,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Portrait of Yu Phas",
-        "rarity": "Common"
-      },
-      {
         "name": "Rugged Blade",
         "rarity": "Common/Uncommon",
         "unverified": true
@@ -710,11 +710,19 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Benditz": {
     "loved": [
       {
+        "name": "Arrowhead Gem",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Blue-Rose Bouquet",
         "rarity": "Common"
       },
       {
         "name": "Decorative Arrows",
+        "rarity": "Common"
+      },
+      {
+        "name": "Eastern Board Game",
         "rarity": "Common"
       },
       {
@@ -734,8 +742,20 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Rancid Garum",
+        "rarity": "Common"
+      },
+      {
         "name": "Red Hair Clip",
         "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Solomon Coffee",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -745,10 +765,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Antique Medal",
-        "rarity": "Common/Uncommon"
-      },
-      {
-        "name": "Arrowhead Gem",
         "rarity": "Common/Uncommon"
       },
       {
@@ -795,10 +811,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "Eastern Board Game",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Earrings",
         "rarity": "Common"
       },
@@ -816,10 +828,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Gaudy Bangle",
-        "rarity": "Common"
-      },
-      {
-        "name": "Horse-Grooming Kit",
         "rarity": "Common"
       },
       {
@@ -843,10 +851,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Rancid Garum",
-        "rarity": "Common"
-      },
-      {
         "name": "Red-Rose Bouquet",
         "rarity": "Common",
         "unverified": true
@@ -860,10 +864,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Solomon Coffee",
-        "rarity": "Common"
-      },
-      {
         "name": "Southern Coffee",
         "rarity": "Common"
       },
@@ -873,10 +873,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -922,6 +918,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Pegasus Panorama",
         "rarity": "Common/Uncommon",
         "unverified": true
@@ -943,6 +943,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Shield Portrait",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -1029,10 +1033,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Mane Ornament",
         "rarity": "Common",
         "unverified": true
@@ -1080,10 +1080,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Sturdy Rucksack",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -1140,6 +1136,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Meal Voucher",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Morfis Almanac",
+        "rarity": "Common"
       },
       {
         "name": "Poems of the Greats",
@@ -1307,10 +1307,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "Morfis Almanac",
-        "rarity": "Common"
-      },
-      {
         "name": "Niiza Garum",
         "rarity": "Common"
       },
@@ -1433,6 +1429,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Crimson Ghosh",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "History of a Master",
         "rarity": "Common"
       },
@@ -1472,6 +1472,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Tales of Adventure",
+        "rarity": "Common"
+      },
+      {
+        "name": "Volcano Ghosh",
         "rarity": "Common"
       }
     ],
@@ -1519,10 +1523,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Crafting Knives",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Crimson Ghosh",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Dagda Beard Grass",
@@ -1698,10 +1698,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Volcano Ghosh",
-        "rarity": "Common"
-      },
-      {
         "name": "Wing Fletching",
         "rarity": "Common"
       },
@@ -1720,6 +1716,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "History of a Master",
         "rarity": "Common"
+      },
+      {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Meal Voucher",
@@ -1752,6 +1752,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Shield Portrait",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -1830,10 +1834,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Mane Ornament",
         "rarity": "Common"
       },
@@ -1879,10 +1879,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Tales of Adventure",
-        "rarity": "Common"
-      },
-      {
         "name": "Tome from Away",
         "rarity": "Common"
       },
@@ -1898,6 +1894,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   },
   "Catania": {
     "loved": [
+      {
+        "name": "Ahm Lu Cloth",
+        "rarity": "Common/Uncommon"
+      },
       {
         "name": "Arrowhead Gem",
         "rarity": "Common/Uncommon"
@@ -1967,10 +1967,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       }
     ],
     "reallyLiked": [
-      {
-        "name": "Ahm Lu Cloth",
-        "rarity": "Common/Uncommon"
-      },
       {
         "name": "Antique Medal",
         "rarity": "Common/Uncommon",
@@ -2154,6 +2150,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Pegasus Panorama",
         "rarity": "Common/Uncommon"
       },
@@ -2180,6 +2180,14 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Shield Portrait",
+        "rarity": "Common"
+      },
+      {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -2273,10 +2281,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Mane Ornament",
         "rarity": "Common",
         "unverified": true
@@ -2326,15 +2330,7 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
         "name": "Sturdy Rucksack",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -2385,12 +2381,24 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Creek": {
     "loved": [
       {
+        "name": "Crimson Ghosh",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Eastern Board Game",
+        "rarity": "Common"
+      },
+      {
+        "name": "Ebony Game Board",
         "rarity": "Common"
       },
       {
         "name": "History of a Master",
         "rarity": "Common"
+      },
+      {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Meal Voucher",
@@ -2402,7 +2410,19 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Rancid Garum",
+        "rarity": "Common"
+      },
+      {
         "name": "Special “Medicine”",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
+      },
+      {
+        "name": "Volcano Ghosh",
         "rarity": "Common"
       }
     ],
@@ -2468,10 +2488,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Crimson Ghosh",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Dagda Beard Grass",
         "rarity": "Common"
       },
@@ -2493,10 +2509,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Eastern Tea Leaves",
-        "rarity": "Common"
-      },
-      {
-        "name": "Ebony Game Board",
         "rarity": "Common"
       },
       {
@@ -2546,10 +2558,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Light Shosh",
         "rarity": "Common"
       },
@@ -2593,10 +2601,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Protection Figurine",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Rancid Garum",
-        "rarity": "Common"
       },
       {
         "name": "Rugged Blade",
@@ -2655,10 +2659,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Tales of Adventure",
-        "rarity": "Common"
-      },
-      {
         "name": "Tales of the Arena",
         "rarity": "Common/Uncommon"
       },
@@ -2697,10 +2697,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Village Recipes",
-        "rarity": "Common"
-      },
-      {
-        "name": "Volcano Ghosh",
         "rarity": "Common"
       },
       {
@@ -2755,6 +2751,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Rugged Blade",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "School Scandal",
         "rarity": "Common/Uncommon"
       },
@@ -2762,6 +2762,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Shield Portrait",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       },
       {
         "name": "Tome from Away",
@@ -2786,10 +2790,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Black Tail Feathers",
         "rarity": "Unknown",
         "unverified": true
-      },
-      {
-        "name": "Blue-Rose Bouquet",
-        "rarity": "Common"
       },
       {
         "name": "Board-Game Tactics",
@@ -2949,10 +2949,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Rugged Blade",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Saraminian Sweets",
         "rarity": "Common"
       },
@@ -2989,10 +2985,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Sturdy Rucksack",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Tales of Adventure",
-        "rarity": "Common"
       },
       {
         "name": "Tales of the Arena",
@@ -3062,9 +3054,17 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Eastern Love Story",
+        "rarity": "Common"
+      },
+      {
         "name": "Ebony Game Board",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Flower Painting",
+        "rarity": "Common"
       },
       {
         "name": "History of a Master",
@@ -3073,6 +3073,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Legendary Garum",
         "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Poems of the Greats",
+        "rarity": "Common"
       },
       {
         "name": "Portrait of Yu Phas",
@@ -3092,6 +3096,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -3141,24 +3149,12 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "Eastern Love Story",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Tea Leaves",
         "rarity": "Common",
         "unverified": true
       },
       {
         "name": "Everyday Scenes",
-        "rarity": "Common"
-      },
-      {
-        "name": "Flower Painting",
-        "rarity": "Common"
-      },
-      {
-        "name": "Fodlan Tea",
         "rarity": "Common"
       },
       {
@@ -3199,10 +3195,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Poems of the Greats",
-        "rarity": "Common"
-      },
-      {
         "name": "Rugged Blade",
         "rarity": "Common/Uncommon"
       },
@@ -3216,14 +3208,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Southern Coffee",
-        "rarity": "Common"
-      },
-      {
-        "name": "Sturdy Rucksack",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -3289,6 +3273,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Shield Portrait",
+        "rarity": "Common"
+      },
+      {
+        "name": "Strategy Manuscript",
         "rarity": "Common"
       },
       {
@@ -3373,10 +3361,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Rare Spices",
-        "rarity": "Common"
-      },
-      {
         "name": "School Scandal",
         "rarity": "Common/Uncommon",
         "unverified": true
@@ -3394,10 +3378,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Spirit Board Game",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
       },
       {
         "name": "Tome from Away",
@@ -3420,6 +3400,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Dietrich": {
     "loved": [
       {
+        "name": "Candy Crystals",
+        "rarity": "Common"
+      },
+      {
         "name": "Eastern Board Game",
         "rarity": "Common",
         "unverified": true
@@ -3431,6 +3415,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "History of a Master",
         "rarity": "Common"
+      },
+      {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Pegasus Panorama",
@@ -3445,9 +3433,21 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Rugged Blade",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Shield Portrait",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -3476,10 +3476,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Box of Treats",
         "rarity": "Unknown"
-      },
-      {
-        "name": "Candy Crystals",
-        "rarity": "Common"
       },
       {
         "name": "Ceremonial Spear",
@@ -3533,10 +3529,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Huge Fish Eyeball",
-        "rarity": "Common"
-      },
-      {
         "name": "Jade Panther Figure",
         "rarity": "Common/Uncommon",
         "unverified": true
@@ -3548,10 +3540,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Kitten Figurine",
         "rarity": "Common"
-      },
-      {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Mane Ornament",
@@ -3580,10 +3568,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Rugged Blade",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Saraminian Sweets",
         "rarity": "Common"
       },
@@ -3598,14 +3582,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Spirit Board Game",
-        "rarity": "Common"
-      },
-      {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -3720,6 +3696,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
+        "name": "Candy Crystals",
+        "rarity": "Common"
+      },
+      {
         "name": "Decorative Arrows",
         "rarity": "Common",
         "unverified": true
@@ -3729,9 +3709,21 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Eastern Black Silk",
+        "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Eastern Earrings",
+        "rarity": "Common"
+      },
+      {
         "name": "Eastern Love Story",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Flower Painting",
+        "rarity": "Common"
       },
       {
         "name": "History of a Master",
@@ -3801,10 +3793,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Candy Crystals",
-        "rarity": "Common"
-      },
-      {
         "name": "Ceremonial Spear",
         "rarity": "Common/Uncommon",
         "unverified": true
@@ -3837,14 +3825,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Eastern Black Silk",
-        "rarity": "Common/Uncommon"
-      },
-      {
-        "name": "Eastern Earrings",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Tea Leaves",
         "rarity": "Common"
       },
@@ -3854,10 +3834,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Flexible Fishing Rod",
-        "rarity": "Common"
-      },
-      {
-        "name": "Flower Painting",
         "rarity": "Common"
       },
       {
@@ -4024,6 +4000,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Fabio": {
     "loved": [
       {
+        "name": "Crimson Ghosh",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Flower Painting",
         "rarity": "Common"
       },
@@ -4045,6 +4025,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
+        "name": "Pegasus Panorama",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Portrait of Yu Phas",
         "rarity": "Common"
       },
@@ -4057,11 +4041,19 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Shield Portrait",
+        "rarity": "Common"
+      },
+      {
         "name": "Solomon Coffee",
         "rarity": "Common"
       },
       {
         "name": "Special “Medicine”",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       }
     ],
@@ -4103,10 +4095,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Common Coffee",
         "rarity": "Common"
-      },
-      {
-        "name": "Crimson Ghosh",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Dagda Beard Grass",
@@ -4170,10 +4158,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Pegasus Panorama",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Potted Vegetables",
         "rarity": "Common"
       },
@@ -4194,10 +4178,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Shield Portrait",
-        "rarity": "Common"
-      },
-      {
         "name": "Simple Pastries",
         "rarity": "Common"
       },
@@ -4211,10 +4191,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Sun Ghosh",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -4242,9 +4218,17 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Fianna": {
     "loved": [
       {
+        "name": "Arrowhead Gem",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Decorative Arrows",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Eastern Earrings",
+        "rarity": "Common"
       },
       {
         "name": "Eastern Love Story",
@@ -4263,6 +4247,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "History of a Master",
         "rarity": "Common"
+      },
+      {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Morfis Almanac",
@@ -4289,6 +4277,14 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Solomon Coffee",
         "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
+      },
+      {
+        "name": "Volcano Ghosh",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -4296,10 +4292,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Ahm Lu Cloth",
         "rarity": "Common/Uncommon",
         "unverified": true
-      },
-      {
-        "name": "Arrowhead Gem",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Black Tail Feathers",
@@ -4341,10 +4333,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Eastern Earrings",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Tea Leaves",
         "rarity": "Common"
       },
@@ -4377,10 +4365,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Joint-Relief Gloves",
         "rarity": "Common"
-      },
-      {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Morfis Tea",
@@ -4427,10 +4411,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Tales of Adventure",
-        "rarity": "Common"
-      },
-      {
         "name": "The Knight’s Suitors",
         "rarity": "Common/Uncommon",
         "unverified": true
@@ -4445,10 +4425,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Volcano Ghosh",
-        "rarity": "Common"
-      },
-      {
         "name": "Wing Fletching",
         "rarity": "Common"
       }
@@ -4456,6 +4432,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   },
   "Gaitz": {
     "loved": [
+      {
+        "name": "Ahm Lu Cloth",
+        "rarity": "Common/Uncommon"
+      },
       {
         "name": "Ceremonial Spear",
         "rarity": "Common/Uncommon"
@@ -4477,6 +4457,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Eastern Tea Leaves",
+        "rarity": "Common"
+      },
+      {
         "name": "Ebony Game Board",
         "rarity": "Common"
       },
@@ -4491,6 +4475,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Legendary Garum",
         "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Morfis Almanac",
+        "rarity": "Common"
       },
       {
         "name": "Pegasus Panorama",
@@ -4525,6 +4513,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
         "name": "Tales of Adventure",
         "rarity": "Common"
       },
@@ -4534,10 +4526,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       }
     ],
     "reallyLiked": [
-      {
-        "name": "Ahm Lu Cloth",
-        "rarity": "Common/Uncommon"
-      },
       {
         "name": "Antique Medal",
         "rarity": "Common/Uncommon"
@@ -4581,10 +4569,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Dagda Beard Grass",
-        "rarity": "Common"
-      },
-      {
-        "name": "Eastern Tea Leaves",
         "rarity": "Common"
       },
       {
@@ -4651,10 +4635,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Morfis Almanac",
-        "rarity": "Common"
-      },
-      {
         "name": "Morfis Tea",
         "rarity": "Common",
         "unverified": true
@@ -4709,10 +4689,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Spirit Board Game",
-        "rarity": "Common"
-      },
-      {
-        "name": "Strategy Manuscript",
         "rarity": "Common"
       },
       {
@@ -4831,6 +4807,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Tales of Adventure",
         "rarity": "Common"
+      },
+      {
+        "name": "Volcano Ghosh",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -5015,10 +4995,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Volcano Ghosh",
-        "rarity": "Common"
-      },
-      {
         "name": "Wing Fletching",
         "rarity": "Common"
       },
@@ -5036,6 +5012,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
     "loved": [
       {
         "name": "Ceremonial Spear",
+        "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Crimson Ghosh",
         "rarity": "Common/Uncommon"
       },
       {
@@ -5132,10 +5112,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Crafting Knives",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Crimson Ghosh",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Eastern Black Silk",
@@ -5629,6 +5605,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Portrait of Yu Phas",
+        "rarity": "Common"
+      },
+      {
         "name": "Rancid Garum",
         "rarity": "Common"
       },
@@ -5750,10 +5730,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Portrait of Yu Phas",
-        "rarity": "Common"
-      },
-      {
         "name": "Protection Figurine",
         "rarity": "Common",
         "unverified": true
@@ -5820,6 +5796,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Inyoni": {
     "loved": [
       {
+        "name": "Arrowhead Gem",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Blue-Rose Bouquet",
         "rarity": "Common",
         "unverified": true
@@ -5843,6 +5823,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Poems of the Greats",
         "rarity": "Common",
         "unverified": true
@@ -5859,6 +5843,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Shield Portrait",
         "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -5871,10 +5859,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Antique Medal",
         "rarity": "Common/Uncommon",
         "unverified": true
-      },
-      {
-        "name": "Arrowhead Gem",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Black Tail Feathers",
@@ -5932,10 +5916,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Morfis Almanac",
         "rarity": "Common",
         "unverified": true
@@ -5973,10 +5953,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Sturdy Rucksack",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -6042,6 +6018,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Pegasus Panorama",
         "rarity": "Common/Uncommon"
       },
@@ -6063,6 +6043,14 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Solomon Coffee",
+        "rarity": "Common"
+      },
+      {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       }
     ],
@@ -6154,10 +6142,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Mane Ornament",
         "rarity": "Common"
       },
@@ -6191,15 +6175,7 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
         "name": "Sturdy Rucksack",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -6230,6 +6206,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Ceremonial Spear",
         "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Dual Fish Knives",
+        "rarity": "Common"
       },
       {
         "name": "History of a Master",
@@ -6274,6 +6254,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Shield Portrait",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
       },
       {
         "name": "Tales of Adventure",
@@ -6331,10 +6315,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Dagda Beard Grass",
-        "rarity": "Common"
-      },
-      {
-        "name": "Dual Fish Knives",
         "rarity": "Common"
       },
       {
@@ -6483,10 +6463,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
         "name": "Strong Cervi",
         "rarity": "Common"
       },
@@ -6545,6 +6521,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Eastern Black Silk",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Eastern Board Game",
         "rarity": "Common"
       },
@@ -6579,6 +6559,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Solomon Coffee",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       }
     ],
@@ -6640,10 +6624,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Dual Fish Knives",
         "rarity": "Common"
-      },
-      {
-        "name": "Eastern Black Silk",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Eastern Tea Leaves",
@@ -6738,10 +6718,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Strong Seasonings",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -7081,12 +7057,20 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Meal Voucher",
         "rarity": "Common",
         "unverified": true
       },
       {
         "name": "Portrait of Yu Phas",
+        "rarity": "Common"
+      },
+      {
+        "name": "Rancid Garum",
         "rarity": "Common"
       },
       {
@@ -7206,10 +7190,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Light Shosh",
         "rarity": "Common"
       },
@@ -7237,10 +7217,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Protection Figurine",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Rancid Garum",
-        "rarity": "Common"
       },
       {
         "name": "Rare Spices",
@@ -7347,6 +7323,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Flower Painting",
+        "rarity": "Common"
+      },
+      {
         "name": "History of a Master",
         "rarity": "Common"
       },
@@ -7444,10 +7424,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Exquisite Ring",
-        "rarity": "Common"
-      },
-      {
-        "name": "Flower Painting",
         "rarity": "Common"
       },
       {
@@ -7596,7 +7572,19 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Lilian": {
     "loved": [
       {
+        "name": "Arrowhead Gem",
+        "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Decorative Arrows",
+        "rarity": "Common"
+      },
+      {
         "name": "Eastern Love Story",
+        "rarity": "Common"
+      },
+      {
+        "name": "Eastern Tea Leaves",
         "rarity": "Common"
       },
       {
@@ -7631,6 +7619,14 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "School Scandal",
+        "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
         "name": "Tales of Adventure",
         "rarity": "Common"
       },
@@ -7650,10 +7646,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Antique Medal",
-        "rarity": "Common/Uncommon"
-      },
-      {
-        "name": "Arrowhead Gem",
         "rarity": "Common/Uncommon"
       },
       {
@@ -7692,10 +7684,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Decorative Arrows",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Black Silk",
         "rarity": "Common/Uncommon"
       },
@@ -7705,10 +7693,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Eastern Earrings",
-        "rarity": "Common"
-      },
-      {
-        "name": "Eastern Tea Leaves",
         "rarity": "Common"
       },
       {
@@ -7780,10 +7764,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "School Scandal",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Skin Balm",
         "rarity": "Common"
       },
@@ -7791,10 +7771,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Solomon Coffee",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
       },
       {
         "name": "Strong Seasonings",
@@ -7837,6 +7813,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Loretta": {
     "loved": [
       {
+        "name": "Candy Crystals",
+        "rarity": "Common"
+      },
+      {
         "name": "Ceremonial Spear",
         "rarity": "Common/Uncommon"
       },
@@ -7862,6 +7842,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Shield Portrait",
+        "rarity": "Common"
+      },
+      {
+        "name": "Strategy Manuscript",
         "rarity": "Common"
       },
       {
@@ -7891,10 +7875,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Box of Treats",
         "rarity": "Unknown"
-      },
-      {
-        "name": "Candy Crystals",
-        "rarity": "Common"
       },
       {
         "name": "Coffee Pastries",
@@ -7980,10 +7960,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
         "name": "Sturdy Rucksack",
         "rarity": "Common"
       },
@@ -8009,11 +7985,19 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Ludia": {
     "loved": [
       {
+        "name": "Ahm Lu Cloth",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Arrowhead Gem",
         "rarity": "Common/Uncommon"
       },
       {
         "name": "Blue-Rose Bouquet",
+        "rarity": "Common"
+      },
+      {
+        "name": "Candy Crystals",
         "rarity": "Common"
       },
       {
@@ -8039,6 +8023,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "History of a Master",
         "rarity": "Common"
+      },
+      {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Pegasus Panorama",
@@ -8071,15 +8059,15 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
+      },
+      {
         "name": "Tome from Away",
         "rarity": "Common"
       }
     ],
     "reallyLiked": [
-      {
-        "name": "Ahm Lu Cloth",
-        "rarity": "Common/Uncommon"
-      },
       {
         "name": "Aromatic Shosh",
         "rarity": "Common",
@@ -8092,10 +8080,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Board-Game Tactics",
         "rarity": "Common/Uncommon"
-      },
-      {
-        "name": "Candy Crystals",
-        "rarity": "Common"
       },
       {
         "name": "Ceremonial Spear",
@@ -8172,10 +8156,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Magic-Trick Set",
         "rarity": "Common"
       },
@@ -8232,10 +8212,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Sharp Fishhook",
-        "rarity": "Common"
-      },
-      {
         "name": "Shield Portrait",
         "rarity": "Common"
       },
@@ -8259,10 +8235,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Sun Ghosh",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Tales of Adventure",
-        "rarity": "Common"
       },
       {
         "name": "Tales of the Arena",
@@ -8500,6 +8472,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Majide": {
     "loved": [
       {
+        "name": "Ceremonial Spear",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Decorative Arrows",
         "rarity": "Common",
         "unverified": true
@@ -8545,6 +8521,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Rugged Blade",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Shield Portrait",
         "rarity": "Common",
         "unverified": true
@@ -8554,7 +8534,15 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
         "name": "Tales of Adventure",
+        "rarity": "Common"
+      },
+      {
+        "name": "Volcano Ghosh",
         "rarity": "Common"
       }
     ],
@@ -8602,10 +8590,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Candy Crystals",
         "rarity": "Common"
-      },
-      {
-        "name": "Ceremonial Spear",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Crafting Knives",
@@ -8701,10 +8685,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Rugged Blade",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Rustic Ghosh",
         "rarity": "Common"
       },
@@ -8726,10 +8706,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
         "name": "Sun Ghosh",
         "rarity": "Common"
       },
@@ -8744,10 +8720,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Training Weights",
-        "rarity": "Common"
-      },
-      {
-        "name": "Volcano Ghosh",
         "rarity": "Common"
       },
       {
@@ -8766,6 +8738,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   },
   "Mikaela": {
     "loved": [
+      {
+        "name": "Crimson Ghosh",
+        "rarity": "Common/Uncommon"
+      },
       {
         "name": "History of a Master",
         "rarity": "Common"
@@ -8788,6 +8764,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Rugged Blade",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Solomon Coffee",
         "rarity": "Common"
       },
@@ -8797,6 +8777,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       }
     ],
@@ -8852,10 +8836,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Concentrated Garum",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Crimson Ghosh",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Dual Fish Knives",
@@ -8952,10 +8932,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Rugged Blade",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Rustic Ghosh",
         "rarity": "Common"
       },
@@ -9001,10 +8977,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Sun Ghosh",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -9059,6 +9031,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Eastern Love Story",
+        "rarity": "Common"
+      },
+      {
+        "name": "Eastern Tea Leaves",
         "rarity": "Common"
       },
       {
@@ -9170,10 +9146,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Eastern Board Game",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Eastern Tea Leaves",
-        "rarity": "Common"
       },
       {
         "name": "Everyday Scenes",
@@ -9649,6 +9621,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Nezha": {
     "loved": [
       {
+        "name": "Ceremonial Spear",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Decorative Arrows",
         "rarity": "Common"
       },
@@ -9681,6 +9657,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Shield Portrait",
         "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -9704,10 +9684,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Blue-Rose Bouquet",
-        "rarity": "Common"
-      },
-      {
         "name": "Bow Repair Kit",
         "rarity": "Common/Uncommon",
         "unverified": true
@@ -9715,10 +9691,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Candy Crystals",
         "rarity": "Common"
-      },
-      {
-        "name": "Ceremonial Spear",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Crimson Ghosh",
@@ -9802,10 +9774,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Tales of Adventure",
-        "rarity": "Common"
-      },
-      {
         "name": "Tome from Away",
         "rarity": "Common",
         "unverified": true
@@ -9835,8 +9803,16 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Ninae": {
     "loved": [
       {
+        "name": "Eastern Black Silk",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "History of a Master",
         "rarity": "Common"
+      },
+      {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Poems of the Greats",
@@ -9850,6 +9826,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Rancid Garum",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -9875,10 +9855,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "Eastern Black Silk",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Eastern Board Game",
         "rarity": "Common",
         "unverified": true
@@ -9892,25 +9868,13 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Morfis Almanac",
-        "rarity": "Common"
-      },
-      {
-        "name": "Pack of Pastels",
         "rarity": "Common"
       },
       {
         "name": "Pegasus Panorama",
         "rarity": "Common/Uncommon",
         "unverified": true
-      },
-      {
-        "name": "Rare Spices",
-        "rarity": "Common"
       },
       {
         "name": "Rugged Blade",
@@ -9924,10 +9888,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -10096,9 +10056,17 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Dual Fish Knives",
+        "rarity": "Common"
+      },
+      {
         "name": "History of a Master",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Odd Vegetable Seeds",
@@ -10131,6 +10099,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Solomon Coffee",
+        "rarity": "Common"
+      },
+      {
+        "name": "Strategy Manuscript",
         "rarity": "Common"
       }
     ],
@@ -10196,10 +10168,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Dual Fish Knives",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Black Silk",
         "rarity": "Common/Uncommon"
       },
@@ -10240,10 +10208,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Kitten Figurine",
         "rarity": "Common"
-      },
-      {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Mane Ornament",
@@ -10291,19 +10255,11 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "Sharp Fishhook",
-        "rarity": "Common"
-      },
-      {
         "name": "Smooth Garum",
         "rarity": "Common/Uncommon"
       },
       {
         "name": "Southern Coffee",
-        "rarity": "Common"
-      },
-      {
-        "name": "Strategy Manuscript",
         "rarity": "Common"
       },
       {
@@ -10353,6 +10309,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Rancid Garum",
         "rarity": "Common"
+      },
+      {
+        "name": "Rugged Blade",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Shield Portrait",
@@ -10457,10 +10417,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Protection Figurine",
         "rarity": "Common"
-      },
-      {
-        "name": "Rugged Blade",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Saraminian Sweets",
@@ -10528,10 +10484,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Village Recipes",
-        "rarity": "Common"
-      },
-      {
         "name": "Wing Fletching",
         "rarity": "Common"
       }
@@ -10539,6 +10491,22 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   },
   "Olympia": {
     "loved": [
+      {
+        "name": "Ahm Lu Cloth",
+        "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Arrowhead Gem",
+        "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Blue-Rose Bouquet",
+        "rarity": "Common"
+      },
+      {
+        "name": "Decorative Arrows",
+        "rarity": "Common"
+      },
       {
         "name": "Eastern Board Game",
         "rarity": "Common"
@@ -10563,6 +10531,18 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Legendary Garum",
         "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Pegasus Panorama",
+        "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Poems of the Greats",
+        "rarity": "Common"
+      },
+      {
+        "name": "Portrait of Yu Phas",
+        "rarity": "Common"
       },
       {
         "name": "Rancid Garum",
@@ -10593,25 +10573,13 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
     ],
     "reallyLiked": [
       {
-        "name": "Ahm Lu Cloth",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Antique Medal",
         "rarity": "Common/Uncommon",
         "unverified": true
       },
       {
-        "name": "Arrowhead Gem",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Black Tail Feathers",
         "rarity": "Unknown"
-      },
-      {
-        "name": "Blue-Rose Bouquet",
-        "rarity": "Common"
       },
       {
         "name": "Candy Crystals",
@@ -10643,10 +10611,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Crimson Ghosh",
         "rarity": "Common/Uncommon",
         "unverified": true
-      },
-      {
-        "name": "Decorative Arrows",
-        "rarity": "Common"
       },
       {
         "name": "Eastern Black Silk",
@@ -10700,18 +10664,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Pack of Pastels",
-        "rarity": "Common"
-      },
-      {
-        "name": "Pegasus Panorama",
-        "rarity": "Common/Uncommon"
-      },
-      {
-        "name": "Poems of the Greats",
-        "rarity": "Common"
-      },
-      {
-        "name": "Portrait of Yu Phas",
         "rarity": "Common"
       },
       {
@@ -10823,6 +10775,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Shield Portrait",
+        "rarity": "Common"
+      },
+      {
+        "name": "Strategy Manuscript",
         "rarity": "Common"
       },
       {
@@ -10987,10 +10943,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
         "name": "Strong Seasonings",
         "rarity": "Common"
       },
@@ -11097,6 +11049,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Solomon Coffee",
+        "rarity": "Common"
+      },
+      {
+        "name": "Strategy Manuscript",
         "rarity": "Common"
       },
       {
@@ -11265,10 +11221,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Spirit Board Game",
-        "rarity": "Common"
-      },
-      {
-        "name": "Strategy Manuscript",
         "rarity": "Common"
       },
       {
@@ -11538,10 +11490,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Rare Spices",
-        "rarity": "Common"
-      },
-      {
         "name": "Rugged Blade",
         "rarity": "Common/Uncommon",
         "unverified": true
@@ -11600,6 +11548,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Seteth": {
     "loved": [
       {
+        "name": "Eastern Love Story",
+        "rarity": "Common"
+      },
+      {
         "name": "History of a Master",
         "rarity": "Common"
       },
@@ -11613,6 +11565,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Morfis Almanac",
+        "rarity": "Common"
+      },
+      {
         "name": "Portrait of Yu Phas",
         "rarity": "Common"
       },
@@ -11622,6 +11578,14 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Solomon Coffee",
+        "rarity": "Common"
+      },
+      {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -11679,10 +11643,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Eastern Love Story",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Tea Leaves",
         "rarity": "Common"
       },
@@ -11708,10 +11668,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Huge Fish Eyeball",
-        "rarity": "Common"
-      },
-      {
-        "name": "Morfis Almanac",
         "rarity": "Common"
       },
       {
@@ -11751,15 +11707,7 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
         "name": "Sturdy Rucksack",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -11796,6 +11744,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   "Sha Lan": {
     "loved": [
       {
+        "name": "Arrowhead Gem",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Decorative Arrows",
         "rarity": "Common",
         "unverified": true
@@ -11805,12 +11757,20 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Eastern Earrings",
+        "rarity": "Common"
+      },
+      {
         "name": "Flower Painting",
         "rarity": "Common"
       },
       {
         "name": "History of a Master",
         "rarity": "Common"
+      },
+      {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Odd Vegetable Seeds",
@@ -11852,6 +11812,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Special “Medicine”",
         "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -11861,10 +11825,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Alecto Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
-        "name": "Arrowhead Gem",
         "rarity": "Common/Uncommon"
       },
       {
@@ -11920,10 +11880,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Eastern Earrings",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Tea Leaves",
         "rarity": "Common"
       },
@@ -11977,10 +11933,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Kitten Figurine",
         "rarity": "Common"
-      },
-      {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Magic-Trick Set",
@@ -12074,10 +12026,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Tales of Adventure",
-        "rarity": "Common"
-      },
-      {
         "name": "The Knight’s Suitors",
         "rarity": "Common/Uncommon",
         "unverified": true
@@ -12112,8 +12060,16 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
+        "name": "Dual Fish Knives",
+        "rarity": "Common"
+      },
+      {
         "name": "History of a Master",
         "rarity": "Common"
+      },
+      {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Portrait of Yu Phas",
@@ -12129,6 +12085,14 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Shield Portrait",
+        "rarity": "Common"
+      },
+      {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       }
     ],
@@ -12161,10 +12125,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "Dual Fish Knives",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Black Silk",
         "rarity": "Common/Uncommon"
       },
@@ -12182,16 +12142,8 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Huge Fish Eyeball",
-        "rarity": "Common"
-      },
-      {
         "name": "Joint-Relief Gloves",
         "rarity": "Common"
-      },
-      {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Morfis Almanac",
@@ -12220,21 +12172,9 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "Sharp Fishhook",
-        "rarity": "Common"
-      },
-      {
         "name": "Solomon Coffee",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
-        "rarity": "Common"
       },
       {
         "name": "Tome from Away",
@@ -12268,6 +12208,18 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Eastern Earrings",
+        "rarity": "Common"
+      },
+      {
+        "name": "Eastern Love Story",
+        "rarity": "Common"
+      },
+      {
+        "name": "Flower Painting",
+        "rarity": "Common"
+      },
+      {
         "name": "History of a Master",
         "rarity": "Common"
       },
@@ -12286,12 +12238,24 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Portrait of Yu Phas",
+        "rarity": "Common"
+      },
+      {
         "name": "Red Hair Clip",
         "rarity": "Common/Uncommon",
         "unverified": true
       },
       {
+        "name": "Shield Portrait",
+        "rarity": "Common"
+      },
+      {
         "name": "Special “Medicine”",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       }
     ],
@@ -12363,14 +12327,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Eastern Earrings",
-        "rarity": "Common"
-      },
-      {
-        "name": "Eastern Love Story",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Tea Leaves",
         "rarity": "Common"
       },
@@ -12380,10 +12336,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Exquisite Ring",
-        "rarity": "Common"
-      },
-      {
-        "name": "Flower Painting",
         "rarity": "Common"
       },
       {
@@ -12457,10 +12409,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Portrait of Yu Phas",
-        "rarity": "Common"
-      },
-      {
         "name": "Protection Figurine",
         "rarity": "Common",
         "unverified": true
@@ -12492,10 +12440,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "Shield Portrait",
-        "rarity": "Common"
-      },
-      {
         "name": "Skin Balm",
         "rarity": "Common"
       },
@@ -12509,10 +12453,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Sun Ghosh",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -12562,6 +12502,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Flower Painting",
+        "rarity": "Common"
+      },
+      {
         "name": "History of a Master",
         "rarity": "Common"
       },
@@ -12579,7 +12523,27 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Odd Vegetable Seeds",
+        "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Portrait of Yu Phas",
+        "rarity": "Common"
+      },
+      {
+        "name": "Rancid Garum",
+        "rarity": "Common"
+      },
+      {
         "name": "Rare Southern Seeds",
+        "rarity": "Common"
+      },
+      {
+        "name": "Solomon Coffee",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       }
     ],
@@ -12659,10 +12623,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Flower Painting",
-        "rarity": "Common"
-      },
-      {
         "name": "Fragrant Pastries",
         "rarity": "Common"
       },
@@ -12723,10 +12683,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Odd Vegetable Seeds",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Orgus Coffee",
         "rarity": "Common"
       },
@@ -12755,10 +12711,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Portrait of Yu Phas",
-        "rarity": "Common"
-      },
-      {
         "name": "Potted Vegetables",
         "rarity": "Common",
         "unverified": true
@@ -12769,10 +12721,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Pure-White Cervi",
-        "rarity": "Common"
-      },
-      {
-        "name": "Rancid Garum",
         "rarity": "Common"
       },
       {
@@ -12809,10 +12757,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "Solomon Coffee",
-        "rarity": "Common"
-      },
-      {
         "name": "Southern Coffee",
         "rarity": "Common"
       },
@@ -12822,10 +12766,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Strong Seasonings",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -12925,6 +12865,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Portrait of Yu Phas",
+        "rarity": "Common"
+      },
+      {
         "name": "Rancid Garum",
         "rarity": "Common"
       },
@@ -13117,10 +13061,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Pickled Vegetables",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Portrait of Yu Phas",
-        "rarity": "Common"
       },
       {
         "name": "Potted Vegetables",
@@ -13551,6 +13491,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Pegasus Panorama",
         "rarity": "Common/Uncommon"
       },
@@ -13622,10 +13566,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Mane Ornament",
         "rarity": "Common"
       },
@@ -13673,6 +13613,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Dual Fish Knives",
+        "rarity": "Common"
+      },
+      {
         "name": "Eastern Board Game",
         "rarity": "Common"
       },
@@ -13682,11 +13626,19 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Eastern Love Story",
+        "rarity": "Common"
+      },
+      {
         "name": "Ebony Game Board",
         "rarity": "Common"
       },
       {
         "name": "Flower Painting",
+        "rarity": "Common"
+      },
+      {
+        "name": "Fodlan Tea",
         "rarity": "Common"
       },
       {
@@ -13698,8 +13650,20 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
+        "name": "Morfis Almanac",
+        "rarity": "Common"
+      },
+      {
+        "name": "Morfis Tea",
+        "rarity": "Common"
+      },
+      {
         "name": "Odd Vegetable Seeds",
         "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Poems of the Greats",
+        "rarity": "Common"
       },
       {
         "name": "Portrait of Yu Phas",
@@ -13713,6 +13677,18 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Red Hair Clip",
         "rarity": "Common/Uncommon",
         "unverified": true
+      },
+      {
+        "name": "School Scandal",
+        "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Strategy Manuscript",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       },
       {
         "name": "Tome from Away",
@@ -13758,16 +13734,8 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Dual Fish Knives",
-        "rarity": "Common"
-      },
-      {
         "name": "Eastern Black Silk",
         "rarity": "Common/Uncommon"
-      },
-      {
-        "name": "Eastern Love Story",
-        "rarity": "Common"
       },
       {
         "name": "Eastern Tea Leaves",
@@ -13781,10 +13749,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Flexible Fishing Rod",
         "rarity": "Common",
         "unverified": true
-      },
-      {
-        "name": "Fodlan Tea",
-        "rarity": "Common"
       },
       {
         "name": "Full Sewing Kit",
@@ -13824,14 +13788,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Morfis Almanac",
-        "rarity": "Common"
-      },
-      {
-        "name": "Morfis Tea",
-        "rarity": "Common"
-      },
-      {
         "name": "Niiza Garum",
         "rarity": "Common"
       },
@@ -13849,10 +13805,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Pickled Vegetables",
-        "rarity": "Common"
-      },
-      {
-        "name": "Poems of the Greats",
         "rarity": "Common"
       },
       {
@@ -13880,10 +13832,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "School Scandal",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Skin Balm",
         "rarity": "Common"
       },
@@ -13901,19 +13849,11 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
         "name": "Strong Cervi",
         "rarity": "Common"
       },
       {
         "name": "Strong Seasonings",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {
@@ -13965,6 +13905,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
+      },
+      {
         "name": "Meal Voucher",
         "rarity": "Common",
         "unverified": true
@@ -13989,6 +13933,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Special “Medicine”",
+        "rarity": "Common"
+      },
+      {
+        "name": "Tales of Adventure",
         "rarity": "Common"
       }
     ],
@@ -14111,10 +14059,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Light Shosh",
         "rarity": "Common"
       },
@@ -14212,10 +14156,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Tales of Adventure",
-        "rarity": "Common"
-      },
-      {
         "name": "Tome from Away",
         "rarity": "Common",
         "unverified": true
@@ -14283,6 +14223,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Poems of the Greats",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Portrait of Yu Phas",
+        "rarity": "Common"
       },
       {
         "name": "Rancid Garum",
@@ -14409,10 +14353,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Portrait of Yu Phas",
-        "rarity": "Common"
-      },
-      {
         "name": "Protection Figurine",
         "rarity": "Common",
         "unverified": true
@@ -14475,6 +14415,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
   },
   "Ultand": {
     "loved": [
+      {
+        "name": "Dual Fish Knives",
+        "rarity": "Common"
+      },
       {
         "name": "Eastern Love Story",
         "rarity": "Common",
@@ -14543,10 +14487,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Crimson Ghosh",
         "rarity": "Common/Uncommon"
-      },
-      {
-        "name": "Dual Fish Knives",
-        "rarity": "Common"
       },
       {
         "name": "Eastern Black Silk",
@@ -15138,6 +15078,14 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
+        "name": "Eastern Black Silk",
+        "rarity": "Common/Uncommon"
+      },
+      {
+        "name": "Eastern Tea Leaves",
+        "rarity": "Common"
+      },
+      {
         "name": "Ebony Game Board",
         "rarity": "Common",
         "unverified": true
@@ -15150,6 +15098,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "History of a Master",
         "rarity": "Common"
+      },
+      {
+        "name": "Legendary Garum",
+        "rarity": "Common/Uncommon"
       },
       {
         "name": "Morfis Almanac",
@@ -15181,6 +15133,10 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "name": "Shield Portrait",
         "rarity": "Common",
         "unverified": true
+      },
+      {
+        "name": "Tales of Adventure",
+        "rarity": "Common"
       }
     ],
     "reallyLiked": [
@@ -15222,19 +15178,11 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "unverified": true
       },
       {
-        "name": "Eastern Black Silk",
-        "rarity": "Common/Uncommon"
-      },
-      {
         "name": "Eastern Board Game",
         "rarity": "Common"
       },
       {
         "name": "Eastern Earrings",
-        "rarity": "Common"
-      },
-      {
-        "name": "Eastern Tea Leaves",
         "rarity": "Common"
       },
       {
@@ -15260,10 +15208,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Joint-Relief Gloves",
         "rarity": "Common"
-      },
-      {
-        "name": "Legendary Garum",
-        "rarity": "Common/Uncommon"
       },
       {
         "name": "Pickled Bulbs",
@@ -15300,10 +15244,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Strategy Manuscript",
-        "rarity": "Common"
-      },
-      {
-        "name": "Tales of Adventure",
         "rarity": "Common"
       },
       {

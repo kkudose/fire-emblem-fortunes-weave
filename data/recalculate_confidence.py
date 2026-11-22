@@ -81,6 +81,17 @@ def consolidate():
         for source, tier in source_votes.items():
             if tier not in POSITIVE_TIERS:
                 lower_votes[tier].add(source)
+        tier_votes = defaultdict(set)
+        for source, tier in source_votes.items():
+            tier_votes[tier].add(source)
+        plurality_tiers = [
+            tier for tier, sources in tier_votes.items()
+            if all(
+                len(sources) > len(other_sources)
+                for other_tier, other_sources in tier_votes.items()
+                if other_tier != tier
+            )
+        ]
 
         conflict = intra_source_conflict or len(set(positive_sources.values())) > 1
         if direct_tier:
@@ -98,8 +109,19 @@ def consolidate():
                 tier for tier, sources in lower_votes.items()
                 if len(sources) >= MINIMUM_INDEPENDENT_SOURCES
             ]
-            if len(positive_sources) >= MINIMUM_INDEPENDENT_SOURCES:
-                # Loved/Really Liked disagreement is resolved to Really Liked.
+            if plurality_tiers:
+                tier = plurality_tiers[0]
+                selected_sources = set(tier_votes[tier])
+                verified = len(selected_sources) >= MINIMUM_INDEPENDENT_SOURCES
+                conflict = conflict or len(tier_votes) > 1
+                if tier not in POSITIVE_TIERS:
+                    lower_tier_overrides += 1
+                    note = "Lower tier selected because more independent sources support it than any competing tier."
+                else:
+                    note = "Tier selected by the most independent source votes." if conflict else None
+            elif len(positive_sources) >= MINIMUM_INDEPENDENT_SOURCES:
+                # On unresolved positive-tier ties, keep the conservative
+                # Loved/Really Liked resolution used before source voting.
                 tier = "Really Liked" if "Really Liked" in positive_sources.values() else "Loved"
                 selected_sources = set(positive_sources)
                 verified = True

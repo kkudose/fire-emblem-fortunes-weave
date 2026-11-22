@@ -7,10 +7,10 @@
 - 64 characters and 127 canonical gifts, drawn from source rows and manual confirmations.
 - 6 external sources: Altema, Dork, Game8 JP, Raider King, Redfreshet, and Yuphas Temple. The direct in-game confirmation ledger is stored as a separate seventh source.
 - 15,657 source rows across the six external sources; all source labels, lower tiers, statuses, and available scores are retained.
-- 56 active manual confirmations: 46 Really Liked, 2 Loved, and 8 Liked.
-- 3,563 compiled high-tier candidates and their outcomes: 2,626 verified and 937 unverified. Outcomes are 490 verified Loved, 2,081 verified Really Liked, 55 verified Liked, 215 unverified Loved, and 722 unverified Really Liked.
-- 52 previously unverified higher-tier candidates now resolve to a lower tier because two independent sources agree on that lower tier. Those lower-tier sources are listed in `eligible_sources`; the higher-tier outlier is omitted. Three additional Liked outcomes are direct user confirmations.
-- Loved/Really Liked disagreements resolve to Really Liked when at least two independent sources support those upper-positive tiers. A tier disagreement by itself does not make such a pair unverified.
+- 57 active manual confirmations: 46 Really Liked, 2 Loved, and 9 Liked.
+- 3,564 compiled high-tier candidates and their outcomes: 2,633 verified and 931 unverified. Outcomes are 642 verified Loved, 1,916 verified Really Liked, 75 verified Liked, 215 unverified Loved, and 716 unverified Really Liked.
+- 66 higher-tier candidates resolve to a lower tier by source-tier majority or agreement among at least two independent sources. Those lower-tier sources are listed in `eligible_sources`; higher-tier outliers are omitted.
+- Direct user confirmations override source votes. Otherwise each eligible independent source gets one vote per pair. A uniquely most-supported exact tier wins; lower-tier results require at least two sources. Ties retain the prior conservative resolution, including Really Liked for Loved/Really Liked ties. Lower-tier-only source pairs are still excluded from the high-tier candidate list.
 
 The app reads its Loved and Really Liked lists from a generated TypeScript export of the consolidated SQLite `reactions` table. The export is regenerated as part of every production build; `src/gifts.ts` retains the roster and automatic-recruitment notes, not gift reaction assignments.
 
@@ -30,4 +30,4 @@ The app reads its Loved and Really Liked lists from a generated TypeScript expor
 2. Run `python3 data/import_data.py` to rebuild the database from external captures and manual confirmations only.
 3. Run `python3 data/recalculate_confidence.py` to regenerate the `reactions` table and [`consolidated-reactions.csv`](consolidated-reactions.csv).
 
-The consolidation counts distinct source names, so duplicate rows within one source do not increase corroboration. Direct confirmations override source tiers. Two sources supporting Loved/Really Liked verify the positive tier; a Loved/Really Liked disagreement resolves to Really Liked. If an otherwise unverified higher-tier pair has two independent sources agreeing on the same lower tier, that lower tier is selected and the higher-tier outlier is omitted from `eligible_sources`. Lower-tier-only pairs are not added to the high-tier gift compilation. Source omissions are not negative evidence.
+The consolidation counts distinct source names, so duplicate rows within one source do not increase corroboration. Direct confirmations override source votes. For each pair, a uniquely most-supported exact normalized tier is selected; ties use the prior conservative resolution, including Really Liked for Loved/Really Liked ties. A lower-tier result requires at least two independent sources. Selected lower-tier sources are listed in `eligible_sources`, and higher-tier outliers are omitted. Lower-tier-only pairs are not added to the high-tier gift compilation. Source omissions are not negative evidence.
