@@ -48,92 +48,100 @@ This is one linearized working order consistent with the observations, not a cla
 36. Aromatic Shosh
 37. Common Coffee
 38. Select Coffee
-39. Southern Coffee
-40. Orgus Coffee
-41. Pickled Vegetables
-42. Potted Vegetables
-43. Meaty Delicacy
-44. Huge Fish Eyeball
-45. Odd Vegetable Seeds
-46. Outdoor Cooking Set
-47. Strong Seasonings
-48. Home-Recipe Book
-49. Pastry Cookbook
-50. Herbal Recipe Guide
-51. Village Recipes
-52. Morfis Tea
-53. Fodlan Tea
-54. Eastern Tea Leaves
-55. Kitten Figurine
-56. Magic-Trick Set
-57. Protection Figurine
-58. Flexible Fishing Rod
-59. Bow Repair Kit
-60. Sharp Fishhook
-61. Sturdy Rucksack
-62. Divination Bagua
-63. Mane Ornament
-64. Dagda Beard Grass
-65. Crimson Bull Figure
-66. Jade Panther Figure
-67. The Works of Dante
-68. Horse-Grooming Kit
-69. The Knight’s Suitors
-70. Trader’s Handbook
-71. Thick Foreign Tome
-72. Tales of the Arena
-73. Poems of the Greats
-74. Wing Fletching
-75. School Scandal
-76. Tome from Away
-77. Strategy Manuscript
-78. Tales of Adventure
-79. Sharp Dagger
-80. Crafting Knives
-81. Dual Fish Knives
-82. Rugged Blade
-83. Ceremonial Spear
-84. Training Weights
-85. Training Pillar
-86. Training Bracelet
-87. Antique Medal
-88. Imitation Medal
-89. Joint-Relief Gloves
-90. History of a Master
-91. Full Sewing Kit
-92. Skin Balm
-93. Decorative Arrows
-94. Eastern Black Silk
-95. Ahm Lu Cloth
-96. Board-Game Tactics
-97. Spirit Board Game
-98. Ebony Game Board
-99. Exquisite Ring
-100. Red-Rose Bouquet
-101. Gaudy Bangle
-102. Blue-Rose Bouquet
-103. Eastern Earrings
-104. Arrowhead Gem
-105. Pack of Pastels
-106. Pegasus Panorama
-107. Flower Painting
-108. Portrait of Yu Phas
+39. Pickled Bulbs
+40. Southern Coffee
+41. Orgus Coffee
+42. Pickled Vegetables
+43. Potted Vegetables
+44. Meaty Delicacy
+45. Huge Fish Eyeball
+46. Odd Vegetable Seeds
+47. Outdoor Cooking Set
+48. Strong Seasonings
+49. Home-Recipe Book
+50. Pastry Cookbook
+51. Rare Spices
+52. Herbal Recipe Guide
+53. Village Recipes
+54. Morfis Tea
+55. Fodlan Tea
+56. Eastern Tea Leaves
+57. Kitten Figurine
+58. Magic-Trick Set
+59. Protection Figurine
+60. Flexible Fishing Rod
+61. Bow Repair Kit
+62. Sharp Fishhook
+63. Sturdy Rucksack
+64. Divination Bagua
+65. Mane Ornament
+66. Dagda Beard Grass
+67. Crimson Bull Figure
+68. Jade Panther Figure
+69. The Works of Dante
+70. Horse-Grooming Kit
+71. The Knight’s Suitors
+72. Trader’s Handbook
+73. Thick Foreign Tome
+74. Tales of the Arena
+75. Poems of the Greats
+76. Wing Fletching
+77. School Scandal
+78. Tome from Away
+79. Strategy Manuscript
+80. Tales of Adventure
+81. Sharp Dagger
+82. Crafting Knives
+83. Dual Fish Knives
+84. Rugged Blade
+85. Ceremonial Spear
+86. Training Weights
+87. Training Pillar
+88. Training Bracelet
+89. Antique Medal
+90. Imitation Medal
+91. Joint-Relief Gloves
+92. History of a Master
+93. Full Sewing Kit
+94. Skin Balm
+95. Decorative Arrows
+96. Eastern Black Silk
+97. Ahm Lu Cloth
+98. Board-Game Tactics
+99. Spirit Board Game
+100. Ebony Game Board
+101. Exquisite Ring
+102. Red-Rose Bouquet
+103. Gaudy Bangle
+104. Blue-Rose Bouquet
+105. Red Hair Clip
+106. Eastern Earrings
+107. Arrowhead Gem
+108. Pack of Pastels
+109. Pegasus Panorama
+110. Flower Painting
+111. Portrait of Yu Phas
 
 ## Unknown positions
 
 These names have appeared in the working inventory or preference data but have not been placed by an order sequence or the screenshots:
 
+- Black Tail Feathers
+- Brined Fish Guts
 - Concentrated Garum
+- Desert Curios
 - Eastern Board Game
 - Eastern Love Story
 - Everyday Scenes
 - Honey Pastries
+- Legendary Garum
+- Meal Voucher
 - Morfis Almanac
-- Pickled Bulbs
 - Rare Southern Seeds
-- Rare Spices
-- Red Hair Clip
+- Ruin Relics
 - Shield Portrait
+- Solomon Coffee
+- Vihuela-Care Tools
 
 ## Discrepancies and limits
 
@@ -145,6 +153,8 @@ These names have appeared in the working inventory or preference data but have n
 - **Oct 24 user-supplied sequence:** Tales of the Arena → Poems of the Greats → School Scandal → Strategy Manuscript → Tales of Adventure → Dual Fish Knives. The sequence places three previously unknown items and adds relative-order constraints around already placed items.
 - **Oct 24 user-supplied sequences:** Candy Crystals → Garum → Smooth Garum → Niiza Garum → Rancid Garum → Young Ghosh; Pickled Vegetables → Meaty Delicacy → Huge Fish Eyeball; Volcano Ghosh → Crimson Ghosh → Young Shosh; Light Shosh → Blue Shosh → Aromatic Shosh. These supply the order for Blue Shosh and resolve the previously open relative placements among the garums, Pickled Vegetables/Meaty Delicacy/Huge Fish Eyeball, and Blue Shosh.
 - **New user-supplied sequences:** Poems of the Greats → Wing Fletching → Full Sewing Kit; Smooth Garum → Alecto Garum → Rustic Ghosh; Yarc Milk → Honey Milk → Jamel Milk. These place Honey Milk and Alecto Garum in the compiled list and add the shown relative-order constraints for Wing Fletching.
+- **New user-supplied sequence:** Select Coffee → Pickled Bulbs → Home-Recipe Book. This places Pickled Bulbs between the named endpoints as a relative-order constraint; other gifts may occur between them.
+- **New user-supplied sequences:** Pastry Cookbook → Rare Spices → Herbal Recipe Guide; Blue-Rose Bouquet → Red Hair Clip → Eastern Earrings; Potted Vegetables → Strong Seasonings → Rare Spices → Herbal Recipe Guide. These place Rare Spices and Red Hair Clip in the working order; the sequences establish relative order only, not adjacency.
 - **New user-supplied sequences:** Skin Balm → Decorative Arrows → Eastern Black Silk → Ahm Lu Cloth → Board-Game Tactics; Sturdy Rucksack → Divination Bagua → Dagda Beard Grass; Flower Painting → Portrait of Yu Phas. “Decorative arrow” is normalized to the catalog name Decorative Arrows, and “Dagda beard” to Dagda Beard Grass. The user identified Portrait of Yu Phas as the end of the gift list, so it is placed last; its status as the final item may not be certain.
 - **Linearization choices:** The exact relative slots of Strong Cervi vs Pure-White Cervi/Simple Pastries; Box of Treats vs Coffee Pastries/Saraminian Sweets; and Crimson Ghosh vs Special “Medicine” are not established. The numbered list picks one usable sequence where the evidence leaves these open.
 - **Repeated rows:** Repeated names at screenshot boundaries are continuity overlaps, not extra items. Across the screenshots, Jade Ghosh, Select Coffee, Dagda Beard Grass, Crimson Bull Figure, and Young Ghosh are each counted once. After Crimson Ghosh, the screenshot shows Young Shosh.

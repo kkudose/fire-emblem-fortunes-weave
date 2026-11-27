@@ -1026,7 +1026,7 @@ Fianna,Volcano Ghosh,Loved,verified,3,Dork; Raider King; Yuphas Temple,true,fals
 Fianna,Wing Fletching,Really Liked,verified,2,Altema; Yuphas Temple,true,false
 Gaitz,Ahm Lu Cloth,Loved,verified,2,Raider King; Yuphas Temple,true,false
 Gaitz,Antique Medal,Really Liked,verified,2,Altema; Yuphas Temple,false,false
-Gaitz,Aromatic Shosh,Really Liked,unverified,1,Altema,false,false
+Gaitz,Aromatic Shosh,Liked,verified,1,Dork,false,true
 Gaitz,Arrowhead Gem,Really Liked,verified,4,Dork; Game8 JP; Raider King; Yuphas Temple,true,false
 Gaitz,Board-Game Tactics,Really Liked,verified,3,Dork; Raider King; Yuphas Temple,false,false
 Gaitz,Candy Crystals,Really Liked,verified,2,Altema; Dork,true,false
@@ -1056,10 +1056,10 @@ Gaitz,Jade Ghosh,Really Liked,unverified,1,Altema,false,false
 Gaitz,Jade Panther Figure,Really Liked,verified,3,Dork; Raider King; Yuphas Temple,false,false
 Gaitz,Joint-Relief Gloves,Really Liked,verified,3,Game8 JP; Raider King; Yuphas Temple,true,false
 Gaitz,Legendary Garum,Loved,verified,2,Dork; Yuphas Temple,false,false
-Gaitz,Light Shosh,Really Liked,unverified,1,Altema,false,false
+Gaitz,Light Shosh,Liked,verified,0,,false,true
 Gaitz,Magic-Trick Set,Really Liked,unverified,1,Yuphas Temple,false,false
 Gaitz,Mane Ornament,Really Liked,verified,2,Raider King; Yuphas Temple,false,false
-Gaitz,Mature Ghosh,Really Liked,unverified,1,Altema,false,false
+Gaitz,Mature Ghosh,Liked,verified,0,,false,true
 Gaitz,Meaty Delicacy,Really Liked,unverified,1,Altema,false,false
 Gaitz,Morfis Almanac,Loved,verified,2,Raider King; Yuphas Temple,true,false
 Gaitz,Morfis Tea,Really Liked,unverified,1,Yuphas Temple,false,false
@@ -1100,8 +1100,8 @@ Gaitz,Training Weights,Really Liked,verified,3,Game8 JP; Raider King; Yuphas Tem
 Gaitz,Village Recipes,Really Liked,verified,2,Dork; Yuphas Temple,true,false
 Gaitz,Volcano Ghosh,Really Liked,unverified,1,Altema,false,false
 Gaitz,Wing Fletching,Really Liked,verified,2,Altema; Yuphas Temple,false,false
-Gaitz,Young Ghosh,Really Liked,unverified,1,Altema,false,false
-Gaitz,Young Shosh,Really Liked,unverified,1,Altema,false,false
+Gaitz,Young Ghosh,Liked,verified,0,,false,true
+Gaitz,Young Shosh,Liked,verified,0,,false,true
 Goliath,Ahm Lu Cloth,Really Liked,unverified,1,Dork,false,false
 Goliath,Antique Medal,Really Liked,unverified,1,Yuphas Temple,false,false
 Goliath,Aromatic Shosh,Really Liked,verified,3,Dork; Game8 JP; Yuphas Temple,true,false
@@ -1809,7 +1809,7 @@ Loretta,Blue-Rose Bouquet,Really Liked,verified,2,Game8 JP; Yuphas Temple,false,
 Loretta,Box of Treats,Really Liked,verified,2,Dork; Yuphas Temple,false,false
 Loretta,Candy Crystals,Loved,verified,2,Dork; Yuphas Temple,true,false
 Loretta,Ceremonial Spear,Loved,verified,3,Dork; Raider King; Yuphas Temple,false,false
-Loretta,Coffee Pastries,Really Liked,verified,2,Altema; Yuphas Temple,true,false
+Loretta,Coffee Pastries,Liked,verified,0,,false,true
 Loretta,Crafting Knives,Really Liked,unverified,1,Yuphas Temple,false,false
 Loretta,Crimson Ghosh,Really Liked,verified,4,Dork; Game8 JP; Raider King; Yuphas Temple,true,false
 Loretta,Dual Fish Knives,Loved,verified,2,Dork; Yuphas Temple,false,false
@@ -1895,7 +1895,7 @@ Ludia,Rare Southern Seeds,Loved,unverified,1,Yuphas Temple,false,false
 Ludia,Red Hair Clip,Loved,verified,2,Raider King; Yuphas Temple,false,false
 Ludia,Red-Rose Bouquet,Really Liked,verified,2,Dork; Yuphas Temple,false,false
 Ludia,Rugged Blade,Really Liked,unverified,1,Dork,false,false
-Ludia,Rustic Ghosh,Really Liked,unverified,1,Altema,false,false
+Ludia,Rustic Ghosh,Liked,verified,0,,false,true
 Ludia,School Scandal,Loved,verified,2,Dork; Yuphas Temple,false,false
 Ludia,Secret Ghosh,Really Liked,unverified,1,Altema,false,false
 Ludia,Select Coffee,Really Liked,verified,4,Altema; Dork; Game8 JP; Yuphas Temple,true,false
@@ -2531,7 +2531,7 @@ Orchel,Mane Ornament,Really Liked,verified,2,Dork; Yuphas Temple,false,false
 Orchel,Morfis Almanac,Really Liked,verified,2,Dork; Yuphas Temple,true,false
 Orchel,Niiza Garum,Really Liked,verified,2,Dork; Yuphas Temple,false,false
 Orchel,Outdoor Cooking Set,Really Liked,verified,4,Altema; Dork; Raider King; Yuphas Temple,false,false
-Orchel,Pack of Pastels,Really Liked,unverified,1,Yuphas Temple,false,false
+Orchel,Pack of Pastels,Really Liked,verified,1,Yuphas Temple,false,true
 Orchel,Pastry Cookbook,Really Liked,verified,2,Dork; Yuphas Temple,false,false
 Orchel,Pegasus Panorama,Loved,unverified,1,Yuphas Temple,false,false
 Orchel,Poems of the Greats,Loved,verified,2,Dork; Yuphas Temple,false,false
@@ -3393,7 +3393,7 @@ Ultand,Niiza Garum,Really Liked,verified,3,Dork; Raider King; Yuphas Temple,fals
 Ultand,Outdoor Cooking Set,Really Liked,verified,5,Altema; Dork; Game8 JP; Raider King; Yuphas Temple,true,false
 Ultand,Pastry Cookbook,Really Liked,verified,3,Altema; Game8 JP; Yuphas Temple,true,false
 Ultand,Pegasus Panorama,Really Liked,unverified,1,Yuphas Temple,false,false
-Ultand,Poems of the Greats,Loved,unverified,1,Yuphas Temple,false,false
+Ultand,Poems of the Greats,Loved,verified,1,Yuphas Temple,false,true
 Ultand,Portrait of Yu Phas,Loved,verified,3,Dork; Raider King; Yuphas Temple,false,false
 Ultand,Rancid Garum,Loved,verified,3,Dork; Raider King; Yuphas Temple,false,false
 Ultand,Rare Spices,Really Liked,verified,3,Altema; Dork; Yuphas Temple,false,false
@@ -3524,7 +3524,7 @@ Zarcone,Blue-Rose Bouquet,Loved,verified,2,Dork; Yuphas Temple,false,false
 Zarcone,Candy Crystals,Really Liked,verified,2,Altema; Dork,false,false
 Zarcone,Ceremonial Spear,Really Liked,verified,2,Dork; Yuphas Temple,true,false
 Zarcone,Crafting Knives,Really Liked,unverified,1,Yuphas Temple,false,false
-Zarcone,Crimson Bull Figure,Really Liked,unverified,1,Yuphas Temple,false,false
+Zarcone,Crimson Bull Figure,Really Liked,verified,1,Yuphas Temple,false,true
 Zarcone,Crimson Ghosh,Really Liked,unverified,1,Dork,false,false
 Zarcone,Dual Fish Knives,Loved,unverified,1,Yuphas Temple,false,false
 Zarcone,Eastern Black Silk,Loved,verified,2,Dork; Yuphas Temple,true,false

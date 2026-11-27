@@ -7,8 +7,8 @@
 - 64 characters and 127 canonical gifts, drawn from source rows and manual confirmations.
 - 6 external sources: Altema, Dork, Game8 JP, Raider King, Redfreshet, and Yuphas Temple. The direct in-game confirmation ledger is stored as a separate seventh source.
 - 15,657 source rows across the six external sources; all source labels, lower tiers, statuses, and available scores are retained.
-- 57 active manual confirmations: 46 Really Liked, 2 Loved, and 9 Liked.
-- 3,564 compiled high-tier candidates and their outcomes: 2,633 verified and 931 unverified. Outcomes are 642 verified Loved, 1,916 verified Really Liked, 75 verified Liked, 215 unverified Loved, and 716 unverified Really Liked.
+- 67 active manual confirmations: 48 Really Liked, 3 Loved, and 16 Liked.
+- 3,564 compiled high-tier candidates and their outcomes: 2,642 verified and 922 unverified. Outcomes are 643 verified Loved, 1,917 verified Really Liked, 82 verified Liked, 214 unverified Loved, and 708 unverified Really Liked.
 - 66 higher-tier candidates resolve to a lower tier by source-tier majority or agreement among at least two independent sources. Those lower-tier sources are listed in `eligible_sources`; higher-tier outliers are omitted.
 - Direct user confirmations override source votes. Otherwise each eligible independent source gets one vote per pair. A uniquely most-supported exact tier wins; lower-tier results require at least two sources. Ties retain the prior conservative resolution, including Really Liked for Loved/Really Liked ties. Lower-tier-only source pairs are still excluded from the high-tier candidate list.
 
@@ -18,7 +18,7 @@ The app reads its Loved and Really Liked lists from a generated TypeScript expor
 
 - [`schema.sql`](schema.sql) defines `characters`, `gifts`, `data_sources`, `source_tier_mappings`, raw and normalized source reaction tables, `manual_confirmations`, and the consolidated `reactions` table.
 - [`item-rarities.csv`](item-rarities.csv) records visible gift icon rarity: plain icons are Common, sparkle icons are Common/Uncommon (the screenshots do not distinguish Uncommon from Rare), and gifts absent from the screenshots are Unknown.
-- [`manual-confirmations.csv`](manual-confirmations.csv) contains only active direct user reports. Retracted confirmations and statements that merely rule out the top two tiers are not entered as reactions. The three direct Liked records remain in this ledger and suppress any conflicting top-tier source compilation for the same pair.
+- [`manual-confirmations.csv`](manual-confirmations.csv) contains only active direct user reports. Retracted confirmations and statements that merely rule out the top two tiers are not entered as reactions. The 16 direct Liked records remain in this ledger and suppress any conflicting top-tier source compilation for the same pair.
 - [`source-tier-mappings.csv`](source-tier-mappings.csv) documents source label mappings. Known mapped tiers can support tier consensus; Unknown and source statuses marked Suspected or Not known do not count.
 - [`gift-name-aliases.csv`](gift-name-aliases.csv) maps alternate source spellings to canonical gift names. In particular, `Bagua Divination Set` is normalized to `Divination Bagua`.
 - The Game8 US transcription is not included as a source. It informed the Japanese label crosswalk only. Japanese Game8's `気に入った` maps to Really Liked (472 of 475 shared pairs were US Really Liked). `とても気に入った` also maps conservatively to Really Liked because the shared pairs split nearly evenly between US Loved (64) and Really Liked (68). Altema's `大好き` maps conservatively to Really Liked (376 of 430 shared pairs were US Really Liked); its lower `好き` tier maps to Liked and can support a lower-tier consensus.

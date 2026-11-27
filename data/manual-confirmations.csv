@@ -8,6 +8,11 @@ Dietrich,Saraminian Sweets,Really Liked,Direct user confirmation
 Diego,Joint-Relief Gloves,Really Liked,Direct user confirmation
 Esmeralda,Gaudy Bangle,Really Liked,Direct user confirmation
 Fabio,Jade Ghosh,Really Liked,Direct user confirmation
+Gaitz,Aromatic Shosh,Liked,"User confirmed it is liked, not Really Liked"
+Gaitz,Light Shosh,Liked,"User confirmed it is liked, not Really Liked"
+Gaitz,Mature Ghosh,Liked,"User confirmed it is liked, not Really Liked"
+Gaitz,Young Ghosh,Liked,"User confirmed it is liked, not Really Liked"
+Gaitz,Young Shosh,Liked,"User confirmed it is liked, not Really Liked"
 Goliath,Jade Ghosh,Really Liked,Direct user confirmation
 Goliath,Mature Ghosh,Really Liked,Direct user confirmation
 Goliath,Mature Shosh,Really Liked,Direct user confirmation
@@ -15,8 +20,10 @@ Guzran,Energizing Ghosh,Really Liked,Direct user confirmation
 Guzran,Mature Ghosh,Really Liked,Direct user confirmation
 Halvin,Honey Pastries,Really Liked,Direct user confirmation
 Jester,Village Recipes,Really Liked,Direct user confirmation
+Loretta,Coffee Pastries,Liked,User confirmed it is kind of liked
 Ludia,Mature Ghosh,Liked,User confirmed it is kind of liked
 Ludia,Mature Shosh,Liked,User confirmed it is kind of liked
+Ludia,Rustic Ghosh,Liked,User confirmed it is kind of liked
 Ludia,Sturdy Rucksack,Really Liked,Direct user confirmation
 Ludia,Young Ghosh,Liked,User confirmed it is kind of liked
 Majide,Aromatic Shosh,Really Liked,Direct user confirmation
@@ -36,6 +43,7 @@ Noctula,Training Bracelet,Really Liked,Direct user confirmation
 Noctula,Training Pillar,Really Liked,Direct user confirmation
 Nydine,Mane Ornament,Really Liked,Direct user confirmation
 Nydine,Sturdy Rucksack,Really Liked,Direct user confirmation
+Orchel,Pack of Pastels,Really Liked,Direct user confirmation
 Peppe,Common Coffee,Really Liked,Direct user confirmation
 Peppe,Select Coffee,Really Liked,Direct user confirmation
 Peter,Garum,Liked,User confirmed it is kind of liked
@@ -55,4 +63,6 @@ Tialla,Village Recipes,Really Liked,Direct user confirmation
 Ninae,Blue-Rose Bouquet,Liked,User confirmed it is liked, but not Really Liked
 Sha Lan,Sharp Fishhook,Liked,User confirmed it is only Liked
 Ultand,Imitation Medal,Liked,User confirmed it is only Liked
+Ultand,Poems of the Greats,Loved,Direct user confirmation
 Ultand,The Works of Dante,Really Liked,User confirmed it is liked
+Zarcone,Crimson Bull Figure,Really Liked,Direct user confirmation

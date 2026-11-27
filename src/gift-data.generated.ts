@@ -4531,11 +4531,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common/Uncommon"
       },
       {
-        "name": "Aromatic Shosh",
-        "rarity": "Common",
-        "unverified": true
-      },
-      {
         "name": "Arrowhead Gem",
         "rarity": "Common/Uncommon"
       },
@@ -4611,11 +4606,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Common"
       },
       {
-        "name": "Light Shosh",
-        "rarity": "Common",
-        "unverified": true
-      },
-      {
         "name": "Magic-Trick Set",
         "rarity": "Common",
         "unverified": true
@@ -4623,11 +4613,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Mane Ornament",
         "rarity": "Common"
-      },
-      {
-        "name": "Mature Ghosh",
-        "rarity": "Common",
-        "unverified": true
       },
       {
         "name": "Meaty Delicacy",
@@ -4750,16 +4735,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Wing Fletching",
         "rarity": "Common"
-      },
-      {
-        "name": "Young Ghosh",
-        "rarity": "Common",
-        "unverified": true
-      },
-      {
-        "name": "Young Shosh",
-        "rarity": "Common",
-        "unverified": true
       }
     ]
   },
@@ -7877,10 +7852,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
         "rarity": "Unknown"
       },
       {
-        "name": "Coffee Pastries",
-        "rarity": "Common"
-      },
-      {
         "name": "Crafting Knives",
         "rarity": "Common",
         "unverified": true
@@ -8190,11 +8161,6 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       {
         "name": "Rugged Blade",
         "rarity": "Common/Uncommon",
-        "unverified": true
-      },
-      {
-        "name": "Rustic Ghosh",
-        "rarity": "Common",
         "unverified": true
       },
       {
@@ -10899,8 +10865,7 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Pack of Pastels",
-        "rarity": "Common",
-        "unverified": true
+        "rarity": "Common"
       },
       {
         "name": "Pastry Cookbook",
@@ -14434,8 +14399,7 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Poems of the Greats",
-        "rarity": "Common",
-        "unverified": true
+        "rarity": "Common"
       },
       {
         "name": "Portrait of Yu Phas",
@@ -15169,8 +15133,7 @@ export const databaseGiftRecords: Record<string, { loved: { name: string; rarity
       },
       {
         "name": "Crimson Bull Figure",
-        "rarity": "Common",
-        "unverified": true
+        "rarity": "Common"
       },
       {
         "name": "Crimson Ghosh",
